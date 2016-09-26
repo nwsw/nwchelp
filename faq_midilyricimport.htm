@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>FAQ: What is imported when a MIDI file has lyrics?</title>
+</head>
+<body >
+<h2>FAQ: What is imported when a MIDI file has lyrics?</h2>
+<hr>
+<p>MIDI files can be imported into <i>NoteWorthy Composer</i> song files using the File|Open command. However, MIDI files are not notation based files. They generally contain raw performance data that represents exactly how a song should be played, but not really how it should be notated.
+<p>
+MIDI files can optionally include text events, including text identified as Lyric Text. Text that is included in a MIDI file is not associated with any particular note pitch or duration, and can appear anywhere in the file, even if no instrument/note performance data is present. Lyric text in a MIDI file simply identifies a chronological sequence of syllables that should be sung with the song, and the time at which each syllable should start to be sung. The actual length of time that each syllable is sung is <b>not</b> specified in the MIDI file (although it obviously does not extend beyond the start time of the next syllable). These syllables might correspond to note events that are also included in the MIDI file, but there is no rule that it must be this way.
+<p>
+So, what does this all have to do with <i>NoteWorthy Composer</i>? Well, since lyric text is not bounded/framed by any other MIDI performance data, <i>NoteWorthy Composer</i> imports each lyric track into a separate lyric-only staff when importing MIDI data into NWC format. Each lyric-only staff imported into <i>NoteWorthy Composer</i> has the following properties:
+<p>
+<ul>
+<li>Each lyric syllable is attached to a fake, muted note that is added to the staff solely for the purpose of attaching lyric text (it does not sound during play back)<br>
+<li>The staff itself is given only a single staff line, to make it clear that it is a vocal only track<br>
+<li>Each lyric staff will be marked in a <b>Lyrics</b> group from File|Page Setup|Contents and Staff|Staff Properties|General, to make them easier to find and manipulate<br>
+<li>All notation on the staff is set to <b>Never</b> show on the printed page, so only the lyric text will appear when printed<br>
+<li>All fake notes entered on the staff will appear in hidden treble clef, although technically the notes themselves have no significance, except as a medium for attaching the lyric syllables found in the file (you can change the hidden clef without having any effect on the lyric staff)<br>
+</ul>
+<p>
+In addition, <i>NoteWorthy Composer</i> will try to layer an imported lyric staff with the corresponding note data that matches the lyric. This does not always work very well, due to the inherent limitations described earlier in this article. <i>NoteWorthy Composer</i> uses the following scheme when layering a lyric staff with a notation staff during import:
+<p>
+<ul>
+<li>first, the track where the MIDI lyric events are found is checked for MIDI note data<br></li>
+<li>if MIDI note data is present, the list of <i>NoteWorthy Composer</i> import instructions are checked to see if any note data is being imported from this track<br></li>
+<li>if multiple <i>NoteWorthy Composer</i> import instructions are found for this track, the first one is considered the source for a matching a notation staff for the MIDI lyrics found in the file<br></li>
+<li>the notation staff generated from the import instruction is then layered with the lyric staff generated from the MIDI lyrics<br></li>
+<li>if no matching import instruction is found, or no note events are in the track that contains MIDI lyrics, then the lyric staff will not be layered within <i>NoteWorthy Composer</i>; it will appear at the bottom of the score, after the notation staves<br></li>
+</ul>
+<p>
+After an import is completed, you can try several things to improve the results of the lyric import.
+If the lyric staff is layered with the wrong notation staff, you can layer it with a different notation staff:
+<p>
+<ol><li>turn off the layering option on the notation staff (press F2 while the notation staff above the lyric is active, then click the Visual tab, turn off option <i>Layer with next staff</i>)<br></li>
+<li>now, make the lyric staff active (which can now be easily done by clicking on it)<br></li>
+<li>now move the lyric staff around using Ctrl+Shift+Page Down/Up until it is under the notation staff that appears as though it represents the vocals<br></li>
+<li>lastly, you can optionally enable layering on the notation staff directly above the lyric staff so that the lyrics will appear to belong to this staff when printing or displaying in NoteWorthy Player<br></li>
+</ol>
+<p>If you are feeling confident, you can also move the lyric text from the lyric staff over to the actual notation staff that you think corresponds to the lyric text:
+<p>
+<ol><li>use Page Up/Down until the imported lyric staff is active<br></li>
+<li>open the lyric editor using Edit|Lyrics or Ctrl+L<br></li>
+<li>press Ctrl+Shift+End to highlight the entire lyric<br></li>
+<li>press Ctrl+C to copy all of the selected lyric text<br></li>
+<li>press Cancel to close this lyric editor<br></li>
+<li>activate the notation staff to which you want to add these lyrics (again, using Page Up/Down is an easy way to do this)<br></li>
+<li>open up the lyric editor for this notation staff<br></li>
+<li>on the Configuration tab, assign the <i>Line Count</i> field to <i>1 Lyric Line</i><br></li>
+<li>click on the <i>Lyric 1</i> tab<br></li>
+<li>in the lyric text box, press Ctrl+V to paste the lyrics<br></li>
+<li>press OK to complete the job<br></li>
+</ol>
+<p>
+You now have these lyrics attached to the notation staff. You will probably find that some tweaking of the lyrics and note properties will be required in order to match the lyric syllables with the correct notes on the staff. In some cases, this effort might be enough to convince you to use the layered lyric staff instead. If you decide not to keep the original lyric staff, you can remove it by making it active, then pressing Ctrl+D.
+
+</body>
+</html>

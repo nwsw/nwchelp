@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>FAQ: Does NWC support karaoke (*.kar) files?</title>
+</head>
+<body >
+<h2>FAQ: Does NWC support karaoke (*.kar) files?</h2>
+<hr>
+<p>Karaoke files conform to the <a href="http://www.midi.org/">Official MIDI Specification</a>, but include custom text 
+formats for the inclusion of lyrics and other text. Karaoke files <b>do not utilize</b> the standard
+<b><i>Lyric Meta Event</i></b> for inclusion of song lyrics. Karaoke files use the general purpose
+<b><i>Text Meta Event</i></b> for inclusion of lyrics. <i>NoteWorthy Composer</i> will import lyric
+text events from a karaoke file as long as the file name has the correct *.kar file extension. The
+import uses the same procedure as described in
+&quot;<a href="faq_midilyricimport.htm">What is imported when a MIDI file has lyrics?</a>&quot;,
+except the lyric text is derived from the <i>Text Meta Event</i>, rather than the official <i>Lyric Meta Event</i>.
+<p>
+On export to a MIDI file, <i>NoteWorthy Composer</i> uses the standard <b><i>Lyric Meta Event</i></b> for saving lyrics into a standard MIDI file. <i>NoteWorthy Composer</i> does not save files using the custom Karaoke File (*.kar) format extensions. It uses the standard defined by the <a href="http://www.midi.org/">Official MIDI Specification</a>.<br>
+
+</body>
+</html>
