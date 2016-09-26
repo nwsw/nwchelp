@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Tempo Variance Command </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2><img src=img/qinsfmta.gif><img src=img/qinsbrth.gif> Tempo Variance Command</h2>
+<hr>
+<p>
+This command is used to insert a tempo variance into the score. The following variance styles are supported: </p>
+<ul>
+<li><b>BreathMark: </b>The breath mark is represented graphically in the score and indicates that the performer should take a breath at this position. You can optionally specify a delay (in 16th notes) which will influence the play back of the staff. The delay should only be specified for one instance of the mark at any given vertical position in the song.</li>
+<li><b>Fermata: </b>The fermata is similar to the breath mark in that it is represented symbollically in the score and has a corresponding delay. The delay should only be specified for one instance of the mark at any given vertical position in the song.</li>
+</ul>
+<p>
+The other marks (<b>Accelerando, Allargando, Rallentando, Ritardando, Ritenuto, Rubato, and Stringendo</b>) do not use a predefined delay. They scan on both sides of the variance event to find the presence of tempo marks. If they are found, then the change from one tempo to the next is introduced gradually at a rate determined by the distance up to the next tempo mark. If a tempo mark is not found either before or after the variance mark, then no change in the tempo is introduced into the play back of the staff/score. </p>
+<p>
+Note that it is up to the composer to make sure that the tempo variance that is actually implemented reflects the change indicated in the text. For example, it is technically possible to create a section which slows down in tempo and yet is labeled as <b>Accelerando</b>. </p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_INSERT.htm>Insert Menu Commands</a></li>
+</ul>
+</body>
+</html>

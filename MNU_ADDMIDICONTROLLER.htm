@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Multi-point Controller Command </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>Multi-point Controller Command</h2>
+<hr>
+<p>
+This command enables MIDI controller changes as well as tempo changes to be inserted into the song during play back. The changes can either by absolute changes, or the item can be instructed to gradually produce the change (Linear Sweep). </p>
+<p>
+This symbol can be used for sophisticated control over the performance of the song. For example, it can be used to: </p>
+<ul>
+<li>fade a part in or out during a song</li>
+<li>gradually speed up or slow down a selection</li>
+<li>change the pitch of a sustained note (string bends and the like)</li>
+</ul>
+<p>
+The notation item produced from this command can only be seen from within the score editor. The display associated with this command does not get printed. This item can be changed using the <a href=MNU_OPENPROPERTIES.htm>Edit Selection</a> command. </p>
+<p>
+When this command is invoked, the MIDI Controller Specification dialog is presented. It contains the following information: </p>
+<p>
+<b>MIDI Controller Specification </b></p>
+<p>
+<b><u>Controller:</u></b> This is where the type of controller that you want to control should be designated. You can chose from: </p>
+<table border=0>
+<tr>
+<td width="20%"><b>Tempo</b></td> <td width="80%">Controls the tempo of the performance</td>
+</tr>
+<tr>
+<td width="20%"><b>Volume</b></td> <td width="80%">Controls the loudness of the performance</td>
+</tr>
+<tr>
+<td width="20%"><b>Stereo Pan</b></td> <td width="80%">Controls where in a stereo image the instrument will be heard</td>
+</tr>
+<tr>
+<td width="20%"><b>Breath Control</b></td> <td width="80%">For instruments which support it, this controls the parameter designed to simulate wind flow into the instrument</td>
+</tr>
+<tr>
+<td width="20%"><b>Pitch Bend</b></td> <td width="80%">Most useful when used to change the pitch of a sustained note</td>
+</tr>
+<tr>
+<td width="20%"><b>Modulation Wheel</b></td> <td width="80%">Used to change the settings for the Mod Wheel in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Foot Controller</b></td> <td width="80%">Used to change the settings for the Foot Controller in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Portamento Time</b></td> <td width="80%">Used to change the settings for Portamento Time in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Data Entry MSB</b></td> <td width="80%">Used to change the settings for the Data Entry MSB in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Balance</b></td> <td width="80%">Used to change the settings for Balance in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Expression</b></td> <td width="80%">Used to change the settings for the Expression in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Effect Controller 1</b></td> <td width="80%">Used to change the settings for Effect Controller 1 in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Effect Controller 2</b></td> <td width="80%">Used to change the settings for Effect Controller 2 in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Effects (Reverb) Depth</b></td> <td width="80%">Used to change the settings for Effects (Reverb) Depth in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Tremolo Depth</b></td> <td width="80%">Used to change the settings for Tremolo Depth in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Chorus Depth</b></td> <td width="80%">Used to change the settings for Chorus Depth in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Celeste Detune Depth</b></td> <td width="80%">Used to change the settings for Celeste Detune Depth in the synthesizer, if this parameter is supported</td>
+</tr>
+<tr>
+<td width="20%"><b>Phaser Depth</b></td> <td width="80%">Used to change the settings for Phaser Depth in the synthesizer, if this parameter is supported</td>
+</tr>
+</table>
+<p>
+<b><u>Style:</u></b> You can set up to 4 control points with different values for the controller you specify. This field allows you to specify the algorithm that will be used to interpret the control points. </p>
+<table border=0>
+<tr>
+<td width="20%"><b>Absolute</b></td> <td width="80%">Only the specific values at specific times will be performed</td>
+</tr>
+<tr>
+<td width="20%"><b>Linear Sweep</b></td> <td width="80%">Changes between the control points will be changed gradually over the time specified</td>
+</tr>
+</table>
+<p>
+<b><u>Time Offset Multiplier</u></b><u>:</u> The numeric values that you place into the Time Offset field for each control point are relative times. They are converted to absolute musical intervals by multiplying them by the time offset multiplier specified here. </p>
+<p>
+<b><u>Linear Sweep Contour</u></b><u>:</u> This field can be used to control how dense a series of control changes will be when the Linear Sweep control change style. The larger the value you use, the fewer actual control changes will be used during the linear control sweep. This is most useful for pitch bends, as a very large number of control changes are possible when sweeping the pitch over its full range, thus sometimes overflowing the MIDI data stream. </p>
+<p>
+Put another way, this defines how large a change to the controller value will be considered significant. In the case of pitch bend, where the value can be swept over thousands of values, each and every change of only 3 or 4 is not very important. In this case, you might use a value of 100, or even more, depending on how smooth you wish the pitch bend to be. This allows the program to lean out the number of control changes sent to the MIDI device, which can significantly improve performance. Think of it like this. If you started at 0 and wanted to count out loud to 10000 in 2 minutes, then:</p>
+<ul>
+<li>using a contour setting of 1, you would count like this: &quot;1, 2, 3, 4, 5, 6, 7, 8, 9...&quot; all the way to 10000, and you would have to speak very fast to finish in 2 minutes</li>
+<li>using a contour setting of 100, you would count: &quot;100, 200, 300, 400, 500...&quot; all the way to 10000, and you would probably have no trouble finishing in 2 minutes</li>
+</ul>
+<p>
+The same is true with this setting. A higher contour value makes it easier for the controller to change the value from the value of 1 up to the value of 10000.</p>
+<p>
+<b><u>Control Point Settings</u></b><u>:</u> The lower area of the dialog is where you actually can define up to four control points. The first point is automatically enabled, so there is not an enabling checkbox. The other three points have a checkbox which you use to enable the corresponding control point. </p>
+<p>
+<b>Time Offset</b>: The time offset for each control point gets multiplied by the Time Offset Multiplier field and then added to the current song position. This is how you specify when the control point should be initiated. Each control point's time offset is added to the previous control point's event time. This means that Setting 3 will always occur sometime after Setting 2, and so on. The time offsets do not change when particular notes are played that follow after the controller item in the staff, so one controller item can influence a series of note events. </p>
+<p>
+<b>Controller Value</b>: The scroll bars next to each setting control the value associated with that control point. The range of the control point varies with the type of controller that has been specified. </p>
+<p>
+<b><i>Special Note</i></b><i>:</i> Inserting a Multi-point Controller that contains control points that are scheduled at time offset well beyond the current beat can significantly add to the hesitation time between when you request play and actually hear the song start to play back.</p>
+<p>
+<b>MIDI Controllers</b>: For those that want to know the exact MIDI controllers used by the multi-point controller, the following controller names map to MIDI control numbers as shown:</p>
+<table border=0 width="50%">
+<tr>
+<td width="30%"><b><u>Name</u></b></td> <td align=center width="20%"><b><u>Controller #</u></b></td>
+</tr>
+<tr>
+<td width="30%">Volume</td> <td align=center width="20%">7</td>
+</tr>
+<tr>
+<td width="30%">Stereo Pan</td> <td align=center width="20%">10</td>
+</tr>
+<tr>
+<td width="30%">Breath Control</td> <td align=center width="20%">2</td>
+</tr>
+<tr>
+<td width="30%">Modulation Wheel</td> <td align=center width="20%">1</td>
+</tr>
+<tr>
+<td width="30%">Foot Controller</td> <td align=center width="20%">4</td>
+</tr>
+<tr>
+<td width="30%">Portamento Time</td> <td align=center width="20%">5</td>
+</tr>
+<tr>
+<td width="30%">Data Entry MSB</td> <td align=center width="20%">6</td>
+</tr>
+<tr>
+<td width="30%">Balance</td> <td align=center width="20%">8</td>
+</tr>
+<tr>
+<td width="30%">Expression</td> <td align=center width="20%">11</td>
+</tr>
+<tr>
+<td width="30%">Effect Controller 1</td> <td align=center width="20%">12</td>
+</tr>
+<tr>
+<td width="30%">Effect Controller 2</td> <td align=center width="20%">13</td>
+</tr>
+<tr>
+<td width="30%">Effects (Reverb) Depth</td> <td align=center width="20%">91</td>
+</tr>
+<tr>
+<td width="30%">Tremolo Depth</td> <td align=center width="20%">92</td>
+</tr>
+<tr>
+<td width="30%">Chorus Depth</td> <td align=center width="20%">93</td>
+</tr>
+<tr>
+<td width="30%">Celeste Detune Depth</td> <td align=center width="20%">94</td>
+</tr>
+<tr>
+<td width="30%">Phaser Depth</td> <td align=center width="20%">95</td>
+</tr>
+</table>
+<p>
+<b>See Also </b></p>
+<ul>
+<li><a href=SUBMNU_INSERT.htm><b>Insert Menu Commands</b></a><b> </b></li>
+</ul>
+</body>
+</html>

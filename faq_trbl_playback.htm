@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>FAQ: Problems with play back</title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>FAQ: Problems with play back</h2>
+<hr>
+<p>
+The first thing to note is that sound cards support a variety of sound generation methods. For starters, the audio out from a CD player may be run through the amplifier in your sound card to generate sound. In addition, almost all sound cards include a digital audio section that works with audio samples, such as *.WAV files. Neither of these sound types are MIDI sound. Your card, and your Windows system, must be configured for MIDI, whether by you, or an installer provided with your card.</p>
+<p>
+When setting up NWC for MIDI, it is important that your system already be configured for MIDI support via a sound card or MIDI interface. In most cases, you need to make sure that MIDI synthesis is supported by the card, and is operational within Windows. You can test to see if MIDI is supported by your system by doing the following:</p>
+<ol>
+<li>Open the Windows Media Player program</li>
+<li>Open the &quot;CANYON.MID&quot; file, which comes with Windows and should be in your \Windows\Media directory (or \WINDOWS if you are using Windows 3.1).</li>
+<li>Press the play button</li>
+</ol>
+<p>
+If no sound is heard, or some other problem prevented play back, then MIDI is not properly setup on your system, or it is not supported. If sound is heard, then <i>NoteWorthy Composer</i> should be able to play back files on your system.</p>
+<p>
+If it failed, you may need to re-install the software that came with your sound card. If this does not work, you may have a IRQ or DMA conflict in your system. Most sound cards provide a diagnostic utility that can help you solve problems like this. Please refer to your sound card's instructions for additional details.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Insert Dynamic Command </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2><img src=img/qins_ff.gif><img src=img/qins_f.gif><img src=img/qins_mf.gif><img src=img/qins_mp.gif><img src=img/qins_p.gif><img src=img/qins_pp.gif><img src=img/qins_ppp.gif> Insert Dynamic Command</h2>
+<hr>
+<p>
+Performance dynamics can be added at the insertion point with this command. These control the MIDI note on velocity and MIDI note volume with which a particular note is sounded. The symbol is placed at the vertical position of the staff where the insertion point is currently located. </p>
+<p>
+By default, the MIDI Velocity settings (how hard a note is struck or blown) is increased as the dynamic is changed from <i>ppp</i> up to <i>fff</i>. You can override these changes and assign your own MIDI velocity. If you override the velocity with a zero velocity then the dynamic will not alter the current running MIDI velocity in the staff. </p>
+<p>
+By default, a dynamic does not alter the MIDI volume of the channel being utilized to play back the current staff. You can change this behavior by overriding the MIDI volume behavior and specifying a MIDI volume of your choice. If you specify a override MIDI volume value of &quot;-1&quot; then no MIDI volume change will be triggered. </p>
+<p>
+The changes of a dynamic can be gradually phased into a composition by using the Dynamic Variance item. For example, a <b><i>Crescendo</i></b> can be used to gradually move a performance from a <b><i>pp</i></b> to a <b><i>ff</i></b> performance if it is surrounded both before and after by a dynamic as described here. The <b><i>crescendo</i></b> will phase in both changes in MIDI velocity as well as MIDI volume. </p>
+<p>
+The following property pages are used to define the full behaviour of a dynamic expression: </p>
+<ul>
+<li><a href=TAB_DYNAMICSPROP.htm>Dynamic Properties</a></li>
+<li><a href=TAB_NTNPROPALIGNMENT.htm>Expression Placement Properties</a></li>
+<li><a href=TAB_NTNPROPVISIBILITY.htm>Visibility Properties</a></li>
+</ul>
+<p>
+<b>See Also </b></p>
+<ul>
+<li><a href=SUBMNU_INSERT.htm>Insert Menu Commands</a></li>
+<li><a href=MNU_ADDDYNVARIANCE.htm>Insert Dynamic Variance Command</a></li>
+<li><a href=MNU_ADDMIDICONTROLLER.htm>Insert Multi-Point Controller Command</a></li>
+<li><a href=MNU_AUDITSCORE.htm>Refresh Score Command</a></li>
+</ul>
+</body>
+</html>

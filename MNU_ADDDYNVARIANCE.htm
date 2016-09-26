@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Dynamic Variance Command </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>Dynamic Variance Command</h2>
+<hr>
+<p>
+Performance dynamics can be gradually altered by combining absolute dynamics with variance items. This command is used to create variance items. When an item of this type is encountered during MIDI play back, the staff is searched backward and forward for dynamic marks. If they are found on both sides of the variance, then the transition from the previous dynamic to the next dynamic is introduced gradually into the play back of the staff. This is true for both MIDI volume and MIDI note velocities. </p>
+<p>
+It should be noted that the variance does not enforce specific rules about how the transition should take place based on the style of the variance. For example, a <b><i>Crescendo</i></b> could actually be used to fade out a part if the dynamics were arranged in such a way as to reduce the volume of the notes that follow in the staff. It is up to the composer to ensure that the MIDI velocity and volume defined by the surrounding dynamics reflects the true nature of the dynamic variance. </p>
+<p>
+The duration of the transitional dynamic variance is based on the position of the dynamic that follows the variance in the staff. Note that repeats and flow direction marks are ignored when determining the dynamic that follows the variance. If the variance does not have a dynamic on both sides of it in the staff, it does not alter play back dynamics in any way. </p>
+<p>
+Only the <b><i>Crescendo</i></b> and <b><i>Decrescendo </i></b>styles exhibit the variance behavior described above. The <b><i>Diminuendo</i></b>, <b><i>Rinforzando</i></b>, and <b><i>Sforzando</i></b> styles are ignored during MIDI play back. </p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_INSERT.htm>Insert Menu Commands</a></li>
+</ul>
+</body>
+</html>

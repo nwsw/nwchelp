@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>MIDI Input Active </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2><img src=img/midinput.gif> MIDI Input Active</h2>
+<hr>
+<p>
+This command is used to enable remote note entry from an external MIDI device, such as a MIDI enabled keyboard. Notes can be placed into the active staff by keying in note sequences on a MIDI capable keyboard. This is not the same as MIDI recording. In this case, input is not performed in real time, where as in recording, a MIDI performance is captured and subsequently converted to notation. This box enables a procedure whereby notes and/or chords are added one at a time, while also adjusting the other important parameters, such as duration, ties, and the placement of other items like bar lines. The MIDI keyboard simply makes it easier to select the particular note pitches without having to move the insertion point around the staff. It is also possible to create a chord all at once via pressing the keys of the chord simultaneously. </p>
+<p>
+<b><u>Customizing </u></b> </p>
+<p>
+Note entry via MIDI is enabled via the <b>MIDI Input Active</b> command on the <b>Tools</b> menu, or by selecting the equivalent button on the tool bars. However, several other areas must be set properly before this can be used to its fullest. These areas include: </p>
+<ol>
+<li><u>A MIDI input device must be provided</u>:
+<br>
+The <b>Record</b> tab in the Options dialog allows a MIDI input device to be established. The pertinent field is labeled as <b>Input Device</b>. Once a legitimate MIDI input driver is specified and accepted, NWC is able to receive MIDI input.
+<br>
+</li>
+<li><u>MIDI port sharing must be set cooperatively</u>:
+<br>
+The MIDI ports must actually be open and available for use by NWC for the MIDI input to work properly. The port sharing option in the <b>MIDI</b> tab controls when the MIDI ports are open in NWC. If you plan to perform note entry via MIDI input, then you should set the port sharing option to <b>While Active</b> or <b>Always</b>. If it is set to <b>While Playing</b>, then the MIDI input device will only be available while a song is being played.</li>
+</ol>
+<p>
+If the <b>MIDI Input Active</b> command on the <b>Tools</b> menu is grayed out, review the setup described above. Unless your MIDI devices are not configured properly, the two prior settings are the only reasons why MIDI note entry would not be possible on an open score. </p>
+<p>
+<u>Changing Note Duration Remotely </u> </p>
+<p>
+When note entry via MIDI is enabled, it is also possible to change the note duration options using a variety of MIDI controllers. Each controller has two modes: the first mode is used before any new note keys are pressed and held; the second mode is used after one or more new notes are pressed and being held on the keyboard. The controllers and their behavior is described below: </p>
+<p>
+<b><u>Pitch Bend</u></b>
+<br>
+<i>Before the notes are pressed:</i> The note duration setting will move rightward each time you push the pitch bend wheel in the upward, or forward, direction. The note duration setting will be adjusted leftward (towards the whole note) when the pitch bend wheel is pulled downward. The wheel must be returned close to center in order to initiate another movement.
+<br>
+<br>
+<i>While notes are pressed:</i> After one or more notes have been pressed and are being held on the keyboard, the pitch bend wheel controls the dotted note buttons. Each forward push of the wheel cycles the dotted parameter. Each downward pull of the pitch wheel rests the dotted note parameters to off when note keys are being held.
+<br>
+</p>
+<p>
+<b>Modulation Wheel
+<br>
+Modulation Pedal
+<br>
+</b><b><u>Data Entry Slider
+<br>
+</u></b><i>Before the notes are pressed:</i> The note duration setting will change as the pedal, wheel, or slider is moved. The lower controller values correspond to higher note duration. Each the controller value increases or decreases, the note value will change in the tool bar containing the note duration icons.
+<br>
+<br>
+<i>While notes are pressed:</i> After one or more new notes have been pressed and are being held on the keyboard, the controller will cycle the dotted note parameters (ranging from off, to dotted, to double-dotted).
+<br>
+</p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_TOOLS.htm>Tools Menu Commands</a></li>
+</ul>
+</body>
+</html>

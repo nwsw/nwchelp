@@ -1,0 +1,729 @@
+<html><head><title>NoteWorthy Composer Dialog Help Tips</title></head><body>
+This page has all of the tip text for dialog controls in <i>NoteWorthy Composer</i>.
+
+<hr><h2><a name=IDH_DLGABOUT1></a></h2>
+This About box show the latest version of the product, and indicates if the product has been registered. Further details about the product can be found in the online help.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT1></a></h2>
+Enter the name that you would like to be associated with this staff. This name must be unique in the score. It cannot be the same as any other staff name that already is present in the score.
+<p>
+If Staff Labels are enabled when printing, this name will be used for the label placed to the left of the staff when it is printed.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT2></a></h2>
+This box contains the group name that will contain this staff. A score organizes its parts into groups. Each score can have more than one group, with different staff groups assigned via this field. A staff can only reside in a single group.
+<p>
+A typical use of the staff group would be to divide a song up into melody and rhythm sections. This list box is where each staff can be assigned to a particular group. Each staff can be included in one, and only one, group. Creating a new group is accomplished by simply typing in a new group name in this box. It will then be available to subsequent staff properties. By default, all new staves are assigned into a group called Standard.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT3></a></h2>
+The position of the staff can be changed through this list box. The staff will be inserted above the staff selected in this box. If the position is set to default, the position will be not be changed from its current location.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT4></a></h2>
+The style of the staff can be assigned in this field. The style is used to adjust how bar lines are drawn in the staff, and whether the staff is connected to another staff to form a grand staff. This allows the following styles to be designated for the staff:
+<p>
+<b>Standard:</b> The staff will not have a brace on the far left, and it will not connect its bar lines to adjacent staves.
+<p>
+<b>Upper/Lower Grand Staff:</b> Allows a pair of staves to be designated as a grand staff. Their bar lines will be connected, and they will be braced on the left side in each system.
+<p>
+<b>Orchestral:</b> The staff appearance will be consistent with a conductor's score. It will have its bar lines connected with all adjacent staves, and will have a decorative corner added if it is the first or last staff in the system.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT5></a></h2>
+Each staff has a reserved amount of space that it requires when a system is constructed. This box indicates the number of note positions reserved above this staff when it is displayed. This reserves a portion of space for the notation in the staff.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT6></a></h2>
+Each staff has a reserved amount of space that it requires when a system is constructed. This box indicates the number of note positions reserved below this staff when it is displayed. This reserves a portion of space for the notation in the staff.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT7></a></h2>
+This allows the staff to be enabled or disabled during play back. When muted, all notes in the staff will be ignored when playing the song. Tempo marks, instrument patch changes, and volume changes will still be included in the play back, in case another staff uses the same channel, and depends on the settings from this staff.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT8></a></h2>
+This controls the initial volume for this staff's MIDI channel. A value of -1 indicates that the volume currently set for this channel should not be changed, and no volume settings will be sent to the MIDI device. Volume levels range from 0 to 127, with 127 being the loudest. By default, a new staff is assigned an initial volume of 127, which is the loudest possible setting.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT9></a></h2>
+This controls the initial stereo position for the instrument associated with this staff. A value of -1 indicates that the stereo position currently set for this channel should not be changed. Stereo position levels range from 0 to 127, with 64 being the center position in the stereo image. New staff parts are initially assigned a pan position of 64.
+<p>
+Note: not all MIDI devices respond to this parameter. Consult your device's documentation if it does not respond to changes in this box.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT10></a></h2>
+Specify which device should be used for play back of this staff. This can be any of the devices that are currently configured for use from within the MIDI tab of the Options dialog. Up to 16 devices can be used for play back, if you are lucky enough to have this many devices on your system.
+<p>
+Note: The device cannot be changed later from within the notation. A staff always uses the same device for play back, as listed in this box.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT13></a></h2>
+The audio playback of the staff can be transposed using this field. This allows each staff to use a different key signature and tonal center, which is often necessary in orchestral arrangements. This field is used both when saving to a MIDI file as well as with physical play back of the score.
+
+<hr><h2><a name=IDH_DLGSTAFFEDT14></a></h2>
+This specifies which channel on the specified device should be used for playback of this staff.
+<p>
+MIDI devices can support up to 16 channels. Each channel generally uses its own instrument patch, volume, and various other performance parameters. It is usually necessary to use unique channels per staff so that one staff does not interfere with the playback of another staff. By default, each new staff is assigned a new, unique channel.
+
+<hr><h2><a name=IDH_SMARTPROPERTIESINSERT></a></h2>
+This option controls how placement and visibility properties are set for new items inserted into the staff.
+<p>
+<b><u>When enabled</u></b>: The <b>Visibility</b> properties for new items are automatically 
+configured with default settings.
+<p>
+The <b>Expression Placement</b> properties are set by finding a similar item elsewhere 
+in the staff, and then using it as a basis for positioning the new item. If a similar item
+is not found, the program decides on the placement properties based on reasonable defaults.
+<p>
+If the properties need to be changed, the new item can be selected after it is entered, 
+and all properties can be adjusted as necessary.
+<p>
+<b><u>When disabled</b></u>: All available properties for new items must be set manually.
+The properties are initially set to whatever was used the last time this kind of item
+was added.
+
+<hr><h2><a name=IDH_DLGINFO1></a></h2>
+This is where you specify the title of this composition.
+
+<hr><h2><a name=IDH_DLGINFO2></a></h2>
+This box is where you place your name, or the name of the composer of this work. You can also add a phrase such as &quot;arranged by&quot; in front of your name in order to distinguish your role in the song.
+
+<hr><h2><a name=IDH_DLGINFO3></a></h2>
+You are entitled to copyright protection for any original songs. You can specify two lines of copyright information that will be displayed on the first page of the printed composition. A suggested phrasing is provided automatically. If you have registered, your name is also placed here automatically for new songs that are created.
+
+<hr><h2><a name=IDH_DLGINFO4></a></h2>
+Any comments that you wish to make about the composition can be made here. This can be used as a running record of your compositional or performance process associated with the song. This information is not included on any printouts of the song.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC1></a></h2>
+<i>NoteWorthy Composer</i> allows you to select a set of staves for inclusion in a print job. This is done inside of this box. All of the selected staves are then considered to be a single system. By default, all the staves currently in the edit window are selected for print. As staves are selected, the print metrics are updated to reflect how much of a printed page will be used by a single system.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC2></a></h2>
+<b>System Height:</b> This shows how much of the printed page will be occupied by a single system. This value will change as you add or remove staff parts to the system, or change other options which affect notation size and spacing. This is intended to help you optimize the options for a successful printout. The preview is a better method once you have your settings pretty much the way that you want them.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC3></a></h2>
+<b>Cover Page Systems:</b> This indicates how many systems will fit on the cover page of your printout. Use Print Preview for a better indication of what your printout will look like on paper.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC4></a></h2>
+<b>Other Pages:</b> This indicates how many systems will fit on all pages after the cover page of your printout. Use Print Preview for a better indication of your printout's appearance on paper.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC5></a></h2>
+<b>Print All Pages:</b> Select this option if you want your entire score to be printed.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC6></a></h2>
+<b>Print a Range of Pages:</b> Select this option when you want to only print a range of pages in your printout.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC7></a></h2>
+This is the starting page in the range that will be printed when the page range option is enabled.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC8></a></h2>
+The ending page in the print range that will be printed when the page range option is enabled. The printout will include all pages in the numbered range, including the page specified here.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC9></a></h2>
+If you want your printed pages to be numbered, then check this box.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC10></a></h2>
+If you have elected to have your pages numbered, then this indicates what number should be used for the first page. All subsequent pages will be incremented from this starting value.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC11></a></h2>
+This box identifies the size of the printed staff, in points. The size defines the number of points inside the basic staff minus all ledger lines. Depending on your printer's resolution, not all point changes will show actual change on the printed page. Use the Print Preview feature to check the results before printing.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC12></a></h2>
+If you want title, author, and copyright information to be included in the first page of a printout, then check this box. If this box is not checked, all printed pages will use the same format.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC13></a></h2>
+In some cases, the final system in a printout may not extend to the right margin of the page. If you want each staff to be extended out to the right margin in the final system, then check this box. If this is not checked, your last system may not be right aligned with the other systems in a printout.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC14></a></h2>
+If you want the name of each staff to appear in a printout, this can be controlled from this box. You can select one of the following values: 
+<p>
+<b>None:</b> The staff names will not appear in the printout.
+<p>
+<b>First System:</b> The staff names will appear only once, on the top of the first page.
+<p>
+<b>Top Systems:</b> The staff names will appear on the top of each page in the printout.
+<p>
+<b>All Systems:</b> The staff names will appear to the left of every staff on every page.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC15></a></h2>
+Press this button to setup the current printer shown to the right of the button.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC16></a></h2>
+This is the name of the currently selected printer, which will be used if you press the Print button.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC17></a></h2>
+Press this button when you are ready to print your score. It is generally a good idea to preview it first to make sure everything looks as intended.
+
+<hr><h2><a name=IDH_DLGPRINTCLASSIC18></a></h2>
+Press this button when you are ready to preview how your printout will look on paper.
+
+<hr><h2><a name=IDH_DLGIMPORT2></a></h2>
+When opening a MIDI file, the program is capable of embedding sound patch changes into the final notation data. The first sound patch encountered in a track is automatically placed into the track data associated with the track performance information. This option enables all patch changes found in a track to be opened and included in the final music notation.
+
+<hr><h2><a name=IDH_DLGIMPORT3></a></h2>
+When opening a MIDI file, the program can convert sustain pedal events directly into standard music notation. This option enables this conversion. In many cases, it is desirable to disable the automatic inclusion of this data, since it can detract from the overall visual quality of the final score.
+
+<hr><h2><a name=IDH_DLGIMPORT4></a></h2>
+When opening a MIDI file, the program will automatically beam any adjacent notes smaller than a quarter note that appear in the same beat of a measure. If you wish to do the note beaming manually, you can disable this option.
+
+<hr><h2><a name=IDH_DLGIMPORT5></a></h2>
+When opening a MIDI file, the program will automatically detect compound time signatures in a MIDI sequence when this option is enabled. When disabled, any time signatures encountered in the sequence are assumed to be simple time. This influences how the musical beat in a score is emphasized when converting note events into notation. For example, when this option is enabled, a sequence in 9/4 time will use a dotted half note as the beat when the beaming function is performed. If the option is disabled, that same sequence would use a quarter note as the beat when the beaming function is executed.
+
+<hr><h2><a name=IDH_DLGIMPORT6></a></h2>
+The note resolution value specified here influences how note events in the sequence are converted into music notation. Smaller note values allow more complex sequences to be notated correctly. Larger note values tend to simplify the resulting notation, but may not adequately represent the original musical sequence.
+
+<hr><h2><a name=IDH_DLGIMPORT7></a></h2>
+The rest resolution option can be used to control the overall placement of rests within the score. Larger note values here will result in fewer rests being placed in the imported score. Smaller rests may still be used in order to preserve the sequence of note on events, but smaller rests will not be used to create staccato effects.
+
+<hr><h2><a name=IDH_IMPORTMAPCHANNELS></a></h2>
+This option is used to control whether each MIDI channel found in a MIDI track will be mapped into a new staff. When set, a new staff will be created for note events occurring in each MIDI channel that is present. When not set, all note events will be treated together in the conversion to a notated staff regardless of their MIDI channel.
+
+<hr><h2><a name=IDH_IMPORTSPLITTRSHLD></a></h2>
+This option is used to enable automatic splitting of MIDI tracks into two staves. The value in this box is semitones. Whenever a group of simultaneous note events span a semitone interval larger than this value, the performance will automatically be split into two staves during import.
+
+<hr><h2><a name=IDH_DLGKEYSIG1></a></h2>
+In most cases, you will want to use a standard key signature from this list. Select User Defined if you want to enter the sharps and/or flats yourself manually in the definition area below.
+
+<hr><h2><a name=IDH_DLGKEYSIG2></a></h2>
+This area shows the sharps and/or flats that are included in the key signature. If you have selected User Defined from the list above, you can enter your own key signature here.
+
+<hr><h2><a name=IDH_DLGCLEF1></a></h2>
+Chose the type of clef that you want to use from the drop-down list. Treble, bass, alto and tenor clefs are all supported from within this box.
+
+<hr><h2><a name=IDH_DLGCLEF2></a></h2>
+You can apply an octave shift to the clef using this box. You can elect to have notes played an octave up or down from the standard pitch associated with the selected clef.
+
+<hr><h2><a name=IDH_DLGTIMESIG1></a></h2>
+This is the value used for the top half of the time signature. This is generally the number of beats per measure. If you want to use common or cut time, this should be set in the drop-down box below these fields.
+
+<hr><h2><a name=IDH_DLGTIMESIG2></a></h2>
+This is the value used for the lower half of the time signature. This is generally the value of the beat. If you want to use common or cut time, this should be set in the drop-down box below these fields.
+
+<hr><h2><a name=IDH_DLGTIMESIG3></a></h2>
+For standard time signatures, leave this value set to Standard. If you need common or cut time, then set the value to Common time or Alla Breve respectively.
+
+<hr><h2><a name=IDH_DLGTEMPO1></a></h2>
+This field defines the tempo base. For example, if this is set to <i>Quarter</i>, then the specified tempo will be in units of quarter notes per minute.
+
+<hr><h2><a name=IDH_DLGTEMPO2></a></h2>
+This is the tempo, in base units per minute.
+
+<hr><h2><a name=IDH_DLGTEMPO6></a></h2>
+The tempo can optionally include a predefined text-based instruction to the performer. This optional text can be added in this box.
+
+<hr><h2><a name=IDH_DLGDYNAMICS1></a></h2>
+Use this box to specify the dynamic that should be used at this position on the staff.
+
+<hr><h2><a name=IDH_DLGDYNAMICS2></a></h2>
+Use this checkbox and value box combination to override the default MIDI velocity associated with the selected dynamic. MIDI velocity controls how hard a note is struck (or blown for wind instruments). By default, the following velocities are used, based on the dynamic expression selected above: <i>ppp</i> = 10, <i>pp</i> = 30, <i>p</i> = 45, <i>mp</i> = 60, <i>mf</i> = 75, <i>f</i> = 92, <i>ff</i> = 108, and <i>fff</i> = 127.
+
+<hr><h2><a name=IDH_DLGDYNAMICS3></a></h2>
+Use this checkbox and value box combination to change the current MIDI volume for the MIDI channel associated with the staff. By default, no changes are made to the channel volume when a dynamic expression is inserted into the staff. An override volume must be set for the volume to change. If you are using Cresc/Decresc dynamic variances with the dynamic, you may want to use volume overrides to achieve a smoother volume swell over the variance.
+
+<hr><h2><a name=IDH_DLGBARLINE1></a></h2>
+This designates what kind of bar line will appear in the staff.
+
+<hr><h2><a name=IDH_DLGBARLINE2></a></h2>
+When the bar line style is a <i>Local Repeat Close</i> item, you must also set the repeat count for the local repeat using this box. This is the number of times that the music will repeat between the open and close repeat bar lines.
+
+<hr><h2><a name=IDH_DLGSUSTPEDAL1></a></h2>
+This box is used to indicate whether the sustain pedal is being pressed down or being released. The equivalent MIDI sustain pedal message will be sent based on the value of this box.
+
+<hr><h2><a name=IDH_DLGFLOWDIRECTION1></a></h2>
+This box is used to set the type of flow direction that should be used.
+
+<hr><h2><a name=IDH_DLGSPECIALENDING1></a></h2>
+Using these boxes, you can set the different endings that apply to the section that follows this item in the staff. Up to seven standard endings are supported. You can select more than one ending in a single item. These are used in conjunction with master repeat open and close bar lines to build a repeated section.
+
+<hr><h2><a name=IDH_DLGSPECIALENDING2></a></h2>
+This is the default ending for a repeated section. The default is used after a Dal Segno or Da Capo have been executed, since master repeats are themselves ignored after one of the flow directions have been executed.
+
+<hr><h2><a name=IDH_DLGPRTPVIEWPAGEVIEW></a></h2>
+This is the actual depiction of the printed page, shown in a preview window.
+
+<hr><h2><a name=IDH_DLGPRINTPREVIEW1></a></h2>
+When you are finished with previewing the printout, press this button to close the preview window.
+
+<hr><h2><a name=IDH_DLGPRINTPREVIEW2></a></h2>
+This resets the preview back to the first page of the printout.
+
+<hr><h2><a name=IDH_DLGPRINTPREVIEW3></a></h2>
+This advances the preview to the next page.
+
+<hr><h2><a name=IDH_DLGPRTPVIEWBACK></a></h2>
+This moves the preview to the prior page in the printout.
+
+<hr><h2><a name=IDH_DLGPRINTPREVIEW4></a></h2>
+This button is used to copy this page of notation into a graphical format that can be used to insert the page into some other program. You can copy the page into the clipboard, a metafile (*.WMF), or in the 16-bit version to a bitmap file(*.BMP).
+
+<hr><h2><a name=IDH_PAGESETUPMEASNUMS></a></h2>
+This box can be used to enable measure numbers for the score. In the editor, measure numbers will appear on top of nearly every bar line (except local repeat close items). When printing, the measure number appears at the front of each system in the printout.
+
+<hr><h2><a name=IDH_PAGESETUPMEASNUMSTART></a></h2>
+When measure numbers are included, this value indicates the starting number for the beginning of the score. This can be used when a multiple movement piece is created in multiple files. When printing, measure numbers are displayed at the start of each system on the page. In the editor, numbers are displayed for all bar lines in the staff that constitute a new measure. In the editor, only the top-most staff in the system will display the measure number.
+
+<hr><h2><a name=IDH_PGSETUPPVIEWSTATLIST></a></h2>
+This is a summary list of facts regarding the score printout. This includes things like how many pages are expected to be included in the printout, as well as facts about the currently selected printer (which may be needed by support staff if you experience any print problems). The <i>Label</i> column is used to describe each piece of information included in the <i>Information</i> column.
+
+<hr><h2><a name=IDH_PGSETUPPVIEWPREVIEWBTN></a></h2>
+Press this button to preview the score based on the current page setup options. If you do not like the results, you can change or cancel the page setup options from the other tabs.
+
+<hr><h2><a name=IDH_DLGTOOLBARS1></a></h2>
+Select each tool bar that you want to be visible in the program. Those that are not selected will not be available on the screen until this box is opened again, and the item is turned back on by selecting it.
+
+<hr><h2><a name=IDH_DLGADVMIDICFG1></a></h2>
+This controls the timer period used by the play back engine. Generally, this value should not be changed unless you are responding to a particular problem with your system or the play back engine.
+
+<hr><h2><a name=IDH_DLGADVMIDICFG2></a></h2>
+This controls the timer resolution used by the play back engine. Generally, this value should not be changed unless you are responding to a particular problem with your system or the play back engine.
+
+<hr><h2><a name=IDH_DLGADVMIDICFG3></a></h2>
+This button restores the timer period and resolution back to the system defaults. These are the values recommended in normal use of the product.
+
+<hr><h2><a name=IDH_DLGPATCH1></a></h2>
+If your device supports multiple banks of sound patches, you can use this box to send a MIDI bank select message before the actual MIDI patch number. In most cases, this is unnecessary. For example, if you are using a General MIDI compatible sound card, you probably do not need to use the bank select mechanism.
+
+<hr><h2><a name=IDH_DLGPATCH2></a></h2>
+This box is used to select a particular bank of sounds on devices which support the bank select MIDI message.
+
+<hr><h2><a name=IDH_DLGPATCH3></a></h2>
+This list box lists the patches that can be sent to the device port. The patch names included in the list are determined by the Patch List Type field.
+
+<hr><h2><a name=IDH_DLGPATCH4></a></h2>
+This field enables you to specify what type of patch names will be presented in the Patch Name list box. Four patch lists are configured in the default program setup:
+<p>
+<b>Numeric, 1 Based:</b> This puts patch numbers in the list box. The first patch is considered patch number one.
+<p>
+<b>Numeric, 0 Based:</b> This also puts patch numbers in the list box. The first patch is considered patch number zero.
+<p>
+<b>General MIDI:</b> This lists the patch names associated with a General MIDI device such as the Microsoft Midi Mapper.
+<p>
+<b>MT-32:</b> This lists the patch names associated with a Roland MT-32 device.
+<p>
+Other patch list types can be added to this list by manipulating the NTWPATCH.INI file in the application directory.
+
+<hr><h2><a name=IDH_DLGMULTIPTCTRL1></a></h2>
+This is where the type of performance parameter that you want to control should be designated. You can chose from:
+<p>
+<b>Tempo:</b> Controls the speed of the performance
+<p>
+<b>Volume:</b> Controls the loudness of the performance
+<p>
+<b>Stereo Pan:</b> Controls where in a stereo image the instrument will be heard
+<p>
+<b>Breath Control:</b> For instruments which support it, this controls the parameter designed to simulate wind flow into the instrument
+<p>
+<b>Pitch Bend:</b> Most useful when used to change the pitch of a sustained note
+<p>
+The actual change in this parameter is implemented by the remaining fields.
+
+<hr><h2><a name=IDH_DLGMULTIPTCTRL2></a></h2>
+You can set up to 4 control points with different values, which is used to vary the controller value over time. This field allows you to specify the algorithm that will be used to vary the controller between the different control points. You can use:
+<p>
+<b>Absolute:</b> Only the specific values at specific times will be performed
+<p>
+<b>Linear Sweep:</b> Changes between the control points will be changed gradually over the time specified
+
+<hr><h2><a name=IDH_DLGMULTIPTCTRL3></a></h2>
+The numeric values that you place into the <i>Time Offset</i> field for each control point are relative times. They are converted to absolute musical intervals by multiplying them by the time multiplier specified in this box.
+
+<hr><h2><a name=IDH_DLGMULTIPTCTRL4></a></h2>
+This field can be used to control how dense a series of control changes will be when the Linear Sweep control change style. The larger the value you use, the fewer actual control changes will be used during the linear control sweep. This is most useful for pitch bends, as a very large number of control changes are possible when sweeping the pitch over its full range, thus sometimes overflowing the MIDI data stream.
+
+<hr><h2><a name=IDH_DLGMULTIPTCTRL5></a></h2>
+This lower area of the dialog is used to define up to four control points. The first point is automatically enabled, so there is not an enabling checkbox. These three check boxes are used to enable the remaining control points. When a check is next to a control point, it is considered active, and will cause a change in the performance parameter equal to the controller value set to the right.
+
+<hr><h2><a name=IDH_DLGMULTIPTCTRL6></a></h2>
+The time offset for each control point gets multiplied by the <i>Time Offset Multiplier</i> field and then added to the current song position. This is how you specify when the control point should be initiated. Each control point's time offset is added to the previous control point's event time. This means that Setting 3 will always occur sometime after Setting 2, and so on. The time offsets do not change when particular notes are played that follow after the controller item in the staff, so one controller item can influence a series of note events.
+
+<hr><h2><a name=IDH_DLGMULTIPTCTRL7></a></h2>
+These scroll bars are used to control the value associated with the corresponding control point. The range of the control point varies with the type of controller that has been specified.
+
+<hr><h2><a name=IDH_DLGREGISTER1></a></h2>
+If you have registered, you should type your name in this box, exactly as it appears in your registered user package.
+
+<hr><h2><a name=IDH_DLGREGISTER2></a></h2>
+If you have registered, you should type your registration activation code in this box, exactly as it appears in your registered user package.
+
+<hr><h2><a name=IDH_DLGWELCOME1></a></h2>
+This area shows information about the product and its usage license.
+
+<hr><h2><a name=IDH_DLGTRANSPOSE1></a></h2>
+This box contains the number of semitones that the staff will be transposed by during execution of the transpose operation. A value of 0 in this box will cause the staff to be enharmonically re-spelled, based on the current key signatures in the staff.
+
+<hr><h2><a name=IDH_DLGTRANSPOSE2></a></h2>
+If this box is checked, the staff will be audibly transposed during play back such that the effects of the transpose will not be heard (although they will be seen on screen). This box is most often used to compensate for an instrument that does not match concert C tuning. When transposing to the instruments natural key, a check in this box will ensure that MIDI playback will still sound correctly through your sound card. 
+<p>
+If you prefer for the effects of the transpose to both be seen and heard, then do not place a check in this box. If you decide to undo the effect later, this can be done from within the Score Builder, using the Edit button for this staff.
+
+<hr><h2><a name=IDH_DLGTRANSPOSEWARN1></a></h2>
+If you press this button, the transpose will be performed without any additional warnings, even if other chords may not be transposed correctly.
+
+<hr><h2><a name=IDH_DLGTRANSPOSEWARN2></a></h2>
+If you want to cancel the transpose operation, press this button. Once pressed, control will be returned to the editor without making any changes to the staff (ie. the transpose will not be performed).
+
+<hr><h2><a name=IDH_DLGTRANSPOSEWARN3></a></h2>
+This presence of this button indicates that there is at least one more chord in the staff that might not transpose correctly. You can press this button to view the next chord that may have problems during the transpose operation.
+
+<hr><h2><a name=IDH_DLGPRINTMETRICS1></a></h2>
+This is the margin associated with the top of the page.
+
+<hr><h2><a name=IDH_DLGPRINTMETRICS2></a></h2>
+This is the margin associated with the inside edge of the printed page. If Mirror Margins is not checked, the inside edge is always the left side of the page.
+
+<hr><h2><a name=IDH_DLGPRINTMETRICS3></a></h2>
+This is the margin associated with the outside edge of the printed page. If Mirror Margins is not checked, the outside edge is always the right side of the page.
+
+<hr><h2><a name=IDH_DLGPRINTMETRICS4></a></h2>
+This is the margin associated with the bottom of the page.
+
+<hr><h2><a name=IDH_DLGPRINTMETRICS5></a></h2>
+When mirror margins is enabled, the inside edge and outside edge is reversed from page to page. On odd numbered pages, the inside edge is on the left. On even numbered pages, the inside edge is on the right.
+
+<hr><h2><a name=IDH_DLGPRINTMETRICS6></a></h2>
+You can enter the margin values in inches or centimeters. This box controls how the values are interpreted.
+
+<hr><h2><a name=IDH_DLGLYRICLINECNT></a></h2>
+You can include up to 8 lyric lines per staff using this box. A lyric is not available until it is enabled from this box.
+
+<hr><h2><a name=IDH_DLGLYRICALIGNMENT></a></h2>
+The lyric lines can be positioned either above or below the staff using this field.
+
+<hr><h2><a name=IDH_DLGLYRICMARGIN></a></h2>
+This field is used to add space near the staff boundary. The lyric lines will be placed above or below this space, thus making room for things like special endings at the top of a staff.
+
+<hr><h2><a name=IDH_DLGLYRICX1></a></h2>
+The actual lyric text is inserted into this box. When entering lyrics, you should separate each audible syllable with one of the following separators:
+<p>
+<b>hyphen:</b> The hyphen is used to separate syllables within a word.
+<p>
+<b>space:</b> A space is used to separate words within a phrase.
+<p>
+<b>carriage return:</b> A carriage return is used to start a new phrase, but generally the next lyric line is related to the previous line, as if they are part of a single verse or section.
+<p>
+<b>two returns:</b> Two carriage returns together creates a new paragraph, section, or verse within the current lyric. Additional carriage returns (greater than 2 in a row) are ignored.
+<p>
+An underscore can be used to insert spaces into the lyric that do not cause a split of the text into two syllables (underscores are displayed as spaces in the staff).
+
+<hr><h2><a name=IDH_DLGTEMPOVAR1></a></h2>
+This box is used to set the type of variance that will be placed into the staff. 
+
+<hr><h2><a name=IDH_DLGTEMPOVAR2></a></h2>
+This is the delay that will be performed when this item is encountered during play back. This is used only for the fermata and breath mark variance types. In all other cases it is ignored. The value is in units of sixteenth notes. For example, a fermata with a delay of four will cause the playback to hold for the equivalent of one quarter note. The delay should only be specified for one instance of the mark at any given vertical position in the song.
+<hr><h2><a name=IDH_DLGPERFORMSTYLE1></a></h2>
+Select the style that you want to include in the staff from the items in this drop-down list. If you select <i>Legato</i> or <i>Tenuto</i>, notes will generally be played longer. If you select <i>Staccato</i>, notes will generally be played shorter. Other selections will not alter the performance.
+
+<hr><h2><a name=IDH_DLGDYNAMICVAR1></a></h2>
+Select the variance style that you want to include in the staff from the items in this drop-down list.
+
+<hr><h2><a name=IDH_DLGTEXTSPEC1></a></h2>
+Type the text that you want to include in the staff into this box.
+
+<hr><h2><a name=IDH_DLGTEXTSPEC4></a></h2>
+You can control the look of the text using this box. Currently, you can specify that the text be either <b>bold text</b> or <i>italic text</i>.
+
+<hr><h2><a name=IDH_DLGGOTO1></a></h2>
+This box is used to move the insertion point to a specified measure, as identified in this box. The measure you specify must be greater than the starting measure number associated with the score.
+
+<hr><h2><a name=IDH_DLGOPTEDITOR5></a></h2>
+This checkbox is used to control how a click of the right mouse button is treated by the staff notation editor. If you check this box, the editor will re-position the insertion point when you click on the right mouse button. When not check, you must use the left mouse button to first position the insertion point, and then the right mouse button can be used to add notation items. Note that when notation is selected, a right mouse click never re-positions the insertion point, thus leaving the selection present.
+
+<hr><h2><a name=IDH_DLGOPTEDITOR6></a></h2>
+This checkbox is used to control how the insertion point is positioned in the score editor. When checked, the insertion point will generally track to the right side of any notes or rests on the staff. When not checked, the insertion point aligns along the transparent vertical grid that aligns all notes and rests in the current score.
+
+<hr><h2><a name=IDH_DLGOPTEDITOR7></a></h2>
+Persistent note tools: This checkbox is used to control how many of the note tools (such as the dotted parameter) behave during note entry. When enabled, selected note parameters stay selected until you specifically turn them off. When not enabled, the parameters will reset after you add a note or rest to the staff.
+
+<hr><h2><a name=IDH_DLGOPTEDITOR8></a></h2>
+This is used to control how many levels of Undo will be maintained while you work in the editor. You can have as many as 100 commands saved for possible undo. The more levels of Undo that you specify, the more memory will be required by <i>NoteWorthy Composer</i> while you are editing. Keep this in mind while setting this value. Also, please note that changing this value will clear the current Undo buffers in all open windows.
+
+<hr><h2><a name=IDH_DLGOPTFILE1></a></h2>
+This box is used to indicate whether backup files (*.BAK) are generated on a Save operation. When enabled, any time a composition is saved, an equivalent *.BAK file is generated for the score that preserves the previous version of the file.
+
+<hr><h2><a name=IDH_DLGOPTFILE2></a></h2>
+When saving to a Type 1 MIDI file, this checkbox is used to control whether Save places key and time signatures in the track or staff where they exist as well as the conductor track. Some applications complain if they detect signature data in a track other than the conductor track.
+
+<hr><h2><a name=IDH_DLGOPTFILE3></a></h2>
+When saving to a MIDI file, this box is used to control whether the MIDI file will include such items as song title and author information. Some commercial MIDI and notation applications have trouble handling this kind of information when it is present in the conductor track of a MIDI file. It sometimes causes the program to assume that there is not a conductor track in the file. With this box, you can configure this in one of three ways:
+<p>
+<b>Exclude:</b> Disables all of this kind of information in a MIDI file
+<p>
+<b>Track 0:</b> Places this information in the conductor track
+<p>
+<b>Track 1:</b> Places this information in the first sequenced track after the conductor track (only applies to the Type 1 category of standard MIDI Files, Type 0 files will not contain this information)
+
+<hr><h2><a name=IDH_DLGOPTFILEAUTOSV></a></h2>
+You can turn the automatic save feature on and off using these fields. When enabled, your files will be automatically saved as you work on them. This can protect your efforts if you forget to periodically save a file on your own as you work on it. The length of time between automatic save operations can be controlled by the frequency field, which is time in minutes.
+
+<hr><h2><a name=IDH_DLGOPTMIDI2></a></h2>
+This box controls where the program starts the play back of an active score. You can elect to always start playback from the beginning of the score, or several places closer to the current insertion point.
+
+<hr><h2><a name=IDH_DLGOPTMIDI3></a></h2>
+This box controls when MIDI devices are in use by the program. This is important if you are using other MIDI applications at the same time as <i>NoteWorthy Composer</i>. The following variations are available: 
+<p>
+<b>While Active:</b> The MIDI devices will only be open while the program is active. When you switch to a different application, the devices will be released prior to activating the other program. If a Play operation is in progress, it is terminated at the point where a different application is activated.
+<p>
+<b>While Playing:</b> The MIDI devices will only be open while a score is being played back. Whenever a Play operation is not being performed, the MIDI devices are available for some other application.
+<p>
+<b>Always:</b> The MIDI devices are always open and available. This is a good option if you do not plan to use other applications that require the MIDI devices at the same time.
+
+<hr><h2><a name=IDH_DLGOPTMIDI4></a></h2>
+This is all the devices that are not currently being used for play back. You can move any device to the &quot;used list&quot; by double clicking it.
+
+<hr><h2><a name=IDH_DLGOPTMIDI5></a></h2>
+This is the devices that can be used during play back, in the order that they will appear in device selection boxes, such as the one associated with each staff. You can remove a device from this list, thus restoring it to the list of available devices, by double clicking it.
+
+<hr><h2><a name=IDH_DLGOPTMIDI6></a></h2>
+This button can be used to move an available device into the playback list.
+
+<hr><h2><a name=IDH_DLGOPTMIDI7></a></h2>
+This button can be used to move a selected device back to the available pool.
+
+<hr><h2><a name=IDH_DLGOPTMIDI8></a></h2>
+This button enables you to change the timer period and resolution used by the MIDI playback engine. In general, you should not need to change these values.
+
+<hr><h2><a name=IDH_DLGZOOM1></a></h2>
+You can enter the size of the notation that should be used in the editor into this box. This value is in pixels. Only even numbers are used for zoom level. If you enter an odd number, it will be converted to an even number before the zoom is performed.
+
+<hr><h2><a name=IDH_DLGFILETEMPLATE1></a></h2>
+This is a list of templates that can be used as the basis for a new file. Select the template that you want to use, and then press OK. A new file will be created that looks just like the template. The <i>&lt;Blank Score&gt;</i> template on the <b>General</b> tab is always available for creating a new, generic file that is not based on any predefined templates.
+<p>
+If you drag and drop an existing file into this box from the explorer or file manager, it will automatically be copied and used as the basis for a new template.
+
+<hr><h2><a name=IDH_IMPORTWIZINSTRLIST></a></h2>
+This is a list of all the import instructions that will be used in converting the MIDI file into a score. Each instruction corresponds to a staff in the imported score. The instruction list is used, in order from top to bottom, in the construction of the score. Individual instructions in this list can be modified by double clicking on them. Instructions can be added or removed using the adjacent buttons.
+
+<hr><h2><a name=IDH_IMPORTWIZINSTRADD></a></h2>
+Use this button to add a new import instruction to the end of the instruction list. This is useful if you are manually splitting one of the MIDI file tracks into two or more staves, or you just want to import a track into additional staves beyond that which was created during the automatic construction of the import instruction list.
+
+<hr><h2><a name=IDH_IMPORTWIZINSTRDEL></a></h2>
+Use this button to remove the selected import instruction from the import list.
+
+<hr><h2><a name=IDH_IMPORTWIZINSTREDIT></a></h2>
+Use this button to edit a selected instruction in the list. You can also double click on an instruction to edit its properties.
+
+<hr><h2><a name=IDH_IMPORTINSTRTRACKNUM></a></h2>
+This field specifies the track number that will be imported into a music staff.
+
+<hr><h2><a name=IDH_IMPORTINSTRNOTERANGE></a></h2>
+These two boxes are used to control the note range that will be imported into the staff. Notes above or below this range will be ignored. The ranges are listed as MIDI note pitches, which are a combination of note name followed by the octave.
+
+<hr><h2><a name=IDH_IMPORTINSTRCHNLMASK></a></h2>
+This is a list of all the MIDI channels that will be imported into this staff. All channels that are marked will be imported together into the new staff. All channels that are not marked will be ignored.
+
+<hr><h2><a name=IDH_RECORDENDACTION></a></h2>
+This field controls how a recorded MIDI performance will be handled after the recording is completed. The choices for handling the recorded data are:
+<p>
+<b>New window:</b> A new score window will be created with the imported notation from the performance
+<p>
+<b>'Record' group:</b> The imported staff or staves will be added to the current score. They will be placed in a group called 'Record'. If the group already exists, then the import will add a staff to the group. If the group does not exist, it will be created.
+<p>
+<b>Buffer only:</b> The recorded performance will simply be captured into the record buffer, but no import actions will be performed. In this case, the Import Recording command must be used to import the performance.
+
+<hr><h2><a name=IDH_MIDIRECORDDEVICEBOX></a></h2>
+This box is used to designate a MIDI device driver that should be used for MIDI input and recording features. This generally requires that you have an external MIDI device, such as a MIDI keyboard, that is connected to your computer via a MIDI interface.
+
+<hr><h2><a name=IDH_MIDIECHOENABLE></a></h2>
+This field is used to enable a MIDI echo feature. When enabled, any MIDI data received from the MIDI input device will be echoed to the play device listed in the 'echo input to play device' box. This is generally used for playing your internal sound card from an external MIDI keyboard. When echo is disabled, anything you play on an external keyboard will not generally trigger sounds in your computer's sound card. 
+
+<hr><h2><a name=IDH_MIDIECHOOUTDEVICE></a></h2>
+This field is used to specify a playback device for use in the MIDI echo feature. If you have a MIDI keyboard, and have enabled the MIDI input device and the echo feature, then any MIDI data received will be echoed to this device.
+
+<hr><h2><a name=IDH_MIDIECHOCHANNEL></a></h2>
+This field can be used to override the MIDI channel for events arriving from the MIDI input device. This can be used to echo input received from one channel to a different channel on your internal sound card.
+
+<hr><h2><a name=IDH_DLGOPTDLGLTFONT></a></h2>
+This option enables the use of a light font in the dialogs native to this program. This makes the dialogs look consistent across the various operating systems. Changes to this option take effect after  the options dialog is closed.
+
+<hr><h2><a name=IDH_PAGESETUPPADNOTES></a></h2>
+This option controls whether notes are padded with space on their right as the duration increases. For example, when this option is checked, whole notes will be padded on their right, keeping other notes from getting too close on the staff. Turn this option off to get as many notes as possible to fit into the space used by the staff.
+
+<hr><h2><a name=IDH_IMPORTWIZONOPEN></a></h2>
+This box enables the use of the MIDI file import wizard when an *.mid file is opened. When this is not checked, the File Open command will simply open the file using the default options specified in the Import tab of Options.
+
+<hr><h2><a name=IDH_STAFFMUTELIST></a></h2>
+This box lists all of the parts in the score. Each part has a checkbox to its left. Each part that is checked will not be played back when the Play command is selected. Each box that is checked indicates that mute is enabled for the part. The buttons can be used to quickly set or clear the mute status for all the parts in the score.
+
+<hr><h2><a name=IDH_STAFFMUTENONE></a></h2>
+This button is used to clear the selection status of all parts in the list. This can be used to quickly clear the entire selected list. 
+
+<hr><h2><a name=IDH_STAFFMUTEALL></a></h2>
+This button can be used to quickly select every staff in the list. 
+
+<hr><h2><a name=IDH_STAFFMUTEREVERSE></a></h2>
+This button can be used to quickly reverse the selected status of each part in the list. 
+
+<hr><h2><a name=IDH_SCOREREVIEWLIST></a></h2>
+This is the list of parts in the score. A summary of the MIDI properties associated with each staff are shown in the columns to the right of each part's name. 
+
+<hr><h2><a name=IDH_SCORERVWGOTOPROPERTIES></a></h2>
+Select this button to advance to the properties dialog for the selected part. This can be used to make changes to a part and then return back to the review screen. A part can also be changed by pressing Enter while in the review list. 
+
+<hr><h2><a name=IDH_COPYSPECIALDLG1></a></h2>
+These two boxes allow control of whether just the active staff, or all of the staves, will be copied to the clipboard as a graphic. When just the active staff is selected, it will appear by itself in the clipboard graphic. When all staves are selected, all the notation in the editor view that aligns vertically with the selection will be copied to the clipboard as a picture. If only one staff is present in the editor, then this dialog will not be presented, as it is unnecessary. 
+
+<hr><h2><a name=IDH_TIPNAVIGATE></a></h2>
+Use these buttons to navigate through all of the usage tips. Press Back to review past tips, or Next to see new tips.
+
+<hr><h2><a name=IDH_TIPMOREHELP></a></h2>
+Many tips have additional information in the help file. When this button is present, you can press it to get additional help on the current tip.
+
+<hr><h2><a name=IDH_STARTUPTIPS></a></h2>
+This box is used to have a new tip displayed each time you start the program. Deselect this  box if you do not want to receive a new tip each time you start the program.
+
+<hr><h2><a name=IDH_TIPTEXTAREA></a></h2>
+This dialog shows many useful tips on how to use the program. This area shows the current tip.
+
+<hr><h2><a name=IDH_DLGFHISTORYLIST></a></h2>
+This is a list of the most recent songs used in the program. Double click a file to open it, or select it and then press OK.
+
+<hr><h2><a name=IDH_DLGFHISTORYCLEAR></a></h2>
+Press the Clear button to empty the contents of the history buffer, thus starting over on history tracking.
+
+<hr><h2><a name=IDH_CUSTOMVIEWLIST></a></h2>
+Use this list box to select the parts that you want to appear in the editor. You can select or deselect entire staff groups using the group list on the left side of the staff list.
+
+<hr><h2><a name=IDH_OPTFOLDERLOCATIONS></a></h2>
+This list summarizes the folder locations that can be adjusted by the user. The folder types that can be adjusted include:
+<p>
+<b>Song Files:</b> This is where the Open and Save commands will initially look for song files when you first start the program
+<p>
+<b>Print Preview Copy:</b> In the 16-bit edition of the program, this is the default location where copied graphics will be saved while in Print Preview. 
+<p>
+<b>New File Templates:</b> This is the folder that will be used for new file templates when selecting the File New command.
+<p>
+<b>Auto Save/Recovery:</b> This is the folder where songs will automatically be saved and recovered while you work in the editor.
+
+<hr><h2><a name=IDH_OPTCHANGEFOLDERLOC></a></h2>
+Use this button to change the location for one of the folder types.
+
+<hr><h2><a name=IDH_PGSETUPPFONTLIST></a></h2>
+This is the list of font types that are used by the program. You can customize the typeface and styles for each font type, and the information will be saved inside each song file. The font types are used in the following manner:
+<p>
+<b>Staff Italic:</b> Used in the staff for dynamics, text expressions, and other italic text
+<p>
+<b>Staff Bold:</b> Used for bold text that appears in a staff, such as tempo numbers, special ending numbers, and text expressions
+<p>
+<b>Staff Lyric:</b> Used for lyric text in a staff
+<p>
+<b>Page Title Text:</b> Used for the title page when printing a score
+<p>
+<b>Page Text:</b> Used for the author text when printing a score
+<p>
+<b>Page Small Text:</b> Used for copyright and page number text in a printout
+<p>
+<b>User '#':</b> Available for use in the Text Expression item
+
+<hr><h2><a name=IDH_PGSETUPPFONTCHANGEBTN></a></h2>
+Use this button to change the type face or styles of a particular font group.
+
+<hr><h2><a name=IDH_BTNBARCUSTOMIZE></a></h2>
+Press this button if you want to rearrange the contents of any of the toolbars, or create your own custom toolbars.
+
+<hr><h2><a name=IDH_CBTNBARTBARLIST></a></h2>
+This box is used to select the toolbar that can be edited using the remaining buttons and list box controls. Select the toolbar that you want to change from this list, then you can remove it, change its name, or rearrange its contents using the remaining controls. 
+
+<hr><h2><a name=IDH_CBTNBARTBARNEWDELRENAME></a></h2>
+These buttons are used to alter the names and numbers of toolbars in the program. You can delete the currently selected toolbar, add a new custom toolbar, or rename one of the existing toolbars. Note that at least one toolbar must always exist, and all toolbars must have unique names.
+
+<hr><h2><a name=IDH_CBTNBARDEFAULTRESET></a></h2>
+Use this button to restore the toolbars to their factory default settings.
+
+<hr><h2><a name=IDH_CBTNBARAVAILTOOLS></a></h2>
+This is the list of available commands that can be included in a toolbar. When you add a command to a toolbar, it is removed from this list and placed into the selected toolbar. This list is sorted alphabetically so you can quickly locate the available commands. Simply double-click the commands that you want to appear in the selected toolbar.
+
+<hr><h2><a name=IDH_CBTNBARADDDELCMD></a></h2>
+Use these buttons to insert or remove a command from a toolbar. New commands are added after the currently selected command in the list of toolbar commands. The separator item can also be removed from the toolbar using the removal button, even though this item does not actually appear in the list of available tools.
+
+<hr><h2><a name=IDH_CBTNBARSEPARATOR></a></h2>
+Use this button to add a separator after the currently selected command for the toolbar.
+
+<hr><h2><a name=IDH_CBTNBARTBARCMDLIST></a></h2>
+This is the list of tools currently present in the selected toolbar, in order. Double-click any item to remove it from the list.
+
+<hr><h2><a name=IDH_CBTNBARMOVECMDUPDOWN></a></h2>
+Use these two buttons to move a selected command up or down in the toolbar command list. Changes can also be seen in the toolbar if it is currently visible.
+
+<hr><h2><a name=IDH_DLGOPTDLGACTSTAFFFRAME></a></h2>
+Shows a framing rectangle around the active staff in the editor.
+
+<hr><h2><a name=IDH_DLGSTAFFEDTLAYERING></a></h2>
+When set, the staff will overlap with the next staff in the system whenever Layering is enabled for the score.
+
+<hr><h2><a name=IDH_PGSETUPCONTENTLAYERING></a></h2>
+Enables staff layering (overlap) for those parts that have specified layering should be used.
+
+<hr><h2><a name=IDH_FOLDEREDITCTL></a></h2>
+Enter a new folder name directly into this field.
+
+<hr><h2><a name=IDH_FOLDEREDITBROWSE></a></h2>
+Press this button if you want to browse for the directory that should be used, and have that information placed into the edit field next to this button.
+
+<hr><h2><a name=IDH_PREVIEWCOPYSPECCTL></a></h2>
+Select the target for the copy operation. You can select that you want the page graphic to be copied to the clipboard or to a place-able metafile. If you are running the 16-bit edition of the program, you can also copy to a bitmap file. 
+
+<hr><h2><a name=IDH_DLGSTAFFEDTENDBARTYP></a></h2>
+This option determines what kind of bar line appears at the end of the staff. You can use this to customize the look of the final bar line in the staff.
+
+<hr><h2><a name=IDH_DLGEXTRANOTEHEADSLOTS></a></h2>
+This option can be used to add space to the left side of a note on the staff. If the note includes an accidental, this space will appear after the accidental space, but before the note head. This is most useful when working with one or more layered staves that overlap each other. A note head can be moved to further to the right to avoid a collision with a note in another staff.
+
+<hr><h2><a name=IDH_DLGRESTVERTNPOFFSET></a></h2>
+This option can be used to change the vertical location of a rest on the staff. This is most useful when working with one or more layered staves that overlap each other. The rest can be moved up or down to avoid a collision with a note in another staff.
+
+<hr><h2><a name=IDH_DLGOPTRESTRICTEDXPRMNTS></a></h2>
+When enabled, only score files that already utilize an experimental feature will be given access to the experimental features of the product. When disabled, the experimental features will be available all of the time.
+
+<hr><h2><a name=IDH_DLGEXTRAACCSIGNSLOTS></a></h2>
+This option can be used to add additional accidental space between a note and its accidental. This is most useful when working with one or more layered staves that overlap each other. This can be used to create extra room between a note and its accidental, making other notes that exist in a different layered staff to be more visible. A note accidental can be moved to further to the left in order to avoid a collision with an accidental in another staff.
+
+<hr><h2><a name=IDH_NTNSHOWSTATUS></a></h2>
+If this item is for MIDI performance only, then you can elect to hide it when printing using this field. The possible values are:
+<p><b>Default</b>: The item will not appear in the final printout if it is generally not appropriate to do so.
+<br><b>Always</b>: The item will always appear in the final printout.
+<br><b>On Top Staff</b>: The item will appear in print only if it is contained in the top staff of the system.
+<br><b>Never</b>: The item will never appear in print.
+
+<hr><h2><a name=IDH_NTNSHOWCOLOR></a></h2>
+This allows the color of the item to be changed to one of the predefined highlight colors. The highlight colors are set from the Tools | Options command, using the Color property tab.
+
+<hr><h2><a name=IDH_DLGOPTBKCOLOR></a></h2>
+This box is used to indicate what background color will be used in the score editor. Be careful not to use a color that hides active or inactive staff colors in the editor.
+
+<hr><h2><a name=IDH_DLGOPTCOLORNTN></a></h2>
+The color of various notational elements can be changed from within this box. The highlight colors can be utilized via the staff notation Visibility property.
+
+<hr><h2><a name=IDH_DLGOPTCOLORCHANGE></a></h2>
+This button allows you to change the color of the selected notation element.
+
+<hr><h2><a name=IDH_NTNPROPSTAFFPOS></a></h2>
+This value controls the vertical position of the item on the staff. The value is in staff units, which is half the distance between each horizontal line in a staff. A value of 0 is the vertical center of the staff. Negative values move the item downward on the staff, and positive values move it upward.
+
+<hr><h2><a name=IDH_NTNPROPPRESERVEWIDTH></a></h2>
+Check this box if you want this item to occupy space in the staff where it is placed. If this box is not checked, the item will not reserve space for itself in the staff. This can be used to avoid blank spots in the score. When an item does not reserve space for itself, a diamond will appear in the editor to the left of the item. The diamond is present so that you can edit the item. The diamond will not show up in a printout.
+
+<hr><h2><a name=IDH_NTNPROPJUSTIFICATION></a></h2>
+This field is used to control how the item is justified within its space on the staff. This can be especially useful when the item does not preserve its width. It is also helpful when the item is allocated additional space on the staff when aligning it with other expressions in other staves.
+
+<hr><h2><a name=IDH_NTNPROPXALIGNPLACEMENT></a></h2>
+This field controls how the text or symbol expression/instruction should be aligned with other expressions/instructions that appear directly above or below this item in other staves.
+
+<hr><h2><a name=IDH_BARPROPSYSTEMBREAK></a></h2>
+When selected for a bar line that appears in the top staff of a system, this option will force a new system to be started, starting with the next measure. 
+<p>
+<b>Note:</b> This option only has an effect when used with bar lines in the top most staff of the system. It is ignored when it appears on bar lines in lower staves.
+
+<hr><h2><a name=IDH_NOTEPROPSLURDIR></a></h2>
+This box controls the direction of a slur on the selected notes, if a slur exists. It is recommended that the slur direction be set the same for all note members belonging in the slur range. This will yield the best results in the editor and when printing.
+<p>
+This is most useful when working with staff layering, in order to avoid slur collisions with notation in another layered staff.
+
+<hr><h2><a name=IDH_NOTEPROPTIEDIR></a></h2>
+This box controls the direction of a tie on the selected notes, if a tie exists. If applied to a chord, this will force all tied notes in the chord to use the same tie direction. 
+<p>
+This is most useful when working with staff layering, in order to avoid tie collisions with notation in another layered staff.
+
+<hr><h2><a name=IDH_STAFFPROPCOLOR></a></h2>
+Each staff can be assigned one of the custom highlight colors. If this is done, the editor will no longer show this staff in active and inactive colors. It will use this color instead. Custom highlight colors can be changed from the Color tab in Tools | Options.
+
+<hr><h2><a name=IDH_ATTACHLYRICSYLLABLE></a></h2>
+Any note, chord, or rest can automatically be used in the placement of lyrics. By default, all notes except rests, grace notes, and notes that receive a tie or slur get attached to a lyric syllable. This box can be used to override the default lyric attachment behavior.
+
+<hr><h2><a name=IDH_UNASSIGNED></a></h2>
+This item has not yet been assigned a help context. If possible, please let us know about this situation.
+
+<hr><h2><a name=IDH_UNASSIGNED_2199></a></h2>
+This item has not yet been assigned a help context. If possible, please let us know about this situation.
+
+</body>
+</html>

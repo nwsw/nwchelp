@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>FAQ: Linear sweep in a multi-point controller</title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>FAQ: Linear sweep in a multi-point controller</h2>
+<hr>
+<p>
+The Linear Sweep Contour defines how large a change to the controller value will be considered significant. In the case of pitch bend, where the value can be swept over thousands of values, each and every change of only 3 or 4 is not very important. In this case, you might use a value of 100, or even more, depending on how smooth you wish the pitch bend to be. This allows NWC to lean out the number of control changes sent to the MIDI device, which can significantly improve performance.</p>
+<p>
+Think of it like this. If you started at 0 and wanted to count out loud to ten thousand (10000) in 2 minutes, then:</p>
+<ul>
+<li>Using a contour setting of 1, you would count like this: &quot;1, 2, 3, 4, 5, 6, 7, 8, 9...&quot; all the way to 10000, and you would have to speak very fast to finish in 2 minutes.
+<br>
+</li>
+<li>Using a contour setting of 100, you would count: &quot;100, 200, 300, 400, 500...&quot; all the way to 10000, and you would probably not have any trouble finishing in 2 minutes.</li>
+</ul>
+<p>
+The same is true in an MPC. A higher contour value makes it easier for the program to change the value from the value of 1 up to the value of 10000. </p>
+</body>
+</html>

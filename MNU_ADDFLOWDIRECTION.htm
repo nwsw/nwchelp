@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Flow Direction Symbol Command </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>Flow Direction Symbol Command</h2>
+<hr>
+<p>
+<i>Da capo,</i> <i>Dal Segno, Coda</i>, and <i>Fine</i> instructions are added into the staff with this command. The symbols associated with each command are automatically placed in an appropriate vertical orientation. </p>
+<p>
+These symbols must be added to each staff in the score in order to produce the desired play back result. Several examples of repeated sections are available in the <b>Samples</b> folder in the application directory. They are named REPEAT<i>x</i>.NWC, where <i>x</i> is a single numeric digit. </p>
+<p>
+The exact instructions supported by this command include: </p>
+<p>
+<b><i><u>Segno</u></i></b><b><u>:</u></b> This places a <i>Segno</i> symbol into the staff. This marks the place where play should resume after a <i>Dal Segno</i> instruction (which includes <i>Dal Segno</i>,<i> D.S. al Coda</i>, or <i>D.S. al Fine</i> instructions) is encountered during playback. This marker is ignored unless a Dal Segno mark is used to redirect playback to this marker later in the score. </p>
+<p>
+<b><i><u>Coda</u></i></b><b><u>:</u></b> This places a <i>Coda</i> mark into the score. This item is ignored by itself. It is used to mark the location where play will resume after a <i>To Coda</i> instruction is performed. </p>
+<p>
+<b><i><u>To Coda</u></i></b><b><u>:</u></b> This places an instruction into the staff that tells the performer to advance to the <i>Coda</i> mark that appears elsewhere in the score. This instruction is ignored if neither a <i>Da capo</i> nor <i>Dal Segno</i> has been performed. After a <i>D.C.</i> or <i>D.S.</i> instruction is performed, this instruction will send playback to the <i>Coda</i> mark, which generally appears immediately after the <i>D.C.</i> or <i>D.S.</i> instruction. Once a <i>To Coda</i> is performed, master repeat loops are again possible. </p>
+<p>
+<b><i>Da capo</i></b><b>:
+<br>
+</b><b><i>D.C. al Coda</i></b><b>:
+<br>
+</b><b><i><u>D.C. al Fine</u></i></b><b><u>:</u></b> These instructions are all considered to be <i>Da capo</i>, or <i>D.C.</i>, instructions. When encountered, playback will be redirected back to the beginning of the song. After this instruction, all master repeats will be ignored, and only special endings marked with a <b>D.</b> will be performed. These items should not be mixed with <i>Dal Segno</i> instructions in the same song. Attempts to do so will yield unpredictable results. </p>
+<p>
+<b><i>Dal Segno</i></b><b>:
+<br>
+</b><b><i>D.S. al Coda</i></b><b>:
+<br>
+</b><b><i><u>D.S. al Fine</u></i></b><b><u>:</u></b> These instructions are all considered to be <i>Dal Segno</i>, or <i>D.S.</i>, instructions. When encountered, playback will be redirected back to the Segno mark that should be placed earlier in the song. After this instruction, all master repeats will be ignored, and only special endings marked with a <b>D.</b> will be performed. These items should not be mixed with <i>Da capo</i> instructions in the same song. Attempts to do so will yield unpredictable results. </p>
+<p>
+<b><i><u>Fine</u></i></b><b><u>:</u></b> This item is used to stop playback of a song after a <i>Da capo</i> or <i>Dal Segno</i> instruction has been performed. This item is ignored in all other cases. </p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_INSERT.htm>Insert Menu Commands</a></li>
+</ul>
+</body>
+</html>

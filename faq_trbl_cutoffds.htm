@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>FAQ: Notation symbols are only partially displayed</title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>FAQ: Notation symbols are only partially displayed</h2>
+<hr>
+<p>
+This is a problem with your printer or display driver. The solution is to get a corrected version of your printer or display driver that does not exhibit this behaviour.</p>
+<p>
+If your manufacturer does not offer a driver that corrects this bug, you may want to try another option. You can add the OutlineThreshold option to your WIN.INI file under the [TrueType] section, as shown below:</p>
+<p>
+[TrueType]
+<br>
+TTEnable=1
+<br>
+;
+<br>
+; The OutlineThreshold option can sometimes be used to get the
+<br>
+; NoteWorthy Composer music font to be fully displayed by a
+<br>
+; buggy graphics display driver
+<br>
+OutlineThreshold=32</p>
+<p>
+This sometimes will work around the display driver bug, but it also causes some display distortion on many types of equipment.</p>
+</body>
+</html>

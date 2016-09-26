@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Styled Bar Line Command </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>Styled Bar Line Command</h2>
+<hr>
+<p>
+This command allows many types of bar lines to be added to the staff. This is done through the presentation of the Bar Line Specification dialog. The following bar line types are supported: </p>
+<p>
+<b><u>Single:</u></b> A standard bar line (see <a href=MNU_ADDBARLINE.htm>Bar Line Symbol Command</a>). </p>
+<p>
+<b><u>Double:</u></b> A double bar line, which is typically used to denote a sectional change in the score. </p>
+<p>
+<b><u>Section Open/Close:</u></b> Bar lines used to designate the beginning and end of a section of the score. </p>
+<p>
+<b><u>Local Repeat Open/Close:</u></b> A special form of sectional repeat symbols. These allow a section to be repeated for a specified number of iterations without specifying special endings for each iteration. These loops can be nested inside a master loop which contains special endings. Special endings do not apply to local repeats. Attempts to combine local repeats and special endings will yield unpredictable results. Unlike master repeats, local repeat loops are performed even after a D.S. or D.C. flow direction has been executed. </p>
+<p>
+<b><u>Master Repeat Open/Close:</u></b> Sectional repeat symbols for repeating a section. Each repeat should specify a special ending prior to the closing repeat symbol (see <a href=MNU_ADDSPCLENDING.htm>Special Ending Command</a>). The closing repeat mark is ignored after a D.S. or D.C. flow redirection has been initiated. </p>
+<p>
+Note that all repeats in a score must be added to each individual staff so that play back will be compiled and articulated correctly. The score printout logic will automatically display the repeat symbols at the proper position in a score system as long as all staves in the system have been assigned the same bar line types. </p>
+<p>
+Several examples of repeated sections are available in the <b>Samples</b> folder in the application directory. They are named REPEAT<i>x</i>.NWC, where <i>x</i> is a single numeric digit. </p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_INSERT.htm>Insert Menu Commands</a></li>
+</ul>
+</body>
+</html>

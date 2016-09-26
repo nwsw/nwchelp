@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Instrument Patch Command </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>Instrument Patch Command</h2>
+<hr>
+<p>
+A MIDI sound patch can be sent during play back by inserting this symbol at the insertion point. This enables a single staff to sound like several different instruments at different parts of the score. Once placed on the staff, it can be changed using the <a href=MNU_OPENPROPERTIES.htm>Edit Selection</a> command. </p>
+<p>
+If a particular part represented by a staff is only going to play using one instrument sound, it is probably best to define that instrument in the <a href=MNU_EDITSTAFF.htm>Staff Properties</a> of the score. This allows a particular staff to be assigned an instrument without inserting this symbol into the notation. </p>
+<p>
+The notation text used to represent this item in a staff is only visible when in the score editor. It will not be included in the score when it is printed. </p>
+<p>
+<b>Sound (Instrument) Patch Dialog Options </b> </p>
+<p>
+<b><u>Patch Name:</u></b> This list box lists the patches that can be sent to the device port. The patch names included in the list are determined by the Patch List Type field. </p>
+<p>
+<b><u>Patch List Type:</u></b> This field enables you to specify what type of patch names will be presented in the Patch Name list box. Four patch list types come configured with <i>NoteWorthy Composer</i>: </p>
+<ul>
+<li><b>Numeric, 1 Based: </b>This puts patch numbers in the list box. The first patch is considered patch number one.</li>
+<li><b>Numeric, 0 Based: </b>This also puts patch numbers in the list box. The first patch is considered patch number zero.</li>
+<li><b>General MIDI: </b>This lists the patch names associated with a General MIDI device such as the Microsoft Midi Mapper.</li>
+<li><b>MT-32: </b>This lists the patch names associated with a Roland MT-32 device.</li>
+</ul>
+<p>
+Other patch list types can be added to this list by manipulating the NTWPATCH.INI file in the <i>NoteWorthy Composer</i> application directory. </p>
+<p>
+<b><u>Bank Select:</u></b> This area is used to enable or disable the bank select command in the MIDI stream. This can be used to select a particular bank of sounds on devices which support this command. In general, this command is used to select a new group of sounds supported by your sound card or MIDI device. </p>
+<p>
+A bank select command is actually broken up into two messages: a control 0 message and a control 32 message. If your MIDI device supports bank select capabilities, consult your hardware's manual for the proper settings for these two control values. </p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_INSERT.htm>Insert Menu Commands</a></li>
+</ul>
+</body>
+</html>

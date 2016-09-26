@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Record Command </title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2><img src=img/record.gif> Record Command</h2>
+<hr>
+<p>
+The recording feature of NWC is built on top of the existing play back capabilities in the application. This feature allows a MIDI performance received from the MIDI input device to be recorded and captured while the current score is playing back. Recording is only possible when a score is open and is playing. If the current song is only three bars in length, then starting a recording will only allow up to three bars to be recorded. This is because recording and play back will both stop when the current song play back is finished. </p>
+<p>
+This command can be quickly activated using the <b>F4</b> key, or the record icon on the file tool bar. </p>
+<p>
+During recording, play back proceeds the same way as with the Play command, except that play always starts from the beginning of the song. The relative play back options supported by the play command are not used in the recording process, since the imported results always create a new staff. </p>
+<p>
+When the play back of the song is finished, or play is <a href=MNU_MIDISTOP.htm>stopped</a>, the recorded performance is saved into a dedicated record buffer. The performance may optionally be imported into a new staff or new song window. This is controlled by options that you set in the <a href=#TAB_OPTIONSRECORD>Record Tab</a> of the Options dialog. Regardless of the setting for the recording import, the saved performance can be manually imported into a new staff at any time by using the <a href=MNU_IMPORTRECORDING.htm>Import Recording</a> command on the <a href=SUBMNU_STAFF.htm>Staff</a> menu. </p>
+<p>
+<b><u>Configuring Record Options </u></b> </p>
+<p>
+A recording can only be started when a MIDI input device has been provided to NWC. This is done from the <a href=#TAB_OPTIONSRECORD>Record Tab</a> of the Options dialog. Once this is done, a recording can be started for the current song at any time simply by pressing <b>F4</b>, or by pressing the record icon in the tool bar. The current song will immediately begin to play back from the start of the song. An indication that Recording is in progress will appear at the bottom of the screen, which acts as a reminder and confirmation that recording is in progress. The recording concludes when either the song is over, or you press the stop command. </p>
+<p>
+Once recording is concluded, the performance is automatically saved into an internal record buffer. What happens next is up to you. The next step is controlled by the import recording option in the <b>Record</b> tab of the Options. The following choices are included: </p>
+<ol>
+<li>The recording can automatically be imported into a new song window. This is the <b>New window</b> setting. In this case, the import process will be based on the defaults set in the <b>Import</b> tab of Options.</li>
+<li>The recording can be imported into a new staff of the currently active score. The new staff (or staves) will be added to a staff group labeled &quot;<b>Record</b>&quot;. In this case, the import process will be based on the defaults set in the <b>Import</b> tab of Options.</li>
+<li>The recording can simply be retained in the recording buffer, without any automatic import being performed. In this case, the recording can be manually imported using the <b>Import Recording</b> command on the <b>Staff</b> menu. This allows you to specify the note and rest resolutions used in the import, as well as the pitch ranges and channels that will be recognized in the process. The new, imported musical staff will be added to the end of the currently score view.</li>
+</ol>
+<p>
+If you want the MIDI input received by NWC to be echoed to an output MIDI device, this can also be setup in the <b>Record</b> tab of the Options. The echo feature, as it is called, can be enabled from here. It can also be used to specify echo to an existing playback device, as well as specifying an override MIDI channel that should be used instead of the MIDI channel received at input. This feature is generally useful when your MIDI keyboard does not include its own synthesizer. You can use the echo feature to hear what is played on the keyboard through your computer's sound card. </p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_TOOLS.htm>Tools Menu Commands</a></li>
+<li><a href=midiconfigintro.htm>Configuring for Sound:</a></li>
+<li><a href=MNU_PREFERENCES.htm>Options Command</a></li>
+</ul>
+</body>
+</html>
