@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Editor Context Menu Commands (No Selection) </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Editor Context Menu Commands (No Selection)</h2>
-<hr>
+
 <p>
 The following commands are available in the notation editor when no items are currently selected. These can be accessed either by: hitting the right mouse button (on a two or three button mouse), or by pressing the &quot;~&quot; key on the computer keyboard. You do not need to use the shift key for this to work. After this action, the appropriate notation editor context menu pops up with the choices below: </p>
 <ul>
@@ -13,6 +14,7 @@ The following commands are available in the notation editor when no items are cu
 <li><a href="MNU_ADDCHORD.htm">Chord Member</a>: Adds a note member to a chord</li>
 <li><a href="MNU_ADDBARLINE.htm">Bar Line</a>: Adds a standard bar line</li>
 <li><a href="MNU_EDITPASTE.htm">Paste</a>: Pastes the contents of the clipboard at insertion point</li>
+<li><a href="MNU_EDITSELECTALL.htm">Select All</a>: Selects everything in the active staff</li>
 <li><a href="MNU_EDITSTAFF.htm">Staff Properties</a>: Allows the properties of the active staff to be modified</li>
 <li><a href="MNU_ADDMIDICONTROLLER.htm">Multi-point Controller</a>: Adds a generic MIDI controller</li>
 <li><a href="MNU_ADDPATCH.htm">Instrument Patch</a>: Adds a change of instrument</li>
@@ -30,5 +32,5 @@ The following commands are available in the notation editor when no items are cu
 <li><a href="MNU_ADDTEXT.htm">Text</a>: Adds a text expression of your choice</li>
 <li><a href="MNU_ADDTIMESIGNATURE.htm">Time Signature</a>: Adds a time signature designation</li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Window Menu Commands </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Window Menu Commands</h2>
-<hr>
+
 <p>
-This collection of commands enables manipulating the arrangement of editor windows in the <i>NoteWorthy Composer</i> workplace. </p>
+This collection of commands enables manipulating the arrangement of editor windows in the <i>NoteWorthy Composer 2</i> workplace. </p>
 <ul>
 <li><a href="CM_CASCADECHILDREN.htm">Cascade</a>: Cascades all open windows that are not minimized</li>
 <li><a href="CM_TILECHILDRENHORIZ.htm">Tile</a>: Tiles all open windows that are not minimized</li>
@@ -15,5 +16,5 @@ This collection of commands enables manipulating the arrangement of editor windo
 <li><a href="ST_MNU_MDICHILD.htm">Child List</a>: Short list of open windows which can be activated</li>
 <li><a href="ST_MNU_MDIMORECHILD.htm">More Windows</a>: Complete list of open windows (more than 9 windows)</li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

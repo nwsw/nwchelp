@@ -1,17 +1,12 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>General Staff Properties</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>General Staff Properties</h2>
-<hr>
-<p>
-General staff properties include: </p>
-<ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT1')">Name</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT2')">Group</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDTENDBARTYP')">Ending Bar</a></li>
-</ul>
+
+<p>General staff properties.
 <p>
 <b>See Also </b></p>
 <ul>
@@ -19,5 +14,5 @@ General staff properties include: </p>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

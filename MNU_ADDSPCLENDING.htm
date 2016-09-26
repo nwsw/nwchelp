@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Special Ending Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/spclend.gif"> Special Ending Command</h2>
-<hr>
+
 <p>
 This command is used to designate that the current measure should be played during specific iterations of a master repeat loop. Up to seven standard iterations are possible. These are labeled 1st Ending through 7th Ending in the Repeat Loop Ending Specification dialog. The last ending, Default D.S./D.C. Ending, is used after a <i>Da capo</i> or <i>Dal Segno</i> instruction (flow redirection) has been performed. The last primary ending and the default ending are usually followed by a Section Close bar line to designate the end of the master repeat section. </p>
 <p>
@@ -18,5 +19,5 @@ Several examples of repeated sections are available in the <b>Samples</b> folder
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

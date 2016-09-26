@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Experimental Features </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Experimental Features</h2>
-<hr>
+
 <p>
 Occasionally, the program will include a couple of experimental features that are hidden during normal operation. If a file that uses any of the experimental features is opened, or if experimental features are enabled globally, then the experimental features become available. Before using an experimental file and the features that are enabled by it, please read the following: </p>
 <blockquote>
@@ -15,5 +16,5 @@ Occasionally, the program will include a couple of experimental features that ar
 </blockquote>
 <p>
 By default, experimentation is enabled only when opening an existing song file that already uses an experimental feature. However, you can globally enable experimentation from the <a href="MNU_PREFERENCES.htm">Tools Options</a> command by disabling the <a href="JavaScript:IDHTip('IDH_DLGOPTRESTRICTEDXPRMNTS')">Restrict Experimental Features</a> option in the <a href="TAB_OPTIONSFILE.htm">File</a> tab. If this option is not present, then the current version of the program does not include any experimental features.</p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Exit Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Exit Command</h2>
-<hr>
+
 <p>
 The File Exit Command closes all compositions and terminates the application. If play is currently in progress, it will be stopped prior to closure. </p>
 <p>
@@ -12,5 +13,5 @@ The File Exit Command closes all compositions and terminates the application. If
 <ul>
 <li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

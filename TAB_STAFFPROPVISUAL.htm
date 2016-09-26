@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Visual Staff Properties</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Visual Staff Properties</h2>
-<hr>
+
 <p>
 Display properties for a staff include: </p>
 <ul>
@@ -22,5 +23,5 @@ Display properties for a staff include: </p>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

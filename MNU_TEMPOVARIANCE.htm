@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Tempo Variance Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/qinsfmta.gif"><img src="img/qinsbrth.gif"> Tempo Variance Command</h2>
-<hr>
+
 <p>
 This command is used to insert a tempo variance into the score. The following variance styles are supported: </p>
 <ul>
@@ -20,5 +21,5 @@ Note that it is up to the composer to make sure that the tempo variance that is 
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

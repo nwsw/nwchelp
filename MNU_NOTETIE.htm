@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
-<title>Tied Note Command </title>
-</head>
-<body >
-<h2><img src="img/tieout.gif"> Tied Note Command</h2>
-<hr>
+<title>Tie Command </title>
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+<h2><img src="img/tieout.gif"> Tie Command</h2>
+
 <p>
 This command toggles the outward note tie parameter for use during note entry. When activated, notes entered onto the active staff will automatically be tied to the right. They will connect with the next note that is in the same position on the staff. A clef change should not be inserted in the middle of a note tie or the program will associate two notes of differing pitches together, thus preventing some notes from playing, and others from turning off. </p>
 <p>
@@ -22,5 +23,5 @@ A tied note can be created after a note is placed on the staff by selecting it, 
 <li><a href="MNU_ADDNOTE.htm">Note Symbol Command</a></li>
 <li><a href="MNU_AUDITSCORE.htm">Refresh Score Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,16 +1,17 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Zoom In </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/zoomin.gif"> Zoom In</h2>
-<hr>
+
 <p>
-The size of the notation font used in the <i>NoteWorthy Composer</i> score editor can be increased with this command. This effectively lets you zoom in or magnify your view of the currently active score. </p>
+The size of the notation font used in the <i>NoteWorthy Composer 2</i> score editor can be increased with this command. This effectively lets you zoom in or magnify your view of the currently active score. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_VIEW.htm">View Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

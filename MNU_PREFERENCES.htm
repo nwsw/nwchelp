@@ -1,17 +1,18 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Options Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Options Command</h2>
-<hr>
+
 <p>
 This command enables program customization. Once initiated, a dialog is presented with the following tabs: </p>
 <ul>
 <li><a href="TAB_OPTIONSCOLOR.htm">Color</a>: This is where the highlight colors can be customized</li>
 <li><a href="TAB_OPTIONSEDITOR.htm">Editor</a>: This is where the editor can be customized</li>
 <li><a href="TAB_OPTIONSFILE.htm">File</a>: This is where the File handling of <i>NoteWorthy Composer</i> is customized</li>
-<li><a href="TAB_OPTIONSFOLDERS.htm">Folders</a>: This is where the file location handling of <i>NoteWorthy Composer</i> is customized</li>
+<li><a href="TAB_OPTIONSFOLDERS.htm">Folders</a>: This is where the file location handling of <i>NoteWorthy Composer 2</i> is customized</li>
 <li><a href="TAB_OPTIONSIMPORT.htm">Import</a>: This is where the MIDI import options are customized</li>
 <li><a href="TAB_OPTIONSMIDI.htm">Midi</a>: This is where MIDI play back behavior is customized</li>
 <li><a href="TAB_OPTIONSRECORD.htm">Record</a>: This is where MIDI input and recording featured are customized</li>
@@ -23,5 +24,5 @@ Any changes you make in a tab will take effect when you press OK, or switch to a
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

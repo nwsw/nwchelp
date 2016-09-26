@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Note Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Note Command</h2>
-<hr>
+
 <p>
 This command adds an audible music note to the active staff. It places the note at the insertion point using the note parameters that are set in the <a href="SUBMNU_NOTES.htm">Notes</a> menu. The current view of the score is automatically reformatted to align all notes in the proper positions. This command can be quickly executed by pressing the &lt;Enter&gt; key on the computer keyboard while in the score editor, or by selecting the <b>Note</b> command on the editor's context menu. </p>
 <p>
@@ -13,5 +14,5 @@ This command adds an audible music note to the active staff. It places the note 
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 <li><a href="SUBMNU_NOTES.htm">Notes Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

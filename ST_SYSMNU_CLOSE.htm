@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Close Window </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Close Window</h2>
-<hr>
+
 <p>
-This initiates a close operation on the active window or <i>NoteWorthy Composer</i> application. If any data contained within the window has not been saved, you will be given the opportunity to save the data prior to the window being closed. If a notation editor window which is currently playing is closed, the play operation is stopped prior to closure. </p>
+This initiates a close operation on the active window or <i>NoteWorthy Composer 2</i> application. If any data contained within the window has not been saved, you will be given the opportunity to save the data prior to the window being closed. If a notation editor window which is currently playing is closed, the play operation is stopped prior to closure. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
@@ -15,5 +16,5 @@ This initiates a close operation on the active window or <i>NoteWorthy Composer<
 <li><a href="MNU_FILEEXIT.htm">File Exit Command</a></li>
 <li><a href="SUBMNU_WINDOW.htm">Windows Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

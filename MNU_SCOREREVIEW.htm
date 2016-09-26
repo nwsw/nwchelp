@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Score Review </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Score Review</h2>
-<hr>
+
 <p>
-This command brings up a list of all parts in the score. Some of the MIDI attributes for each part are shown in columnar format so that the MIDI configuration can be reviewed. Each part can be edited by advancing to the properties dialog directly from the review. </p>
+This command brings up a list of all staves in the score. A summary of the MIDI attributes from Staff Properties is shown for each staff. Each staff can be edited by advancing to the properties dialog directly from the review. </p>
 <p>
 <b>See Also </b></p>
 <ul>
@@ -15,5 +16,5 @@ This command brings up a list of all parts in the score. Some of the MIDI attrib
 <li><a href="SUBMNU_STAFF.htm">Staff Menu Commands</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

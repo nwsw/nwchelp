@@ -1,11 +1,12 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Skipping notes in a lyric</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Skipping notes in a lyric</h2>
-<hr>
+
 <p>
 If you have a few notes or an entire section of notes that you do not want lyrics assigned to, use an _ (underscore) in the Lyric Editor (Ctrl+L) for each note you want to skip. For example, entering _ _ _ in for Lyrics will skip 3 notes. You can also select the notes that you do not want to have lyrics, press Ctrl+E or Alt+Enter, and under the Notes tab, set Lyric Syllable to Never.</p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,17 +1,17 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>About Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>About Command</h2>
-<hr>
+
 <p>
-This displays a dialog box showing the current version of <i>NoteWorthy Composer</i> and the pertinent copyright statement. </p>
+This displays a dialog box showing the current version of <i>NoteWorthy Composer 2</i> and the pertinent copyright statement. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_HELP.htm">Help Menu Commands</a></li>
-<li><a href="DLG_ABOUT.htm">License Agreement</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Status Bar Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Status Bar Command</h2>
-<hr>
+
 <p>
 This command toggles the display status of the status bar at the bottom of the application. When checked, this indicates that the status bar is visible and available from within the application. When not checked, this indicates that the status bar is currently not included in the application display area. </p>
 <p>
@@ -12,5 +13,5 @@ This command toggles the display status of the status bar at the bottom of the a
 <ul>
 <li><a href="SUBMNU_VIEW.htm">View Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

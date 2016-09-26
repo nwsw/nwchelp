@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Staff Properties </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Staff Properties</h2>
-<hr>
+
 <p>
 This command is used to change the properties of the current staff. A series of property tabs are used to represent all of the parameters that you can change about the staff. The following property tabs are associated with staff data:</p>
 <ul>
@@ -17,8 +18,8 @@ This command is used to change the properties of the current staff. A series of 
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_STAFF.htm">Staff Menu Commands</a></li>
-<li><a href="MNU_ADDPATCH.htm">Setting an Instrument Patch</a></li>
+<li><a href="MNU_ADDPATCH.htm">Instrument Change Command</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

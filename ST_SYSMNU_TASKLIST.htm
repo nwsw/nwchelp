@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Switch To Task </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Switch To Task</h2>
-<hr>
+
 <p>
 This displays all of the open applications so that you can switch to a particular task or arrange the applications on the screen. </p>
 <p>
@@ -13,5 +14,5 @@ This displays all of the open applications so that you can switch to a particula
 <li><a href="ST_SYSMNU.htm">Control Commands</a></li>
 <li><a href="SUBMNU_WINDOW.htm">Windows Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

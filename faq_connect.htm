@@ -1,11 +1,12 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Connecting a staff with others</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Connecting a staff with others</h2>
-<hr>
+
 <p>
 To connect your staves in an orchestral fashion or with a brace (as for piano), go to Staff Properties (F2) for each staff. Under the Visual tab, for Style, select Orchestral for each staff or Upper Grand Staff for the top staff and Lower Grand Staff for the bottom staff (for the brace). </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

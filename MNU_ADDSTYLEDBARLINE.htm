@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Styled Bar Line Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Styled Bar Line Command</h2>
-<hr>
+
 <p>
 This command allows many types of bar lines to be added to the staff. This is done through the presentation of the Bar Line Specification dialog. The following bar line types are supported: </p>
 <p>
@@ -26,5 +27,5 @@ Several examples of repeated sections are available in the <b>Samples</b> folder
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

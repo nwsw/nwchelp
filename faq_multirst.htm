@@ -1,17 +1,18 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Multi-measure rests</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Multi-measure rests</h2>
-<hr>
+
 <p>
-Multi-measure rests are not currently supported in <i>NoteWorthy Composer</i>. However, the following tips provide a good solution:</p>
+Multi-measure rests are not currently supported in <i>NoteWorthy Composer 2</i>. However, the following tips provide a good solution:</p>
 <p>
 If your primary need is for printing, enter a whole measure rest. Then, with the insertion point to the left of the rest, select Insert: Text. In the Expression box, type |---- &quot;a number for the number of measures to hold the rest&quot; ----|. Set Display Font to Bold. Under Expression Placement, do not check Preserve Width and do set the Staff Position for 6. Click OK. This will place a | ---- x ----| over the whole measure rest, which now looks a lot like a multi-measure rest. If you do not like the vertical placement of the number, select the diamond beside the number, and press Ctrl+E to edit the Staff Position.</p>
 <p>
 If you also need the multi-measure rest to play back, use Insert: Bar Line (Decorated), to insert a Local Repeat Open and a Local Repeat Close around the rest. When inserting the Local Repeat Close, enter the number of times to repeat the rest (measure).</p>
 <p>
 You could also use both methods above and create a Print Group and a Play Group.</p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

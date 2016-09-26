@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>View Menu Commands </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>View Menu Commands</h2>
-<hr>
+
 <p>
 This menu contains commands necessary to zoom in and out of the current score, as well as to control the visibility of the tool bars. </p>
 <ul>
@@ -13,8 +14,9 @@ This menu contains commands necessary to zoom in and out of the current score, a
 <li><a href="MNU_VIEWZOOM.htm">Zoom</a>: Specify a specific zoom level for the active score</li>
 <li><a href="MNU_AUDITSCORE.htm">Refresh Score</a>: Redraw (refresh) the active score</li>
 <li><a href="MNU_ALLOWLAYERING.htm">Allow Layering</a>: Toggle the status of staff layering</li>
+<li><a href="MNU_VIEWER.htm">Viewer Preview</a>: Preview how the score will look in the <i>NoteWorthy Composer Viewer</i> program</li>
 <li><a href="MNU_VIEWSTATUSBAR.htm">Status Bar</a>: Toggle the visual status of the status bar</li>
 <li><a href="CM_TOOLBARS.htm">Tool Bars</a>: Select which tool bars should be currently visible</li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Changing the clef</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Changing the clef</h2>
-<hr>
+
 <p>
 Notes can be changed from one clef to another, as follows:</p>
 <ol>
@@ -13,5 +14,5 @@ Notes can be changed from one clef to another, as follows:</p>
 <li>Press <b>Shift+Ctrl+Up/Down Arrow</b> until the notes are at the proper position for the new clef</li>
 <li>Press <b>F9</b> to update the key signature.</li>
 </ol>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

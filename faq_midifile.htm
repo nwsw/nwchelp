@@ -1,11 +1,12 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Creating a standard MIDI file</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Creating a standard MIDI file</h2>
-<hr>
+
 <p>
 You can create a MIDI file from your song by selecting the <a href="MNU_FILESAVEAS.htm">File | Save As</a> command. Always save your performance as a NWC score file (*.nwc) first, because much of your notation information is lost when saving to a MIDI file.</p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

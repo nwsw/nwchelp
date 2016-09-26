@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Automatic Beam Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Automatic Beam Command</h2>
-<hr>
+
 <p>
 This command can be used to automatically beam a series of adjacent notes that contain stem flags and also fall inside of a beat. This command does not alter any notes that are already beamed, so it can be run several times through the course of creating a score to beam any notes that have not yet been handled. </p>
 <p>
@@ -12,5 +13,5 @@ This command can be used to automatically beam a series of adjacent notes that c
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

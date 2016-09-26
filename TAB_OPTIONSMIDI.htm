@@ -1,23 +1,23 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Midi Options Dialog Tab </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Midi Options Dialog Tab</h2>
-<hr>
+
 <p>
-The following fields are included in this tab for controlling the MIDI aspects of <i>NoteWorthy Composer</i>: </p>
+The following fields are included in this tab for controlling the MIDI aspects of <i>NoteWorthy Composer 2</i>: </p>
 <ul>
 <li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI2')">Play</a></li>
 <li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI3')">Port Usage</a></li>
 <li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI4')">Available play devices</a></li>
 <li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI5')">Devices used by play back</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI8')">Timer</a></li>
 </ul>
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: NWC duration names equivalency chart</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: NWC duration names equivalency chart</h2>
-<hr>
+
 <p>
-The following chart shows the equivalent duration names to the names used in <i>NoteWorthy Composer</i>.</p>
+The following chart shows the equivalent duration names to the names used in <i>NoteWorthy Composer 2</i>.</p>
 <table border=1 width=600>
 <tr>
 <th width="25%">in NWC</th> <th width="35%">English </th> <th width="25%">Medieval </th>
@@ -33,5 +34,5 @@ The following chart shows the equivalent duration names to the names used in <i>
 <td align=center width="25%">sixty-fourth</td> <td align=center width="35%">hemidemisemiquaver</td> <td align=center width="25%">--</td>
 </tr>
 </table>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

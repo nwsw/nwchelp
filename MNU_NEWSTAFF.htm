@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>New Staff </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/staffnew.gif"> New Staff</h2>
-<hr>
+
 <p>
 This command is used to create a new staff and add it to the current view of the score. The properties for the new staff can be set by using the <a href="MNU_EDITSTAFF.htm">Staff Properties</a> command. </p>
 <p>
@@ -15,5 +16,5 @@ This command is used to create a new staff and add it to the current view of the
 <li><a href="MNU_ADDPATCH.htm">Setting an Instrument Patch</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Visibility Properties</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Visibility Properties</h2>
-<hr>
+
 <p>
 The visibility properties apply to all items that can be added to a staff. The visibility options include:</p>
 <ul>
@@ -19,5 +20,5 @@ The visibility properties apply to all items that can be added to a staff. The v
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 <li><a href="TAB_OPTIONSCOLOR.htm">Tools | Options | Color</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

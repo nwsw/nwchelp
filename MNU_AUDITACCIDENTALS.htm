@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Audit Accidentals </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Audit Accidentals</h2>
-<hr>
+
 <p>
 This command can be used to remove any unnecessary accidentals assigned to notes in the active staff. It compares all notes with the running key signature, and if the accidental it contains matches the running signature, then the accidental is removed. </p>
 <p>
@@ -17,5 +18,5 @@ This audit will not detect if the accidental is the enharmonic version of a note
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 <li><a href="MNU_FORCEACCIDENTALS.htm">Force Accidentals</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

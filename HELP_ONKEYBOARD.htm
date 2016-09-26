@@ -1,243 +1,350 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Keyboard Guide </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Keyboard Guide</h2>
-<hr>
+
 <p>
-The following are the quick key lists for use in <i>NoteWorthy Composer</i>. When the words <b>Up</b>, <b>Down</b>, <b>Left</b>, or <b>Right</b> are used in the key chart, they refer to the four arrow keys on the keyboard. </p>
+The following are the quick key lists for use in <i>NoteWorthy Composer 2</i>. When the words <b>Up</b>, <b>Down</b>, <b>Left</b>, or <b>Right</b> are used in the key chart, they refer to the four arrow keys on the keyboard. </p>
 <p>
 The following quick keys are generally available when editing a score: </p>
 <table border=0>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDNOTE.htm"><b>Enter</b></a></td> <td width="83%">Adds a note at the insertion point</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDREST.htm"><b>Space</b></a></td> <td width="83%">Adds a rest at the insertion point</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDCHORD.htm"><b>Ctrl+Enter</b></a></td> <td width="83%">Adds a chord member at the insertion point</td>
-</tr>
-<tr>
-<td align=center>Alt+Enter</td> <td>Opens a property dialog for the currently selected item(s)</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDBARLINE.htm"><b>Tab</b></a></td> <td width="83%">Adds a standard bar line at the insertion point</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDBARLINE.htm"><b>*</b></a></td> <td width="83%">Adds a standard bar line at the insertion point</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTE1.htm"><b>1</b></a></td> <td width="83%">Selects a whole note for the running note duration</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTE2.htm"><b>2</b></a></td> <td width="83%">Selects a half note for the running note duration</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTE4.htm"><b>3</b></a></td> <td width="83%">Selects a quarter note for the running note duration</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTE8.htm"><b>4</b></a></td> <td width="83%">Selects a eighth note for the running note duration</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTE16.htm"><b>5</b></a></td> <td width="83%">Selects a sixteenth note for the running note duration</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTE32.htm"><b>6</b></a></td> <td width="83%">Selects a thirty-second note for the running note duration</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NEUTRAL.htm"><b>7</b></a></td> <td width="83%">Toggles the natural sign for note entry</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_FLAT.htm"><b>8</b></a></td> <td width="83%">Toggles the flat sign for note entry</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_SHARP.htm"><b>9</b></a></td> <td width="83%">Toggles the sharp sign for note entry</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTEACCENT.htm"><b>&gt;</b></a></td> <td width="83%">Toggles the accent note attribute</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTESLUR.htm"><b>;</b></a></td> <td width="83%">Toggles the outbound slur note attribute</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTESTACCATO.htm"><b>Comma (,)</b></a></td> <td width="83%">Toggles the staccato note attribute</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTETENUTO.htm"><b>Underscore (_)</b></a></td> <td width="83%">Toggles the tenuto note attribute</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTETIE.htm"><b>Slash (/) </b></a></td> <td width="83%">Toggles the note tie outward status for note entry</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTEDOT.htm"><b>.(period) </b></a></td> <td width="83%">Cycles the dotted note status for note entry. Will also cycle the double dot if it appears next to the dot in a tool bar.</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTESTEMUP.htm"><b>Shift+Up</b></a></td> <td width="83%">Toggles the upward note stem attribute</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NOTESTEMDN.htm"><b>Shift+Down</b></a></td> <td width="83%">Toggles the downward note stem attribute</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDSTYLEDBARLINE.htm"><b>B,b</b></a></td> <td width="83%">Adds a styled standard bar line at the insertion point</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDCLEF.htm"><b>C,c</b></a></td> <td width="83%">Adds a bass or treble clef</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDDYNAMIC.htm"><b>D,d</b></a></td> <td width="83%">Adds dynamics such as <b><i>ppp</i></b> or <b><i>mf</i></b></td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_TEMPOVARIANCE.htm"><b>E,e</b></a></td> <td width="83%">Adds tempo variances, such as <i>fermata</i> and <b><i>accel.</i></b></td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDFLOWDIRECTION.htm"><b>F,f</b></a></td> <td width="83%">Adds flow direction symbols such as <b>To Coda</b></td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDTIMESIGNATURE.htm"><b>G,g</b></a></td> <td width="83%">Adds a time signature designation</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDPATCH.htm"><b>I,i</b></a></td> <td width="83%">Adds a change of instrument</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDKEYSIGNATURE.htm"><b>K,k</b></a></td> <td width="83%">Adds a key signature</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDMIDICONTROLLER.htm"><b>L,l</b></a></td> <td width="83%">Adds a generic MIDI controller</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_MUTELIST.htm"><b>M,m</b></a></td> <td width="83%">Opens a mute list for the current score</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDPERFORMSTYLE.htm"><b>P,p</b></a></td> <td width="83%">Adds a performance style, such as <b>Legato</b></td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_SCOREREVIEW.htm"><b>R,r</b></a></td> <td width="83%">Review the score in a list format</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDSPCLENDING.htm"><b>S,s</b></a></td> <td width="83%">Adds special endings</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDTEMPO.htm"><b>T,t</b></a></td> <td width="83%">Adds tempo designations</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDSUSTAINPEDAL.htm"><b>U,u</b></a></td> <td width="83%">Adds sustain pedal symbols</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDTEXT.htm"><b>X,x</b></a></td> <td width="83%">Adds a text expression of your choice</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_ADDDYNVARIANCE.htm"><b>Y,y</b></a></td> <td width="83%">Adds dynamic variance, such as <b><i>crescendo</i></b></td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_EDITUNDO.htm"><b>Alt+Backspace</b></a></td> <td width="83%">Performs an Undo operation</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_FIND.htm"><b>Ctrl+F</b></a></td> <td width="83%">Find items on the staff</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_FINDNEXT.htm"><b>F3</b></a></td> <td width="83%">Find the next item on the staff</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_EDITPASTE.htm"><b>Ctrl+V</b></a></td> <td width="83%">Pastes the contents of the clipboard</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_NEWSTAFF.htm"><b>Ctrl+A</b></a></td> <td width="83%">Create a new staff</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_REMOVESTAFF.htm"><b>Ctrl+D</b></a></td> <td width="83%">Remove the current staff</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_EDITGOTO.htm"><b>Ctrl+G</b></a></td> <td width="83%">Moves the insertion point to a measure that you specify</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_FILENEW.htm"><b>Ctrl+N</b></a></td> <td width="83%">Create a new score</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_FILEOPEN.htm"><b>Ctrl+O</b></a></td> <td width="83%">Opens an existing score file</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_FILESAVE.htm"><b>Ctrl+S</b></a></td> <td width="83%">Saves the currently active score</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_EDITREDO.htm"><b>Ctrl+Y</b></a></td> <td width="83%">Performs a Redo of a previous Undo operation</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_EDITUNDO.htm"><b>Ctrl+Z</b></a></td> <td width="83%">Performs an Undo operation</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_AUDITSCORE.htm"><b>F9</b></a></td> <td width="83%">Redraws (refresh) the active score</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_AUDITSTAFF.htm"><b>Ctrl+F9</b></a></td> <td width="83%">Redraws (refresh) the active staff</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>0</b></td> <td width="83%">Clears the note accidental, tied, and dotted status parameters</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>+</b></td> <td width="83%">Shifts the running note duration to next smaller duration</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>-</b></td> <td width="83%">Shifts the running note duration to next larger duration</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Home</b></td> <td width="83%">Moves the insertion point to the beginning of the active staff</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Ctrl+Home</b></td> <td width="83%">Changes the active staff to the first staff in the system</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>End</b></td> <td width="83%">Moves the insertion point to the end of the active staff</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Ctrl+End</b></td> <td width="83%">Changes the active staff to the last staff in the system</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Ctrl+Right Arrow</b></td> <td width="83%">Moves the insertion point forward to the next measure</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Ctrl+Left Arrow</b></td> <td width="83%">Moves the insertion point backward to the nearest bar line</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Shift+L/R Arrow</b></td> <td width="83%">Selects notation as the insertion point moves</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Page Up</b></td> <td width="83%">Shifts the active staff upward</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Page Down</b></td> <td width="83%">Shifts the active staff downward</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_VIEWZOOMIN.htm"><b>Alt+Plus</b></a></td> <td width="83%">Zoom in</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_VIEWZOOMOUT.htm"><b>Alt+Minus</b></a></td> <td width="83%">Zoom out</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_VIEWZOOM.htm"><b>Alt+Equal</b></a></td> <td width="83%">Zoom</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="SUBMNU_HELP.htm"><b>F1</b></a></td> <td width="83%">Shows this help file</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_MIDIRECORD.htm"><b>F4</b></a></td> <td width="83%">Records MIDI input while the current score is played</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_STAFFPLAY.htm"><b>Shift+F5</b></a></td> <td width="83%">Plays just the active staff (featured play of the current staff)</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_MIDIPLAY.htm"><b>F5</b></a></td> <td width="83%">Plays the active score</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_MIDISTOP.htm"><b>F6</b></a></td> <td width="83%">Stops play/shuts off stuck notes</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="ST_SYSMNU_CLOSE.htm"><b>Ctrl+F4</b></a></td> <td width="83%">Closes the active window</td>
-</tr>
-<tr>
-<td align=center width="17%"><b>Ctrl+F6</b></td> <td width="83%">Switches to the previous score window</td>
-</tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_LASTUSERTOOL.htm"><b>Ctrl+Alt+F8</b></a></td>
+    <td width="83%">Repeats the last User Tool that was executed</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_USERTOOLS.htm"><b>Alt+F8</b></a></td>
+    <td width="83%">Used to invoke or configure User Tools</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDNOTE.htm"><b>Enter</b></a></td>
+    <td width="83%">Adds a note at the insertion point</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDNOTE.htm"><b>Enter</b></a></td>
+    <td width="83%">Adds a note at the insertion point</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDREST.htm"><b>Space</b></a></td>
+    <td width="83%">Adds a rest at the insertion point</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDCHORD.htm"><b>Ctrl+Enter</b></a></td>
+    <td width="83%">Adds a chord member at the insertion point</td>
+  </tr>
+  <tr> 
+    <td align=center>Alt+Enter</td>
+    <td>Opens a property dialog for the currently selected item(s)</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDBARLINE.htm"><b>Tab</b></a></td>
+    <td width="83%">Adds a standard bar line at the insertion point</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDBARLINE.htm"><b>*</b></a></td>
+    <td width="83%">Adds a standard bar line at the insertion point</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTE1.htm"><b>1</b></a></td>
+    <td width="83%">Selects a whole note for the running note duration</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTE2.htm"><b>2</b></a></td>
+    <td width="83%">Selects a half note for the running note duration</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTE4.htm"><b>3</b></a></td>
+    <td width="83%">Selects a quarter note for the running note duration</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTE8.htm"><b>4</b></a></td>
+    <td width="83%">Selects a eighth note for the running note duration</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTE16.htm"><b>5</b></a></td>
+    <td width="83%">Selects a sixteenth note for the running note duration</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTE32.htm"><b>6</b></a></td>
+    <td width="83%">Selects a thirty-second note for the running note duration</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NEUTRAL.htm"><b>7</b></a></td>
+    <td width="83%">Toggles the natural sign for note entry</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_FLAT.htm"><b>8</b></a></td>
+    <td width="83%">Toggles the flat sign for note entry</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_SHARP.htm"><b>9</b></a></td>
+    <td width="83%">Toggles the sharp sign for note entry</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTEACCENT.htm"><b>!</b></a></td>
+    <td width="83%">Toggles the accent note attribute</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTESLUR.htm"><b>;</b></a></td>
+    <td width="83%">Toggles the outbound slur note attribute</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTESTACCATO.htm"><b>Comma (,)</b></a></td>
+    <td width="83%">Toggles the staccato note attribute</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTETENUTO.htm"><b>Underscore (_)</b></a></td>
+    <td width="83%">Toggles the tenuto note attribute</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTETIE.htm"><b>Slash (/) </b></a></td>
+    <td width="83%">Toggles the note tie outward status for note entry</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTEDOT.htm"><b>.(period) </b></a></td>
+    <td width="83%">Cycles the dotted note status for note entry. Will also cycle 
+      the double dot if it appears next to the dot in a tool bar.</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTESTEMUP.htm"><b>Shift+Up</b></a></td>
+    <td width="83%">Toggles the upward note stem attribute</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NOTESTEMDN.htm"><b>Shift+Down</b></a></td>
+    <td width="83%">Toggles the downward note stem attribute</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_HAIRPINCRESC.htm"><b>&lt;</b></a></td>
+    <td width="83%">Toggles the graphic/hairpin Crescendo note attribute</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_HAIRPINDECRESC.htm"><b>&gt;</b></a></td>
+    <td width="83%">Toggles the graphic/hairpin Diminuendo note attribute</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDSTYLEDBARLINE.htm"><b>B,b</b></a></td>
+    <td width="83%">Adds a styled standard bar line at the insertion point</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDCLEF.htm"><b>C,c</b></a></td>
+    <td width="83%">Adds a bass or treble clef</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDDYNAMIC.htm"><b>D,d</b></a></td>
+    <td width="83%">Adds dynamics such as <b><i>ppp</i></b> or <b><i>mf</i></b></td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_TEMPOVARIANCE.htm"><b>E,e</b></a></td>
+    <td width="83%">Adds tempo variances, such as <i>fermata</i> and <b><i>accel.</i></b></td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDFLOWDIRECTION.htm"><b>F,f</b></a></td>
+    <td width="83%">Adds flow direction symbols such as <b>To Coda</b></td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDTIMESIGNATURE.htm"><b>G,g</b></a></td>
+    <td width="83%">Adds a time signature designation</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDPATCH.htm"><b>I,i</b></a></td>
+    <td width="83%">Adds a change of instrument</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDKEYSIGNATURE.htm"><b>K,k</b></a></td>
+    <td width="83%">Adds a key signature</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDMIDICONTROLLER.htm"><b>L,l</b></a></td>
+    <td width="83%">Adds a generic MIDI controller</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_MUTELIST.htm"><b>M,m</b></a></td>
+    <td width="83%">Opens a mute list for the current score</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDPERFORMSTYLE.htm"><b>P,p</b></a></td>
+    <td width="83%">Adds a performance style, such as <b>Legato</b></td>
+  </tr>
+  <tr>
+    <td align=center width="17%"><a href="MNU_CYCLENOTEHEADS.htm"><b>Q,q</b></a></td>
+    <td width="83%">Cycles through available noteheads during note input</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_SCOREREVIEW.htm"><b>R,r</b></a></td>
+    <td width="83%">Review the score in a list format</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDSPCLENDING.htm"><b>S,s</b></a></td>
+    <td width="83%">Adds special endings</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDTEMPO.htm"><b>T,t</b></a></td>
+    <td width="83%">Adds tempo designations</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDSUSTAINPEDAL.htm"><b>U,u</b></a></td>
+    <td width="83%">Adds sustain pedal symbols</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDTEXT.htm"><b>X,x</b></a></td>
+    <td width="83%">Adds a text expression of your choice</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_ADDDYNVARIANCE.htm"><b>Y,y</b></a></td>
+    <td width="83%">Adds dynamic variance, such as <b><i>crescendo</i></b></td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_EDITUNDO.htm"><b>Alt+Backspace</b></a></td>
+    <td width="83%">Performs an Undo operation</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_FIND.htm"><b>Ctrl+F</b></a></td>
+    <td width="83%">Find items on the staff</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_FINDNEXT.htm"><b>F3</b></a></td>
+    <td width="83%">Find the next item on the staff</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_EDITPASTE.htm"><b>Ctrl+V</b></a></td>
+    <td width="83%">Pastes the contents of the clipboard</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NEWFILEPASTE.htm"><b>Shift+Ctrl+V</b></a></td>
+    <td width="83%">Starts a new file with the contents of the clipboard</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_NEWSTAFF.htm"><b>Ctrl+A</b></a></td>
+    <td width="83%">Create a new staff</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_REMOVESTAFF.htm"><b>Ctrl+D</b></a></td>
+    <td width="83%">Remove the current staff</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_EDITGOTO.htm"><b>Ctrl+G</b></a></td>
+    <td width="83%">Moves the insertion point to a measure that you specify</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_FILENEW.htm"><b>Ctrl+N</b></a></td>
+    <td width="83%">Create a new score</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_FILEOPEN.htm"><b>Ctrl+O</b></a></td>
+    <td width="83%">Opens an existing score file</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_FILESAVE.htm"><b>Ctrl+S</b></a></td>
+    <td width="83%">Saves the currently active score</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_EDITREDO.htm"><b>Ctrl+Y</b></a></td>
+    <td width="83%">Performs a Redo of a previous Undo operation</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_EDITUNDO.htm"><b>Ctrl+Z</b></a></td>
+    <td width="83%">Performs an Undo operation</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_AUDITSCORE.htm"><b>F9</b></a></td>
+    <td width="83%">Redraws (refresh) the active score</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_AUDITSTAFF.htm"><b>Ctrl+F9</b></a></td>
+    <td width="83%">Redraws (refresh) the active staff</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>0</b></td>
+    <td width="83%">Clears the note accidental, tie, and dot status parameters</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>+</b></td>
+    <td width="83%">Shifts the running note duration to next larger duration</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>-</b></td>
+    <td width="83%">Shifts the running note duration to next smaller duration</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Home</b></td>
+    <td width="83%">Moves the insertion point to the beginning of the active staff</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Ctrl+Home</b></td>
+    <td width="83%">Changes the active staff to the first staff in the system</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>End</b></td>
+    <td width="83%">Moves the insertion point to the end of the active staff</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Ctrl+End</b></td>
+    <td width="83%">Changes the active staff to the last staff in the system</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Ctrl+Right Arrow</b></td>
+    <td width="83%">Moves the insertion point forward to the next measure</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Ctrl+Left Arrow</b></td>
+    <td width="83%">Moves the insertion point backward to the nearest bar line</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Shift+L/R Arrow</b></td>
+    <td width="83%">Selects notation as the insertion point moves</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Page Up</b></td>
+    <td width="83%">Shifts the active staff upward</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Page Down</b></td>
+    <td width="83%">Shifts the active staff downward</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_VIEWZOOMIN.htm"><b>Alt+Plus</b></a></td>
+    <td width="83%">Zoom in</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_VIEWZOOMOUT.htm"><b>Alt+Minus</b></a></td>
+    <td width="83%">Zoom out</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_VIEWZOOM.htm"><b>Alt+Equal</b></a></td>
+    <td width="83%">Zoom</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="SUBMNU_HELP.htm"><b>F1</b></a></td>
+    <td width="83%">Shows this help file</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_MIDIRECORD.htm"><b>F4</b></a></td>
+    <td width="83%">Records MIDI input while the current score is played</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_STAFFPLAY.htm"><b>Shift+F5</b></a></td>
+    <td width="83%">Plays just the active staff (featured play of the current 
+      staff)</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_MIDIPLAY.htm"><b>F5</b></a></td>
+    <td width="83%">Plays the active score</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="MNU_MIDISTOP.htm"><b>F6</b></a></td>
+    <td width="83%">Stops play/shuts off stuck notes</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><a href="ST_SYSMNU_CLOSE.htm"><b>Ctrl+F4</b></a></td>
+    <td width="83%">Closes the active window</td>
+  </tr>
+  <tr> 
+    <td align=center width="17%"><b>Ctrl+F6</b></td>
+    <td width="83%">Switches to the previous score window</td>
+  </tr>
 </table>
 <p>
 The following keys are available when notation has been selected: </p>
@@ -246,7 +353,10 @@ The following keys are available when notation has been selected: </p>
 <td align=center width="17%"><a href="CNTXTMNU_NTNEDITOR2.htm"><b>~ (tilde)</b></a></td> <td width="83%">Brings up a context menu</td>
 </tr>
 <tr>
-<td align=center>Alt+Enter</td> <td>Opens a property dialog for the currently selected item(s)</td>
+<td align=center>
+<a href="MNU_OPENPROPERTIES.htm"><b>Alt+Enter</b></a><br>
+<a href="MNU_OPENPROPERTIES.htm"><b>Ctrl+E</b></a>
+</td> <td>Opens a property dialog for the currently selected item(s)</td>
 </tr>
 <tr>
 <td align=center width="17%"><a href="MNU_EDITCUT.htm"><b>Ctrl+X</b></a></td> <td width="83%">Cuts the selection and places it in the clipboard</td>
@@ -256,9 +366,6 @@ The following keys are available when notation has been selected: </p>
 </tr>
 <tr>
 <td align=center width="17%"><a href="MNU_EDITCLEAR.htm"><b>Ctrl+Del</b></a></td> <td width="83%">Clears the selection</td>
-</tr>
-<tr>
-<td align=center width="17%"><a href="MNU_OPENPROPERTIES.htm"><b>Ctrl+E</b></a></td> <td width="83%">Allows a single, selected item to be edited</td>
 </tr>
 <tr>
 <td align=center width="17%"><a href="MNU_NOTEBEAM.htm"><b>Ctrl+B</b></a></td> <td width="83%">Beams the selected notes</td>
@@ -329,5 +436,5 @@ These keys are available when you are inside a <a href="intro_proptab.htm">prope
 <td align=center width="17%"><b>Ctrl+Shift+Tab</b></td> <td width="83%">Advances to the previous tab</td>
 </tr>
 </table>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

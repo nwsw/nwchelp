@@ -1,23 +1,43 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Working with Song Files </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Working with Song Files</h2>
-<hr>
-<p>
-<i>NoteWorthy Composer</i> uses its own file format to load and store song information to and from files. All <i>NoteWorthy Composer</i> files are named with a file type (or dot extension) of <i>NWC</i>. <i>NoteWorthy Composer</i> files can be loaded using the Open command on the File menu (see <a href="MNU_FILEOPEN.htm">Open Command</a>), or by double-clicking on an NWC song file in the File Manager or Explorer. After making changes to an existing song file, the changes can be preserved by saving the changes to the existing file or to a new file. This is accomplished by using the Save command on the File menu (see <a href="MNU_FILESAVE.htm">Save Command</a>). </p>
-<p>
-<i>NoteWorthy Composer</i> is also able to work with song performances stored in standard MIDI files. This makes it possible to convert existing MIDI performances into <i>NoteWorthy Composer</i> scores, where the song can be edited and printed in standard music notation. MIDI files can be created using the <a href="MNU_FILESAVE.htm">Save As</a> command. MIDI files can also be converted to notation using the <a href="MNU_FILEOPEN.htm">Open Command</a> from the File menu.</p>
+
+<p> <i>NoteWorthy Composer 2</i> uses its own file format to load and store song 
+  information to and from files. All <i>NoteWorthy Composer</i> files are named 
+  with a file type (or dot extension) of <i>NWC</i>. <i>NoteWorthy Composer 2</i> 
+  files can be loaded using the Open command on the File menu (see <a href="MNU_FILEOPEN.htm">Open 
+  Command</a>), or by double-clicking on an NWC song file in the File Manager 
+  or Explorer. After making changes to an existing song file, the changes can 
+  be preserved by saving the changes to the existing file or to a new file. This 
+  is accomplished by using the Save command on the File menu (see <a href="MNU_FILESAVE.htm">Save 
+  Command</a>). </p>
+<p> <i>NoteWorthy Composer 2</i> is also able to work with song performances stored 
+  in standard MIDI files. This makes it possible to convert existing MIDI performances 
+  into <i>NoteWorthy Composer</i> scores, where the song can be edited and printed 
+  in standard music notation. MIDI files can be created using the <a href="MNU_FILESAVE.htm">Save 
+  As</a> command. MIDI files can also be converted to notation using the <a href="MNU_FILEOPEN.htm">Open 
+  Command</a> from the File menu.</p>
 <p>
 <b>Warning:</b> Much of the formatting information is lost when opening a MIDI file back into <i>NoteWorthy Composer</i>, so you should always save your work as an NWC file first, prior to saving it as a standard MIDI file. A MIDI file only contains the performance data necessary to play back your work.</p>
-<p>
-<i>NoteWorthy Composer</i> fully supports the loading of compatible files by dropping them into <i>NoteWorthy Composer </i>from the File Manager (this is often referred to as Drag and Drop compatibility). Using this technique, a set of MIDI and <i>NoteWorthy Composer</i> files can be simultaneously dropped into <i>NoteWorthy Composer</i> for subsequent editing and play back. </p>
-<p>
-For even faster and convenient access to your most recent songs, <i>NoteWorthy Composer</i> keeps a history of the last ten songs which have been open. These can quickly be loaded by selecting one of the ten songs in the song history list on the File menu (see <a href="MNU_FILEHISTORY.htm">File History</a>). </p>
-<p>
-You can change the default location for the song files on your machine. The initial song folder is set from the Folders tab in the <a href="MNU_PREFERENCES.htm">Options</a> command. We recommend that you keep your songs in a separate folder from the <i>NoteWorthy Composer</i> program files. This will make upgrading to a new version of the program easier and safer in the future. </p>
+<p> <i>NoteWorthy Composer 2</i> fully supports the loading of compatible files 
+  by dropping them into <i>NoteWorthy Composer 2</i> from the File Manager (this 
+  is often referred to as Drag and Drop compatibility). Using this technique, 
+  a set of MIDI and <i>NoteWorthy Composer</i> files can be simultaneously dropped 
+  into <i>NoteWorthy Composer 2</i> for subsequent editing and play back. </p>
+<p> For even faster and convenient access to your most recent songs, <i>NoteWorthy 
+  Composer 2</i> keeps a history of the last ten songs which have been open. These 
+  can quickly be loaded by selecting one of the ten songs in the song history 
+  list on the File menu (see <a href="MNU_FILEHISTORY.htm">File History</a>). </p>
+<p> You can change the default location for the song files on your machine. The 
+  initial song folder is set from the Folders tab in the <a href="MNU_PREFERENCES.htm">Options</a> 
+  command. We recommend that you keep your songs in a separate folder from the 
+  <i>NoteWorthy Composer 2</i> program files. This will make upgrading to a new 
+  version of the program easier and safer in the future. </p>
 <p>
 The <a href="MNU_PREFERENCES.htm">Options</a> command area can also be used to set up the auto-save feature, on the File tab. When enabled, this feature works in the background to protect your work, even if you forget to save on your own. In the event of a power outage or some other catastrophic event, you may be able to recover changes you made that were not yet saved to disk, as the auto-save feature may have captured the changes for you. </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Notation symbols are only partially displayed</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Notation symbols are only partially displayed</h2>
-<hr>
+
 <p>
 This is a problem with your printer or display driver. The solution is to get a corrected version of your printer or display driver that does not exhibit this behaviour.</p>
 <p>
@@ -25,5 +26,5 @@ TTEnable=1
 OutlineThreshold=32</p>
 <p>
 This sometimes will work around the display driver bug, but it also causes some display distortion on many types of equipment.</p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

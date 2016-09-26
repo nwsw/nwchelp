@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Refresh </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/audtstaf.gif"> Refresh</h2>
-<hr>
+
 <p>
 This command is used to refresh the currently active score. This is sometimes necessary if the score has not been redrawn properly, although this is usually unnecessary. </p>
 <p>
@@ -12,5 +13,5 @@ This command is used to refresh the currently active score. This is sometimes ne
 <ul>
 <li><a href="SUBMNU_VIEW.htm">View Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

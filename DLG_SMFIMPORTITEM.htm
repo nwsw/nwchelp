@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Import Instruction Dialog </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Import Instruction Dialog</h2>
-<hr>
+
 <p>
 This dialog allows you to set the properties that will be used in the MIDI import process. The import instruction options allow you to control the following aspects of the import for the staff associated with this instruction: </p>
 <ul>
@@ -26,5 +27,5 @@ This dialog allows you to set the properties that will be used in the MIDI impor
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

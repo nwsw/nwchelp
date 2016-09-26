@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Commands </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Commands</h2>
-<hr>
+
 <p>
 This index lists the command menus available on the menu bar. Choose a menu to view a list of the specific commands on each menu. </p>
 <ul>
@@ -25,5 +26,5 @@ In addition, there are several speed menus that are available on a context sensi
 <li><a href="CNTXTMNU_NTNEDITOR1.htm">Notation Editor Context Commands (No Selection)</a></li>
 <li><a href="CNTXTMNU_NTNEDITOR2.htm">Notation Editor Context Commands (Selection)</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

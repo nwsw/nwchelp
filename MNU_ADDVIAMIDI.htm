@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>MIDI Input Active </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/midinput.gif"> MIDI Input Active</h2>
-<hr>
+
 <p>
 This command is used to enable remote note entry from an external MIDI device, such as a MIDI enabled keyboard. Notes can be placed into the active staff by keying in note sequences on a MIDI capable keyboard. This is not the same as MIDI recording. In this case, input is not performed in real time, where as in recording, a MIDI performance is captured and subsequently converted to notation. This box enables a procedure whereby notes and/or chords are added one at a time, while also adjusting the other important parameters, such as duration, ties, and the placement of other items like bar lines. The MIDI keyboard simply makes it easier to select the particular note pitches without having to move the insertion point around the staff. It is also possible to create a chord all at once via pressing the keys of the chord simultaneously. </p>
 <p>
@@ -33,7 +34,7 @@ When note entry via MIDI is enabled, it is also possible to change the note dura
 <i>Before the notes are pressed:</i> The note duration setting will move rightward each time you push the pitch bend wheel in the upward, or forward, direction. The note duration setting will be adjusted leftward (towards the whole note) when the pitch bend wheel is pulled downward. The wheel must be returned close to center in order to initiate another movement.
 <br>
 <br>
-<i>While notes are pressed:</i> After one or more notes have been pressed and are being held on the keyboard, the pitch bend wheel controls the dotted note buttons. Each forward push of the wheel cycles the dotted parameter. Each downward pull of the pitch wheel rests the dotted note parameters to off when note keys are being held.
+<i>While notes are pressed:</i> After one or more notes have been pressed and are being held on the keyboard, the pitch bend wheel controls the dotted note buttons. Each forward push of the wheel cycles the dot parameter. Each downward pull of the pitch wheel rests the dot note parameters to off when note keys are being held.
 <br>
 </p>
 <p>
@@ -46,7 +47,7 @@ Modulation Pedal
 </u></b><i>Before the notes are pressed:</i> The note duration setting will change as the pedal, wheel, or slider is moved. The lower controller values correspond to higher note duration. Each the controller value increases or decreases, the note value will change in the tool bar containing the note duration icons.
 <br>
 <br>
-<i>While notes are pressed:</i> After one or more new notes have been pressed and are being held on the keyboard, the controller will cycle the dotted note parameters (ranging from off, to dotted, to double-dotted).
+<i>While notes are pressed:</i> After one or more new notes have been pressed and are being held on the keyboard, the controller will cycle the dot note parameters (ranging from off, to dot, to double-dot).
 <br>
 </p>
 <p>
@@ -54,5 +55,5 @@ Modulation Pedal
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

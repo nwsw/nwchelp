@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Mute List </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Mute List</h2>
-<hr>
+
 <p>
 This command brings up a list of all parts in the score, each with a select box for turning the part's mute status on and off. </p>
 <p>
@@ -15,5 +16,5 @@ This command brings up a list of all parts in the score, each with a select box 
 <li><a href="SUBMNU_STAFF.htm">Staff Menu Commands</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

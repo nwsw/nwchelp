@@ -1,16 +1,25 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Configuring Sound in NoteWorthy Composer </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Configuring Sound in <i>NoteWorthy Composer </i></h2>
-<hr>
-<p>
-After <i>NoteWorthy Composer</i> is initially installed onto your hard drive, it is immediately able to open and print score files with no further adjustments. The scores cannot be played back, however, until <i>NoteWorthy Composer</i> is told which sound device(s) should be used for play back. When it is first installed, the MIDI Mapper will automatically be selected as your default play back device, unless you have already some other device in a prior version of the program. If you do not have any sound hardware on your computer system, <i>NoteWorthy Composer</i> can still be used to create, edit, print, and save score files, but <i>NoteWorthy Composer</i> will be unable to play the scores back so that you can hear them. </p>
-<p>
-The following steps can be used to configure <i>NoteWorthy Composer</i> for sound, so that you can hear scores on play back: </p>
-<p>
-<b>Step 1</b>: If not open already, start the <i>NoteWorthy Composer</i> application </p>
+
+<p> After <i>NoteWorthy Composer 2</i> is initially installed onto your hard drive, 
+  it is immediately able to open and print score files with no further adjustments. 
+  The scores cannot be played back, however, until <i>NoteWorthy Composer 2</i> 
+  is told which sound device(s) should be used for play back. When it is first 
+  installed, the MIDI Mapper will automatically be selected as your default play 
+  back device, unless you have already some other device in a prior version of 
+  the program. If you do not have any sound hardware on your computer system, 
+  <i>NoteWorthy Composer 2</i> can still be used to create, edit, print, and save 
+  score files, but <i>NoteWorthy Composer 2</i> will be unable to play the scores 
+  back so that you can hear them. </p>
+<p> The following steps can be used to configure <i>NoteWorthy Composer 2</i> 
+  for sound, so that you can hear scores on play back: </p>
+<p> <b>Step 1</b>: If not open already, start the <i>NoteWorthy Composer 2</i> 
+  application </p>
 <p>
 <b>Step 2</b>: Open the menu titled <a href="SUBMNU_TOOLS.htm">Tools</a> and select <a href="MNU_PREFERENCES.htm">Options</a> </p>
 <p>
@@ -19,11 +28,20 @@ The following steps can be used to configure <i>NoteWorthy Composer</i> for soun
 From within this dialog, follow the instructions as specified in the help section for this tab (see <a href="TAB_OPTIONSMIDI.htm">Midi Tab Help</a>) </p>
 <p>
 If there are not any devices listed in either the <b>Available Devices</b> or <b>Devices Used for Play Back</b> list box, then you either do not have sound equipment on your computer or the device has not been configured within Windows. Refer to the documentation associated with your sound card for information on setting up the device in Windows. </p>
-<p>
-<b><i>Hint</i></b><i>:</i> If there are many devices listed and you are not sure which one to select, chose the Microsoft MIDI Mapper, if it is listed. This will allow <i>NoteWorthy Composer</i> to play songs using the same configuration that Windows uses in its own multi-media players. In general, it is a good idea to use only one device for play back. If you move more than one device into the used list, you may get unpredictable results, depending on whether your system really supports multiple, simultaneous MIDI sound sources. </p>
-<p>
-After completing these three steps, you are ready to start hearing the scores that you open in <i>NoteWorthy Composer</i>. When you are ready to play a score, the easiest ways of doing it are either by pressing the <b>F5</b> function key or clicking on the <a href="MNU_MIDIPLAY.htm"><img src="img/play.gif" width=26 height=22></a> <a href="MNU_MIDIPLAY.htm">play button</a> in the <a href="toolbar_guide.htm">Tool Bars</a>. </p>
+<p> <b><i>Hint</i></b><i>:</i> If there are many devices listed and you are not 
+  sure which one to select, chose the Microsoft MIDI Mapper, if it is listed. 
+  This will allow <i>NoteWorthy Composer 2</i> to play songs using the same configuration 
+  that Windows uses in its own multi-media players. In general, it is a good idea 
+  to use only one device for play back. If you move more than one device into 
+  the used list, you may get unpredictable results, depending on whether your 
+  system really supports multiple, simultaneous MIDI sound sources. </p>
+<p> After completing these three steps, you are ready to start hearing the scores 
+  that you open in <i>NoteWorthy Composer 2</i>. When you are ready to play a 
+  score, the easiest ways of doing it are either by pressing the <b>F5</b> function 
+  key or clicking on the <a href="MNU_MIDIPLAY.htm"><img src="img/play.gif" width=26 height=22></a> 
+  <a href="MNU_MIDIPLAY.htm">play button</a> in the <a href="toolbar_guide.htm">Tool 
+  Bars</a>. </p>
 <p>
 A similar procedure can be used for setting up MIDI input and recording. The <a href="TAB_OPTIONSRECORD.htm">Record Tab</a> is used to configure an input device for real-time or step entry via a MIDI keyboard or other external MIDI device. When you are ready to record a performance, the easiest approach is to start a new song using one of the <b>Rhythm</b> templates. Any of these templates will enable you to record a new performance while playing back a rhythm that will act as your metronome. Recording can be quickly started from the <b>F4</b> function key or clicking on the <a href="MNU_MIDIRECORD.htm"><img src="img/record.gif" border=0 width=26 height=22> record button</a> in the <a href="toolbar_guide.htm">Tool Bars</a>. </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

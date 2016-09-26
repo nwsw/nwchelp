@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Performance Style Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Performance Style Command</h2>
-<hr>
+
 <p>
 This command is used to insert a predefined performance expression into the staff. You can select among many pre-existing styles, most of which are the standard Italian spellings for the styles. Currently, only two styles alter the way the score is played back: </p>
 <ul>
@@ -18,5 +19,5 @@ All other styles currently change the style back to the default play back handli
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

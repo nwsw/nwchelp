@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Find Next Command</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Find Next Command</h2>
-<hr>
+
 <p>
 This command is used to locate the next item in the staff that matches criteria established by a previous <a href="MNU_FIND.htm">Find</a> operation. This can be used to locate a series of matching elements in the staff very quickly, without having to scroll around browsing for the elements. The quickest way to initiate successive searches using the same criteria is to first use <a href="MNU_FIND.htm">Ctrl+F</a> to establish the <b>Find</b> criteria, then use <b>F3</b> to repeat the find using the same criteria. </p>
 <p>
@@ -13,5 +14,5 @@ This command is used to locate the next item in the staff that matches criteria 
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="MNU_FIND.htm">Find Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

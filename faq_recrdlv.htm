@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Recording a live MIDI performance</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Recording a live MIDI performance</h2>
-<hr>
+
 <p>
-If you have a MIDI keyboard and the necessary MIDI cables and equipment for your computer, you can capture a live performance and have it notated all within <i>NoteWorthy Composer</i>. This is setup as follows:</p>
+If you have a MIDI keyboard and the necessary MIDI cables and equipment for your computer, you can capture a live performance and have it notated all within <i>NoteWorthy Composer 2</i>. This is setup as follows:</p>
 <ol>
 <li>Tools: Options, Record tab</li>
 <li>If not set, select the Input Device Driver for your system</li>
@@ -19,6 +20,6 @@ If you have a MIDI keyboard and the necessary MIDI cables and equipment for your
 <li>Recording will appear where you set it in Import Options</li>
 </ol>
 <p>
-The performer must synchronize the playing of the keyboard with the tempo that is played by <i>NoteWorthy Composer</i>. This is how the program figures out the duration of each note when converting the performance to notation.</p>
-</body>
+The performer must synchronize the playing of the keyboard with the tempo that is played by <i>NoteWorthy Composer 2</i>. This is how the program figures out the duration of each note when converting the performance to notation.</p>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

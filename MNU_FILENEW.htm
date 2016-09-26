@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>New Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/new.gif"> New Command</h2>
-<hr>
+
 <p>
 This command is used to create a new <i>NoteWorthy Composer</i> composition. A new file is started by selecting a song template and then pressing OK. The template named <b><i>&lt;Blank Score&gt;</i></b> in the <b>General</b> tab is a special template that starts a new file from scratch. </p>
 <p>
@@ -34,5 +35,5 @@ New templates can be added to the system in three different ways: </p>
 <li><a href="MNU_FILESAVEAS.htm">Save As Command</a></li>
 <li><a href="MNU_FILEINFO.htm">Info Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

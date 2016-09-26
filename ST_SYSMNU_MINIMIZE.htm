@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Minimize Window </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Minimize Window</h2>
-<hr>
+
 <p>
 This replaces the active window with an icon, which is a small graphic representation of the window. This frees up space in the application workspace for other windows to be more readily arranged and viewed. A shortcut button appears on the top right side of a window. </p>
 <p>
@@ -16,5 +17,5 @@ This replaces the active window with an icon, which is a small graphic represent
 <li><a href="ST_SYSMNU_MAXIMIZE.htm">Maximize</a></li>
 <li><a href="SUBMNU_WINDOW.htm">Windows Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

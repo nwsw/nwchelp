@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Transpose Staff Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Transpose Staff Command</h2>
-<hr>
+
 <p>
 This command is used to transpose the current staff up or down by a number of semitones. This is most often used to transpose the visual score to another key which matches the natural pitch of the currently selected instrument for the staff. Both notes and any standard key signatures are transposed by the number of semitones that you specify. </p>
 <p>
@@ -14,5 +15,5 @@ The audible effect of the transpose can be negated so that all staves in the sco
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

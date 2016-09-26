@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
-<title>Double Dotted Note Command </title>
-</head>
-<body >
+<title>Double-Dot Duration</title>
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/dbldot.gif"> Double Dotted Note Command</h2>
-<hr>
+
 <p>
 This command toggles the double dotted note duration for use during note entry. If it is selected when a note, chord member, or rest is added, the resulting item on the staff will have the double dotted variation of its base duration. </p>
 <p>
@@ -15,5 +16,5 @@ This command toggles the double dotted note duration for use during note entry. 
 <li><a href="MNU_ADDNOTE.htm">Note Symbol Command</a></li>
 <li><a href="MNU_ADDREST.htm">Rest Symbol Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

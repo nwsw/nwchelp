@@ -1,16 +1,17 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Close All Windows Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Close All Windows Command</h2>
-<hr>
+
 <p>
-This command closes all edit windows in the <i>NoteWorthy Composer</i> workplace. Any songs which have changed since their last save will prompt for permission to save the file. </p>
+This command closes all edit windows in the <i>NoteWorthy Composer 2</i> workplace. Any songs which have changed since their last save will prompt for permission to save the file. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_WINDOW.htm">Windows Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

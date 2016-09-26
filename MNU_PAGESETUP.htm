@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Page Setup Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/pgsetup.gif" width=26 height=22> Page Setup Command</h2>
-<hr>
+
 <p>
 This command allows you to set properties associated with a printed page of your song. The page options are distributed across several tabs: </p>
 <p>
@@ -12,7 +13,14 @@ This command allows you to set properties associated with a printed page of your
 <ul>
 <li><a href="JavaScript:IDHTip('IDH_CUSTOMVIEWLIST')">Groups</a></li>
 <li><a href="JavaScript:IDHTip('IDH_CUSTOMVIEWLIST')">Visible Parts</a></li>
-<li><a href="JavaScript:IDHTip('IDH_PGSETUPCONTENTLAYERING')">Allow Layering</a></li>
+</ul>
+<p>
+<b><u>Fonts:</u></b> This is where you can customize the fonts used in the staff. The page includes the following controls: </p>
+<ul>
+<li><a href="JavaScript:IDHTip('IDH_PGSETUPNTNTYPEFACE')">Notation Typeface</a></li>
+<li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC11')">Print Size</a></li>
+<li><a href="JavaScript:IDHTip('IDH_PGSETUPPFONTLIST')">Font List</a></li>
+<li><a href="JavaScript:IDHTip('IDH_PGSETUPPFONTCHANGEBTN')">Modify Button</a></li>
 </ul>
 <p>
 <b><u>Options:</u></b> This is where the general setup options are available. They include the following (click on the field name to get additional information): </p>
@@ -21,7 +29,6 @@ This command allows you to set properties associated with a printed page of your
 <li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC12')">Title Page Info</a></li>
 <li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC13')">Extend last system</a></li>
 <li><a href="JavaScript:IDHTip('IDH_PAGESETUPPADNOTES')">Increase note spacing for larger note durations</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC11')">Notation Size</a></li>
 <li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC14')">Staff Labels</a></li>
 <li><a href="JavaScript:IDHTip('IDH_PAGESETUPMEASNUMS')">Measure Numbers</a></li>
 <li><a href="JavaScript:IDHTip('IDH_PAGESETUPMEASNUMSTART')">Measure Start</a></li>
@@ -37,12 +44,6 @@ This command allows you to set properties associated with a printed page of your
 <li><a href="JavaScript:IDHTip('IDH_DLGPRINTMETRICS6')">Measure Units</a></li>
 </ul>
 <p>
-<b><u>Fonts:</u></b> This is where you can customize the fonts used in each staff of a score. The page includes the following controls: </p>
-<ul>
-<li><a href="JavaScript:IDHTip('IDH_PGSETUPPFONTLIST')">Font List</a></li>
-<li><a href="JavaScript:IDHTip('IDH_PGSETUPPFONTCHANGEBTN')">Modify Button</a></li>
-</ul>
-<p>
 <b><u>Preview:</u></b> This is where you can preview the effects of changes made in the other page setup areas. This area includes a summary list of what the current view of the score will look like on the printed page. You can also go directly to print preview from this page. The page includes the following: </p>
 <ul>
 <li><a href="JavaScript:IDHTip('IDH_PGSETUPPVIEWSTATLIST')">Information List</a></li>
@@ -56,5 +57,5 @@ This command allows you to set properties associated with a printed page of your
 <li><a href="MNU_PRINTPREVIEW.htm">Print Preview Command</a></li>
 <li><a href="MNU_PRINTERSETUP.htm">Printer Setup Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

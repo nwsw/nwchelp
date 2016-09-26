@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Restore Window </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Restore Window</h2>
-<hr>
+
 <p>
-This restores a window to its original size and position. After a window is restored, it can be minimized or maximized by selecting the appropriate control menu command. When a score window is maximized, a restore shortcut button is available on the <i>NoteWorthy Composer</i> menu bar. </p>
+This restores a window to its original size and position. After a window is restored, it can be minimized or maximized by selecting the appropriate control menu command. When a score window is maximized, a restore shortcut button is available on the <i>NoteWorthy Composer 2</i> menu bar. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
@@ -16,5 +17,5 @@ This restores a window to its original size and position. After a window is rest
 <li><a href="ST_SYSMNU_MAXIMIZE.htm">Maximize</a></li>
 <li><a href="SUBMNU_WINDOW.htm">Windows Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

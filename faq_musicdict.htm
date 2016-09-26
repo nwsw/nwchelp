@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Music terminology</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Music terminology</h2>
-<hr>
+
 <p>
-The music terms in this glossary are available for use when notating with <i>NoteWorthy Composer</i>. Each term can be found in the <b>Insert</b> menu of <i>NoteWorthy Composer</i> under the command matching the heading below. For example, Pianissimo is defined under the heading Dynamic. To use a Pianissimo symbol (<i>pp</i>) in <i>NoteWorthy Composer</i>, you would select the <b>Dynamic</b> command from the <b>Insert</b> menu. </p>
+The music terms in this glossary are available for use when notating with <i>NoteWorthy Composer 2</i>. Each term can be found in the <b>Insert</b> menu of <i>NoteWorthy Composer 2</i> under the command matching the heading below. For example, Pianissimo is defined under the heading Dynamic. To use a Pianissimo symbol (<i>pp</i>) in <i>NoteWorthy Composer 2</i>, you would select the <b>Dynamic</b> command from the <b>Insert</b> menu. </p>
 <p>
 <b>Dynamics </b></p>
 <p>
@@ -100,7 +101,7 @@ These terms are used to indicate the direction, or flow of play.</p>
 <p>
 <b>Performance Style </b></p>
 <p>
-Performance style is the manner in which music is played. <i>NoteWorthy Composer</i> does not generally change its play back style based on performance styles, except in the case of <b><i>Legato/Tenuto</i></b>.</p>
+Performance style is the manner in which music is played. <i>NoteWorthy Composer 2</i> does not generally change its play back style based on performance styles, except in the case of <b><i>Legato/Tenuto</i></b>.</p>
 <table border=1 width=600>
 <tr>
 <th align=left width="25%"><u>Style Name</u></th> <th align=left width="35%"><u>Intended Performance Change</u></th>
@@ -256,5 +257,5 @@ These terms and symbols denote a change in speed from slow to fast or fast to sl
 <td width="20%"><b>Stringendo</b></td> <td width="40%">Hurry up</td>
 </tr>
 </table>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

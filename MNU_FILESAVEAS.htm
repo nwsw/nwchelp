@@ -1,20 +1,20 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Save As Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Save As Command</h2>
-<hr>
+
 <p>
 This command enables saving the currently active composition to a new file.</p>
-<p>
-The song can also be saved as a MIDI performance by specifying the appropriate file type in the file type box. When saving the song into a MIDI file (*.mid), the file name remains unchanged, as it is necessary to save the file in native *.nwc format in order to preserve all the notation elements in the score.</p>
 <p>
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
 <li><a href="MNU_FILESAVE.htm">Save Command</a></li>
 <li><a href="MNU_FILESAVEALL.htm">Save All Command</a></li>
+<li><a href="MNU_FILEEXPORT.htm">Export Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

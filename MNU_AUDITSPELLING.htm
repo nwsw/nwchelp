@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Audit Enharmonic Spelling Command</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Audit Enharmonic Spelling Command</h2>
-<hr>
+
 <p>
-This command is used to audit all of the note spelling on the staff. All note pitches, including individual members of a chord, will be compared to the note pitches contained within the key signature. If a note pitch can be spelled within the key signature, then the audit will change the spelling of the note such that it is in the key signature. If the note requires an accidental, the spelling of the note will favor sharps for key signatures that contain sharps, or flats for key signatures that contain flats.
+This command is used to audit all of the note spelling on the staff. All note pitchesd, including individual members of a chord, will be compared to the note pitches contained within the key signature. If a note pitch can be spelled within the key signature, then the audit will change the spelling of the note such that it is in the key signature. If the note requires an accidental, the spelling of the note will favor sharps for key signatures that contain sharps, or flats for key signatures that contain flats.
 <p>
 In some chord scenarios where multiple adjacent intervals of a minor second are used, the result of the audit may include some lost or inaccurate notes in the staff . In cases where this might happen, you are warned, and the chords which may have a problem are shown to you, one by one. The specific things which might cause trouble include: </p>
 <ol>
@@ -21,5 +22,5 @@ If any of these situations apply to the staff you are transposing, you should lo
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

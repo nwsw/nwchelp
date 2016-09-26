@@ -1,20 +1,25 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Getting Started </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Getting Started</h2>
-<hr>
-<p>
-After installing <i>NoteWorthy Composer</i> on your system, you are now ready to start working with music and playing back existing scores and MIDI files. The following topics help you to get started in this effort.</p>
+
+<p> After installing <i>NoteWorthy Composer 2</i> on your system, you are now 
+  ready to start working with music and playing back existing scores and MIDI 
+  files. The following topics help you to get started in this effort.</p>
 <p>
 <a href="workwithsngfiles.htm">Working with Song Files:</a>
 <br>
-<i>NoteWorthy Composer</i> comes installed with several complete score files (as well as song excerpts) which are ready to be played back and printed. This section explains how song files are used in <i>NoteWorthy Composer</i>. </p>
+  <i>NoteWorthy Composer 2</i> comes installed with several complete score files 
+  (as well as song excerpts) which are ready to be played back and printed. This 
+  section explains how song files are used in <i>NoteWorthy Composer 2</i>. </p>
 <p>
 <a href="midiconfigintro.htm">Configuring for Sound:</a>
 <br>
-<i>NoteWorthy Composer</i> needs to be configured for sound before any scores can be played back. This section explains how to do this. </p>
+  <i>NoteWorthy Composer 2</i> needs to be configured for sound before any scores 
+  can be played back. This section explains how to do this. </p>
 <p>
 <a href="createsongintro.htm">Creating a New Song:</a>
 <br>
@@ -23,5 +28,5 @@ Once you have successfully played back one or more of the sample songs, you are 
 <a href="ntneditorintro.htm">Working in the Score Editor:</a>
 <br>
 Whether you are creating a new song, or changing an existing song, this section can help explain how the score editor works, and how notation can best be placed into the active staff. </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

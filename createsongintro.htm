@@ -1,15 +1,16 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Creating a New Song </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Creating a New Song</h2>
-<hr>
+
 <p>
 You can start a new song of your own by selecting the <a href="MNU_FILENEW.htm">New command</a> on the File menu. Once executed, you will be presented with a tabbed dialog that shows various templates that are available. The templates are used as the basis for a new song. If you want to start from scratch, you can select the <b><i>&lt;Blank Score&gt;</i></b> template from the <b><i>General</i></b> tab. In all cases, you will then be prompted for important information about your new song: the title, author, and copyright information which you wish to assign to your new score. If you are uncertain about what you wish to say in this box, do not worry as you can always get back to it later using the <a href="MNU_FILEINFO.htm">Info command</a> on the File menu. </p>
 <p>
 After you OK the authoring information, an initial score is presented which includes the initial parts based on the template. In order to add additional parts or change existing parts, you should use commands on the <a href="SUBMNU_STAFF.htm">Staff</a> menu. Use the <a href="MNU_EDITSTAFF.htm">Staff Properties</a> command to change the attributes of each individual staff. This is where you can assign a name to the staff, as well as control its size attributes and play back characteristics. You can quickly open the staff properties by pressing <b>F2</b>. </p>
 <p>
 <a href="ntneditorintro.htm">Click here to proceed to an introduction of the notation editor.</a> </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

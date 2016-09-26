@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Changing the key signature</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Changing the key signature</h2>
-<hr>
+
 <p>
 It is easy to change the key signature of a staff, as follows:</p>
 <ol>
@@ -12,5 +13,5 @@ It is easy to change the key signature of a staff, as follows:</p>
 <li><b>Select</b> the key signature, and change it using <b>Ctrl+E</b> (Edit Selection). If no key exists, then use <b>Insert: Key Signature </b>(or <b>K</b>) &nbsp; to enter a key signature at the beginning of the staff.</li>
 <li>Select <b>Tools: Audit Enharmonic Spelling</b> to update notes to the key.</li>
 </ol>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,16 +1,17 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Cut Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/cut.gif"> Cut Command</h2>
-<hr>
+
 <p>
-The cut command removes the selected items from the active staff and places them into the <i>NoteWorthy Composer</i> clipboard. The items are then available to the paste command. </p>
+The cut command removes the selected items from the active staff and places them into the <i>NoteWorthy Composer 2</i> clipboard. The items are then available to the paste command. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

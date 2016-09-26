@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Staff Menu Commands </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Staff Menu Commands</h2>
-<hr>
+
 <p>
 This menu allows staff parts to be added, changed, or removed from the score. </p>
 <ul>
@@ -15,5 +16,5 @@ This menu allows staff parts to be added, changed, or removed from the score. </
 <li><a href="MNU_MUTESTAFF.htm">Mute Staff</a>: Mute the active staff so that it does not sound during play back</li>
 <li><a href="MNU_EDITSTAFF.htm">Staff Properties</a>: Edit the properties of the current staff</li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

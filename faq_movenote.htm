@@ -1,15 +1,16 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Moving an existing note</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Moving an existing note</h2>
-<hr>
+
 <p>
 You can move one or more notes in a staff by selecting them, then using the Edit | Cut command to remove the selected notes and put them into the clipboard. You can then move the insertion point into the new location and select Edit | Paste to restore the notes in the spot.</p>
 <p>
 You can also move selected notes up or down on the staff. For any selected note(s), Ctrl+Shift+(up/down arrow keys) will move the note(s) up and down on a staff. </p>
 <p>
 You cannot move just one note in a chord. However, you can place your insertion point to the right of the chord member and press Ctrl+Backspace to remove the chord member.</p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

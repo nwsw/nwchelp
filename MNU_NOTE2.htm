@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Half Note Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/note2.gif"> Half Note Command</h2>
-<hr>
+
 <p>
 This command selects a half note duration for use during note entry. If it is selected when a note, chord member, or rest is added, the resulting item on the staff will have a base duration equivalent to a half note. </p>
 <p>
@@ -14,5 +15,5 @@ This command selects a half note duration for use during note entry. If it is se
 <li><a href="MNU_ADDNOTE.htm">Note Symbol Command</a></li>
 <li><a href="MNU_ADDREST.htm">Rest Symbol Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

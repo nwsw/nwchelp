@@ -1,18 +1,29 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Clef Symbol Command </title>
-</head>
-<body >
-<h2><img src="img/qinsclft.gif"><img src="img/qinsclfb.gif"><img src="img/qinsclfa.gif"> Clef Symbol Command</h2>
-<hr>
-<p>
-This command enables treble, bass, alto, and tenor clef signs to be added at the insertion point. The visual orientation of notes and chords contained in the score is not changed in any way when adding a clef to the score. Key signatures, however, are changed to represent the current clef. </p>
-<p>
-When adding a clef in front of a series of notes previously placed on the staff, the notes can still be moved to reflect the clef change, if it is necessary. This is accomplished by selecting the region that should be shifted. The notes can then be shifted by pressing &lt;Ctrl+Shift+Up Arrow&gt; or &lt;Ctrl+Shift+Down Arrow&gt; until the notes are placed as desired. The accidental associated with each note is not altered during this process. Note stem and slur directions can be audited if they are incorrect after this operation. </p>
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+<h2><img src="img/qinsclft.gif"><img src="img/qinsclfb.gif"><img src="img/qinsclfa.gif"><img src="img/qinsclfd.gif"> Clef Symbol Command</h2>
+
+<p> This command enables treble, bass, alto, tenor, and percussion clef signs 
+  to be added at the insertion point. The visual orientation of notes and chords 
+  contained in the score is not changed in any way when adding a clef to the score. 
+  Key signatures, however, are changed to represent the current clef. </p>
+<p> When adding a clef in front of a series of notes previously placed on the 
+  staff, the notes can still be moved to reflect the clef change, if it is necessary. 
+  This is accomplished by selecting the region that should be shifted. The notes 
+  can then be shifted by pressing &lt;Ctrl+Shift+Up Arrow&gt; or &lt;Ctrl+Shift+Down 
+  Arrow&gt; until the notes are placed as desired. The accidental associated with 
+  each note is not altered during this process. Note stem and slur directions 
+  can be audited if they are incorrect after this operation.</p>
+<p>Although in the natural world the percussion clef does not indicate pitch (due 
+  to the nature of percussion notated in this clef), for purposes of MIDI input 
+  and play back the percussion clef behaves exactly like bass clef. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

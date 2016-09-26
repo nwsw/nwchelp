@@ -1,27 +1,18 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Editor Options Dialog Tab </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Editor Options Dialog Tab</h2>
-<hr>
+
 <p>
-The following options are available for controlling the operation of the editor:</p>
-<ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTEDITOR5')">Rt Mouse Sets Insertion Pt</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTEDITOR6')">Smart Insertion Point</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTEDITOR7')">Persistent Note Tools</a></li>
-<li><a href="JavaScript:IDHTip('IDH_SMARTPROPERTIESINSERT')">Smart Properties Insert</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTDLGLTFONT')">Use light font in dialogs</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTDLGACTSTAFFFRAME')">Active staff frame</a></li>
-<li><a href="JavaScript:IDHTip('IDH_CHASEPLAYINGNOTES')">Chase playing notes</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTEDITOR8')">Undo Levels</a></li>
-</ul>
+The box has options that control the operation of the editor.</p>
 <p>
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

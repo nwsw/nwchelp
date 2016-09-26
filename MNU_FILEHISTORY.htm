@@ -1,16 +1,17 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>History Commands </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>History Commands</h2>
-<hr>
+
 <p>
-The File History commands make it easier to open recent compositions within <i>NoteWorthy Composer</i>. Your most recent compositions are stored in the file history. Only the songs saved as *.NWC files end up in the history. </p>
+The File History commands make it easier to open recent compositions within <i>NoteWorthy Composer 2</i>. Your most recent compositions are stored in the file history. Only the songs saved as *.NWC files end up in the history. </p>
 <p>
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

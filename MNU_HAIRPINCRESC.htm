@@ -1,0 +1,30 @@
+<?php require_once("init.inc");
+?><html>
+<head>
+<title>Crescendo Command </title>
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+<h2><img src="img/cresc.gif"> Crescendo Command</h2>
+
+<p> This command adds a crescendo graphic to selected notes. This is sometimes referred to
+  as a hairpin crescendo. The crescendo will appear on the staff in the same vertical position as the most
+  recent prior <a href="MNU_ADDDYNAMIC.htm">Dynamic</a> or <a href="MNU_ADDDYNVARIANCE.htm">Dynamic Variance</a>
+  (which ever appears first).</p>
+
+<p>This first note after a <a hrefMNU_ADDDYNAMIC.htm>Dynamic</a> change that has this property turned on 
+will trigger a gradual volume/velocity dynamic swell or fade. The gradual change is based on the 
+<a href="MNU_ADDDYNAMIC.htm">Dynamic instructions</a> that immediate precede and immediately follow the notes
+within the hairpin. For longer swell and fade sequences, it is generally preferrable to use the equivalent 
+text instruction using the <a href="MNU_ADDDYNVARIANCE.htm">Dynamic Variance</a> item.
+You can safely use both items in the same swell or fade, since only the first one that is encountered
+will actually be used during play back.
+</p>
+
+<p><b>See Also </b> </p>
+<ul>
+  <li><a href="SUBMNU_NOTES.htm">Notes Menu Commands</a></li>
+  <li><a href="MNU_HAIRPINDECRESC.htm">Diminuendo Command</a></li>
+  <li><a href="MNU_ADDDYNVARIANCE.htm">Dynamic Variance Command</a> (Textual Crescendo/Diminuendo Instructions)</li>
+</ul>
+<?php echo $HTMLDoc->BodyFtr?></body>
+</html>

@@ -1,19 +1,18 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Stuck notes on play back</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Stuck notes on play back</h2>
-<hr>
+
 <p>
 When this occurs, the quick fix is to hit the Stop button twice. The second Stop command will cause Note Off events to be sent for all notes on every MIDI channel for every selected device. </p>
 <p>
-As for the cause, there are several possibilities: </p>
+As for the cause, there are two possibilities: </p>
 <p>
-The most likely cause for this situation is from note ties across bar lines, where both notes do not have the same accidental assigned to them. For example, you might be selecting to tie a note outward, and then changing the key signature or clef before the recipient of the note tie is encountered. This will cause stuck notes, as the &quot;Note Off&quot; pitch will not coincide with the original &quot;Note On&quot; pitch. For example, if you have a B-Flat note, including its accidental, tied outward into a bar line, then you need to make sure that the note on the other side of the bar line at that staff position is also a B-Flat note, either via the key signature or by its accidental. Any accidental that you assign to the recipient of a note tie will be suppressed when the note is displayed. </p>
+If you are using flow directions, be careful when a note is tied when entering a flow direction. The tied note must resolve to the same note in all sections that receive the note tie. For example, if a note tie extends into a special ending, if you do not resolve the note tie in one of the special endings, then the tied note will be &quot;stuck&quot;. </p>
 <p>
-The second cause is mostly a consequence of internal data getting confused. <i>NoteWorthy Composer</i> can be very sophisticated in how it handles note ties: for example you can tie a note going into a special ending, and <i>NoteWorthy Composer</i> will figure out that the note should be tied to the next note in all of the special endings automatically. If you do not resolve the note tie on one of the special endings, then the tied note will be &quot;stuck&quot;. </p>
-<p>
-Lastly, if you play a score which includes the Sustain Pedal markings, and Stop the play back while the pedal is down, the &quot;pedal down&quot; effect remains for that MIDI channel even after you start play back again. This can cause stuck notes when play is selected again. If this is the cause, the easiest solution is to hit the Stop button twice. </p>
-</body>
+Secondly, if you play a score which includes the Sustain Pedal markings, and Stop the play back while the pedal is down, the &quot;pedal down&quot; effect remains for that MIDI channel even after you start play back again. This can cause stuck notes when play is selected again. If this is the cause, the easiest solution is to hit the Stop button twice. </p>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

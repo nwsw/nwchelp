@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Size Window </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Size Window</h2>
-<hr>
+
 <p>
-This command can be used to change the size of the active window within the <i>NoteWorthy Composer</i> workplace. After selecting the size command, use the arrow keys to select the border of the window that will be used to adjust its size. After changing the position of the border, simply press Enter to complete the size operation. Note that this command is not available for a window that is maximized. </p>
+This command can be used to change the size of the active window within the <i>NoteWorthy Composer 2</i> workplace. After selecting the size command, use the arrow keys to select the border of the window that will be used to adjust its size. After changing the position of the border, simply press Enter to complete the size operation. Note that this command is not available for a window that is maximized. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
@@ -16,5 +17,5 @@ This command can be used to change the size of the active window within the <i>N
 <li><a href="ST_SYSMNU_MAXIMIZE.htm">Maximize</a></li>
 <li><a href="SUBMNU_WINDOW.htm">Windows Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

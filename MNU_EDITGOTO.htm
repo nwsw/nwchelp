@@ -1,18 +1,20 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Goto Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Goto Command</h2>
-<hr>
+
 <p>
-This command is used to move the insertion point to a specified measure. The measure you specify must be greater than the starting measure number associated with the score. </p>
+This command is used to move the insertion point to a specified measure. The measure must be greater than the starting bar number associated with the score.</p>
 <p>
-This command is also useful on occasions where you want to find out the current measure number at the insertion point. By selecting this command, you can find out the current bar number because it is the initial value presented in the bar number field. You can simply cancel the operation if you are only wanting to determine the current measure number. </p>
+This command is also useful on occasions where you want to find out the current measure number at the insertion point. By selecting this command, you can find out the current bar number because it is the initial value presented in the bar number field. You can simply cancel the operation if you are only wanting to determine the current measure number.</p>
+<p>You can create or extend a selection by enabling the <a href="JavaScript:IDHTip('IDH_DLGGOTOMAKESELECTION')">Selection checkbox</a>.
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

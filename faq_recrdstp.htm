@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Step entry using a MIDI keyboard</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Step entry using a MIDI keyboard</h2>
-<hr>
+
 <p>
 If you have a MIDI capable keyboard, soundcard, and the necessary cable connections, you can enter notes at your own pace from the keyboard. This is usually referred to as <i>step time entry</i> from a remote keyboard, and can be setup as follows.
 <ol>
@@ -15,5 +16,5 @@ If you have a MIDI capable keyboard, soundcard, and the necessary cable connecti
 </ol>
 <p>
 You can now use the MIDI keyboard will enter the pitch of a note or chord,and the pitch bend wheel can be used to set with the note duration prior to entering the pitch.</p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

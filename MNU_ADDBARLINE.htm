@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Bar Line Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Bar Line Command</h2>
-<hr>
+
 <p>
 This command adds a standard bar line at the insertion point. This command is most efficiently issued by pressing the &lt;Tab&gt; key from the computer keyboard. </p>
 <p>
@@ -14,5 +15,5 @@ Bar lines need to be added manually during note entry. They must be added to eac
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

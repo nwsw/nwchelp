@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Sixty-fourth Note Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/note64.gif"> Sixty-fourth Note Command</h2>
-<hr>
+
 <p>
 This command selects a 64th note duration for use during note entry. If it is selected when a note, chord member, or rest is added, the resulting item on the staff will have a base duration equivalent to a sixty-fourth note. </p>
 <p>
@@ -14,5 +15,5 @@ This command selects a 64th note duration for use during note entry. If it is se
 <li><a href="MNU_ADDNOTE.htm">Note Symbol Command</a></li>
 <li><a href="MNU_ADDREST.htm">Rest Symbol Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

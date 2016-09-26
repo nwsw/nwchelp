@@ -1,18 +1,20 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
-<title>Instrument Patch Properties</title>
-</head>
-<body >
-<h2>Instrument Patch Properties</h2>
-<hr>
+<title>Instrument Change Properties</title>
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+<h2>Instrument Change Properties</h2>
+
+<p>Instrument properties include:
 <p>
-Instrument patch properties include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGPATCH3')">Patch Name</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPATCH4')">Patch List Type</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPATCH1')">Select a different patch bank</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPATCH2')">Controller 0 (for bank select)</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPATCH2')">Controller 32 (for bank select)</a></li>
+<li><a href="JavaScript:IDHTip('IDH_DLGPATCHNAME')">Patch Name</a></li>
+<li><a href="JavaScript:IDHTip('IDH_DLGPATCHPRESETS')">Predefined Instruments</a></li>
+<li><a href="JavaScript:IDHTip('IDH_DLGPATCHPATCHNUM')">Send Patch</a></li>
+<li><a href="JavaScript:IDHTip('IDH_DLGPATCHBANKSEL')">Bank Select</a> options</li>
+<li><a href="JavaScript:IDHTip('IDH_DLGPATCHDYNVEL')">Default Dynamic Velocities</a></li>
+<li><a href="JavaScript:IDHTip('IDH_DLGPATCHTRANSPOSE')">Transposition</a></li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -21,5 +23,5 @@ Instrument patch properties include: </p>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

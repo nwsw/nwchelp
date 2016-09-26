@@ -1,15 +1,15 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Print Preview </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/preview.gif"> Print Preview</h2>
-<hr>
+
 <p>
-This is where you can preview what the printout of your score will look like. </p>
-<p>
-<b>Note for users of the 16-bit program:</b> If you have a high-resolution printer (300 dpi or better), the resulting bitmap from a <b>Copy</b> operation may be very large, and thus consume a large amount of memory. In some cases, the operation may fail due to insufficient memory to perform the operation. In these cases, you may want to decrease the notation size and increase the margins associated with the page. This will reduce the overall size of the bitmap that you are creating. </p>
-<p>
+This gives you a preview of the printed version of your score. It is not an exact replica of what will be printed, but it
+is pretty close.
+</p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
@@ -17,5 +17,5 @@ This is where you can preview what the printout of your score will look like. </
 <li><a href="MNU_PAGESETUP.htm">Page Setup Command</a></li>
 <li><a href="MNU_PRINT.htm">Print Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

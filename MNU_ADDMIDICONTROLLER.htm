@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Multi-point Controller Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Multi-point Controller Command</h2>
-<hr>
+
 <p>
 This command enables MIDI controller changes as well as tempo changes to be inserted into the song during play back. The changes can either by absolute changes, or the item can be instructed to gradually produce the change (Linear Sweep). </p>
 <p>
@@ -168,5 +169,5 @@ The same is true with this setting. A higher contour value makes it easier for t
 <ul>
 <li><a href="SUBMNU_INSERT.htm"><b>Insert Menu Commands</b></a><b> </b></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

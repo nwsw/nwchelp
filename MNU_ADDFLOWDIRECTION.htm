@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Flow Direction Symbol Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Flow Direction Symbol Command</h2>
-<hr>
+
 <p>
 <i>Da capo,</i> <i>Dal Segno, Coda</i>, and <i>Fine</i> instructions are added into the staff with this command. The symbols associated with each command are automatically placed in an appropriate vertical orientation. </p>
 <p>
@@ -36,5 +37,5 @@ The exact instructions supported by this command include: </p>
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,247 +1,179 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
-<title>What's New in NoteWorthy Composer </title>
-</head>
-<body >
-<h2>What's New in <i>NoteWorthy Composer</i></h2>
-<hr>
-<p>
-<i>NoteWorthy Composer</i> was first released in October of 1994. There have been many additions since the initial release. The following list is an overview summary of the major changes and additions, from the most recent update back to the original relase of the product.</p>
-<p>
-Note: If you want to quickly learn how to use the newest features of <i>NoteWorthy Composer</i>, check out this <a href="faq_useofnewftrs.htm">FAQ answer</a> in the <a href="HELP_TROUBLESHOOT.htm">FAQ</a> section.</p>
-
-<p>
-<b><u>Version 1.75b (features since version 1.75 was released on CD):</u></b></p>
+<title>What's New in NoteWorthy Composer 2</title>
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+<h2>What's New in <i>NoteWorthy Composer 2</i></h2>
 <ul>
-<li>New: <b>Allow Layering</b> command on the View menu for fast on/off control of layering</li>
-<li>New: <b>Print Preview</b> automatically advances to the page that includes your current editor location</li>
-<li>New: Beams can be extended across one or more rests</li>
-<li>New: Triplets do not automatically set stem direction</li>
-<li>New: Improved clef/key signature handling at start of printed systems</li>
-<li>New: Improved horizontal scrolling in the editor (there should now be less need to do a manual View|Refresh)</li>
-<li>New: Modernized/latest NWC file compression algorithm</li>
-<li>New: Improved handling of hidden notes within a beam</li>
-<li>New: Lyric events are imported when opening MIDI files</li>
-<li>New: Lyric text is imported from KAR files</li>
-<li>New: Lyrics saved into type 0 and type 1 MIDI files</li>
-<li>New: Vertical staff sizing controls when configuring lyrics</li>
+<li>Support for user selectable notation font</li>
+<li>Hear notes as you add them to the staff</li>
+<li>Hairpin/graphic crescendo/diminuendo note properties</li>
+<li><i><b>X</b></i> noteheads for percussion notes</li>
+<li><b><i>Diamond </i></b>noteheads for other non-pitched and harmonic notes</li>
+<li>A blank notehead for unusual circumstances</li>
+<li>Percussion Clef</li>
+<li>A new Instrument Tree mechanism</li>
+<li>New Bi-directional Clipboard Text</li>
+<li>New user tool mechanism for scripting clip text processing</li>
+<li>Lyricist field (in addition to the existing Author/Composer field)</li>
+<li>User control over note stems</li>
+<li>Slurs are now drawn to the contour of the enclosing notes</li>
+<li>Default beam placement and slant have been completely redesigned</li>
+<li>Grace note scaling  is now more consistent with standard conventions</li>
+<li>Accidentals and other note symbols are now scaled on grace notes</li>
+<li>Grace notes are slurred independently from primary notes</li>
+<li>Grace note stems default to up when their stem direction is not set</li>
+<li>Text expressions now show typeface, style, and size for font selection</li>
+<li>A new anchor symbol for expressions (a replacement for the diamond)</li>
+<li>Optional support for underscores in your lyrics (shut off translation to spaces)</li>
+<li>Staff labels, which are separate from the staff name</li>
+<li>Staff labels can optionally be shown in the editor</li>
+<li>New &quot;Use stem for articulations&quot; option for selected notes</li>
+<li>Inverted fermata is now automatic when placed below the center of the staff</li>
+<li>Automatic handling of accidentals for tied notes across bar lines</li>
+<li>Hidden items show in active and inactive colors for quicker identification</li>
+<li>New note alignment algorithm (the notation alignment scheme has been totally redesigned)</li>
+<li>Accidental placement within chords has been totally redesigned, making them more consistent with prevailing notation guidelines</li>
+<li>Bar lines can optionally be excluded from the built-in measure counter</li>
+<li>Improved expression placement options</li>
+<li>Improved rendering of Grand Staff and Orchestral Staff braces</li>
+<li>Copy Special and Print Preview Copy now use the Windows Enhanced Metafile format (EMF)</li>
+<li>Staff notation limits increased to 32000 items (an almost 300% increase)</li>
+<li>New top and bottom margins in the score editor</li>
+<li>Wheel mouse can now be used for vertical scrolling</li>
+<li>More highlight colors (7 highlight colors, double the version 1 highlights)</li>
+<li>Direct entry of Multi-point Controller values via Edit boxes</li>
+<li>Toolbar data is now stored in the Config Files folder, and is named &quot;nwc2toolbars.dat&quot;</li>
+<li>When run on Windows XP, the selected display theme is supported in dialogs and windows</li>
+<li>File Open/Save now support new Windows 2000/XP/Vista favorites section on the left side of the dialog</li>
+<li>Mouse pointer in editor uses system cursor when run on a Windows XP/Vista system</li>
+<li>New <b>Justify printed systems vertically</b> option for controlling whether printed systems are justified vertically when printing</li>
 </ul>
 
-<p>
-<b><u>Version 1.75 (features since version 1.70 was released on CD):</u></b></p>
-<ul>
-<li>New: <b>Find</b> command on the Edit menu</li>
-<li>New: <b>Lines</b> property in Visual Staff Properties</li>
-<li>New: <b>Muted</b> property for Notes</li>
-<li>New: <b>No Leger Lines</b> property for Notes</li>
-<li>New: Key signatures with no accidentals now shows the F Natural as a hidden item in the editor</li>
-<li>New: Select All command on the Edit menu
+<p><b>Some version 2.0 features explained in more detail:</b>
+<p><ul>
+<li><b>User selectable notation font</b><br>
+The staff notation typeface can now be specified by the user. This is done from <a href="MNU_PAGESETUP.htm">File, Page Setup, Fonts (tab)</a>.
+The Staff Size option from version 1 is also found on this tab (moved from the <b>File, Page Setup, Options</b> tab).
+<br><br>
+</li>
+<li><b><a href="MNU_HAIRPINCRESC.htm"><img src="img/cresc.gif"> Crescendo</a> and <a href="MNU_HAIRPINDECRESC.htm"><img src="img/decresc.gif"> Diminuendo</a> Attributes for Selected Notes</b><br>
+  Graphic crescendo and diminuendo can now be added as easily as slurs are applied to notes. Simply select the notes
+  that are included in the volume swell or fade, then press the <b>&lt;</b> key for a crescendo symbol, or the <b>&gt;</b>
+  key for the diminuendo symbol. The hairpins are placed on the staff consistent with the preceding Dynamic mark that you should
+  already have inserted into the staff.<br>
+  <br>
+<b>Note</b> that the shortcut for adding a note accent has been moved to the exclamation point (!).<br>
+  <br>
+  </li>
+<li><i><b><a href="MNU_NOTEHEADX.htm"><img src="img/notehdx.gif"></a> X</b></i><b> noteheads </b>for percussion notes<br>
+    You can add new notes that use the X notehead by first selecting the X Notehead 
+    tool, then adding notes as normal. The only difference is that the notes will 
+    now show up with an X as their notehead. The easiest way to change noteheads 
+    during note entry is to use the Q key to cycle through the available notehead 
+    styles.<br>
+    <br>
+    The notehead of existing notes can also be changed by selecting them first, 
+    then pressing the X Notehead tool button.<br>
+    <br>
+  </li>
+<li><b><i><b><a href="MNU_NOTEHEADDIAMOND.htm"><img src="img/notehdmd.gif" border="0"></a></b> 
+    Diamond </i></b>noteheads for other non-pitched and harmonic notes<br>
+    The procedure for inserting diamond notes or changing notes to use the diamond 
+    shape is the same as for X noteheads described above, except that the Diamond 
+    Notehead tool is selected instead.<br>
+    <br>
+  </li>
+<li><b><i><b><a href="MNU_ADDCLEF.htm"><img src="img/qinsclfd.gif"></a></b></i></b> 
+    <b>Percussion Clef</b><br>
+    The percussion clef can be added quickly using the new quick insert tool button 
+    shown. It can also be adding using the conventional Insert | Clef command. 
+    Note that the percussion clef is treated just like a bass clef for MIDI input, 
+    play back, and key signature support. Technically, a percussion clef has no 
+    concept of pitch, but in the MIDI domain, a means of determining pitch is 
+    still necessary. Defaulting to Bass Clef seems to be a good default choice. 
+    You can use the Staff Properties Transpose value to alter this behavior as 
+    needed. <br>
+    <br>
+</li>
+<li><b>A new Instrument Tree mechanism</b><br>
+The NTWPATCH.INI mechanism from version 1 has been removed. A new instrument tree mechanism has been added in its place. User customizable instrument trees are used to create and select predefined instruments, with full control over all instrument properties, including bank select, transpose, and default dynamic note velocities. New Instrument Tree files are added to a dedicated folder that is controlled from Tools|Options|Folders, so you can override the default location of these files. Instrument changes in the staff can now show a custom, user assigned name. Default MIDI note velocities for Dynamics are now under user control via Instrument Properties.<br>
 <br>
 </li>
-<li>New: Transpose now preserves note intervals, so relative chord and note positioning are preserved</li>
-<li>New: Transpose now includes user control over new key signatures in ambiguous cases</li>
-<li>New: A new Audit Enharmonic Spelling command enables you to re-spell the notes in a staff, much like how the Transpose with 0 semi-tones used to work</li>
-<li>New: Staff, lyric, and note vertical positioning now support an extended range</li>
-<li>New: Bar lines properties can now be changed for an entire selection, making removal of system breaks much easier</li>
-<li>New: Standardized lyric syllable alignment is now an option from the Lyric Configuration tab</li>
-<li>New: Spacing of notes is now consistent, regardless of whether or not the note is adjacent to an invisible item</li>
-<li>New: A staff can now be moved up or down to a new position in the system using Ctrl+Shift+Page Up/Down</li>
-<li>New: Beams between a note in the staff and another note extending well above or below the staff now include a slant for improved appearance</li>
-<li>New: Hidden accidental display in editor for notes with incoming ties</li>
-<li>New: Printing now sends the song filename rather than song title to the print spooler</li>
-<li>New: Total song play back time is now displayed in addition to the current elapsed time during play back.</li>
-<li>New: When MIDI Port Usage is set to While Playing, a 4 second delay is now taken prior to stopping play back at the end of the song. This allows software synthesizers time to complete play back of the song.</li>
-<li>New: Crash protection has been added to the 32-bit edition of the program. The program now attempts to recover from events that used to cause a crash of the program, such as floating point and other math errors. This will often give the user an additional opportunity to salvage unsaved work prior to closing the program.</li>
-<li>New: The folder browsing mechanism in Tools | Options | Folders has been enhanced in the 32-bit edition of the program.</li>
-<li>New: The editor's scroll bars are now active and available, even while the song is playing.</li>
-<li>New: The editor's note chase that follows notes as they play can now be disabled. When disabled, you can continue to edit your song while it plays.</li>
-</ul>
-<p>
-<b><u>Version 1.70 (features since 1.55): </u></b></p>
-<ul>
-<li>Color highlighting and printing</li>
-<li>User specified system breaks</li>
-<li>Improved handling for back-to-back sections</li>
-<li>Improved print preview</li>
-<li>Additional styles for the final bar line in each staff</li>
-<li>User control over slur and tie direction</li>
-<li>Staff layering for true multi-voice support</li>
-<li>New hide options for more printing flexibility</li>
-<li>Beam over grace notes, text expressions, and more</li>
-<li>Full control over which notes attach to lyric syllables</li>
-<li>Additional controllers/effects supported by Multi-point Controller</li>
-<li>Preserve Width option support for all expressions</li>
-<li>New left, right, and center justification of expressions</li>
-<li>New alignment and placement options for expressions</li>
-<li>User defined text in tempo expressions</li>
-<li>Two additional user defined text fonts</li>
-<li>Longer text expressions</li>
-<li>Fast insert toolbar for quickly inserting dynamics, fermatas, and some other symbols</li>
-<li>Smart properties insert option allows for faster and more consistent item entry</li>
-<li>A smart &quot;Save As&quot; command that automatically uses the appropriate file extension for the selected file type</li>
-<li>More parts can be shown in the editor at one time</li>
-<li>Improved keyboard navigation in property/tab dialogs</li>
-<li>Ctrl+Shift+Up/Down now works on selected expressions</li>
-</ul>
-<p>
-<b><u>Version 1.55 (features since 1.52): </u></b></p>
-<ul>
-<li>Compressed NWC files (for Internet publishing)</li>
-<li>Control over vertical rest placement (experimental)</li>
-<li>Added control over note and accidental placement (experimental)</li>
-<li>A repeat sign for the final bar in a staff</li>
-<li>Zoom level down to 2 pixels</li>
-<li>Improved slur handling</li>
-<li>Lyric font always used for lyric editor text</li>
-<li>Large note counts on screen no longer cause a crash</li>
-<li>Tie direction now consistent for notes on center line</li>
-</ul>
-<p>
-<b><u>Version 1.52 (features since 1.51): </u></b></p>
-<ul>
-<li>Whole note chords at same pitch drawn as two notes rather than one</li>
-<li>Triplet not drawn in a note beam now appears outside of staff lines</li>
-<li>ESC key used for play stops</li>
-<li>Chord with half note and a smaller note at same pitch now shows both note heads</li>
-<li>If two adjacent ending local repeats exist (with no intervening start of a repeat), the second repeat should be aborted at the prior repeat ending</li>
-<li>Print preview window now starts in a maximized window</li>
-<li>Placeable metafiles now supported in 32-bit Print Preview Copy</li>
-</ul>
-<p>
-<b><u>Version 1.51 (features since 1.50): </u></b></p>
-<ul>
-<li>Enhanced toolbars for better mouse navigation</li>
-<li>A default selection now available for all tabs in the File New dialog</li>
-<li>Reduced initial printed staff size on a new score</li>
-</ul>
-<p>
-<b><u>Version 1.50 (features since 1.31): </u></b></p>
-<ul>
-<li>Grace notes</li>
-<li>User selectable text fonts</li>
-<li>High performance native 32-bit playback on Windows 95</li>
-<li>Toolbar Customization</li>
-<li>Automatic save/recovery mechanism in the editor</li>
-<li>Print preview directly from Page Setup</li>
-<li>Zoom in or out in Print Preview</li>
-<li>Standardized print mechanism</li>
-<li>Split stem chord on same note</li>
-<li>Lyrics aligned to top of staff</li>
-</ul>
-<p>
-<b><u>Version 1.31 (features since 1.30): </u></b></p>
-<ul>
-<li>New song templates
-<ul>
-<li>Several templates included out of the box</li>
-<li>Ability to add your own templates</li>
-</ul>
+<li><b>NWC Clipboard Text<br>
+</b>The Find text introduced in version 1 has been extended to support full textual Copy and Paste operations to and from the clipboard. You can now copy and paste large selections of staff notation in the Find text format. This enables you to edit the Find text in a text editor, and then paste it back into the program. The mechanism is automatic. Simply copy notation as normal, but now you can paste the data into any text edit window, such as Windows' Notepad.<br>
+<br>
+You can see most of the Find text format by simply copying single items from the program into a text editor. When copying single items, more text details are shown than the shorter format used when copying multiple items at once.
+<br>
+<br>
+A <a href="MNU_USERTOOLS.htm">User Tool</a> mechanism is provided which enables prewritten scripts to applied against selected notation.<br>
+<br>
+You can now also paste simple text into the staff. It is automatically pasted as a text expression.<br>
+<br>
 </li>
-<li>Featured play back of individual staff</li>
-<li>Record feature for MIDI keyboard users</li>
-<li>Note input via MIDI keyboard</li>
-<li>MIDI echo so external keyboards can use your computer's soundcard</li>
-<li>New import wizard for enhanced midi import capabilities
-<ul>
-<li>Track splits</li>
-<li>SMF type 0 detection</li>
-<li>Dedicated tempo track</li>
-</ul>
+<li><b>User control of note stems</b><br>
+    By default, the program tries to make note stem lengths more consistent with conventional notation practices. When necessary, the length of a note stem is now under user control. The stem length can be adjusted, as well as completely hidden.<br>
+    <br>
+  </li>
+<li><b>New Lyricist field</b> (in addition to the existing Author/Composer field)<br>
+    File | Info now has a field for Lyricist. This is printed on the left side 
+    of the title page at the same vertical position as the Author/Composer field.<br>
+    <br>
+  </li>
+<li><b>Optional support for underscores in your lyrics</b> (shut off translation 
+    to spaces)<br>
+    The Configuration tab of Edit | Lyrics now has a new option called &quot;Underscore 
+    shown as space&quot; which can be unchecked to disable the underscore translation 
+    to space feature.<br>
+    <br>
+  </li>
+<li><b>New staff labels</b></li>
+<br>
+  A staff can now be named and labeled separately. Each staff must have a unique name, but the label is not subject to this restriction. A grand staff label can now be controlled by the first staff in the grand staff brace by simply assigning the other staves to a blank label.<br>
+<br>
+A new option is added to Tools | Options that controls whether staff  labels will be shown in the editor.
+  This new option is separate from the Page Setup options that control whether staff labels appear when
+  printing.<br>
+<br>
+  
+<li><b>Hidden items show in active and inactive colors for quicker identification</b><br>
+  You can set the exact color scheme that is used in the editor from the Tools | Options | Color area.
+  Make sure that you have a score edit window open before going to this area.
+<br>
+<br>
 </li>
-<li>Creating either SMF type 0 or type 1 files</li>
-<li>On/off control over padding of notes based on duration</li>
-<li>Copy Special feature for copying notation graphics</li>
-<li>Add, remove, and edit a staff straight from the editor</li>
-<li>New mute button in the file tool bar</li>
-<li>New fast mute list tool</li>
-<li>Enhanced tab dialog interface</li>
-<li>Improved performance of score audits</li>
-<li>Staff transpose logic enhanced (for interacting with non-standard special endings)</li>
-<li>A menu item now allows chord member removal using the Edit menu</li>
+<li><b>A new anchor symbol</b><br>
+A new anchor symbol for expressions that do not preserve width.<br>
+<br>
+</li>
+<li><b>Staff notation limits increased to 32000 items</b><br>
+    Any staff can now have up to 32000 items in it. Each note, rest, chord, bar line, or other object on the staff counts as
+	one item. The old version 1.* limit was 12000 items.<br>
+<br>
+    </li>
+<li><b>More highlight colors</b><br>
+   You now have access to seven different highlight colors for drawing special attention to some areas of
+   your work. This is more than double the number of highlights that were available in version 1.
+  <br>
+<br>
+</li>
+<li><b>Direct entry of Multi-point Controller values</b><br>
+   You no longer are required to use the data entry sliders for those small adjustments to your 
+   Multi-point Controller settings. New edit boxes for each control point allow you to quickly modify 
+   your settings. The sliders are still available for use and reference, and they even update as you change the values in the
+   edit boxes.
+  <br>
+<br>
+</li>
+<li><b>Windows XP enhancements</b><br>
+    If you are using Windows XP, several enhancements will be automatically available in this new version. This new version is more aware of 
+	the themes feature that is controlled from the Display applet of the Control Panel. Your selected theme 
+    and more of the controls in the program interface will be consistent with your selected theme. Windows XP 
+	also allows user control over the hand cursor, and this new version utilizes this system cursor. Lastly, 
+	the File Open and Save dialogs include extra options that are only available on Windows 2000, Windows XP, 
+	or Windows Vista systems.</li>
 </ul>
-<p>
-<b><u>Version 1.30 (features since 1.21): </u></b></p>
-<ul>
-<li>Dock-able tool bars, with tool tips</li>
-<li>Advanced MIDI port sharing (allowing other such &quot;cooperative apps&quot; to also be running and using the MIDI ports)</li>
-<li>Double dots</li>
-<li>Double sharps</li>
-<li>Double flats</li>
-<li>Tenuto mark</li>
-<li>Flatter menus for easier navigation</li>
-<li>Optional .BAK files</li>
-<li>Long filenames when run on Windows 95</li>
-<li>Notation font is now installed directly into the system</li>
-<li>Add patch # to score at {patch}</li>
-<li>Choice of centimeters or inches for page margin settings</li>
-<li>Optional control of last system extending out to right margin</li>
-</ul>
-<p>
-<b><u>Version 1.21 (features since 1.20): </u></b></p>
-<ul>
-<li>Configurable Undo/Redo of up to last 100 edit actions</li>
-<li>Lyrics expanded to support 8 lines per staff</li>
-<li>Whole measure rests are now centered</li>
-<li>Tightly packed chords with dotted note attribute are displayed better</li>
-<li>Print Preview Copy now supports clipboard</li>
-<li>NWC files can be opened directly from the File Manager, the Windows 95 Explorer, or the Windows 95 Start menu</li>
-<li>File History mechanism has been standardized (now uses the Last In/First Out scheme)</li>
-<li>Setup detection of Windows 95</li>
-</ul>
-<p>
-<b><u>Version 1.20 (features since 1.10): </u></b></p>
-<ul>
-<li>Lyrics (up to 4 lyric lines per staff)</li>
-<li>Measure numbers, and a &quot;Goto Measure&quot; command</li>
-<li>Flexible Slurs (across bar lines, rests, repeats, etc.)</li>
-<li>Many new style expressions, including Fermata, Breath Mark, Cresc, Decresc., Accel, Legato, etc. (many of which are supported by play back)</li>
-<li>Control of both MIDI key velocity and volume from the Dynamics marks, and support for both of these in Cresc.and Decresc. marks</li>
-<li>Select and edit any single notation or expression mark on a staff (notes continue to use the tool bar as opposed to a dialog box)</li>
-<li>Note stem direction control</li>
-<li>A chord composed of a note, or notes, and a smaller duration rest</li>
-<li>A generic Text Expression item where you can add your own expressions</li>
-<li>All notation symbols now use True Type fonts, so you have much more control over the size of a score</li>
-</ul>
-<p>
-<b><u>Version 1.10 (features since 1.0): </u></b></p>
-<ul>
-<li>Alto and Tenor clefs</li>
-<li>Common Time and alla breve time signatures</li>
-<li>Tempo marks using eighth, quarter, half and dotted note beats</li>
-<li>Staff labels optionally attached to staves</li>
-<li>The last system in a score print is no longer justified to the right</li>
-<li>Automatic save recovery through use of BAK files on replaces</li>
-<li>Revert to saved version of the active score</li>
-<li>Import/Export of MIDI files</li>
-<li>History tracking of the last 10 songs used</li>
-<li>Symbols are added via the Insert menu</li>
-<li>Automatic beaming function for the active staff</li>
-<li>Transpose function for the active staff</li>
-<li>Tools to assist in changing the key signature within the active staff</li>
-<li>Audit tools for the active staff and the whole score</li>
-<li>Bar line audit which aligns all bars at measure boundaries</li>
-<li>Score builder tool</li>
-<li>Notes menu now includes Staccato and Accent commands</li>
-<li>Editor speed menus now include Note, Rest, Chord and Bar line commands</li>
-<li>All tool buttons now include mouse fly-over hints in the status bar</li>
-<li>Tool button access to the Score Builder tool</li>
-<li>Tool button access and display for the Audit Staff tool</li>
-<li>Change editor font sizes straight from the tool bar</li>
-<li>Change the active score partition straight from the tool bar</li>
-<li>See when the active staff needs auditing straight from the tool bar</li>
-<li>Status indicator of current play buffer when active score is playing</li>
-<li>Change note accidentals by selecting notes and pressing a button</li>
-<li>Add/remove a note tie by selecting a note and pressing the tie button</li>
-<li>Add/remove dots, staccato, or accent marks using tool buttons</li>
-<li>Get immediate visual feedback on button availability</li>
-<li>Get visual feedback on whether a button will add/remove an attribute</li>
-<li>Right mouse support in the note tool bar for changing its orientation</li>
-<li>Configurable starting point for play to begin</li>
-<li>Staff mute no longer disables tempo and other controller changes</li>
-<li>Very short staccato notes should now still be heard on your equipment</li>
-<li>Dynamic changing of selected notes attributes</li>
-<li>Double-click editing of midi data controllers (patch and multi-point)</li>
-<li>Right mouse button changes</li>
-</ul>
-</body>
+
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

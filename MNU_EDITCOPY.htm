@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Copy Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/copy.gif"> Copy Command</h2>
-<hr>
+
 <p>
 This command makes a copy of the selected notes and places them in the clipboard for future paste operations. If you want a graphical version of the selected notes, use the <a href="MNU_COPYSPECIAL.htm">Copy Special</a> command. </p>
 <p>
@@ -12,5 +13,5 @@ This command makes a copy of the selected notes and places them in the clipboard
 <ul>
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

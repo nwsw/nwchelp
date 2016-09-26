@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Toolbars Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Toolbars Command</h2>
-<hr>
+
 <p>
 This command is used to enable or disable the listed tool bars. You can use this command to hide or restore tool bars that are available to assist you with your compositional work. The tool bars names that are checked are those that will be made visible. Those that are not checked, will be removed from the screen. </p>
 <p>
@@ -13,5 +14,5 @@ This command is used to enable or disable the listed tool bars. You can use this
 <li><a href="DLG_CUSTOMIZETOOLBARS.htm">Customize</a></li>
 <li><a href="SUBMNU_VIEW.htm">View Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

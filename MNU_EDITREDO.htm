@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Redo Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/redo.gif"> Redo Command</h2>
-<hr>
+
 <p>
 The Redo command can be used to re-apply a command that was reversed using the <a href="MNU_EDITUNDO.htm">Undo</a> command. This command is only available immediately after an Undo operation has been performed. If a subsequent change is made to the active staff after an Undo command is performed, the Redo command will no longer be available. </p>
 <p>
@@ -12,5 +13,5 @@ The Redo command can be used to re-apply a command that was reversed using the <
 <ul>
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

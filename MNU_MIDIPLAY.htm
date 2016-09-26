@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Play Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/play.gif"> Play Command</h2>
-<hr>
+
 <p>
 This command compiles the active score and begins to play it back over the selected MIDI devices. This command can be quickly activated using the <b>F5</b> function key, or the play icon on the file tool bar. </p>
 <p>
@@ -18,5 +19,5 @@ The point where play back begins can be customized to suit your preferences. For
 <li><a href="midiconfigintro.htm">Configuring for Sound:</a></li>
 <li><a href="MNU_PREFERENCES.htm">Options Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

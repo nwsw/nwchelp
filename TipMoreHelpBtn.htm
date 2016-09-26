@@ -1,11 +1,12 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Sample Link</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Sample Link</h2>
-<hr>
+
 <p>
 See how that worked! Any tips that include the <b>Additional Information</b> button have extra information in the help file that can be quickly reviewed simply by pressing it. When you are finished reviewing the information, you can return to the program by pressing the <b>Alt</b> and <b>Tab</b> keys simultaneously until the program is selected. </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

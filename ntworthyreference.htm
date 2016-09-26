@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Command Reference </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Command Reference</h2>
-<hr>
+
 <p>
-The following are references for the various components included in the <i>NoteWorthy Composer</i> application: </p>
+The following are references for the various components included in the <i>NoteWorthy Composer 2</i> application: </p>
 <p>
 <a href="HELP_ONCOMMANDS.htm">Command Reference:</a>
 <br>
@@ -19,5 +20,5 @@ Keystrokes that will speed the score creation process. </p>
 <a href="toolbar_guide.htm">Tool Bar Reference:</a>
 <br>
 Shows and describes the icons on the tool bars. </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,0 +1,29 @@
+<?php require_once("init.inc");
+?><html>
+<head>
+<title>Import Command </title>
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+<h2>Import Command</h2>
+
+<p>
+This command imports an existing music file that is not in NWC song format.</p>
+<p>
+You can import the following file types:</p>
+<p>
+<ul>
+<li><u>MID</u> Files
+<br>
+These files are assumed to be Standard MIDI Files. These are commonly used to exchange music performance data 
+between music sequencer, notation, and algorithmic composition software. When imported, the performance data
+is converted into standard NWC music notation. </li>
+</ul>
+<p>
+<b>See Also </b></p>
+<ul>
+<li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
+<li><a href="MNU_FILENEW.htm">Creating a New Composition</a></li>
+<li><a href="MNU_FILEHISTORY.htm">Reopening a Composition</a></li>
+</ul>
+<?php echo $HTMLDoc->BodyFtr?></body>
+</html>

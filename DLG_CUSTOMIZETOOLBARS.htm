@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Customize Toolbars </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Customize Toolbars</h2>
-<hr>
+
 <p>
 This window is used to customize the command toolbars available in the program. Using this window, you can: </p>
 <ul>
@@ -16,12 +17,13 @@ This window is used to customize the command toolbars available in the program. 
 <li>Reset the toolbars to the factory default</li>
 </ul>
 <p>
-All changes to the toolbars are saved in the file <i>toolbars.dat</i>, in the same folder as the program files. The program files folder must be accessible for creating and saving new files in order for the customizations to be saved for future sessions. </p>
+All changes to the toolbars are saved in the file <i>nwc2toolbars.dat</i>, in the Config folder. The Config folder must be 
+accessible for creating and saving new files in order for the customizations to be saved for future sessions. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="CM_TOOLBARS.htm">View Toolbars</a></li>
 <li><a href="SUBMNU_VIEW.htm">View Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

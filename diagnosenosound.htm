@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Playback problem description/diagnosis </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Playback problem description/diagnosis </a></h2>
-<hr>
+
 <p>
 The first thing to note is that sound cards support a variety of sound generation methods. For starters, the audio out from a CD player may be run through the amplifier in your sound card to generate sound. In addition, almost all sound cards include a digital audio section that works with audio samples, such as *.WAV files. Neither of these sound types are MIDI sound. Your card, and your Windows system, must be configured for MIDI, whether by you, or an installer provided with your card. </p>
 <p>
@@ -15,8 +16,8 @@ When setting up NWC for MIDI, it is important that your system already be config
 <li>Press the play button</li>
 </ol>
 <p>
-If no sound is heard, or some other problem prevented play back, then MIDI is not properly setup on your system, or it is not supported. If sound is heard, then <b><i>NoteWorthy Composer</i></b> should be able to play back files on your system. </p>
+If no sound is heard, or some other problem prevented play back, then MIDI is not properly setup on your system, or it is not supported. If sound is heard, then <b><i>NoteWorthy Composer 2</i></b> should be able to play back files on your system. </p>
 <p>
 If it failed, you may need to re-install the software that came with your sound card. If this does not work, you may have a IRQ or DMA conflict in your system. Many sound cards provide a diagnostic utility that can help you solve problems like this. Please refer to your sound card's instructions for additional details. </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

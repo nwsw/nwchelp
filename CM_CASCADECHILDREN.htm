@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Cascade Windows Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/cascade.gif"> Cascade Windows Command</h2>
-<hr>
+
 <p>
 This command arranges all open edit windows which are not minimized into a cascaded stack. All of the score file names will be visible in the banners of each window. </p>
 <p>
@@ -12,5 +13,5 @@ This command arranges all open edit windows which are not minimized into a casca
 <ul>
 <li><a href="SUBMNU_WINDOW.htm">Windows Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

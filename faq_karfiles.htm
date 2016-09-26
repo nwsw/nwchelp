@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Does NWC support karaoke (*.kar) files?</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Does NWC support karaoke (*.kar) files?</h2>
-<hr>
+
 <p>Karaoke files conform to the <a href="http://www.midi.org/">Official MIDI Specification</a>, but include custom text 
 formats for the inclusion of lyrics and other text. Karaoke files <b>do not utilize</b> the standard
 <b><i>Lyric Meta Event</i></b> for inclusion of song lyrics. Karaoke files use the general purpose
@@ -16,5 +17,5 @@ except the lyric text is derived from the <i>Text Meta Event</i>, rather than th
 <p>
 On export to a MIDI file, <i>NoteWorthy Composer</i> uses the standard <b><i>Lyric Meta Event</i></b> for saving lyrics into a standard MIDI file. <i>NoteWorthy Composer</i> does not save files using the custom Karaoke File (*.kar) format extensions. It uses the standard defined by the <a href="http://www.midi.org/">Official MIDI Specification</a>.<br>
 
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

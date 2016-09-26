@@ -1,16 +1,17 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Child Windows List </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Child Windows List</h2>
-<hr>
+
 <p>
-The first nine songs that are open in the <i>NoteWorthy Composer</i> workplace can be activated from this list. Once selected from this list, that score becomes the active window in the <i>NoteWorthy Composer</i> workplace.</p>
+The first nine songs that are open in the <i>NoteWorthy Composer 2</i> workplace can be activated from this list. Once selected from this list, that score becomes the active window in the <i>NoteWorthy Composer 2</i> workplace.</p>
 <p>
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_WINDOW.htm">Windows Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

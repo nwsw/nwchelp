@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Introduction to the Score (Notation) Editor </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Introduction to the Score (Notation) Editor</h2>
-<hr>
+
 <p>
 Once a score is created, it can be edited by selecting a staff for display in the Score Editor. The <a href="JavaScript:HLPTip('staffgrpintropopup')">staff group</a> feature can be used to quickly select a collection of parts into the editor window. This is done via the Contents tab in <a href="MNU_PAGESETUP.htm">Page Setup</a>. The editor shows all of the staves that are included in the display group, and displays the active staff in a different color (the default is blue). This blue staff is the one where editing is active when adding, selecting, changing, or removing notation items. </p>
 <p>
@@ -22,5 +23,5 @@ If you are using the mouse for notation entry, then you will probably be using t
 </ul>
 <p>
 Once notation has been placed in a staff, the mouse can also be used to select items and manipulate them. Selection can be accomplished with the mouse by clicking in a staff, and then dragging the mouse while holding the left button down. If you drag the mouse close to the left or right borders of the window, the editor will automatically scroll the score in the appropriate direction. Once you have selected the target notation items, the right mouse button can be used to activate the speed menu. </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

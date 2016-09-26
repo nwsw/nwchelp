@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Setting up a MIDI keyboard</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Setting up a MIDI keyboard</h2>
-<hr>
+
 <p>
 To get MIDI keyboard input to work, here are a few things to try:</p>
 <ol>
@@ -15,5 +16,5 @@ To get MIDI keyboard input to work, here are a few things to try:</p>
 </ol>
 <p>
 If you still cannot record, the problem is most likely the device driver for the input of your soundcard. You should re-install from the setup disk that came with your sound card. If this does not correct the problem, get the latest update driver software from your sound card manufacturer. </p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

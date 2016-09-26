@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Insert Menu Commands </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Insert Menu Commands</h2>
-<hr>
+
 <p>
 This menu contains all of the symbols which can be inserted into a staff. All commands followed by three dots (...) utilize a dialog box to designate parameters associated with the item to be added. When a new symbol is added, it is placed at the insertion point in the active staff. When items are selected, symbols cannot be added to the active staff. </p>
 <ul>
@@ -25,8 +26,8 @@ This menu contains all of the symbols which can be inserted into a staff. All co
 <li><a href="MNU_TEMPOVARIANCE.htm">Tempo Variance</a>: Adds tempo variances, such as <i>fermata</i> and <b><i>accel.</i></b></li>
 <li><a href="MNU_ADDTEXT.htm">Text</a>: Adds a text expression of your choice</li>
 <li><a href="MNU_ADDTIMESIGNATURE.htm">Time Signature</a>: Adds a time signature designation</li>
+<li><a href="MNU_ADDPATCH.htm">Instrument Change</a>: Change the performance instrument and its properties</li>
 <li><a href="MNU_ADDMIDICONTROLLER.htm">Multi-point Controller</a>: Adds a generic MIDI controller</li>
-<li><a href="MNU_ADDPATCH.htm">Instrument Patch</a>: Adds a change of instrument</li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

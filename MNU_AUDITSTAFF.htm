@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Refresh Staff </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Refresh Staff</h2>
-<hr>
+
 <p>
 This command is used to refresh the currently active staff. This is sometimes necessary if the staff has not been redrawn properly, although this is usually unnecessary. This command is sometimes faster than the primary refresh command, which scans the entire score for possible corrections. </p>
 <p>
@@ -12,5 +13,5 @@ This command is used to refresh the currently active staff. This is sometimes ne
 <ul>
 <li><a href="SUBMNU_VIEW.htm">View Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

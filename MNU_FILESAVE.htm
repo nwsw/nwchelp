@@ -1,20 +1,22 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Save Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/save.gif" width=26 height=22> Save Command</h2>
-<hr>
+
 <p>
 This command saves the composition in the active window to its associated file name. If the composition has not yet been given a name, the Save As command will automatically be invoked. </p>
 <p>
-Just prior to saving the file, <i>NoteWorthy Composer</i> optionally checks to see if a file exists with the same name as the one about to be saved. If so, it is optionally renamed to a *.BAK file whenever backup files are enabled. You can always restore the previous version of a file after saving it by copying the *.BAK file to an *.NWC file. This only works for the most recent version of the file that existed prior to the last save operation.</p>
+Just prior to saving the file, <i>NoteWorthy Composer 2</i> optionally checks to see if a file exists with the same name as the one about to be saved. If so, it is optionally renamed to a *.BAK file whenever backup files are enabled. You can always restore the previous version of a file after saving it by copying the *.BAK file to an *.NWC file. This only works for the most recent version of the file that existed prior to the last save operation.</p>
 <p>
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
 <li><a href="MNU_FILESAVEAS.htm">Save As Command</a></li>
 <li><a href="MNU_FILESAVEALL.htm">Save All Command</a></li>
+<li><a href="MNU_FILEEXPORT.htm">Export Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

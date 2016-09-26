@@ -1,11 +1,12 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Loop play</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Loop play</h2>
-<hr>
+
 <p>
-<i>NoteWorthy Composer</i> does not have a loop play feature, When you play a song, it only plays it once. However, you can use our <i>NoteWorthy Player</i> program to get this result. This program is freely available from our web site.</p>
-</body>
+<i>NoteWorthy Composer 2</i> does not have a loop play feature, When you play a song, it only plays it once. However, you can use our <i>NoteWorthy Player</i> program to get this result. This program is freely available from our web site.</p>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

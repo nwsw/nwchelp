@@ -1,12 +1,17 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Dynamic Variance Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Dynamic Variance Command</h2>
-<hr>
+
 <p>
-Performance dynamics can be gradually altered by combining absolute dynamics with variance items. This command is used to create variance items. When an item of this type is encountered during MIDI play back, the staff is searched backward and forward for dynamic marks. If they are found on both sides of the variance, then the transition from the previous dynamic to the next dynamic is introduced gradually into the play back of the staff. This is true for both MIDI volume and MIDI note velocities. </p>
+Performance dynamics can be gradually altered by combining absolute dynamics with variance items. This command is used to create
+text based crescendo and diminuendo dynamic changes. When an item of this type is encountered during MIDI play back, the staff
+is searched backward and forward for dynamic marks. If they are found on both sides of the variance, then the transition
+from the previous dynamic to the next dynamic is introduced gradually into the play back of the staff. This is true for
+both MIDI volume and MIDI note velocities. </p>
 <p>
 It should be noted that the variance does not enforce specific rules about how the transition should take place based on the style of the variance. For example, a <b><i>Crescendo</i></b> could actually be used to fade out a part if the dynamics were arranged in such a way as to reduce the volume of the notes that follow in the staff. It is up to the composer to ensure that the MIDI velocity and volume defined by the surrounding dynamics reflects the true nature of the dynamic variance. </p>
 <p>
@@ -17,6 +22,8 @@ Only the <b><i>Crescendo</i></b>, <b><i>Decrescendo</i></b>, and <b><i>Diminuend
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
+<li><a href="MNU_HAIRPINCRESC.htm">Graphic Crescendo Command</a></li>
+<li><a href="MNU_HAIRPINDECRESC.htm">Graphic Decrescendo Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

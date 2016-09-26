@@ -1,12 +1,13 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Create your own templates</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Create your own templates</h2>
-<hr>
+
 <p>
-You can change the templates provided in <i>NoteWorthy Composer</i> and save them as new templates:</p>
+You can change the templates provided in <i>NoteWorthy Composer 2</i> and save them as new templates:</p>
 <ol>
 <li>Open the rhythm that you want to change</li>
 <li>Change the template as you want</li>
@@ -22,5 +23,5 @@ You can also create a brand new template:</p>
 <li>Select File | Save As</li>
 <li>Save under Template, Rhythm or Custom</li>
 </ol>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Edit Menu Commands </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Edit Menu Commands</h2>
-<hr>
+
 <p>
 Most commands available from the edit menu are designed to operate on the active staff of the active window. Many of the commands are only enabled after notation items have been selected in the active staff. Items can be selected by holding down the shift key while moving the insertion point with the mouse or arrow keys. Clicking the left mouse button and dragging the mouse also can be used to select notation items. </p>
 <p>
@@ -16,6 +17,7 @@ The commands available from the edit menu include: </p>
 <li><a href="MNU_EDITCOPY.htm">Copy</a>: Copies the selection to the clipboard</li>
 <li><a href="MNU_COPYSPECIAL.htm">Copy Special</a>: Copies the portion of the selection that fits on screen to the clipboard as a graphic</li>
 <li><a href="MNU_EDITPASTE.htm">Paste</a>: Pastes the contents of the clipboard at insertion point</li>
+<li><a href="MNU_NEWFILEPASTE.htm">Paste as New File</a>: Pastes the contents of the clipboard into a new file</li>
 <li><a href="MNU_EDITCLEAR.htm">Clear</a>: Clears the selection (no effect on clipboard)</li>
 <li><a href="MNU_EDITSELECTALL.htm">Select All</a>: Selects everything in the active staff</li>
 <li><a href="MNU_REMOVENOTE.htm">Remove Chord Note</a>: Remove the member of a chord immediately on the left of the insertion point</li>
@@ -27,5 +29,5 @@ The commands available from the edit menu include: </p>
 <li><a href="MNU_EDITLYRICS.htm">Lyrics</a>: Opens the lyric editor dialog for this staff</li>
 <li><a href="MNU_OPENPROPERTIES.htm">Properties</a>: Open the propeties editor for the current selection</li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

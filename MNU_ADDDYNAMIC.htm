@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Insert Dynamic Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/qins_ff.gif"><img src="img/qins_f.gif"><img src="img/qins_mf.gif"><img src="img/qins_mp.gif"><img src="img/qins_p.gif"><img src="img/qins_pp.gif"><img src="img/qins_ppp.gif"> Insert Dynamic Command</h2>
-<hr>
+
 <p>
 Performance dynamics can be added at the insertion point with this command. These control the MIDI note on velocity and MIDI note volume with which a particular note is sounded. The symbol is placed at the vertical position of the staff where the insertion point is currently located. </p>
 <p>
@@ -28,5 +29,5 @@ The following property pages are used to define the full behaviour of a dynamic 
 <li><a href="MNU_ADDMIDICONTROLLER.htm">Insert Multi-Point Controller Command</a></li>
 <li><a href="MNU_AUDITSCORE.htm">Refresh Score Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

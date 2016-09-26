@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Printer Setup Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/prtsetup.gif"> Printer Setup Command</h2>
-<hr>
+
 <p>
 This command allows you to change your printer device and its configuration. The exact details of the possible options are device and system dependent. </p>
 <p>
@@ -15,5 +16,5 @@ This command allows you to change your printer device and its configuration. The
 <li><a href="MNU_PRINTPREVIEW.htm">Print Preview Command</a></li>
 <li><a href="MNU_PAGESETUP.htm">Page Setup Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

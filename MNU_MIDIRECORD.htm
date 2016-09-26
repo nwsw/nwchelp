@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Record Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/record.gif"> Record Command</h2>
-<hr>
+
 <p>
 The recording feature of NWC is built on top of the existing play back capabilities in the application. This feature allows a MIDI performance received from the MIDI input device to be recorded and captured while the current score is playing back. Recording is only possible when a score is open and is playing. If the current song is only three bars in length, then starting a recording will only allow up to three bars to be recorded. This is because recording and play back will both stop when the current song play back is finished. </p>
 <p>
@@ -33,5 +34,5 @@ If you want the MIDI input received by NWC to be echoed to an output MIDI device
 <li><a href="midiconfigintro.htm">Configuring for Sound:</a></li>
 <li><a href="MNU_PREFERENCES.htm">Options Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

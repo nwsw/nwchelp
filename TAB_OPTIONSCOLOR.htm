@@ -1,19 +1,23 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Color Options Dialog Tab </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Color Options Dialog Tab</h2>
-<hr>
+
 <p>
-This tab allows the editor background color to be set, as well as a variety of colors used within the score. Color can be <a href="JavaScript:IDHTip('IDH_DLGOPTCOLORNTN')">set</a> for the following notation elements:</p>
+This tab allows the editor background colors to be set, as well as a variety of colors used within the score. Color can be <a href="JavaScript:IDHTip('IDH_DLGOPTCOLORNTN')">set</a> for the following notation elements:</p>
 <ul>
 <li><i>Printer Default</i>: Any notational elements that do not explicitly set a color will use this color when printed.</li>
 <li><i>Active Staff</i>: This is the color that will be used for the active staff in the editor, unless the staff color has been changed in Staff Properties.</li>
 <li><i>Inactive Staff</i>: Any staff that is not active in the editor will use this color, unless the staff color has been changed in Staff Properties.</li>
-<li><i>Hidden Notation</i>: Notation that will not appear in print will be shown with this color while in the editor.</li>
+<li><i>Active Hidden Notation</i>: Notation that will not appear in print will be shown with this color while active in the editor.</li>
+<li><i>Inactive Hidden Notation</i>: Notation that will not appear in print will be shown with this color while inactive in the editor.</li>
 <li><i>Play Highlight</i>: Notes will be highlighted in this color as they are played.</li>
 <li><i>Highlight Colors</i>: Miscellaneous colors that can be assigned to staff elements via their property interface.</li>
+<li><i>Editor Background</i>: This is the background color for the main editor screen.</li>
+<li><i>Editor Staff Label Taskbar</i>: This is the background color for the staff label taskbar that appears on the left side of the editor.</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -21,5 +25,5 @@ This tab allows the editor background color to be set, as well as a variety of c
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

@@ -1,16 +1,17 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Zoom </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/zoom.gif"> Zoom</h2>
-<hr>
+
 <p>
-The size of the notation font used in the <i>NoteWorthy Composer</i> score editor can be specified with this command.</p>
+The size of the notation font used in the <i>NoteWorthy Composer 2</i> score editor can be specified with this command. The size that you specify is the number of pixels which separate each line in the staff. Note that only an even number of pixels can be applied to staff separation. If you enter an odd number, it will be converted to the next even value (based on whether you are increasing or decreasing the separation). </p>
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_VIEW.htm">View Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

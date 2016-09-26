@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Stem Down Command </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2><img src="img/stemdn.gif"> Stem Down Command</h2>
-<hr>
+
 <p>
 This command toggles the note stem down attribute for use during note entry. If it is selected when a note, rest, or chord member is added, the resulting item on the staff will have an downward stem, if it requires a stem. This parameter also applies to rests and whole notes, neither of which actually demonstrate their note stem direction visually. </p>
 <p>
@@ -18,5 +19,5 @@ If a note does not contain a stem direction attribute, the stem direction is det
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="MNU_AUDITSTEMS.htm">Audit Note Stems Command</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

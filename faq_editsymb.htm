@@ -1,11 +1,12 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>FAQ: Edit an existing symbol</title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>FAQ: Edit an existing symbol</h2>
-<hr>
+
 <p>
 There is an easy way to edit symbols like the clef, key signature, and text. First, select (highlight) the item, then press <b>Ctrl+E</b>. The dialog box for that item will appear for quick editing.</p>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>

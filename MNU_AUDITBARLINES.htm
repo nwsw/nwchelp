@@ -1,10 +1,11 @@
-<html>
+<?php require_once("init.inc");
+?><html>
 <head>
 <title>Audit Bar Lines </title>
-</head>
-<body >
+<?php echo $HTMLDoc->GetHeadOpts()?></head>
+<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
 <h2>Audit Bar Lines</h2>
-<hr>
+
 <p>
 This command is used to audit the bar line alignment in the active staff. If the audit finds a standard bar line that is not aligned properly, it is removed and a new bar line is added in the proper place. </p>
 <p>
@@ -16,5 +17,5 @@ This command will abort if it finds that a bar line is needed in the middle of a
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-</body>
+<?php echo $HTMLDoc->BodyFtr?></body>
 </html>
