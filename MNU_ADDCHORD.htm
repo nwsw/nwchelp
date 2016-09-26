@@ -1,15 +1,14 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Chord Member Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Chord Member Command</h2>
 
 <p>
 This command adds a new note to an existing note, rest, or chord that is just behind the insertion point. If only a single note or rest is present prior to executing this command, a new chord will be formed that combines this new note with the prior item. If the operation is not allowed (due to a rules violation, as described below), the computer will beep and no change will occur. </p>
 <p>
-A chord is capable of supporting notes of two differing duration and/or differing stem directions. If the new note's stem direction and note position is consistent with the note, rest, or chord to the left of the insertion point, then the new note is combined with the item to the left. When combining notes with a previously placed rest, the stem direction tools can be used to control whether the notes appear above or below the rest. </p>
+A chord is capable of supporting notes of two differing duration and/or differing stem directions. If the new note&#39;s stem direction and note position is consistent with the note, rest, or chord to the left of the insertion point, then the new note is combined with the item to the left. When combining notes with a previously placed rest, the stem direction tools can be used to control whether the notes appear above or below the rest. </p>
 <p>
 The following rules apply to chords in <i>NoteWorthy Composer 2</i>: </p>
 <ol>
@@ -34,5 +33,5 @@ Lastly, it is important to understand that only the smaller duration item is act
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 <li><a href="SUBMNU_NOTES.htm">Notes Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

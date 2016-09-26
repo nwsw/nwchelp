@@ -1,21 +1,16 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Tie Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2><img src="img/tieout.gif"> Tie Command</h2>
 
 <p>
 This command toggles the outward note tie parameter for use during note entry. When activated, notes entered onto the active staff will automatically be tied to the right. They will connect with the next note that is in the same position on the staff. A clef change should not be inserted in the middle of a note tie or the program will associate two notes of differing pitches together, thus preventing some notes from playing, and others from turning off. </p>
 <p>
-A tied note can be created after a note is placed on the staff by selecting it, and then pressing the note tie button on the tool bar. This only works when the following conditions are satisfied: </p>
-<ol>
-<li>One, and only one, note or chord is selected</li>
-<li>The adjacent note or chord to the right includes a note at the same position on the staff</li>
-</ol>
+A tied note can be created after a note is placed on the staff by selecting it, and then pressing the note tie button on the tool bar.
 <p>
-<b>If you are using the lyric feature</b>: All notes that are the recipient of an inward tie will not be associated with a new lyric syllable. </p>
+<b>If you are using the lyric feature</b>: By default, all notes that are the recipient of an inward tie will not be associated with a new lyric syllable. This can be controlled from the <a href="TAB_SNGNOTEPROPERTIES.htm">Notes tab of Edit, Properties</a>.</p>
 <p>
 <b>See Also </b> </p>
 <ul>
@@ -23,5 +18,5 @@ A tied note can be created after a note is placed on the staff by selecting it, 
 <li><a href="MNU_ADDNOTE.htm">Note Symbol Command</a></li>
 <li><a href="MNU_AUDITSCORE.htm">Refresh Score Command</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Tools Menu Commands </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Tools Menu Commands</h2>
 
 <p>
@@ -12,21 +11,26 @@ This menu contains various tools for working with a score file. </p>
 <li><a href="MNU_MIDIRECORD.htm">Record</a>: Records MIDI input while playing the active score</li>
 <li><a href="MNU_STAFFPLAY.htm">Staff Play</a>: Plays just the active staff</li>
 <li><a href="MNU_MIDIPLAY.htm">Play</a>: Plays the active score</li>
+<li><a href="MNU_PLAYPAUSE.htm">Pause</a>: Pause the current play back</li>
 <li><a href="MNU_MIDISTOP.htm">Stop</a>: Stops play or resets all configured devices</li>
 <li><a href="MNU_VOLUMECONTROL.htm">Windows Volume Control</a>: Opens the system volume control panel</li>
 <li><a href="MNU_SCOREREVIEW.htm">Score Review</a>: Review the score in a list format</li>
+<li><a href="MNU_LAYERINGTOOL.htm">Layerng Tool</a>: A layering tool for quickly reworking staff layers</li>
 <li><a href="MNU_MUTELIST.htm">Mute List</a>: Set and clear the mute status for the score parts from a list</li>
 <li><a href="MNU_ADDVIAMIDI.htm">Insert MIDI Input</a>: Enables remote note entry via MIDI Input</li>
-<li><a href="MNU_NOTETOOLSPERSIST.htm">Persistent Note Tools</a>: Enables the selection of various note tools to persistent even after a note is added</li>
 <li><a href="MNU_AUTOBEAM.htm">Automatic Beam</a>: Automatically beaming function for the active staff</li>
 <li><a href="MNU_TRANSPOSE.htm">Transpose Staff</a>: Transposes the active staff up or down in semitones</li>
 <li><a href="MNU_FORCEACCIDENTALS.htm">Force Accidentals</a>: Forces all notes in active staff to be labeled with an accidental</li>
-<li><a href="MNU_AUDITBARLINES.htm">Audit Bar Lines</a>: Audits and replaces the bar line structure of the current staff</li>
+<li>Audit
+<ul>
 <li><a href="MNU_AUDITACCIDENTALS.htm">Audit Accidentals</a>: Audits and polishes the accidental assignments in the active staff</li>
+<li><a href="MNU_AUDITBARLINES.htm">Audit Bar Lines</a>: Audits and replaces the bar line structure of the current staff</li>
 <li><a href="MNU_AUDITSPELLING.htm">Audit Enharmonic Spelling</a>: Audits and re-spells notes to match the current key signature</li>
-<li><a href="MNU_AUDITSTEMS.htm">Audit Note Stem</a>: Audits and polishes the note stem directions for the active staff</li>
+<li><a href="MNU_AUDITSTEMS.htm">Audit Note Stem</a>: Audits the note stem directions for selected notes</li>
+</ul>
+</li>
 <li><a href="MNU_USERTOOLS.htm">User Tool</a>: Used to run your own custom tools/commands on selected notation</li>
 <li><a href="MNU_PREFERENCES.htm">Options</a>: Configure <i>NoteWorthy Composer 2</i> application preferences</li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

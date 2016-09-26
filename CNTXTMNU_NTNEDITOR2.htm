@@ -1,23 +1,26 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Editor Context Menu Commands (Selection Present) </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Editor Context Menu Commands (Selection Present)</h2>
 
 <p>
-The following commands are available in the notation editor when one or more notation items are currently selected in the active staff. These can be accessed either by: hitting the right mouse button (on a two or three button mouse), or by pressing the &quot;~&quot; key on the computer keyboard. You do not need to use the shift key for this to work. After this action, the appropriate notation editor context menu pops up with the choices below: </p>
+The following commands are available in the notation editor when one or more notation items are currently selected in the active staff. These can be accessed either by: hitting the right mouse button (on a two or three button mouse), or by pressing the Menu key on the computer keyboard.  After this action, the appropriate notation editor context menu pops up with the choices below: </p>
 <ul>
-<li><a href="MNU_EDITCUT.htm">Cut</a>: Cuts the selection to the clipboard</li>
-<li><a href="MNU_EDITCOPY.htm">Copy</a>: Copies the selection to the clipboard</li>
-<li><a href="MNU_COPYSPECIAL.htm">Copy Special</a>: Copies the portion of the selection that fits on screen to the clipboard as a graphic</li>
-<li><a href="MNU_EDITCLEAR.htm">Clear</a>: Clears the selection (no effect on clipboard)</li>
+<li><a href="MNU_EDITCUT.htm">Cut</a>: Copy the selection to the clipboard and then delete it</li>
+<li><a href="MNU_EDITCOPY.htm">Copy</a>: Copy the selection to the clipboard</li>
+<li><a href="MNU_EDITCLEAR.htm">Clear</a>: Clear the selection (no effect on clipboard)</li>
+<li><a href="MNU_EDITPASTE.htm">Paste</a>: Paste the contents of the clipboard into the staff</li>
 <li><a href="MNU_LASTUSERTOOL.htm">Last User Tool</a>: Used to repeat the most recently executed user tool on the selected notation</li>
 <li><a href="MNU_USERTOOLS.htm">User Tool</a>: Used to run your own custom tools/commands on selected notation</li>
-<li><a href="MNU_OPENPROPERTIES.htm">Selection</a>: Edits the current selection (opens appropriate dialog)</li>
+<li><a href="SUBMNU_NOTES.htm">Notes</a>:
+<br>
+<ul>
 <li><a href="MNU_NOTEBEAM.htm">Beam</a>: Beams the note flags of the selected notes</li>
 <li><a href="MNU_NOTETRIPLET.htm">Triplet</a>: Turns the selected notes into a triplet</li>
+<li><a href="MNU_HAIRPINCRESC.htm">Crescendo</a>: Toggles the crescendo attribute of the selected notes</li>
+<li><a href="MNU_HAIRPINDECRESC.htm">Diminuendo</a>: Toggles the decrescendo attribute of the selected notes</li>
 <li><a href="MNU_NOTEACCENT.htm">Accent</a>: Toggles the accent attribute of the selected notes</li>
 <li><a href="MNU_NOTEDOT.htm">Dot</a>: Marks subsequent notes and rests as having a dotted duration</li>
 <li><a href="MNU_NOTEDOUBLEDOT.htm">Double-Dot</a>: Toggles the double dot attribute</li>
@@ -28,5 +31,9 @@ The following commands are available in the notation editor when one or more not
 <li><a href="MNU_NOTESTEMUP.htm">Stem Up</a>: Toggles the upward stem attribute</li>
 <li><a href="MNU_NOTESTEMDN.htm">Stem Down</a>: Toggles the downward stem attribute</li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</li>
+<li><a href="MNU_NTNFILTEREDPROP.htm">Filtered Properties</a>: Allows an include/exclude filter to be applied before editing properties</li>
+<li><a href="MNU_OPENPROPERTIES.htm">Properties</a>: Open the propeties editor for the current selection</li>
+</ul>
+</body>
 </html>

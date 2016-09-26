@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>FAQ: Stuck notes on play back</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>FAQ: Stuck notes on play back</h2>
 
 <p>
@@ -14,5 +13,5 @@ As for the cause, there are two possibilities: </p>
 If you are using flow directions, be careful when a note is tied when entering a flow direction. The tied note must resolve to the same note in all sections that receive the note tie. For example, if a note tie extends into a special ending, if you do not resolve the note tie in one of the special endings, then the tied note will be &quot;stuck&quot;. </p>
 <p>
 Secondly, if you play a score which includes the Sustain Pedal markings, and Stop the play back while the pedal is down, the &quot;pedal down&quot; effect remains for that MIDI channel even after you start play back again. This can cause stuck notes when play is selected again. If this is the cause, the easiest solution is to hit the Stop button twice. </p>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

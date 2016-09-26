@@ -1,15 +1,15 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
-<title>Allow Layering</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
-<h2>Allow Layering</h2>
+<title>Layering in Edit Mode</title>
+</head>
+<body>
+<h2><img src="img/layering.gif"> Layering in Edit Mode</h2>
 
 <p>
-This command is used to change the active status of the <a href="JavaScript:IDHTip('IDH_PGSETUPCONTENTLAYERING')">Allow Layering</a>
-option in <a href="MNU_PAGESETUP.htm">Page Setup</a>. Sometimes it is easier to work with layered parts with the layering feature
-turned off. This option is a fast way to turn layering on and off directly in the editor.</p>
+This command is used to enable the layering of parts within the editor while in edit mode. 
+When disabled, no layering is shown in the editor unless it is in <a href="MNU_VIEWER.htm">Viewer Mode</a>.
+
+<p>This option should not be confused with the <a href="MNU_PAGESETUP.htm">Allow Layering option in Page Setup</a>.
 <p>
 <b>See Also </b>
 <p>
@@ -17,5 +17,5 @@ turned off. This option is a fast way to turn layering on and off directly in th
 <li><a href="SUBMNU_VIEW.htm">View Menu Commands</a></li>
 <li><a href="MNU_PAGESETUP.htm">Page Setup</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

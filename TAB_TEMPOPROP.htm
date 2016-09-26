@@ -1,17 +1,19 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Tempo Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Tempo Properties</h2>
 
 <p>
 Tempo properties include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGTEMPO1')">Base</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGTEMPO2')">Tempo</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGTEMPO6')">Optional Text Expression</a></li>
+<li><h4>Base</h4><div class="ctldesc">This field defines the tempo base. For example, if this is set to <i>Quarter</i>, then the specified tempo will be in units of quarter notes per minute.</div>
+</li>
+<li><h4>Tempo</h4><div class="ctldesc">This is the tempo, in base units per minute.</div>
+</li>
+<li><h4>Optional Text Expression</h4><div class="ctldesc">The tempo can optionally include a predefined text-based instruction to the performer. This optional text can be added in this box.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -20,5 +22,5 @@ Tempo properties include: </p>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

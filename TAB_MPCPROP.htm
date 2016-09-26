@@ -1,21 +1,32 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Multi-point Controller Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Multi-point Controller Properties</h2>
 
 <p>
 Multi-point controller properties include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGMULTIPTCTRL1')">Controller</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGMULTIPTCTRL2')">Style</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGMULTIPTCTRL3')">Time Resolution</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGMULTIPTCTRL4')">Sweep Resolution</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGMULTIPTCTRL5')">Setting Enable Checkboxes</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGMULTIPTCTRL6')">Time Offsets</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGMULTIPTCTRL7')">Controller Value Sliders</a></li>
+<li><h4>Controller</h4><div class="ctldesc">This is the type of performance parameter that you want to control. 
+The actual change in this parameter is implemented by the remaining fields.</div>
+</li>
+<li><h4>Style</h4><div class="ctldesc">You can set up to 4 control points with different values, which is used to vary the controller value over time. This field allows you to specify the algorithm that will be used to vary the controller between the different control points. You can use:
+<p>
+<b>Absolute:</b> Only the specific values at specific times will be performed
+<p>
+<b>Linear Sweep:</b> Changes between the control points will be changed gradually over the time specified</div>
+</li>
+<li><h4>Time Resolution</h4><div class="ctldesc">The numeric values that you place into the <i>Time Offset</i> field for each control point are relative times. They are converted to absolute musical intervals by multiplying them by the time multiplier specified in this box.</div>
+</li>
+<li><h4>Sweep Resolution</h4><div class="ctldesc">This field can be used to control how dense a series of control changes will be when the Linear Sweep control change style. The larger the value you use, the fewer actual control changes will be used during the linear control sweep. This is most useful for pitch bends, as a very large number of control changes are possible when sweeping the pitch over its full range, thus sometimes overflowing the MIDI data stream.</div>
+</li>
+<li><h4>Setting Enable Checkboxes</h4><div class="ctldesc">This lower area of the dialog is used to define up to four control points. The first point is automatically enabled, so there is not an enabling checkbox. These three check boxes are used to enable the remaining control points. When a check is next to a control point, it is considered active, and will cause a change in the performance parameter equal to the controller value set to the right.</div>
+</li>
+<li><h4>Time Offsets</h4><div class="ctldesc">The time offset for each control point gets multiplied by the <i>Time Offset Multiplier</i> field and then added to the current song position. This is how you specify when the control point should be initiated. Each control point&#39;s time offset is added to the previous control point&#39;s event time. This means that Setting 3 will always occur sometime after Setting 2, and so on. The time offsets do not change when particular notes are played that follow after the controller item in the staff, so one controller item can influence a series of note events.</div>
+</li>
+<li><h4>Controller Value Sliders</h4><div class="ctldesc">These scroll bars are used to control the value associated with the corresponding control point. The range of the control point varies with the type of controller that has been specified.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -24,5 +35,5 @@ Multi-point controller properties include: </p>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

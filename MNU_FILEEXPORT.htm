@@ -1,27 +1,19 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
-<title>Export Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+<title>Export Command</title>
+</head>
+<body>
 <h2>Export Command</h2>
-
-<p>
-This command is used to export a work into an alternative file format, such as a Standard MIDI File (*.mid), NoteWorthy Composer text file,
-or the older NoteWorthy Composer version 1.75 file format. You can select:
-
+<p>This command is used to export a work into a Standard MIDI File (*.mid) or the older NoteWorthy Composer file format (*.nwc).</p>
 <ul>
-<li><b>Type 0 MIDI File:</b> contain a single one track that contains all of the song data</li>
-<li><b>Type 1 MIDI File:</b> Each staff reqpresents a MIDI track in the file, as well as a conductor track for performance tempo and other signature data</li>
-<li><b>NoteWorthy Composer 1.75 File:</b> A representation of the score that is suitable for opening in NoteWorthy Composer 1.75 or later</li>
-<li><b>NWC Text File:</b> A textual representation of the score that is suitable for reading in a text editor, and processing by text filter/conversion programs</li>
+<li><strong>Type 0 MIDI File:</strong><br>A performance file with a single track that contains all of the song performance data.<br><br></li>
+<li><strong>Type 1 MIDI File:</strong><br>A performance file where each staff represents a separate MIDI track. A conductor track contains performance tempo and other performance/signature instructions.<br><br></li>
+<li><strong>NoteWorthy Composer 1.75 File:</strong><br>Creates a file that can be opened by NoteWorthy Composer 1.75. Any version 2 specific functionality in the file will be lost in the conversion.</li>
 </ul>
-</p>
-<b>See Also </b></p>
+<p><strong>See Also </strong></p>
 <ul>
-<li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
-<li><a href="MNU_FILESAVE.htm">Save Command</a></li>
-<li><a href="MNU_FILESAVEALL.htm">Save All Command</a></li>
+<li><a href="/nwc2/help/SUBMNU_FILE.htm">File Menu Commands</a></li>
+<li><a href="/nwc2/help/MNU_FILESAVE.htm">Save Command</a></li>
+<li><a href="/nwc2/help/MNU_FILESAVEALL.htm">Save All Command</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
-</html>
+</body>

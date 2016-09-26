@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Insert Menu Commands </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Insert Menu Commands</h2>
 
 <p>
@@ -13,6 +12,9 @@ This menu contains all of the symbols which can be inserted into a staff. All co
 <li><a href="MNU_ADDREST.htm">Rest</a>: Adds a rest</li>
 <li><a href="MNU_ADDCHORD.htm">Chord Member</a>: Adds a note member to a chord</li>
 <li><a href="MNU_ADDBARLINE.htm">Bar Line</a>: Adds a standard bar line</li>
+<li><a href="MNU_ADDMMREST.htm">Multi-measure Rest</a>: Adds a multi-measure rest</li>
+<li><a href="MNU_ADDSPACER.htm">Spacer</a>: Adds a staff spacer</li>
+<li><a href="MNU_ADDSIZER.htm">Boundary Change</a>: Adds a boundary change instruction</li>
 <li><a href="MNU_ADDSTYLEDBARLINE.htm">Styled Bar Line</a>: Adds special bar lines</li>
 <li><a href="MNU_ADDCLEF.htm">Clef</a>: Adds a bass or treble clef</li>
 <li><a href="MNU_ADDDYNAMIC.htm">Dynamic</a>: Adds dynamics such as <b><i>ppp</i></b> or <b><i>mf</i></b></li>
@@ -29,5 +31,5 @@ This menu contains all of the symbols which can be inserted into a staff. All co
 <li><a href="MNU_ADDPATCH.htm">Instrument Change</a>: Change the performance instrument and its properties</li>
 <li><a href="MNU_ADDMIDICONTROLLER.htm">Multi-point Controller</a>: Adds a generic MIDI controller</li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

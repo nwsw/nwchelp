@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Multi-point Controller Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Multi-point Controller Command</h2>
 
 <p>
@@ -104,7 +103,7 @@ The same is true with this setting. A higher contour value makes it easier for t
 <p>
 <b><u>Control Point Settings</u></b><u>:</u> The lower area of the dialog is where you actually can define up to four control points. The first point is automatically enabled, so there is not an enabling checkbox. The other three points have a checkbox which you use to enable the corresponding control point. </p>
 <p>
-<b>Time Offset</b>: The time offset for each control point gets multiplied by the Time Offset Multiplier field and then added to the current song position. This is how you specify when the control point should be initiated. Each control point's time offset is added to the previous control point's event time. This means that Setting 3 will always occur sometime after Setting 2, and so on. The time offsets do not change when particular notes are played that follow after the controller item in the staff, so one controller item can influence a series of note events. </p>
+<b>Time Offset</b>: The time offset for each control point gets multiplied by the Time Offset Multiplier field and then added to the current song position. This is how you specify when the control point should be initiated. Each control point&#39;s time offset is added to the previous control point&#39;s event time. This means that Setting 3 will always occur sometime after Setting 2, and so on. The time offsets do not change when particular notes are played that follow after the controller item in the staff, so one controller item can influence a series of note events. </p>
 <p>
 <b>Controller Value</b>: The scroll bars next to each setting control the value associated with that control point. The range of the control point varies with the type of controller that has been specified. </p>
 <p>
@@ -169,5 +168,5 @@ The same is true with this setting. A higher contour value makes it easier for t
 <ul>
 <li><a href="SUBMNU_INSERT.htm"><b>Insert Menu Commands</b></a><b> </b></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

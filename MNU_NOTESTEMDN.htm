@@ -1,17 +1,16 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Stem Down Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2><img src="img/stemdn.gif"> Stem Down Command</h2>
 
 <p>
 This command toggles the note stem down attribute for use during note entry. If it is selected when a note, rest, or chord member is added, the resulting item on the staff will have an downward stem, if it requires a stem. This parameter also applies to rests and whole notes, neither of which actually demonstrate their note stem direction visually. </p>
 <p>
-A note's stem direction can be controlled after it has been placed in the staff. This is accomplished by selecting the notes, and then pressing the note stem button on the tool bar. The button is highlighted when the entire selection contains the stem direction attribute, otherwise it is not highlighted. The stem direction cannot be changed for a selection which includes a split stem chord or chord which includes a rest. </p>
+A note&#39;s stem direction can be controlled after it has been placed in the staff. This is accomplished by selecting the notes, and then pressing the note stem button on the tool bar. The button is highlighted when the entire selection contains the stem direction attribute, otherwise it is not highlighted. The stem direction cannot be changed for a selection which includes a split stem chord or chord which includes a rest. </p>
 <p>
-If a note does not contain a stem direction attribute, the stem direction is determined by the position of the note on the staff. If the <a href="MNU_AUDITSTEMS.htm">Audit Note Stems</a> command is used, all stem direction attributes will be reconsidered based on a note's position on the staff, its presence in a beam, as well as any preceding split stem chords which appear behind it. </p>
+If a note does not contain a stem direction attribute, the stem direction is determined by the position of the note on the staff. If the <a href="MNU_AUDITSTEMS.htm">Audit Note Stems</a> command is used, all stem direction attributes will be reconsidered based on a note&#39;s position on the staff, its presence in a beam, as well as any preceding split stem chords which appear behind it. </p>
 <p>
 <b>See Also </b> </p>
 <ul>
@@ -19,5 +18,5 @@ If a note does not contain a stem direction attribute, the stem direction is det
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="MNU_AUDITSTEMS.htm">Audit Note Stems Command</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

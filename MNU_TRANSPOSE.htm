@@ -1,19 +1,43 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Transpose Staff Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Transpose Staff Command</h2>
+<p>
+This command is used to transpose the current staff up or down by a number of semitones. This is most often used to transpose the visual score to another key which matches the natural 
+pitch of the currently selected instrument for the staff. Both notes and any standard key signatures are transposed by the number of semitones that you specify. The audible effect of
+the transpose can be negated so that all staves in the score sound right when played back. This is done using the Transposition field in the global staff parameters. You can designate
+that the staff play back transposition be updated automatically, or you can change this yourself from inside the <a href="MNU_EDITSTAFF.htm">Staff Properties</a> dialog on the <i>Midi</i> tab.</p>
 
+<h3>Controls</h3>
+<h4>Semitones</h4>
+<div class="ctldesc">This box contains the number of semitones that the staff will be transposed by during execution of the transpose operation. A value of 0 in this box will cause the staff to be enharmonically re-spelled, based on the current key signatures in the staff.
+</div>
+
+<h4>Update staff play back</h4>
+<div class="ctldesc">If this box is checked, the staff will be audibly transposed during play back such that the effects of the transpose will not be heard (although they will be seen on screen). This box is most often used to compensate for an instrument that does not match concert C tuning. When transposing to the instruments natural key, a check in this box will ensure that MIDI playback will still sound correctly through your sound card. 
 <p>
-This command is used to transpose the current staff up or down by a number of semitones. This is most often used to transpose the visual score to another key which matches the natural pitch of the currently selected instrument for the staff. Both notes and any standard key signatures are transposed by the number of semitones that you specify. </p>
-<p>
-The audible effect of the transpose can be negated so that all staves in the score sound right when played back. This is done using the Transposition field in the global staff parameters. You can designate that the staff play back transposition be updated automatically, or you can change this yourself from inside the <a href="MNU_EDITSTAFF.htm">Staff Properties</a> dialog on the <i>Midi</i> tab. </p>
+If you prefer for the effects of the transpose to both be seen and heard, then do not place a check in this box. If you decide to undo the effect later, this can be done from within the Score Builder, using the Edit button for this staff.
+</div>
+
+<h4>Minimize sharp/flat count</h4>
+<div class="ctldesc">When enabled, this tells the transpose operation to select new key signatures that minimize the number of sharps or flats in the key.
+</div>
+
+<h4>Favor Flat Keys</h4>
+<div class="ctldesc">When enabled, this tells the transpose operation to prefer flat key signatures when the new key signature would otherwise be ambiguous.
+</div>
+
+<h4>Favor Sharp Keys</h4>
+<div class="ctldesc">When enabled, this tells the transpose operation to prefer sharp key signatures when the new key signature would otherwise be ambiguous.
+</div>
+
+
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

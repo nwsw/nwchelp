@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Page Setup Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2><img src="img/pgsetup.gif" width=26 height=22> Page Setup Command</h2>
 
 <p>
@@ -11,43 +10,97 @@ This command allows you to set properties associated with a printed page of your
 <p>
 <b><u>Contents:</u></b> One or more staff parts can be selected for editing and/or printing using this tab: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_CUSTOMVIEWLIST')">Groups</a></li>
-<li><a href="JavaScript:IDHTip('IDH_CUSTOMVIEWLIST')">Visible Parts</a></li>
+<li><h4>Groups</h4><div class="ctldesc">Use this list box to select the parts that you want to appear in the editor. You can select or deselect entire staff groups using the group list on the left side of the staff list.</div>
+</li>
+<li><h4>Visible Parts</h4><div class="ctldesc">Use this list box to select the parts that you want to appear in the editor. You can select or deselect entire staff groups using the group list on the left side of the staff list.</div>
+</li>
+<li><h4>Allow Layering</h4><div class="ctldesc">This enables layering of parts within the file. If this is turned off, then no layering will be
+done for this file, and the other layering options will be unavailable.</div>
+</li>
 </ul>
 <p>
 <b><u>Fonts:</u></b> This is where you can customize the fonts used in the staff. The page includes the following controls: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_PGSETUPNTNTYPEFACE')">Notation Typeface</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC11')">Print Size</a></li>
-<li><a href="JavaScript:IDHTip('IDH_PGSETUPPFONTLIST')">Font List</a></li>
-<li><a href="JavaScript:IDHTip('IDH_PGSETUPPFONTCHANGEBTN')">Modify Button</a></li>
+<li><h4>Notation Typeface</h4><div class="ctldesc">This box identifies the typeface that will be used for most of the standard notation on the staff, including noteheads, clefs, accidentals, dynamics, and note stem flags.
+Any NWC2 symbol fonts currently installed on the system are included in the drop down list, but any typeface name can be entered in this box. You will
+only get high quality results when selecting fonts explicitly designed for the program.</div>
+</li>
+<li><h4>Print Size</h4><div class="ctldesc">This box identifies the size of the printed staff, in points. The size defines the number of points inside the basic staff minus all leger lines. Depending on your printer&#39;s resolution, not all point changes will show actual change on the printed page. Use the Print Preview feature to check the results before printing.</div>
+</li>
+<li><h4>Font List</h4><div class="ctldesc">This is the list of font types that are used by the program. You can customize the typeface and styles for each font type, and the information will be saved inside each song file. The font types are used in the following manner:
+<p>
+<b>Staff Italic:</b> Used in the staff for text expressions and other italic text
+<p>
+<b>Staff Bold:</b> Used for bold text that appears in a staff, such as tempo numbers, special ending numbers, and text expressions
+<p>
+<b>Staff Lyric:</b> Used for lyric text in a staff
+<p>
+<b>Page Title Text:</b> Used for the title page when printing a score
+<p>
+<b>Page Text:</b> Used for the author text when printing a score
+<p>
+<b>Page Small Text:</b> Used for copyright and page number text in a printout
+<p>
+<b>User &#39;#&#39;:</b> Available for use in the Text Expression item</div>
+</li>
+<li><h4>Modify Button</h4><div class="ctldesc">Use this button to change the type face or styles of a particular font group.</div>
+</li>
 </ul>
 <p>
-<b><u>Options:</u></b> This is where the general setup options are available. They include the following (click on the field name to get additional information): </p>
+<b><u>Options:</u></b> This is where the general setup options are available. They include the following: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC9')">Page Numbering</a> <a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC10')">From</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC12')">Title Page Info</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC13')">Extend last system</a></li>
-<li><a href="JavaScript:IDHTip('IDH_PAGESETUPPADNOTES')">Increase note spacing for larger note durations</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTCLASSIC14')">Staff Labels</a></li>
-<li><a href="JavaScript:IDHTip('IDH_PAGESETUPMEASNUMS')">Measure Numbers</a></li>
-<li><a href="JavaScript:IDHTip('IDH_PAGESETUPMEASNUMSTART')">Measure Start</a></li>
+<li><h4>Title Page Info</h4><div class="ctldesc">If you want title, author, and copyright information to be included in the first page of a printout, then check this box. If this box is not checked, all printed pages will use the same format.</div>
+</li>
+<li><h4>Extend last system</h4><div class="ctldesc">In some cases, the final system in a printout may not extend to the right margin of the page. If you want each staff to be extended out to the right margin in the final system, then check this box. If this is not checked, your last system may not be right aligned with the other systems in a printout.</div>
+</li>
+<li><h4>Justify printed systems vertically</h4><div class="ctldesc">Option for controlling whether printed systems are justified vertically when printing.</div>
+</li>
+<li><h4>Increase note spacing for larger note durations</h4><div class="ctldesc">This option controls whether notes are padded with space on their right as the duration increases. For example, when this option is checked, whole notes will be padded on their right, keeping other notes from getting too close on the staff. Turn this option off to get as many notes as possible to fit into the space used by the staff.</div>
+</li>
+<li><h4>Print multi-staff system separator marks</h4><div class="ctldesc">This option enables a system separator mark to be printed between adjacent systems. The separator mark will only be placed on a system that
+contains multiple parts or displays a connecting orchestral brace.</div>
+</li>
+<li><h4>Page Numbering</h4><div class="ctldesc">If you want your printed pages to be numbered, then check this box.</div>
+ <h4>From</h4><div class="ctldesc">If you have elected to have your pages numbered, then this indicates what number should be used for the first page. All subsequent pages will be incremented from this starting value.</div>
+</li>
+<li><h4>Staff Labels</h4><div class="ctldesc">If you want the name of each staff to appear in a printout, this can be controlled from this box. You can select one of the following values: 
+<p>
+<b>None:</b> The staff names will not appear in the printout.
+<p>
+<b>First System:</b> The staff names will appear only once, on the top of the first page.
+<p>
+<b>Top Systems:</b> The staff names will appear on the top of each page in the printout.
+<p>
+<b>All Systems:</b> The staff names will appear to the left of every staff on every page.</div>
+</li>
+<li><h4>Measure Numbers</h4><div class="ctldesc">This box can be used to enable measure numbers for the score. In the editor, measure numbers will appear on top of nearly every bar line (except local repeat close items). When printing, the measure number appears at the front of each system in the printout.</div>
+</li>
+<li><h4>Measure Start</h4><div class="ctldesc">When measure numbers are included, this value indicates the starting number for the beginning of the score. This can be used when a multiple movement piece is created in multiple files. When printing, measure numbers are displayed at the start of each system on the page. In the editor, numbers are displayed for all bar lines in the staff that constitute a new measure. In the editor, only the top-most staff in the system will display the measure number.</div>
+</li>
 </ul>
 <p>
-<b><u>Margins:</u></b> This is where the page margins are set. The margin settings include the following (click on the field name to get additional information): </p>
+<b><u>Margins:</u></b> This is where the page margins are set. The margin settings include the following: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTMETRICS1')">Top of Page</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTMETRICS2')">Inside Edge</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTMETRICS3')">Outside Edge</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTMETRICS4')">Bottom of Page</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTMETRICS5')">Mirror Margins</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGPRINTMETRICS6')">Measure Units</a></li>
+<li><h4>Top of Page</h4><div class="ctldesc">This is the margin associated with the top of the page.</div>
+</li>
+<li><h4>Inside Edge</h4><div class="ctldesc">This is the margin associated with the inside edge of the printed page. If Mirror Margins is not checked, the inside edge is always the left side of the page.</div>
+</li>
+<li><h4>Outside Edge</h4><div class="ctldesc">This is the margin associated with the outside edge of the printed page. If Mirror Margins is not checked, the outside edge is always the right side of the page.</div>
+</li>
+<li><h4>Bottom of Page</h4><div class="ctldesc">This is the margin associated with the bottom of the page.</div>
+</li>
+<li><h4>Mirror Margins</h4><div class="ctldesc">When mirror margins is enabled, the inside edge and outside edge is reversed from page to page. On odd numbered pages, the inside edge is on the left. On even numbered pages, the inside edge is on the right.</div>
+</li>
+<li><h4>Measure Units</h4><div class="ctldesc">You can enter the margin values in inches or centimeters. This box controls how the values are interpreted.</div>
+</li>
 </ul>
 <p>
 <b><u>Preview:</u></b> This is where you can preview the effects of changes made in the other page setup areas. This area includes a summary list of what the current view of the score will look like on the printed page. You can also go directly to print preview from this page. The page includes the following: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_PGSETUPPVIEWSTATLIST')">Information List</a></li>
-<li><a href="JavaScript:IDHTip('IDH_PGSETUPPVIEWPREVIEWBTN')">Preview Button</a></li>
+<li><h4>Information List</h4><div class="ctldesc">This is a summary list of facts regarding the score printout. This includes things like how many pages are expected to be included in the printout, as well as facts about the currently selected printer (which may be needed by support staff if you experience any print problems). The <i>Label</i> column is used to describe each piece of information included in the <i>Information</i> column.</div>
+</li>
+<li><h4>Preview Button</h4><div class="ctldesc">Press this button to preview the score based on the current page setup options. If you do not like the results, you can change or cancel the page setup options from the other tabs.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -57,5 +110,5 @@ This command allows you to set properties associated with a printed page of your
 <li><a href="MNU_PRINTPREVIEW.htm">Print Preview Command</a></li>
 <li><a href="MNU_PRINTERSETUP.htm">Printer Setup Command</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

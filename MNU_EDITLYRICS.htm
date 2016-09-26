@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Lyrics Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2><img src="img/lyric.gif" width=26 height=22> Lyrics Command</h2>
 
 <p>
@@ -11,7 +10,15 @@ Lyrics are added to a staff using this command. Each staff can be configured for
 <p>
 <b><u>Configuring Lyrics: </u></b></p>
 <p>
-The first property section, the <b><i>Configuration</i></b> tab, is used to define the lyric <a href="JavaScript:IDHTip('IDH_DLGLYRICLINECNT')">Line Count</a> that should be associated with the active staff. A separate tab is then available for each of the lyric lines that have been defined for the staff. You can control how lyric syllables are aligned with notes on the staff using the <a href="JavaScript:IDHTip('IDH_DLGLYRICNOTEALIGNMENT')">Align Syllable Using</a> option. You can control where the lyrics are placed vertically in the staff using the <a href="JavaScript:IDHTip('IDH_DLGLYRICALIGNMENT')">Alignment</a> and <a href="JavaScript:IDHTip('IDH_DLGLYRICMARGIN')">Offset</a> placement options.</p>
+The first property section, the <b><i>Configuration</i></b> tab, is used to define the lyric <h4>Line Count</h4><div class="ctldesc">You can include up to 8 lyric lines per staff using this box. A lyric is not available until it is enabled from this box.</div>
+ that should be associated with the active staff. A separate tab is then available for each of the lyric lines that have been defined for the staff. You can control how lyric syllables are aligned with notes on the staff using the <h4>Align Syllable Using</h4><div class="ctldesc">This field controls how the lyric text will be aligned and justified underneath its corresponding note(s). Lyric alignment can be forced to use:
+<p><b>Start of Accidental/Note</b>: This aligns the lyric syllables on the far left side of each corresponding note, starting at the same
+location as any accidentals that would appear on the note.
+<p><b>Standard Rules</b>: This aligns the lyric using standard conventions for lyrics in notation. Normally, the lyric will be centered 
+under the notes. If a multi-note phrase encompasses the syllable, then the lyric will be left aligned with the start of the notehead.</div>
+ option. You can control where the lyrics are placed vertically in the staff using the <h4>Alignment</h4><div class="ctldesc">The lyric lines can be positioned either above or below the staff using this field.</div>
+ and <h4>Offset</h4><div class="ctldesc">This field is used to add space near the staff boundary. The lyric lines will be placed above or below this space, thus making room for things like special endings at the top of a staff.</div>
+ placement options.</p>
 <p>
 <b><u>Authoring Lyrics: </u></b></p>
 <p>
@@ -47,8 +54,9 @@ When entering lyrics, you should separate each audible syllable with one of the 
 Use of these separator conventions may become more important in later upgrades that may allow &quot;fake book&quot; arrangements. </p>
 <p> If you want to include one or more spaces into a single syllable (or utterance), 
   you can use the underscore character (&quot;_&quot;) to accomplish this, as 
-  long as you have the <a href="JavaScript:IDHTip('IDH_DLGLYRICXLATEUNDRSCORE')">Underscore 
-  shown as space</a> option enabled. Any underscores in a lyric are displayed 
+  long as you have the <h4>Underscore 
+  shown as space</h4><div class="ctldesc">Use this option to enable the translation of underscores into spaces within the lyric.</div>
+ option enabled. Any underscores in a lyric are displayed 
   as spaces in the score when this is enabled. Using the underscore, you can have 
   multiple words or syllables associated with a single note event on the score. 
   You can also add space onto the front or at the end of a syllable in order to 
@@ -86,5 +94,5 @@ While in the lyric editor, you can copy a lyric line via the clipboard using sta
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="MNU_NTNPROPERTIES.htm">notation properties</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

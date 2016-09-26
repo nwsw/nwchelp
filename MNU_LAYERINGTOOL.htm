@@ -1,13 +1,19 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Layering Tool</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Layering Tool</h2>
 
 <p>
-This command brings up a list of all parts in the score where layering can be quickly established or removed.</p>
+This command brings up a list of all parts in the score where layering can be quickly established or removed.
+You create a layer in the Layering Tool by selecting all of the parts that should be in the layer, 
+then pressing the <b>Make Layer</b> button. If you have only one part selected, then the Make Layer command will 
+make that part unlayered, since you are basically making it a layer comprised of a single staff.
+</p>
+<p>You select multiple parts in the Layering Tool in much the same way as you do from Windows Explorer. 
+You can press and hold the shift key to select ranges, or the control key to select individual parts.
+</p>
 <p>
 <b>See Also </b></p>
 <ul>
@@ -16,5 +22,5 @@ This command brings up a list of all parts in the score where layering can be qu
 <li><a href="SUBMNU_STAFF.htm">Staff Menu Commands</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

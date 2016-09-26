@@ -1,18 +1,72 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Editor Options Dialog Tab </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Editor Options Dialog Tab</h2>
-
 <p>
-The box has options that control the operation of the editor.</p>
+This tab contains a variety of options that control the operation of the editor, including:</p>
+
+<h4>Rt Mouse Sets Insertion Pt</h4>
+<div class="ctldesc">This checkbox is used to control how a click of the right mouse button is treated by the staff notation editor. If you check this box, the editor will re-position the insertion point when you click on the right mouse button. When not check, you must use the left mouse button to first position the insertion point, and then the right mouse button can be used to add notation items. Note that when notation is selected, a right mouse click never re-positions the insertion point, thus leaving the selection present.
+</div>
+
+<h4>Smart Insertion Point</h4>
+<div class="ctldesc">This checkbox is used to control how the insertion point is positioned in the score editor. When checked, the insertion point will generally track to the right side of any notes or rests on the staff. When not checked, the insertion point aligns along the transparent vertical grid that aligns all notes and rests in the current score.
+</div>
+
+<h4>Ignore Transpose on Midi In</h4>
+<div class="ctldesc">This checkbox controls how incoming MIDI events are converted into notes when the currently active staff is using an instrument with transposition. 
+If disabled, incoming MIDI notes will be added to the staff exactly as they sound on the staff. For example, in order to add a C4 note into a Bb trumpet staff, you would 
+need to press the Bb3 key on the piano, since the trumpet triggers a two semitone transposition to its Bb tuning.
+When enabled, you can enter notes onto the staff from the piano keyboard, or a remote MIDI device, and the notes will be placed onto the staff without applying the 
+transposition settings of the current instrument. This means that you can enter a C4 note onto the staff by pressing the C4 key on the piano, even if the current instrument is 
+a Bb trumpet (with a transposition of -2).
+</div>
+
+<h4>Smart Properties Insert</h4>
+<div class="ctldesc">This option controls how placement and visibility properties are set for new items inserted into the staff.
+<p>
+When enabled, the <b>Visibility</b> properties for new items are automatically configured with default settings.
+<p>
+The <b>Expression Placement</b> properties are set by finding a similar item elsewhere in the staff, and then using it as a basis for positioning the new item. If a similar item is not found, the program decides on the placement properties based on reasonable defaults.
+<p>
+If the properties need to be changed, the new item can be selected after it is entered, and all properties can be adjusted as necessary.
+<p>
+When disabled, all available properties for new items must be set manually. The properties are initially set to whatever was used the last time this kind of item was added.
+</div>
+
+<h4>Custom Expression Anchor</h4>
+<div class="ctldesc">This option changes the editor&#39;s expression anchor into a custom pointer that indicates the justification origin. The size option 
+indicates the amount of space reserved for the anchor relative to the current zoom level. A size setting of about 1.0 is recommended when using
+the custom anchor.
+</div>
+
+<h4>Chase Playing Notes</h4>
+<div class="ctldesc">When enabled, the editor will follow and highlight notes while they are being played by the program, including in the built-in <a href="MNU_PIANOBAR_ID.htm">piano control</a>. When disabled, a song is played without being followed by the program. Finally, when the note chase is disabled, you can continue to edit the song in the editor. Your changes will not have any audible effect, however, until you stop and restart play back.
+</div>
+
+<h4>Undo Levels</h4>
+<div class="ctldesc">This is used to control how many levels of Undo will be maintained while you work in the editor. You can have as many as 100 commands saved for possible undo. The more levels of Undo that you specify, the more memory will be required by <i>NoteWorthy Composer 2</i> while you are editing. Keep this in mind while setting this value. Also, please note that changing this value will clear the current Undo buffers in all open windows.
+</div>
+
+<h4>Extra Margin Spacing &quot;Above&quot;</h4>
+<div class="ctldesc">This sets the amount of empty top margin space used in the editor. Larger values make it easier to see
+elements in a staff that are located farther above the top staff in the system. Smaller values reduce the
+amount of empty space shown at the top of the score while working the editor.
+</div>
+
+<h4>Extra Margin Spacing &quot;Below&quot;</h4>
+<div class="ctldesc">This sets the amount of empty space included under the score system shown in the editor. Larger values make 
+it possible to scroll down to see elements in a staff that are located farther below the last staff in the 
+system. Smaller values reduce the amount of scrollable space shown at the bottom of the score while working the editor.
+</div>
+
 <p>
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

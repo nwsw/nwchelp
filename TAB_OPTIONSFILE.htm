@@ -1,26 +1,47 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
-<title>File Options Dialog Tab </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+<title>File Options Dialog Tab</title>
+</head>
+<body>
 <h2>File Options Dialog Tab</h2>
-
-<p>
-The following options are available for controlling the file handling operations of <i>NoteWorthy Composer 2</i>: </p>
+<p>The following options are available for controlling the file handling operations of <em>NoteWorthy Composer 2</em>:</p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTFILE1')">Create Backup Files</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTFILEAUTOSV')">Auto save/recovery</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTRESTRICTEDXPRMNTS')">Restrict Experimental Features</a> (this option is only available when experimental features are present in the product)</li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTFILE2')">Export per track signature</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTFILE3')">Header Info</a></li>
-<li><a href="JavaScript:IDHTip('IDH_IMPORTWIZONOPEN')">Use Import Wizard on Open</a></li>
+<li>
+<h4>Backup files during Save</h4>
+<div class="ctldesc">This box is used to indicate whether backup files (*.BAK) are generated on a Save operation. When enabled, any time a composition is saved, an equivalent *.BAK file is generated for the score that preserves the previous version of the file.</div>
+</li>
+<li>
+<h4>Auto save/recovery</h4>
+<div class="ctldesc">You can turn the automatic save feature on and off using these fields. When enabled, your files will be automatically saved as you work on them. This can protect your efforts during a long edit session. The length of time in minutes between automatic save operations can be controlled by the frequency field.</div>
+</li>
+<li>
+<h4>Exit warning threshold</h4>
+<p>This option can be used to trigger an extra warning message when you have multiple open windows with unsaved changes.</p>
+</li>
+<li>
+<h4>Export per track signature</h4>
+<div class="ctldesc">When saving to a Type 1 MIDI file, this checkbox is used to control whether Save places key and time signatures in the track or staff where they exist as well as the conductor track. Some applications complain if they detect signature data in a track other than the conductor track.</div>
+</li>
+<li>
+<h4>Header Info</h4>
+<div class="ctldesc">When saving to a MIDI file, this box is used to control whether the MIDI file will include such items as song title and author information. Some commercial MIDI and notation applications have trouble handling this kind of information when it is present in the conductor track of a MIDI file. It sometimes causes the program to assume that there is not a conductor track in the file. With this box, you can configure this in one of three ways:
+<p><strong>Exclude:</strong> Disables all of this kind of information in a MIDI file</p>
+<p><strong>Track 0:</strong> Places this information in the conductor track</p>
+<p><strong>Track 1:</strong> Places this information in the first sequenced track after the conductor track (only applies to the Type 1 category of standard MIDI Files, Type 0 files will not contain this information)</p>
+</div>
+</li>
+<li>
+<h4>Use Import Wizard on Open</h4>
+<div class="ctldesc">This box enables the use of the MIDI file import wizard when an *.mid file is opened. When this is not checked, the File Open command will simply open the file using the default options specified in the Import tab of Options.</div>
+</li>
+<li>
+<h4>Restrict Experimental Features</h4>
+<p>This option is only available when experimental features are present in the product. When enabled, only score files that already utilize an experimental feature will be given access to the experimental features of the product. When disabled, the experimental features will be available all of the time.</p>
+</li>
 </ul>
-<p>
-<b>See Also </b></p>
+<p><strong>See Also </strong></p>
 <ul>
-<li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
-<li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
+<li><a href="/nwc2/help/SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
+<li><a href="/nwc2/help/SUBMNU_FILE.htm">File Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
-</html>
+</body>

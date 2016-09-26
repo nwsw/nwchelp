@@ -1,16 +1,23 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Visibility Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Visibility Properties</h2>
 
 <p>
 The visibility properties apply to all items that can be added to a staff. The visibility options include:</p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_NTNSHOWSTATUS')">Show on printed page</a></li>
-<li><a href="JavaScript:IDHTip('IDH_NTNSHOWCOLOR')">Item color</a></li>
+<li><h4>Show on printed page</h4><div class="ctldesc">If this item is for MIDI performance only, then you can elect to hide it when printing using this field. The possible values are:
+<p><b>Default</b>: The item will not appear in the final printout if it is generally not appropriate to do so.
+<br><b>Always</b>: The item will always appear in the final printout.
+<br><b>On Top Staff</b>: The item will appear in print only if it is contained in the top staff of the system.
+<br><b>Single Staff Prints</b>: The item will appear in print only when a single staff is included in the system.
+<br><b>Multi Staff Prints</b>: The item will appear in print only when multiple staves are included in the system.
+<br><b>Never</b>: The item will never appear in print.</div>
+</li>
+<li><h4>Item color</h4><div class="ctldesc">This allows the color of the item to be changed to one of the predefined highlight colors. The highlight colors are set from the Tools | Options command, using the Color property tab.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -20,5 +27,5 @@ The visibility properties apply to all items that can be added to a staff. The v
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 <li><a href="TAB_OPTIONSCOLOR.htm">Tools | Options | Color</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

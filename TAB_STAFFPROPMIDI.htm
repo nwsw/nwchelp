@@ -1,19 +1,29 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Staff Performance Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Staff Performance Properties</h2>
 
 <p>
 Staff performance properties used in MIDI play back include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT7')">Muted</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT8')">Part Volume</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT9')">Stereo Pan</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT10')">Play back device</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT14')">Channel</a></li>
+<li><h4>Muted</h4><div class="ctldesc">This allows the staff to be enabled or disabled during play back. When muted, all notes in the staff will be ignored when playing the song. Tempo marks, instrument patch changes, and volume changes will still be included in the play back, in case another staff uses the same channel, and depends on the settings from this staff.</div>
+</li>
+<li><h4>Part Volume</h4><div class="ctldesc">This controls the initial volume for this staff&#39;s MIDI channel. A value of -1 indicates that the volume currently set for this channel should not be changed, and no volume settings will be sent to the MIDI device. Volume levels range from 0 to 127, with 127 being the loudest. By default, a new staff is assigned an initial volume of 127, which is the loudest possible setting.</div>
+</li>
+<li><h4>Stereo Pan</h4><div class="ctldesc">This controls the initial stereo position for the instrument associated with this staff. A value of -1 indicates that the stereo position currently set for this channel should not be changed. Stereo position levels range from 0 to 127, with 64 being the center position in the stereo image. New staff parts are initially assigned a pan position of 64.
+<p>
+Note: not all MIDI devices respond to this parameter. Consult your device&#39;s documentation if it does not respond to changes in this box.</div>
+</li>
+<li><h4>Play back device</h4><div class="ctldesc">Specify which device should be used for play back of this staff. This can be any of the devices that are currently configured for use from within the MIDI tab of the Options dialog. Up to 16 devices can be used for play back, if you are lucky enough to have this many devices on your system.
+<p>
+Note: The device cannot be changed later from within the notation. A staff always uses the same device for play back, as listed in this box.</div>
+</li>
+<li><h4>Channel</h4><div class="ctldesc">This specifies which channel on the specified device should be used for playback of this staff.
+<p>
+MIDI devices can support up to 16 channels. Each channel generally uses its own instrument patch, volume, and various other performance parameters. It is usually necessary to use unique channels per staff so that one staff does not interfere with the playback of another staff. By default, each new staff is assigned a new, unique channel.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -23,5 +33,5 @@ Staff performance properties used in MIDI play back include: </p>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

@@ -1,27 +1,37 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Visual Staff Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Visual Staff Properties</h2>
 
 <p>
 Display properties for a staff include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT5')">Upper Vertical Size</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT6')">Lower Vertical Size</a></li>
-<li><a href="JavaScript:IDHTip('IDH_STAFFLINECOUNT')">Lines</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDT4')">Style</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSTAFFEDTLAYERING')">Layer with next staff</a></li>
-<li><a href="JavaScript:IDHTip('IDH_STAFFPROPCOLOR')">Color</a></li>
+<li><h4>Upper Vertical Size</h4><div class="ctldesc">Each staff has a reserved amount of space that it requires when a system is constructed. This box indicates the number of note positions reserved above this staff when it is displayed. This reserves a portion of space for the notation in the staff.</div>
+</li>
+<li><h4>Lower Vertical Size</h4><div class="ctldesc">Each staff has a reserved amount of space that it requires when a system is constructed. This box indicates the number of note positions reserved below this staff when it is displayed. This reserves a portion of space for the notation in the staff.</div>
+</li>
+<li><h4>Lines</h4><div class="ctldesc">This controls the number of lines displayed by the staff. Normally, this should be set to five.</div>
+</li>
+<li><h4>Orchestral Bracket</h4><div class="ctldesc">Start or continue an orchestral bracket to the next staff.</div>
+</li>
+<li><h4>Grand Staff Brace</h4><div class="ctldesc">Start or continue a grand staff brace to the next staff.</div>
+</li>
+<li><h4>Bars Connected</h4><div class="ctldesc">Connect bar lines to the bar lines in the next staff.</div>
+</li>
+<li><h4>Layer with Next Staff</h4><div class="ctldesc">When set, the staff will overlap with the next staff in the system whenever Layering is enabled for the score.</div>
+</li>
+<li><h4>Color</h4><div class="ctldesc">Each staff can be assigned one of the custom highlight colors. If this is done, the editor will no longer show this staff in active and inactive colors. It will use this color instead. Custom highlight colors can be changed from the Color tab in Tools | Options.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
 <ul>
+<li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
+<li><a href="faq_singlestaffsysboundary.htm">Forcing a boundary line in a single staff system</a></li>
 <li><a href="intro_proptab.htm">Introduction to Property Dialog Boxes</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
-<li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

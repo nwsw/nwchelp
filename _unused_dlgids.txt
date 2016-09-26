@@ -1,0 +1,483 @@
+<h4>IDH_DLGABOUT1</h4>
+<div class="ctldesc">This About box show the latest version of the product, and indicates if the product has been registered. Further details about the product can be found in the online help.
+</div>
+
+<h4>IDH_DLGSTAFFNAME</h4>
+<div class="ctldesc">Enter the name that you would like to be associated with this staff. This name must be unique in the score. It cannot be the same as any other staff name that already is present in the score.
+</div>
+
+<h4>IDH_DLGSTAFFLABEL</h4>
+<div class="ctldesc">This is a label that identifies the staff. It does not need to be unique.
+<p>
+If Staff Labels are enabled when printing (from File|Page Setup), this label will be placed to the left of the staff when 
+it is printed. When labeling a grand staff, add a label name to the first staff in the brace, then leave the label blank
+for the other staves in the grand staff brace.
+</div>
+
+<h4>IDH_DLGSTAFFEDT2</h4>
+<div class="ctldesc">This box contains the group name that will contain this staff. A score organizes its parts into groups. Each score can have more than one group, with different staff groups assigned via this field. A staff can only reside in a single group.
+<p>
+A typical use of the staff group would be to divide a song up into melody and rhythm sections. This list box is where each staff can be assigned to a particular group. Each staff can be included in one, and only one, group. Creating a new group is accomplished by simply typing in a new group name in this box. It will then be available to subsequent staff properties. By default, all new staves are assigned into a group called Standard.
+</div>
+
+<h4>IDH_DLGSTAFFEDT3</h4>
+<div class="ctldesc">The position of the staff can be changed through this list box. The staff will be inserted above the staff selected in this box. If the position is set to default, the position will be not be changed from its current location.
+</div>
+
+<h4>IDH_SMARTPROPERTIESINSERT</h4>
+<div class="ctldesc">This option controls how placement and visibility properties are set for new items inserted into the staff.
+<p>
+<b><u>When enabled</u></b>: The <b>Visibility</b> properties for new items are automatically 
+configured with default settings.
+<p>
+The <b>Expression Placement</b> properties are set by finding a similar item elsewhere 
+in the staff, and then using it as a basis for positioning the new item. If a similar item
+is not found, the program decides on the placement properties based on reasonable defaults.
+<p>
+If the properties need to be changed, the new item can be selected after it is entered, 
+and all properties can be adjusted as necessary.
+<p>
+<b><u>When disabled</b></u>: All available properties for new items must be set manually.
+The properties are initially set to whatever was used the last time this kind of item
+was added.
+</div>
+
+<h4>IDH_DLGINFO1</h4>
+<div class="ctldesc">This is where you specify the title of this composition.
+</div>
+
+<h4>IDH_DLGINFO2</h4>
+<div class="ctldesc">This box is where you place your name, or the name of the composer of this work. You can also add a phrase such as &quot;arranged by&quot; in front of your name in order to distinguish your role in the song.
+</div>
+
+<h4>IDH_DLGINFO3</h4>
+<div class="ctldesc">You are entitled to copyright protection for any original songs. You can specify two lines of copyright information that will be displayed on the first page of the printed composition. A suggested phrasing is provided automatically.
+</div>
+
+<h4>IDH_DLGINFO4</h4>
+<div class="ctldesc">Any comments that you wish to make about the composition can be made here. This can be used as a running record of your compositional or performance process associated with the song. This information is not included on any printouts of the song.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC1</h4>
+<div class="ctldesc"><i>NoteWorthy Composer 2</i> allows you to select a set of staves for inclusion in a print job. This is done inside of this box. All of the selected staves are then considered to be a single system. By default, all the staves currently in the edit window are selected for print. As staves are selected, the print metrics are updated to reflect how much of a printed page will be used by a single system.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC2</h4>
+<div class="ctldesc"><b>System Height:</b> This shows how much of the printed page will be occupied by a single system. This value will change as you add or remove staff parts to the system, or change other options which affect notation size and spacing. This is intended to help you optimize the options for a successful printout. The preview is a better method once you have your settings pretty much the way that you want them.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC3</h4>
+<div class="ctldesc"><b>Cover Page Systems:</b> This indicates how many systems will fit on the cover page of your printout. Use Print Preview for a better indication of what your printout will look like on paper.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC4</h4>
+<div class="ctldesc"><b>Other Pages:</b> This indicates how many systems will fit on all pages after the cover page of your printout. Use Print Preview for a better indication of your printout&#39;s appearance on paper.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC5</h4>
+<div class="ctldesc"><b>Print All Pages:</b> Select this option if you want your entire score to be printed.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC6</h4>
+<div class="ctldesc"><b>Print a Range of Pages:</b> Select this option when you want to only print a range of pages in your printout.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC7</h4>
+<div class="ctldesc">This is the starting page in the range that will be printed when the page range option is enabled.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC8</h4>
+<div class="ctldesc">The ending page in the print range that will be printed when the page range option is enabled. The printout will include all pages in the numbered range, including the page specified here.
+</div>
+
+<h4>IDH_PGSETUPSTAFFSZRESCALE</h4>
+<div class="ctldesc">When this box is checked, any changes to the Staff Size will proportionately change the other fonts configured for use in the staff.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC15</h4>
+<div class="ctldesc">Press this button to setup the current printer shown to the right of the button.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC16</h4>
+<div class="ctldesc">This is the name of the currently selected printer, which will be used if you press the Print button.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC17</h4>
+<div class="ctldesc">Press this button when you are ready to print your score. It is generally a good idea to preview it first to make sure everything looks as intended.
+</div>
+
+<h4>IDH_DLGPRINTCLASSIC18</h4>
+<div class="ctldesc">Press this button when you are ready to preview how your printout will look on paper.
+</div>
+
+<h4>IDH_DLGPRTPVIEWPAGEVIEW</h4>
+<div class="ctldesc">This is the actual depiction of the printed page, shown in a preview window.
+</div>
+
+<h4>IDH_DLGPRINTPREVIEW1</h4>
+<div class="ctldesc">When you are finished with previewing the printout, press this button to close the preview window.
+</div>
+
+<h4>IDH_DLGPRINTPREVIEW2</h4>
+<div class="ctldesc">This resets the preview back to the first page of the printout.
+</div>
+
+<h4>IDH_DLGPRINTPREVIEW3</h4>
+<div class="ctldesc">This advances the preview to the next page.
+</div>
+
+<h4>IDH_DLGPRTPVIEWBACK</h4>
+<div class="ctldesc">This moves the preview to the prior page in the printout.
+</div>
+
+<h4>IDH_DLGPRINTPREVIEW4</h4>
+<div class="ctldesc">This button is used to copy this page as a graphic. The graphic can then be imported and edited by many page layout applications. You can copy the page into the clipboard or a Windows Enhanced Metafile (*.EMF).
+</div>
+
+<h4>IDH_DLGTOOLBARS1</h4>
+<div class="ctldesc">Select each tool bar that you want to be visible in the program. Those that are not selected will not be available on the screen until this box is opened again, and the item is turned back on by selecting it.
+</div>
+
+<h4>IDH_DLGWELCOME1</h4>
+<div class="ctldesc">This area shows information about the product and its usage license.
+</div>
+
+<h4>IDH_DLGTRANSPOSE1</h4>
+<div class="ctldesc">This box contains the number of semitones that the staff will be transposed by during execution of the transpose operation. A value of 0 in this box will cause the staff to be enharmonically re-spelled, based on the current key signatures in the staff.
+</div>
+
+<h4>IDH_DLGTRANSPOSE2</h4>
+<div class="ctldesc">If this box is checked, the staff will be audibly transposed during play back such that the effects of the transpose will not be heard (although they will be seen on screen). This box is most often used to compensate for an instrument that does not match concert C tuning. When transposing to the instruments natural key, a check in this box will ensure that MIDI playback will still sound correctly through your sound card. 
+<p>
+If you prefer for the effects of the transpose to both be seen and heard, then do not place a check in this box. If you decide to undo the effect later, this can be done from within the Score Builder, using the Edit button for this staff.
+</div>
+
+<h4>IDH_DLGTRANSPOSE3</h4>
+<div class="ctldesc">When enabled, this tells the transpose operation to select new key signatures that minimize the number of sharps or flats in the key.
+</div>
+
+<h4>IDH_DLGTRANSPOSE4</h4>
+<div class="ctldesc">When enabled, this tells the transpose operation to prefer flat key signatures when the new key signature would otherwise be ambiguous.
+</div>
+
+<h4>IDH_DLGTRANSPOSE5</h4>
+<div class="ctldesc">When enabled, this tells the transpose operation to prefer sharp key signatures when the new key signature would otherwise be ambiguous.
+</div>
+
+<h4>IDH_DLGTRANSPOSEWARN1</h4>
+<div class="ctldesc">If you press this button, the command will be performed without any additional warnings, even if other notes may not be spelled correctly.
+</div>
+
+<h4>IDH_DLGTRANSPOSEWARN2</h4>
+<div class="ctldesc">If you want to cancel the current operation, press this button. Once pressed, control will be returned to the editor without making any changes to the staff (ie. the command will not be performed).
+</div>
+
+<h4>IDH_DLGTRANSPOSEWARN3</h4>
+<div class="ctldesc">This presence of this button indicates that there is at least one more note/chord in the staff that might not be spelled correctly after the command is finished. You can press this button to view the next item that may have problems during the command operation.
+</div>
+
+<h4>IDH_DLGLYRICX1</h4>
+<div class="ctldesc">The actual lyric text is inserted into this box. When entering lyrics, you should separate each audible syllable with one of the following separators:
+<p>
+<b>hyphen:</b> The hyphen is used to separate syllables within a word.
+<p>
+<b>space:</b> A space is used to separate words within a phrase.
+<p>
+<b>carriage return:</b> A carriage return is used to start a new phrase, but generally the next lyric line is related to the previous line, as if they are part of a single verse or section.
+<p>
+<b>two returns:</b> Two carriage returns together creates a new paragraph, section, or verse within the current lyric. Additional carriage returns (greater than 2 in a row) are ignored.
+<p>
+An underscore can be used to insert spaces into the lyric that do not cause a split of the text into two syllables (underscores are displayed as spaces in the staff).
+</div>
+
+<h4>IDH_DLGGOTO1</h4>
+<div class="ctldesc">This control is used to move the insertion point to a specified measure, as identified in this box. The measure you specify must be greater than the starting measure number associated with the score.
+</div>
+
+<h4>IDH_DLGOPTEDITOR5</h4>
+<div class="ctldesc">This checkbox is used to control how a click of the right mouse button is treated by the staff notation editor. If you check this box, the editor will re-position the insertion point when you click on the right mouse button. When not check, you must use the left mouse button to first position the insertion point, and then the right mouse button can be used to add notation items. Note that when notation is selected, a right mouse click never re-positions the insertion point, thus leaving the selection present.
+</div>
+
+<h4>IDH_DLGOPTEDITOR6</h4>
+<div class="ctldesc">This checkbox is used to control how the insertion point is positioned in the score editor. When checked, the insertion point will generally track to the right side of any notes or rests on the staff. When not checked, the insertion point aligns along the transparent vertical grid that aligns all notes and rests in the current score.
+</div>
+
+<h4>IDH_DLGOPTEDITOR7</h4>
+<div class="ctldesc">Persistent note tools: This box is used to configure the note tools that should persist during note entry. When enabled, selected note parameters stay selected until you specifically turn them off. When not enabled, the parameters will reset after you add a note or rest to the staff.
+</div>
+
+<h4>IDH_DLGOPTEDITOR8</h4>
+<div class="ctldesc">This is used to control how many levels of Undo will be maintained while you work in the editor. You can have as many as 100 commands saved for possible undo. The more levels of Undo that you specify, the more memory will be required by <i>NoteWorthy Composer 2</i> while you are editing. Keep this in mind while setting this value. Also, please note that changing this value will clear the current Undo buffers in all open windows.
+</div>
+
+<h4>IDH_DLGOPTMIDISTARTDELAY</h4>
+<div class="ctldesc">This box controls the count down, in seconds, that is used before play actually begins.
+</div>
+
+<h4>IDH_DLGOPTMIDIPLAYNEWNOTES</h4>
+<div class="ctldesc">This controls whether new notes are played as they are entered from the computer keyboard.
+</div>
+
+<h4>IDH_DLGOPTMIDI6</h4>
+<div class="ctldesc">This button can be used to move an available device into the playback list.
+</div>
+
+<h4>IDH_DLGOPTMIDI7</h4>
+<div class="ctldesc">This button can be used to move a selected device back to the available pool.
+</div>
+
+<h4>IDH_DLGZOOM1</h4>
+<div class="ctldesc">You can enter the size of the notation that should be used in the editor into this box. This value is in pixels. Only even numbers are used for zoom level. If you enter an odd number, it will be converted to an even number before the zoom is performed.
+</div>
+
+<h4>IDH_DLGFILETEMPLATE1</h4>
+<div class="ctldesc">This is a list of templates that can be used as the basis for a new file. Select the template that you want to use, and then press OK. A new file will be created that looks just like the template. The <i>&lt;Blank Score&gt;</i> template on the <b>General</b> tab is always available for creating a new, generic file that is not based on any predefined templates.
+<p>
+If you drag and drop an existing file into this box from the explorer or file manager, it will automatically be copied and used as the basis for a new template.
+</div>
+
+<h4>IDH_IMPORTWIZINSTRLIST</h4>
+<div class="ctldesc">This is a list of all the import instructions that will be used in converting the MIDI file into a score. Each instruction corresponds to a staff in the imported score. The instruction list is used, in order from top to bottom, in the construction of the score. Individual instructions in this list can be modified by double clicking on them. Instructions can be added or removed using the adjacent buttons.
+</div>
+
+<h4>IDH_IMPORTWIZINSTRADD</h4>
+<div class="ctldesc">Use this button to add a new import instruction to the end of the instruction list. This is useful if you are manually splitting one of the MIDI file tracks into two or more staves, or you just want to import a track into additional staves beyond that which was created during the automatic construction of the import instruction list.
+</div>
+
+<h4>IDH_IMPORTWIZINSTRDEL</h4>
+<div class="ctldesc">Use this button to remove the selected import instruction from the import list.
+</div>
+
+<h4>IDH_IMPORTWIZINSTREDIT</h4>
+<div class="ctldesc">Use this button to edit a selected instruction in the list. You can also double click on an instruction to edit its properties.
+</div>
+
+<h4>IDH_STAFFMUTELIST</h4>
+<div class="ctldesc">This box lists all of the parts in the score. Each part has a checkbox to its left. Each part that is checked will not be played back when the Play command is selected. Each box that is checked indicates that mute is enabled for the part. The buttons can be used to quickly set or clear the mute status for all the parts in the score.
+</div>
+
+<h4>IDH_STAFFMUTENONE</h4>
+<div class="ctldesc">This button is used to clear the selection status of all parts in the list. This can be used to quickly clear the entire selected list.
+</div>
+
+<h4>IDH_STAFFMUTEALL</h4>
+<div class="ctldesc">This button can be used to quickly select every staff in the list.
+</div>
+
+<h4>IDH_STAFFMUTEREVERSE</h4>
+<div class="ctldesc">This button can be used to quickly reverse the selected status of each part in the list.
+</div>
+
+<h4>IDH_SCOREREVIEWLIST</h4>
+<div class="ctldesc">This is the list of parts in the score. A summary of the MIDI properties associated with each staff are shown in the columns to the right of each part&#39;s name.
+</div>
+
+<h4>IDH_SCORERVWGOTOPROPERTIES</h4>
+<div class="ctldesc">Select this button to advance to the properties dialog for the selected part. This can be used to make changes to a part and then return back to the review screen. A part can also be changed by pressing Enter while in the review list.
+</div>
+
+<h4>IDH_COPYSPECIALDLG1</h4>
+<div class="ctldesc">These two boxes allow control of whether just the active staff, or all of the staves, will be copied to the clipboard as a graphic. When just the active staff is selected, it will appear by itself in the clipboard graphic. When all staves are selected, all the notation in the editor view that aligns vertically with the selection will be copied to the clipboard as a picture. If only one staff is present in the editor, then this dialog will not be presented, as it is unnecessary.
+</div>
+
+<h4>IDH_TIPNAVIGATE</h4>
+<div class="ctldesc">Use these buttons to navigate through all of the usage tips. Press Back to review past tips, or Next to see new tips.
+</div>
+
+<h4>IDH_TIPMOREHELP</h4>
+<div class="ctldesc">Many tips have additional information in the help file. When this button is present, you can press it to get additional help on the current tip.
+</div>
+
+<h4>IDH_STARTUPTIPS</h4>
+<div class="ctldesc">This box is used to have a new tip displayed each time you start the program. Deselect this  box if you do not want to receive a new tip each time you start the program.
+</div>
+
+<h4>IDH_TIPTEXTAREA</h4>
+<div class="ctldesc">This dialog shows many useful tips on how to use the program. This area shows the current tip.
+</div>
+
+<h4>IDH_DLGFHISTORYLIST</h4>
+<div class="ctldesc">This is a list of the most recent songs used in the program. Double click a file to open it, or select it and then press OK.
+</div>
+
+<h4>IDH_DLGFHISTORYCLEAR</h4>
+<div class="ctldesc">Press the Clear button to empty the contents of the history buffer, thus starting over on history tracking.
+</div>
+
+<h4>IDH_BTNBARCUSTOMIZE</h4>
+<div class="ctldesc">Press this button if you want to rearrange the contents of any of the toolbars, or create your own custom toolbars.
+</div>
+
+<h4>IDH_CBTNBARTBARLIST</h4>
+<div class="ctldesc">This box is used to select the toolbar that can be edited using the remaining buttons and list box controls. Select the toolbar that you want to change from this list, then you can remove it, change its name, or rearrange its contents using the remaining controls.
+</div>
+
+<h4>IDH_CBTNBARTBARNEWDELRENAME</h4>
+<div class="ctldesc">These buttons are used to alter the names and numbers of toolbars in the program. You can delete the currently selected toolbar, add a new custom toolbar, or rename one of the existing toolbars. Note that at least one toolbar must always exist, and all toolbars must have unique names.
+</div>
+
+<h4>IDH_CBTNBARDEFAULTRESET</h4>
+<div class="ctldesc">Use this button to restore the toolbars to their factory default settings.
+</div>
+
+<h4>IDH_CBTNBARAVAILTOOLS</h4>
+<div class="ctldesc">This is the list of available commands that can be included in a toolbar. When you add a command to a toolbar, it is removed from this list and placed into the selected toolbar. This list is sorted alphabetically so you can quickly locate the available commands. Simply double-click the commands that you want to appear in the selected toolbar.
+</div>
+
+<h4>IDH_CBTNBARADDDELCMD</h4>
+<div class="ctldesc">Use these buttons to insert or remove a command from a toolbar. New commands are added after the currently selected command in the list of toolbar commands. The separator item can also be removed from the toolbar using the removal button, even though this item does not actually appear in the list of available tools.
+</div>
+
+<h4>IDH_CBTNBARSEPARATOR</h4>
+<div class="ctldesc">Use this button to add a separator after the currently selected command for the toolbar.
+</div>
+
+<h4>IDH_CBTNBARTBARCMDLIST</h4>
+<div class="ctldesc">This is the list of tools currently present in the selected toolbar, in order. Double-click any item to remove it from the list.
+</div>
+
+<h4>IDH_CBTNBARMOVECMDUPDOWN</h4>
+<div class="ctldesc">Use these two buttons to move a selected command up or down in the toolbar command list. Changes can also be seen in the toolbar if it is currently visible.
+</div>
+
+<h4>IDH_FOLDEREDITCTL</h4>
+<div class="ctldesc">Enter a new folder name directly into this field.
+</div>
+
+<h4>IDH_FOLDEREDITBROWSE</h4>
+<div class="ctldesc">Press this button if you want to browse for the directory that should be used, and have that information placed into the edit field next to this button.
+</div>
+
+<h4>IDH_PREVIEWCOPYSPECCTL</h4>
+<div class="ctldesc">Select the target for the copy operation. You can copy the page graphic to the clipboard or a file.
+</div>
+
+<h4>IDH_DLGSTAFFEDTENDBARTYP</h4>
+<div class="ctldesc">This option determines what kind of bar line appears at the end of the staff. You can use this to customize the look of the final bar line in the staff.
+</div>
+
+<h4>IDH_DLGOPTCOLORCHANGE</h4>
+<div class="ctldesc">This button allows you to change the color of the currently selected element.
+</div>
+
+<h4>IDH_CHASEPLAYINGNOTES</h4>
+<div class="ctldesc">When enabled, the score editor will follow and highlight notes while they are being played by the program. When disabled, a song is played without being followed by the program. This can be used to reduce the demands of the program on the computer during play back. It also will sometimes make play back more accurate, since the demands on the computer are significantly reduced. Finally, when the note chase is disabled, you can continue to edit the song in the editor. Your changes will not have any audible effect, however, until you stop and restart play back.
+</div>
+
+<h4>IDH_DLGINFOLYRICIST</h4>
+<div class="ctldesc">This box is where you place the name of the person or persons who wrote the lyrics for this work. 
+You can also add a phrase such as &quot;words by&quot; in front of the name in order to distinguish 
+their role in the song. If the work does not have lyrics or a credited lyricist, simply leave this 
+field blank.
+</div>
+
+<h4>IDH_USERSTEMLENGTH</h4>
+<div class="ctldesc">Use this option to override the default stem length on the selected notes. You can assign a zero length if you want to hide the stem completely.
+</div>
+
+<h4>IDH_SMALLEXPRESSIONANCHOR</h4>
+<div class="ctldesc">This option changes the editor&#39;s expression anchor into a smaller diamond shape. Advanced users may find
+the smaller diamond to be easier to work with in the editor than the larger anchor symbol.
+</div>
+
+<h4>IDH_EXITWARNINGTHRESHOLD</h4>
+<div class="ctldesc">If the number of unsaved windows equals or exceeds this value, you will get an extra warning when you try to close the program.
+If you never want to receive this warning, you can just enter 0 for the threshold value.
+</div>
+
+<h4>IDH_DLGITREEBOX</h4>
+<div class="ctldesc">This is a list of predefined instruments that are included in the currently selected instrument tree. 
+Simply select the instrument that you want, then press OK. The properties for the selected instrument
+will be copied back to the instrument form that is currently open.
+</div>
+
+<h4>IDH_DLGLOADITREE</h4>
+<div class="ctldesc">This button allows you to select a different instrument tree to be shown in the list. The name of
+the currently selected instrument tree is shown in the title bar of this dialog box.
+</div>
+
+<h4>IDH_DLGOPTEDITORTOPMARGIN</h4>
+<div class="ctldesc">This sets the amount of empty top margin space used in the editor. Larger values make it easier to see
+elements in a staff that are located farther above the top staff in the system. Smaller values reduce the
+amount of empty space shown at the top of the score while working the editor.
+</div>
+
+<h4>IDH_DLGOPTEDITORBTMMARGIN</h4>
+<div class="ctldesc">This sets the amount of empty space included under the score system shown in the editor. Larger values make 
+it possible to scroll down to see elements in a staff that are located farther below the last staff in the 
+system. Smaller values reduce the amount of scrollable space shown at the bottom of the score while working 
+the editor.
+</div>
+
+<h4>IDH_STEMARTICULATION</h4>
+<div class="ctldesc">When set, any articulations added to the note or chord will appear on the stem side of the note, rather than 
+at the notehead. If the selected note is part of a beam, you might also want to override the note&#39;s stem length
+in order to have any articulations properly appear near the end of the note stem.
+</div>
+
+<h4>IDH_UTOOL_LIST</h4>
+<div class="ctldesc">This is a list of user tools that you have added. If you want to run a tool, simply select it and press Enter, or 
+click the Run button.
+</div>
+
+<h4>IDH_UTOOL_MODIFY</h4>
+<div class="ctldesc">Use these buttons to add, edit, or remove a tool from the list.
+</div>
+
+<h4>IDH_UTOOL_NAME</h4>
+<div class="ctldesc">This is the name for the tool that you are creating. The name should describe what the tool does so that
+you can easily identify it later when running the tool.
+</div>
+
+<h4>IDH_UTOOL_CMD</h4>
+<div class="ctldesc">This is the actual command that is run when the tool is selected. The command should invoke a console
+mode program that looks for notation clip text on standard input. It should output replacement clip
+text on standard output. It should exit with a return code of 0 when everything goes as expected.
+Any errors or warning should be sent to standard error.
+
+<p>You can use the <b>Browse</b> button to look for existing scripts. It is recommended that your
+collection of scripts be kept in the <b>Scripts</b> folder, which was created for just this purpose.
+If you open a PHP script with the Browse button, and you have installed the <b>NWC2 User Tool Starter Kit</b>, 
+then the proper command invocation will automatically be created for the PHP script.
+</div>
+
+<h4>IDH_UTOOLR_STDIN</h4>
+<div class="ctldesc">This shows the input data (STDIN) that was sent to the tool.
+</div>
+
+<h4>IDH_UTOOLR_STDOUT</h4>
+<div class="ctldesc">This shows the standard output (STDOUT) generated by the tool.
+</div>
+
+<h4>IDH_UTOOLR_STDERR</h4>
+<div class="ctldesc">This shows any warning/error information (STDERR) issued from the tool.
+</div>
+
+<h4>IDH_UTOOLR_FILE</h4>
+<div class="ctldesc">This is where the input or output file contents are shown.
+</div>
+
+<h4>IDH_UTOOLR_STATUSMSG</h4>
+<div class="ctldesc">This shows the status of the tool result.
+</div>
+
+<h4>IDH_UTOOL_PROMPT</h4>
+<div class="ctldesc">The selected user tool accepts user input from you. The prompt that you see in this dialog will be passed to the user tool script,
+where it will respond accordingly.
+</div>
+
+<h4>IDH_VERTJUSTPGSYSTEMS</h4>
+<div class="ctldesc">This options controls whether the collection of staff systems will be vertically justified/centered on the printed page.
+</div>
+
+<h4>IDH_DLGRESTCHORDSHOWREST</h4>
+<div class="ctldesc">This option can be used to control whether the rest component of the Rest Chord will appear on the printed page.
+</div>
+
+<h4>IDH_UNASSIGNED</h4>
+<div class="ctldesc">This item has not yet been assigned a help context. If possible, please let us know about this situation.
+</div>
+
+<h4>IDH_UNASSIGNED_2199</h4>
+<div class="ctldesc">This item has not yet been assigned a help context. If possible, please let us know about this situation.
+</div>

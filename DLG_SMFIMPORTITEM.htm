@@ -1,23 +1,31 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Import Instruction Dialog </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Import Instruction Dialog</h2>
 
 <p>
 This dialog allows you to set the properties that will be used in the MIDI import process. The import instruction options allow you to control the following aspects of the import for the staff associated with this instruction: </p>
 <ul>
-<li>The <a href="JavaScript:IDHTip('IDH_IMPORTINSTRTRACKNUM')">Track Number</a></li>
-<li>The <a href="JavaScript:IDHTip('IDH_IMPORTINSTRNOTERANGE')">Note Range</a></li>
-<li>The <a href="JavaScript:IDHTip('IDH_IMPORTINSTRCHNLMASK')">MIDI Channels</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT3')">Conversion of sustain pedal marks</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT2')">Conversion of patch changes</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT4')">Automatic note beaming</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT5')">Detection of compound time</a></li>
-<li>The <a href="JavaScript:IDHTip('IDH_DLGIMPORT6')">note resolution</a></li>
-<li>The <a href="JavaScript:IDHTip('IDH_DLGIMPORT7')">rest resolution</a></li>
+<li>The <h4>Track Number</h4><div class="ctldesc">This field specifies the track number that will be imported into a music staff.</div>
+</li>
+<li>The <h4>Note Range</h4><div class="ctldesc">These two boxes are used to control the note range that will be imported into the staff. Notes above or below this range will be ignored. The ranges are listed as MIDI note pitches, which are a combination of note name followed by the octave.</div>
+</li>
+<li>The <h4>MIDI Channels</h4><div class="ctldesc">This is a list of all the MIDI channels that will be imported into this staff. All channels that are marked will be imported together into the new staff. All channels that are not marked will be ignored.</div>
+</li>
+<li><h4>Conversion of sustain pedal marks</h4><div class="ctldesc">When opening a MIDI file, the program can convert sustain pedal events directly into standard music notation. This option enables this conversion. In many cases, it is desirable to disable the automatic inclusion of this data, since it can detract from the overall visual quality of the final score.</div>
+</li>
+<li><h4>Conversion of patch changes</h4><div class="ctldesc">When opening a MIDI file, the program is capable of embedding sound patch changes into the final notation data. The first sound patch encountered in a track is automatically placed into the track data associated with the track performance information. This option enables all patch changes found in a track to be opened and included in the final music notation.</div>
+</li>
+<li><h4>Automatic note beaming</h4><div class="ctldesc">When opening a MIDI file, the program will automatically beam any adjacent notes smaller than a quarter note that appear in the same beat of a measure. If you wish to do the note beaming manually, you can disable this option.</div>
+</li>
+<li><h4>Detection of compound time</h4><div class="ctldesc">When opening a MIDI file, the program will automatically detect compound time signatures in a MIDI sequence when this option is enabled. When disabled, any time signatures encountered in the sequence are assumed to be simple time. This influences how the musical beat in a score is emphasized when converting note events into notation. For example, when this option is enabled, a sequence in 9/4 time will use a dotted half note as the beat when the beaming function is performed. If the option is disabled, that same sequence would use a quarter note as the beat when the beaming function is executed.</div>
+</li>
+<li>The <h4>note resolution</h4><div class="ctldesc">The note resolution value specified here influences how note events in the sequence are converted into music notation. Smaller note values allow more complex sequences to be notated correctly. Larger note values tend to simplify the resulting notation, but may not adequately represent the original musical sequence.</div>
+</li>
+<li>The <h4>rest resolution</h4><div class="ctldesc">The rest resolution option can be used to control the overall placement of rests within the score. Larger note values here will result in fewer rests being placed in the imported score. Smaller rests may still be used in order to preserve the sequence of note on events, but smaller rests will not be used to create staccato effects.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b> </p>
@@ -27,5 +35,5 @@ This dialog allows you to set the properties that will be used in the MIDI impor
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

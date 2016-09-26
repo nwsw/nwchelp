@@ -1,19 +1,29 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Clef Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Clef Properties</h2>
 
-<p>
-The <a href="JavaScript:IDHTip('IDH_DLGCLEF1')">clef type</a> is specified from this property page. You can optionally apply an <a href="JavaScript:IDHTip('IDH_DLGCLEF2')">octave shift</a> to the clef, which will cause any subsequent notes to be applied an octave above or below their standard pitch.</p>
+<h4>Clef Type</h4>
+<div class="ctldesc">Chose the type of clef that you want to use from the drop-down list. Treble, bass, alto, tenor, and percussion
+clefs are all supported from within this box.</div>
+
+<h4>Octave Shift</h4>
+<div class="ctldesc">You can apply an octave shift to the clef using this box. You can elect to have notes played an octave up or down from the standard pitch associated with the selected clef.
+</div>
+
+<h4>Disable Automatic System Clef</h4>
+<div class="ctldesc">This option can be used to prevent this clef from automatically being displayed at the start of later systems in the printed copy of the file. This option is needed even when the first clef instance
+is hidden from the printed copy via Visibility settings.
+</div>
 <p>
 <b>See Also </b></p>
 <ul>
 <li><a href="intro_proptab.htm">Introduction to Property Dialog Boxes</a></li>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
+<li><a href="MNU_ADDCLEF.htm">Insert Clef Command</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

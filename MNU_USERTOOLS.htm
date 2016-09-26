@@ -1,74 +1,20 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>User Tool Command</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>User Tool Command</h2>
 
-<p>This command is used to create a list of user tools which can then be run on selected notation in a staff, or on an empty selection for inserting new notation into the staff. You can use the New, Edit, and Remove buttons to customize your user tools.
-<p><b><u>Developer Information</u></b>
-<p>User tools
-are console mode programs (they run on the command line, not via a graphical user interface). A user tool should accept notation clip text on its standard input (STDIN), and should output new or replacement clip text on its standard output (STDOUT).
-Any warnings or errors should be directed to standard error (STDERR). The following return codes are recognized:
-<p>
-<table border=0 cellspacing="0" cellpadding="4">
-<tr>
-<td width="10%" valign="top">0</td>
-<td width="90%" valign="top">Text in STDOUT  is processed and anything found in STDERR is presented as a warning to the user<br>
-</td>
-</tr>
-<tr>
-<td width="10%" valign="top">1</td>
-<td width="90%" valign="top">Anything found in STDERR is shown to the user, and nothing else is done<br>
-</td>
-</tr>
-<tr>
-<td width="10%" valign="top">99</td>
-<td width="90%" valign="top">Anything found in STDOUT is shown to the user, and nothing else is done</td>
-</tr>
-</table>
-<p>A user tool can be configured to accept user input by adding special prompt instructions on the user tool command line. The format for a prompt instruction is as follows:
-<p><b>&lt;PROMPT:prompt_label=*&gt;</b><br>
-A prompt instruction always starts with the <b>&lt;</b> sign, followed by the word <b>PROMPT</b> in upper case, and completed by a colon. The prompt issued to the user is then specified. It should only contain alpha-numeric text, questions mark, or colon. The prompt is terminated by an equal sign (<b>=</b>). The character after the equal sign is a format specifier, which can be one of the following:
-<p>
-<table border=0 cellspacing="0" cellpadding="4">
-<tr>
-<td width="10%" valign="top">*&nbsp;</td>
-<td width="90%">An asterisk indicates that general text input should be gathered from the user. <br>
-</td>
-</tr>
-<tr>
-<td width="10%" valign="top">#</td>
-<td width="90%">The pound sign indicates that the user should be prompted for an integer value. The range of the value can optionally be specified in brackets after the # sign. For example <b>#[0,5]</b> would prompt for a value from 0 to 5 to be entered by the user.<br>
-</td>
-</tr>
-<tr>
-<td width="10%" valign="top">|</td>
-<td width="90%">The vertical bar indicates that the user should be prompt to select a value from a list. The list of possible values immediately follow the first vertical bar, each separated by another single vertical bar. For example, <b>|Quarter|Half|Whole</b> would prompt the user to select one of these three durations. The first value in the list is the default.</td>
-</tr>
-</table>
-<p>Finally, the prompt is terminated by the <b>&gt;</b> sign.
-No extra white space should be included in the prompt specifier.
-<p>Some example prompts:
-<p><b>&lt;PROMPT:Enter a matching text expression:=*&gt;</b><br>
-This will prompt the user to &quot;<i>Enter a matching text expression:</i>&quot; that will include a text box for general text entry.
+<p>This command is used to create and access a list of user tools which can be run against the currently active editor window.
+You can use the New, Edit, and Remove buttons to create your own user tool commands. A starter set of tools is available 
+from <a href="http://www.noteworthysoftware.com/nwc2/">our web site</a>, or on the optional CD.
 
-<p><b>&lt;PROMPT:How many?=#&gt;</b><br>
-This will prompt the user &quot;<i>How many?</i>&quot; that will include a numeric entry box.
+<p>Developers and advanced users may also wish to explore our <a href="http://my.noteworthysoftware.com/?board=7.0">forum dedicated to User Tools</a>.
 
-<p><b>&lt;PROMPT:Which octave?=#[3,6]&gt;</b><br>
-This will prompt the user to select &quot;<i>Which octave?</i>&quot; and will include a numeric entry box that accepts values from 3 to 6.
-
-<p><b>&lt;PROMPT:Please select the smallest note to process?=|Quarter|8th|16th|32nd&gt;</b><br>
-This will prompt the user to &quot;<i>Please select the smallest note to process?</i>&quot; and will include a drop down box that includes <b>Quarter</b>, <b>8th</b>, <b>16th</b>, and <b>32nd</b>.
-
-<p>A good way to learn more about the user tool mechanism is to start with our User Tool Starter Kit. It can be found at our web site:
-<p align="center"><a href="http://www.noteworthysoftware.com">http://NoteworthySoftware.com</a>
 <p><b>See Also </b> 
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 <li><a href="MNU_LASTUSERTOOL.htm">Last User Tool</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

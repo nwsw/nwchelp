@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Styled Bar Line Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Styled Bar Line Command</h2>
 
 <p>
@@ -11,7 +10,13 @@ This command allows many types of bar lines to be added to the staff. This is do
 <p>
 <b><u>Single:</u></b> A standard bar line (see <a href="MNU_ADDBARLINE.htm">Bar Line Symbol Command</a>). </p>
 <p>
+<b><u>Transparent:</u></b> A transparent bar line which will not be shown on theprinted page, but will otherwise act just like a Single line.</a>).</p>
+<p>
 <b><u>Double:</u></b> A double bar line, which is typically used to denote a sectional change in the score. </p>
+<p>
+<b><u>Broken Single:</u></b> Similar to the standard bar line but with a broken dashed line appearance.</p>
+<p>
+<b><u>Broken Double:</u></b> Similar to the standard double bar line but with a broken dashed line appearance.</p>
 <p>
 <b><u>Section Open/Close:</u></b> Bar lines used to designate the beginning and end of a section of the score. </p>
 <p>
@@ -27,5 +32,5 @@ Several examples of repeated sections are available in the <b>Samples</b> folder
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

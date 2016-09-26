@@ -1,16 +1,17 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Tempo Variance Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Tempo Variance Properties</h2>
 
 <p>
 Tempo variance properties include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGTEMPOVAR1')">Style</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGTEMPOVAR2')">Delay (for fermata and breath marks)</a></li>
+<li><h4>Style</h4><div class="ctldesc">This box is used to set the type of variance that will be placed into the staff.</div>
+</li>
+<li><h4>Delay (for fermata and breath marks)</h4><div class="ctldesc">This is the delay that will be performed when this item is encountered during play back. This is used only for the fermata and breath mark variance types. In all other cases it is ignored. The value is in units of sixteenth notes. For example, a fermata with a delay of four will cause the playback to hold for the equivalent of one quarter note. The delay should only be specified for one instance of the mark at any given vertical position in the song.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -19,5 +20,5 @@ Tempo variance properties include: </p>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

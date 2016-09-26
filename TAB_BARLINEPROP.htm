@@ -1,18 +1,23 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Bar Line Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Bar Line Properties</h2>
 
 <p>
 Bar line properties include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGBARLINE1')">Style</a></li>
-<li><a href="JavaScript:IDHTip('IDH_BARPROPSYSTEMBREAK')">Force System Break (Top Staff Only)</a></li>
-<li><a href="JavaScript:IDHTip('IDH_BARPROPXBARCNT')">Exclude From Bar Count</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGBARLINE2')">Repeat Count (local repeats)</a></li>
+<li><h4>Style</h4><div class="ctldesc">This designates what kind of bar line will appear in the staff.</div>
+</li>
+<li><h4>Force System Break (Top Staff Only)</h4><div class="ctldesc">When selected for a bar line that appears in the top staff of a system, this option will force a new system to be started, starting with the next measure. 
+<p>
+<b>Note:</b> This option only has an effect when used with bar lines in the top most staff of the system. It is ignored when it appears on bar lines in lower staves.</div>
+</li>
+<li><h4>Exclude From Bar Count</h4><div class="ctldesc">This option can be used to prevent a bar line from adding to the running measure count.</div>
+</li>
+<li><h4>Repeat Count (local repeats)</h4><div class="ctldesc">When the bar line style is a <i>Local Repeat Close</i> item, you must also set the repeat count for the local repeat using this box. This is the number of times that the music will repeat between the open and close repeat bar lines.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -21,5 +26,5 @@ Bar line properties include: </p>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

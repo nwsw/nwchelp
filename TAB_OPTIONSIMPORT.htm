@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Import Options Dialog Tab </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Import Options Dialog Tab</h2>
 
 <p>
@@ -11,18 +10,26 @@ The following options are available for controlling the MIDI import operations o
 <p>
 <b><i>Notate Options </i></b></p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT3')">Notate Pedal Marks</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT2')">Insert Instrument Changes</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT4')">Automatic Beam</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT5')">Detect Compound Time</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT6')">Note Resolution</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGIMPORT7')">Rest Resolution</a></li>
+<li><h4>Notate Pedal Marks</h4><div class="ctldesc">When opening a MIDI file, the program can convert sustain pedal events directly into standard music notation. This option enables this conversion. In many cases, it is desirable to disable the automatic inclusion of this data, since it can detract from the overall visual quality of the final score.</div>
+</li>
+<li><h4>Insert Instrument Changes</h4><div class="ctldesc">When opening a MIDI file, the program is capable of embedding sound patch changes into the final notation data. The first sound patch encountered in a track is automatically placed into the track data associated with the track performance information. This option enables all patch changes found in a track to be opened and included in the final music notation.</div>
+</li>
+<li><h4>Automatic Beam</h4><div class="ctldesc">When opening a MIDI file, the program will automatically beam any adjacent notes smaller than a quarter note that appear in the same beat of a measure. If you wish to do the note beaming manually, you can disable this option.</div>
+</li>
+<li><h4>Detect Compound Time</h4><div class="ctldesc">When opening a MIDI file, the program will automatically detect compound time signatures in a MIDI sequence when this option is enabled. When disabled, any time signatures encountered in the sequence are assumed to be simple time. This influences how the musical beat in a score is emphasized when converting note events into notation. For example, when this option is enabled, a sequence in 9/4 time will use a dotted half note as the beat when the beaming function is performed. If the option is disabled, that same sequence would use a quarter note as the beat when the beaming function is executed.</div>
+</li>
+<li><h4>Note Resolution</h4><div class="ctldesc">The note resolution value specified here influences how note events in the sequence are converted into music notation. Smaller note values allow more complex sequences to be notated correctly. Larger note values tend to simplify the resulting notation, but may not adequately represent the original musical sequence.</div>
+</li>
+<li><h4>Rest Resolution</h4><div class="ctldesc">The rest resolution option can be used to control the overall placement of rests within the score. Larger note values here will result in fewer rests being placed in the imported score. Smaller rests may still be used in order to preserve the sequence of note on events, but smaller rests will not be used to create staccato effects.</div>
+</li>
 </ul>
 <p>
 <b><i>Track Splitting Options </i></b></p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_IMPORTMAPCHANNELS')">Separate MIDI channels</a></li>
-<li><a href="JavaScript:IDHTip('IDH_IMPORTSPLITTRSHLD')">Maximum single track chord size</a></li>
+<li><h4>Separate MIDI channels</h4><div class="ctldesc">This option is used to control whether each MIDI channel found in a MIDI track will be mapped into a new staff. When set, a new staff will be created for note events occurring in each MIDI channel that is present. When not set, all note events will be treated together in the conversion to a notated staff regardless of their MIDI channel.</div>
+</li>
+<li><h4>Maximum single track chord size</h4><div class="ctldesc">This option is used to enable automatic splitting of MIDI tracks into two staves. The value in this box is semitones. Whenever a group of simultaneous note events span a semitone interval larger than this value, the performance will automatically be split into two staves during import.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -30,5 +37,5 @@ The following options are available for controlling the MIDI import operations o
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 <li><a href="SUBMNU_FILE.htm">File Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

@@ -1,22 +1,53 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Note Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Note Properties</h2>
 
 <p>
 Note properties are assigned to one or more selected notes after they have been added to the staff. Note properties include: </p>
 <ul>
-  <li><a href="JavaScript:IDHTip('IDH_DLGEXTRAACCSIGNSLOTS')">Extra Accidental 
-    Spacing</a></li>
-  <li><a href="JavaScript:IDHTip('IDH_DLGEXTRANOTEHEADSLOTS')">Extra Note Spacing</a></li>
-  <li><a href="JavaScript:IDHTip('IDH_NOTEMUTED')">Muted</a></li>
-  <li><a href="JavaScript:IDHTip('IDH_NOLEGERLINES')">No Leger Lines</a></li>
-  <li><a href="JavaScript:IDHTip('IDH_NOTEPROPSLURDIR')">Slur Direction</a></li>
-  <li><a href="JavaScript:IDHTip('IDH_NOTEPROPTIEDIR')">Tie Direction</a></li>
-  <li><a href="JavaScript:IDHTip('IDH_ATTACHLYRICSYLLABLE')">Lyric Syllable</a></li>
+<li><h4>Extra Accidental 
+Spacing</h4><div class="ctldesc">This option can be used to add additional accidental space between a note and its accidental. This is most useful when working with one or more layered staves that overlap each other. This can be used to create extra room between a note and its accidental, making other notes that exist in a different layered staff to be more visible. A note accidental can be moved to further to the left in order to avoid a collision with an accidental in another staff.</div>
+</li>
+<li><h4>Extra Note Spacing</h4><div class="ctldesc">This option can be used to add space to the left side of a note on the staff. If the note includes an accidental, this space will appear after the accidental space, but before the note head. This is most useful when working with one or more layered staves that overlap each other. A note head can be moved to further to the right to avoid a collision with a note in another staff.</div>
+</li>
+<li><h4>Muted</h4><div class="ctldesc">This allows a note or chord to be muted such that it will not be heard during play back. 
+<b>Be careful</b> with this, as muting the receiving end of a note tie will cause stuck notes that
+never stop playing.</div>
+</li>
+<li><h4>No Leger Lines</h4><div class="ctldesc">This option can be used to prevent leger lines from being shown for selected notes, even if the note extends
+outside of the normal five line staff.</div>
+</li>
+
+<li><h4>Use stem for articulations</h4>
+<div class="ctldesc">When set, any articulations added to the note or chord will appear on the stem side of the note, rather than 
+at the notehead. If the selected note is part of a beam, you might also want to override the note&#39;s stem length
+in order to have any articulations properly appear near the end of the note stem.
+</div>
+</li>
+
+<li><h4>Override Stem Length</h4>
+<div class="ctldesc">Use this option to override the default stem length on the selected notes. You can assign a zero length if you want to hide the stem completely.
+</div>
+</li>
+
+<li><h4>Slur Direction</h4><div class="ctldesc">This box controls the direction of a slur on the selected notes, if a slur exists. It is recommended that the slur direction be set the same for all note members belonging in the slur range. This will yield the best results in the editor and when printing.
+<p>
+This is most useful when working with staff layering, in order to avoid slur collisions with notation in another layered staff.</div>
+</li>
+<li><h4>Tie Direction</h4><div class="ctldesc">This box controls the direction of a tie on the selected notes, if a tie exists. If applied to a chord, this will force all tied notes in the chord to use the same tie direction. 
+<p>
+This is most useful when working with staff layering, in order to avoid tie collisions with notation in another layered staff.</div>
+</li>
+
+<li><h4>Lyric Syllable</h4><div class="ctldesc">Any note, chord, or rest can automatically be used in the placement of lyrics. By default, all notes except rests, grace notes, and notes that receive a tie or slur get attached to a lyric syllable. This box can be used to override the default lyric attachment behavior.</div>
+</li>
+
+<li><h4>Notehead Color</h4><div class="ctldesc">Each note can be assigned its own notehead color. For chords, this should generally be done while adding the note members 
+to the chord. You can use this control to reset the notehead color for all currently selected notes, including those within a selected chord.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -25,5 +56,5 @@ Note properties are assigned to one or more selected notes after they have been 
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

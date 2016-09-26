@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Staff Menu Commands </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Staff Menu Commands</h2>
 
 <p>
@@ -14,7 +13,11 @@ This menu allows staff parts to be added, changed, or removed from the score. </
 <li><a href="MNU_MOVESTAFF.htm">Move Staff</a>: Move the currently active staff to another position in the score</li>
 <li><a href="MNU_REMOVESTAFF.htm">Delete Staff</a>: Remove the currently active staff</li>
 <li><a href="MNU_MUTESTAFF.htm">Mute Staff</a>: Mute the active staff so that it does not sound during play back</li>
+<li><a href="MNU_STAFFBRACKET.htm">Bracket with Next Staff</a>: Start or extend an orchestral bracket to the next staff</li>
+<li><a href="MNU_STAFFBRACE.htm">Brace with Next Staff</a>: Start or extend a grand staff brace to the next staff</li>
+<li><a href="MNU_CONNECTBARS.htm">Connect Bars</a>: Connect bar lines to the next staff</li>
+<li><a href="MNU_LAYERWITHNEXT.htm">Layer with Next</a>: Use layering to overlap this staff with the one under it</li>
 <li><a href="MNU_EDITSTAFF.htm">Staff Properties</a>: Edit the properties of the current staff</li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

@@ -1,16 +1,30 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Special Ending Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Special Ending Properties</h2>
 
 <p>
 Special ending properties include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGSPECIALENDING1')">Standard Special Endings (1 through 7)</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGSPECIALENDING2')">Default (D.S./D.C.) Ending</a></li>
+<li><h4>Standard Special Endings (1 through 7)</h4><div class="ctldesc">Using these boxes, you can set the different endings that apply to the section that follows this item in the staff. Up to seven standard endings are supported. You can select more than one ending in a single item. These are used in conjunction with master repeat open and close bar lines to build a repeated section.</div>
+</li>
+<li><h4>Default (D.S./D.C.) Ending</h4><div class="ctldesc">This is the default ending for a repeated section. The default is used after a Dal Segno or Da Capo have been executed, since master repeats are themselves ignored after one of the flow directions have been executed.</div>
+</li>
+
+<li><h4>Continue prior ending</h4><div class="ctldesc">You can use this button to add a continuation line that extends through the current bar.</div>
+
+<li><h4>Closed ending</h4><div class="ctldesc">This option is used to terminate the special ending bracket just before the next bar.</div>
+
+<li><h4>Hide ending text</h4><div class="ctldesc">This option can be used to hide any ending text while in Viewer mode or when printing. If necessary, custom text can be added using Insert, Text Expression.</div>
+
+<li><h4>Bracket height</h4><div class="ctldesc">This controls the height of the starting and closing ends of the ending bracket. </div>
+
+<li><h4>Vertical offset</h4><div class="ctldesc">This controls the vertical position of the ending relative to the current staff upper boundary.
+A positive offset moves the ending upward away from the top of the staff. A negative offset moves the ending downward. The offset starts at the staff&#39;s dynamic upper boundary.
+</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -19,5 +33,5 @@ Special ending properties include: </p>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

@@ -1,22 +1,26 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>View Menu Commands </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>View Menu Commands</h2>
 
 <p>
-This menu contains commands necessary to zoom in and out of the current score, as well as to control the visibility of the tool bars. </p>
+This menu contains various commands that control appearance and zoom levels in the editor and surrounding toolbars.</p>
 <ul>
+<li><a href="MNU_ACTIVESTAFFFRAME.htm">Show Active Staff Edges</a>: Show the top and bottom boundary edges for the currently active staff</li>
+<li><a href="MNU_SHOWCROSSHAIR.htm">Show Crosshair Command</a>: Show crosshair guidelines at the insertion point</li>
+<li><a href="MNU_SHOWLABELPANEL.htm">Show Label Panel</a>: Show or hide the entire staff label panel on the left side of the editor</li>
+<li><a href="MNU_SHOWSTAFFLABELS.htm">Show Staff Labels</a>: Show staff labels in the left side panel of the editor</li>
+<li><a href="MNU_SHOWBARNUMPANEL.htm">Show Bar Number Panel</a>: Show or hide the bar number panel at the top of the editor</li>
+<li><a href="MNU_ALLOWLAYERING.htm">Layering in Edit Mode</a>: Enable/disable staff layering while in edit mode</li>
+<li><a href="MNU_VIEWER.htm">Viewer Mode</a>: Places the editor in Viewer mode, where hidden and editor only elements are not shown</li>
 <li><a href="MNU_VIEWZOOMIN.htm">Zoom In</a>: Zoom into the currently active score</li>
 <li><a href="MNU_VIEWZOOMOUT.htm">Zoom Out</a>: Zoom out of the currently active score</li>
 <li><a href="MNU_VIEWZOOM.htm">Zoom</a>: Specify a specific zoom level for the active score</li>
 <li><a href="MNU_AUDITSCORE.htm">Refresh Score</a>: Redraw (refresh) the active score</li>
-<li><a href="MNU_ALLOWLAYERING.htm">Allow Layering</a>: Toggle the status of staff layering</li>
-<li><a href="MNU_VIEWER.htm">Viewer Preview</a>: Preview how the score will look in the <i>NoteWorthy Composer Viewer</i> program</li>
 <li><a href="MNU_VIEWSTATUSBAR.htm">Status Bar</a>: Toggle the visual status of the status bar</li>
 <li><a href="CM_TOOLBARS.htm">Tool Bars</a>: Select which tool bars should be currently visible</li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

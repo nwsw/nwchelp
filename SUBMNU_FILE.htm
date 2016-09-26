@@ -1,9 +1,8 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>File Menu Commands </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>File Menu Commands</h2>
 
 <p>
@@ -11,20 +10,22 @@ The File menu contains the necessary commands to open, save, and print <i>NoteWo
 <ul>
 <li><a href="MNU_FILENEW.htm">New</a>: Creates a new score file from scratch or using a predefined template</li>
 <li><a href="MNU_FILEOPEN.htm">Open</a>: Opens an existing score file or MIDI performance</li>
-<li><a href="MNU_FILESAMPLES.htm">Open Samples</a>: Quick way to open a sample score file provided with the program</li>
+<li><a href="MNU_FILEBACKUPS.htm">Open Backup</a>: Open a backup version of a *.nwc file</li>
+<li><a href="MNU_FILESAMPLES.htm">Open Sample</a>: Quick way to open a sample score file provided with the program</li>
 <li><a href="MNU_FILESAVE.htm">Save</a>: Saves the score in the active edit window</li>
 <li><a href="MNU_FILESAVEAS.htm">Save As</a>: Saves the score in the active window to a new file name and/or file type</li>
 <li><a href="MNU_FILESAVEALL.htm">Save All</a>: Saves all open score files which have been changed</li>
 <li><a href="MNU_FILEREVERT.htm">Revert</a>: Reverts the currently active score back to the version saved on disk.</li>
 <li><a href="MNU_FILECLOSE.htm">Close</a>: Closes the currently active score</li>
 <li><a href="MNU_FILEIMPORT.htm">Import</a>: Import a music file</li>
-<li><a href="MNU_FILEEXPORT.htm">Export</a>: Export a music file</li>
+<li><a href="MNU_FILEEXPORT.htm">Export</a>: Export to a different file format</li>
 <li><a href="MNU_FILEINFO.htm">Info</a>: Specifies authoring information about the active score</li>
 <li><a href="MNU_PAGESETUP.htm">Page Setup</a>: Sets page display options when printing</li>
 <li><a href="MNU_PRINTERSETUP.htm">Printer Setup</a>: Changes the current printer configuration</li>
+<li><a href="MNU_PRINTPREVIEW.htm">Print Preview</a>: Previews what will actually print</li>
 <li><a href="MNU_PRINT.htm">Print</a>: Prints the active score</li>
 <li><a href="MNU_FILEHISTORY.htm">History</a>: Scores which have been recently open</li>
 <li><a href="MNU_FILEEXIT.htm">Exit</a>: Quits the program</li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

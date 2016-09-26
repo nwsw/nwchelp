@@ -1,24 +1,22 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Key Signature Command </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2><img src="img/keysig.gif"> Key Signature Command</h2>
 
 <p>
 A new key signature can be added at the insertion point with this command. When the key signature of an existing section is changed, the visual properties of the notes in that section are not changed in any way. </p>
 <p>
-Key signatures are not automatically propagated to all of the staves in a score. Each staff must be assigned the appropriate key signature. </p>
+Each staff must be assigned the appropriate key signature.</p>
 <p>
 A key signature designating the key of C is displayed as a single natural sign in the score editor. This is done to visually show that a key signature is present in this location. When the score is printed out, it will not show the natural sign. </p>
 <p>
-Sometimes the key will not be displayed correctly until after a refresh is performed by pressing the <b>F9</b> key. </p>
-<p>
 <b>See Also </b> </p>
 <ul>
+<li><a href="TAB_KEYSIGPROP.htm">Key Signature Properties</a></li>
 <li><a href="MNU_AUDITSCORE.htm">Refresh Score Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

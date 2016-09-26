@@ -1,20 +1,18 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Experimental Features </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Experimental Features</h2>
-
 <p>
-Occasionally, the program will include a couple of experimental features that are hidden during normal operation. If a file that uses any of the experimental features is opened, or if experimental features are enabled globally, then the experimental features become available. Before using an experimental file and the features that are enabled by it, please read the following: </p>
+Occasionally, the program will include one or more experimental features that are hidden during normal operation. If a file that uses an experimental feature is opened, 
+then the experimental features become available. Before using an experimental file, please read the following: </p>
 <blockquote>
-<p>
-<i>The experimental features enabled by an experimental file are not guaranteed to behave in the same manner in future versions of the program. These features are provided for experimental purposes only. You may use them, but we strongly suggest that their use be kept to a minimum to avoid future conflicts with later versions of the program. This is because the experimental features may be changed in the next release of the program. </i></p>
-<p>
-<i>If you elect to edit an experimental file, using the experimental features enabled by it in the process, </i><b><i>you are doing so at your own risk.</i></b><b> </b></p>
+<p>Any experimental features enabled by an experimental file are not guaranteed to behave in the same manner in future versions of the program. Experimental features are provided for <b>experimental purposes only</b>. 
+You may use them, but we strongly recommend that their use be kept to a minimum in order to avoid future conflicts with later versions of the program. 
+This is because the experimental features may be changed, or even removed, in the next release of the program.</p>
+
+<p>If you elect to work within an experimental file, <b>you are doing so at your own risk.</b></p>
 </blockquote>
-<p>
-By default, experimentation is enabled only when opening an existing song file that already uses an experimental feature. However, you can globally enable experimentation from the <a href="MNU_PREFERENCES.htm">Tools Options</a> command by disabling the <a href="JavaScript:IDHTip('IDH_DLGOPTRESTRICTEDXPRMNTS')">Restrict Experimental Features</a> option in the <a href="TAB_OPTIONSFILE.htm">File</a> tab. If this option is not present, then the current version of the program does not include any experimental features.</p>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

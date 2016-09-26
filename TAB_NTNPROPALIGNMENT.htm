@@ -1,18 +1,36 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Expression Placement Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Expression Placement Properties</h2>
 
 <p>
 Text and symbol expressions have alignment and placement options that are controlled from this property page. Placement options include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_NTNPROPSTAFFPOS')">Staff Position</a></li>
-<li><a href="JavaScript:IDHTip('IDH_NTNPROPPRESERVEWIDTH')">Preserve Width</a></li>
-<li><a href="JavaScript:IDHTip('IDH_NTNPROPJUSTIFICATION')">Justification</a></li>
-<li><a href="JavaScript:IDHTip('IDH_NTNPROPXALIGNPLACEMENT')">Alignment/Placement</a></li>
+<li><h4>Staff Position</h4><div class="ctldesc">This value controls the vertical position of the item on the staff. The value is in staff units, which is half the distance between each horizontal line in a staff. A value of 0 is the vertical center of the staff. Negative values move the item downward on the staff, and positive values move it upward.</div>
+</li>
+<li><h4>Preserve Width</h4><div class="ctldesc">Check this box if you want this item to occupy space in the staff. If this box is not checked, the item 
+will not reserve space for itself in the staff. This can be used to avoid blank spots or large gaps in the score. When an item
+does not reserve space for itself, an anchor will appear in the editor showing the origin of the item.
+The visible anchor in the editor also allows you to select the item and subsequently edit its properties. The 
+anchor will not appear in a printout.</div>
+</li>
+<li><h4>Justification</h4><div class="ctldesc">This field is used to control how the item is justified within its space on the staff. This can be especially useful when the 
+item does not preserve its width. It might also be useful when the item uses <b>best fit</b> placement and is allocated additional
+space on the staff during note alignment.</div>
+</li>
+<li><h4>Alignment/Placement</h4><div class="ctldesc">This field controls how the text or symbol expression will be inserted and aligned in a multi-staff system.
+Options include:
+<p><b>best fit</b>: The item will be placed in the system in the most efficient way possible. It will tend to stay near
+the note, bar, or signature that precedes it, unless obstructed by a prior item.
+<p><b>best fit forward</b>:  The item will be placed in the system in the most efficient way possible. It will tend to stay near
+the next note, bar, or signature that appears after it in the staff.
+<p><b>as a staff signature</b>: The item will be treated as a staff signature. It will be aligned in the system with
+any other signature item appearing in other staves at the same horizontal position.
+<p><b>at next note/bar</b>: The item will be shifted forward such that it appears at the start of the next note or bar line.
+In the editor, a dashed line to the anchor position will be shown.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -21,5 +39,5 @@ Text and symbol expressions have alignment and placement options that are contro
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

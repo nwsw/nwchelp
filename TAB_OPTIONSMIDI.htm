@@ -1,23 +1,43 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Midi Options Dialog Tab </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Midi Options Dialog Tab</h2>
-
 <p>
-The following fields are included in this tab for controlling the MIDI aspects of <i>NoteWorthy Composer 2</i>: </p>
-<ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI2')">Play</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI3')">Port Usage</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI4')">Available play devices</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGOPTMIDI5')">Devices used by play back</a></li>
+The following fields are included in this tab for controlling various MIDI options:</p>
+
+<h4>Available play devices</h4>
+<div class="ctldesc">This is all the devices that are not currently being used for play back. You can move any device to the &quot;used list&quot; by double clicking it.
+</div>
+
+<h4>Devices used by play back</h4>
+<div class="ctldesc">This is the devices that can be used during play back, in the order that they will appear in device selection boxes, such as the one associated with each staff. You can remove a device from this list, thus restoring it to the list of available devices, by double clicking it.</div>
+
+<h4>Start Countdown</h4>
+<div class="ctldesc">This box controls the count down, in seconds, that is used before play actually begins.
+</div>
+
+<h4>Play notes on entry</h4>
+<div class="ctldesc">This controls whether new notes are played as they are entered from the computer keyboard.
+</div>
+
+<h4>Play</h4>
+<div class="ctldesc">This box controls where the program starts the play back of an active score. You can elect to always start playback from the beginning of the score, or several places closer to the current insertion point.</div>
+
+<h4>Port Usage</h4>
+<div class="ctldesc">This box controls when MIDI devices are in use by the program. This is important if you are using other MIDI applications at the same time as <i>NoteWorthy Composer 2</i>. The following variations are available: 
+<p><ul>
+<li><b>While Active:</b> The MIDI devices will only be open while the program is active. When you switch to a different application, the devices will be released prior to activating the other program. If a Play operation is in progress, it is terminated at the point where a different application is activated.</li>
+<li><b>While Playing:</b> The MIDI devices will only be open while a score is being played back. Whenever a Play operation is not being performed, the MIDI devices are available for some other application.</li>
+<li><b>Always:</b> The MIDI devices are always open and available. This is a good option if you do not plan to use other applications that require the MIDI devices at the same time.</li>
 </ul>
+</div>
+
 <p>
 <b>See Also </b> </p>
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

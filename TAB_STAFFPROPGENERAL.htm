@@ -1,18 +1,29 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>General Staff Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>General Staff Properties</h2>
-
-<p>General staff properties.
-<p>
-<b>See Also </b></p>
+<p>General staff properties are set from this tab, including:</p>
+<h4>Staff Name</h4>
+<div class="ctldesc">Enter the name that you would like to be associated with this staff. This name must be unique in the score. It cannot be the same as any other staff name that already is present in the score.</div>
+<h4>Staff Label</h4>
+<div class="ctldesc">This is a label that identifies the staff. It does not need to be unique.
+<p>If Staff Labels are enabled when printing (from File|Page Setup), this label will be placed to the left of the staff when  it is printed. When labeling a group of braced staves (grand staff) with a single label, you can add a label name to any of the staffs in the brace. A single label will be used if all of the containing staffs use the same label or an empty label.</p>
+<p>When a staff is collapsed, it does not contribute to the staff label calculation. A staff brace will automatically be linked with a "group label" when one or more non-collapsed staffs in the brace have an assigned label, and only one unique label is found in the group.</p>
+<h4>Abbreviated</h4>
+If present, the Abbreviated label will be used in all systems after the first. If the Abbreviated label is empty, the primary Staff Label will be used for all systems.</div>
+<h4>Group</h4>
+<div class="ctldesc">This box contains the group name that will contain this staff. A score organizes its parts into groups. Each score can have more than one group, with different staff groups assigned via this field. A staff can only reside in a single group.
+<p>A typical use of the staff group would be to divide a song up into melody and rhythm sections. This list box is where each staff can be assigned to a particular group. Each staff can be included in one, and only one, group.</p>
+<p>Creating a new group is accomplished by simply typing in a new group name in this box. It will then be available to subsequent staff properties. By default, all new staves are assigned into a group called Standard.</p>
+</div>
+<h4>Ending Bar</h4>
+<div class="ctldesc">This option determines what kind of bar line appears at the end of the staff. You can use this to customize the look of the final bar line in the staff.</div>
+<p><strong>See Also </strong></p>
 <ul>
-<li><a href="intro_proptab.htm">Introduction to Property Dialog Boxes</a></li>
-<li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
-<li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
+<li><a href="/nwc2/help/intro_proptab.htm">Introduction to Property Dialog Boxes</a></li>
+<li><a href="/nwc2/help/SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
+<li><a href="/nwc2/help/SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
-</html>
+</body>

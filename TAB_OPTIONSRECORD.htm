@@ -1,32 +1,42 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Record Options Dialog Tab </title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Record Options Dialog Tab</h2>
 
 <p>
 The following options are included in this tab:</p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_MIDIRECORDDEVICEBOX')">Input Device</a></li>
+<li><h4>Input Device</h4><div class="ctldesc">This box is used to designate a MIDI device driver that should be used for MIDI input and recording features. This generally requires that you have an external MIDI device, such as a MIDI keyboard, that is connected to your computer via a MIDI interface.</div>
+</li>
 </ul>
 <p>
 <b><i>MIDI Through/Echo</i></b></p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_MIDIECHOENABLE')">Echo MIDI Input</a></li>
-<li><a href="JavaScript:IDHTip('IDH_MIDIECHOOUTDEVICE')">Echo Input to Play Device</a></li>
-<li><a href="JavaScript:IDHTip('IDH_MIDIECHOCHANNEL')">Echo to MIDI Channel</a></li>
+<li><h4>Echo MIDI Input</h4><div class="ctldesc">This field is used to enable a MIDI echo feature. When enabled, any MIDI data received from the MIDI input device will be echoed to the play device listed in the &#39;echo input to play device&#39; box. This is generally used for playing your internal sound card from an external MIDI keyboard. When echo is disabled, anything you play on an external keyboard will not generally trigger sounds in your computer#39;s sound card.</div>
+</li>
+<li><h4>Echo Input to Play Device</h4><div class="ctldesc">This field is used to specify a playback device for use in the MIDI echo feature. If you have a MIDI keyboard, and have enabled the MIDI input device and the echo feature, then any MIDI data received will be echoed to this device.</div>
+</li>
+<li><h4>Echo to MIDI Channel</h4><div class="ctldesc">This field can be used to override the MIDI channel for events arriving from the MIDI input device. This can be used to echo input received from one channel to a different channel on your internal sound card.</div>
+</li>
 </ul>
 <p>
 <b><i>Import Options</i></b></p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_RECORDENDACTION')">After recording, import into box</a></li>
+<li><h4>After recording, import into box</h4><div class="ctldesc">This field controls how a recorded MIDI performance will be handled after the recording is completed. The choices for handling the recorded data are:
+<p>
+<b>New window:</b> A new score window will be created with the imported notation from the performance
+<p>
+<b>&#39;Record&#39; group:</b> The imported staff or staves will be added to the current score. They will be placed in a group called &#39;Record&#39;. If the group already exists, then the import will add a staff to the group. If the group does not exist, it will be created.
+<p>
+<b>Buffer only:</b> The recorded performance will simply be captured into the record buffer, but no import actions will be performed. In this case, the Import Recording command must be used to import the performance.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
 <ul>
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

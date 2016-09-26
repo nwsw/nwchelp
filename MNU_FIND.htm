@@ -1,62 +1,65 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Find Command</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Find Command</h2>
 
 <p>
-This command is used to create a new find criteria, which can be used to locate some elements or errors that exist in the staff. The quickest way to initiate a find sequence is by using Ctrl+F. </p>
-<p>
+This command is used to create a new find criteria, which can be used to locate elements that exist in the staff. The quickest way to initiate a find sequence is by using Ctrl+F. 
 There are two types of find operations:
-<ol>
-<li><a href="JavaScript:IDHTip('IDH_FINDBYEXPRESSION')">By Expression</a>
-<br>
-<b>Examples:</b>
-<br>
-<br>
-<b>|Duration:*Eighth</b>
+</p>
+
+<ol> 
+<li><h4>By Expression</h4><div class="ctldesc">This find method can be used to find almost anything on a staff, one item at a time. For
+simple text find operations, simply type in the text you want to find and the text in the active
+staff will be compared with the text you entered. You can place an asterisk (*) in your string and
+it will act as a wildcard character, matching anything in that position of the text.
+<p>Each item on the staff also has a text representation. You can see a staff item&#39;s text representation by selecting any single item on a staff, 
+then using the <a href="MNU_EDITCOPY.htm">Edit, Copy command</a>. Now, either start a new find (Ctrl+F) and paste the object&rsquo;s text into 
+the expression box, or open a notepad window and paste into it. By replacing parts of the text with an asterisk (*), you can create a wild card 
+match criteria that will be used for the search. By starting your expression with a vertical bar (|) followed by the text label that represents 
+the object, the search will use the clip text representation of each object for matching against your expression.
+
+<p><b>Examples:</b>
+<ul>
+<li><b>|Dur:*8th</b>
 <br>
 This search will find anything on the staff that has an 8th note as its duration.
-<br>
-<br>
-<b>|Note|Duration:*Eighth</b>
+</li>
+<li><b>|Note|Dur:*8th</b>
 <br>
 This search will find any note on the staff that has an 8th note as its duration. It will not find chords or rests with this duration.
-<br>
-<br>
-<b>|Tempo|*Tempo:120|</b>
+</li>
+<li><b>|Tempo|*Tempo:120|</b>
 <br>
 This search will find the next tempo on the staff set to 120.
-<br>
-<br>
-<b>|Text|*Slowly</b>
+</li>
+<li><b>|Text|*Slowly</b>
 <br>
 This search will find the next text expresion on the staff that includes the text <i>Slowly</i>.
-<br>
-<br>
-<b>|Bar|*|SysBreak:Y|</b>
+</li>
+<li><b>|Bar*|SysBreak:Y|</b>
 <br>
 This search will find a bar line in the active staff that specifies a system break.
-<br>
-<br>
-<b>|Clef|*</b>
+</li>
+<li><b>|Clef|*</b>
 <br>
 This search will find the next clef on the staff.
-<br>
-<br>
-The key to finding items on a staff is due to the fact that each item on the staff has a text representation. You can see a staff item's text representation by selecting any <b>one</b> item on a staff, then executing an Edit | Copy command. Now, either start a new find (Ctrl+F) and paste into the expression box, or open a notepad window and paste into it. This only works with single item selections, but if you try it a little you will see that you can find almost anything on the staff with a little creative expression building. You can simply replace any part of the text description that you do not want to match with an asterisk (*).
-<br>
-<br>
-</li>
-<li><a href="JavaScript:IDHTip('IDH_FINDBYCATERGORY')">By Category</a>
-<br>
-<ul>
-<li><b>Unassigned Octave Accidental:</b> When an accidental is assigned to a note in one octave, notes of the same pitch in that bar that appear in different octaves should have an accidental assigned to them as well, in order to avoid confusion. This find category helps to quickly locate notes in different octaves that do not have an accidental assignment, but probably should have one.
-<br>
 </li>
 </ul>
+</div>
+</li>
+
+<li><h4>By Category</h4>
+<div class="ctldesc">This find method has a set of predefined find algorithms which can be used to search for objects in the staff.
+The <b>Unassigned Octave Accidental</b> algorithms can be useful when trying to resolve octave intervals in a staff that do not sound as expected.
+<p>
+<ul>
+<li><b>Unassigned Octave Accidental:</b> When an accidental is assigned to a note in one octave, notes of the same pitch in that bar that appear in different octaves should have an accidental assigned to them as well, in order to avoid confusion. This find category helps to quickly locate notes in different octaves that do not have an accidental assignment, but probably should have one.
+</li>
+</ul>
+</div>
 </li>
 </ol>
 <p>
@@ -67,5 +70,5 @@ Once the find criteria is found and executed the first time, the <a href="MNU_FI
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="MNU_FINDNEXT.htm">Find Next Command</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

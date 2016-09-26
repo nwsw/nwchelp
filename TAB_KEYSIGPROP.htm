@@ -1,17 +1,30 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Key Signature Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Key Signature Properties</h2>
 
 <p>
-A key signature can specified either by selecting its name from the predefined signature list, or by manually selecting the sharps and flats and creating a User Defined key signature. The specific option controls include:</p>
+A <a href="MNU_ADDKEYSIGNATURE.htm">key signature</a> can specified either by selecting its name from the predefined signature list, or by manually selecting the sharps and flats and creating a User Defined key signature. The specific option controls include:</p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGKEYSIG1')">Predefined Key Signature List</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGKEYSIG2')">User Defined Key Signature</a></li>
+<li><h4>Predefined Key Signature List</h4><div class="ctldesc">In most cases, you will want to use a standard key signature from this list. Select User Defined if you want to enter the sharps and/or flats yourself manually in the definition area below.</div>
+</li>
+<li><h4>User Defined Key Signature</h4><div class="ctldesc">This area shows the sharps and/or flats that are included in the key signature. If you have selected User Defined from the list above, you can enter your own key signature here.</div>
+</li>
+
+<li><h4>Hide Cancellations</h4>
+<div class="ctldesc">A new key signature will generally show natural signs where necessary to cancel out the prior key signature. This option is used to prevent the display of the natural signs.
+</div>
+</li>
+
+<li><h4>Disable Automatic System Key</h4>
+<div class="ctldesc">This option can be used to prevent this key change from automatically being displayed at the start of later systems in the printed copy of the file. This option is needed even when the first key change 
+instance is hidden from the printed copy via Visibility settings.
+</div>
+</li>
 </ul>
+
 <p>
 <b>See Also </b></p>
 <ul>
@@ -19,5 +32,5 @@ A key signature can specified either by selecting its name from the predefined s
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

@@ -1,16 +1,24 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Text Expression Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Text Expression Properties</h2>
 
 <p>
 Text expression properties include:</p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGTEXTSPEC1')">Expression</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGTEXTSPEC4')">Display Font</a></li>
+<li><h4>Expression</h4><div class="ctldesc">Type the text or symbol characters that you want to include in the staff into this box.</div>
+</li>
+<li><h4>Display Font</h4><div class="ctldesc">You can control the look of the entered character string using this box. You can select one of the predfined staff text fonts, a user font, 
+or the current staff notation symbol font.</div>
+</li>
+<li><h4>Char Map</h4><div class="ctldesc">This button allows you to insert a character or symbol into the existing expression. You select the 
+symbol from the character map or grid that is displayed. You can double click a symbol to quickly insert it into the expression.
+If you are working on a computer that employs a standard multi-byte character system, you might experience difficulties when
+using this utility.
+</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -19,5 +27,5 @@ Text expression properties include:</p>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>

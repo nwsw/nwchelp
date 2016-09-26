@@ -1,17 +1,20 @@
-<?php require_once("init.inc");
-?><html>
+<html>
 <head>
 <title>Dynamic Properties</title>
-<?php echo $HTMLDoc->GetHeadOpts()?></head>
-<body <?php echo $HTMLDoc->GetBodyOpts()?>><?php echo $HTMLDoc->BodyHdr?>
+</head>
+<body>
 <h2>Dynamic Properties</h2>
 
 <p>
 Performance dynamics control the MIDI note velocity and MIDI channel volume. The properties that can be set for dynamic changes include: </p>
 <ul>
-<li><a href="JavaScript:IDHTip('IDH_DLGDYNAMICS1')">Style</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGDYNAMICS2')">Custom Note Velocity</a></li>
-<li><a href="JavaScript:IDHTip('IDH_DLGDYNAMICS3')">Change Channel Volume</a></li>
+<li><h4>Style</h4><div class="ctldesc">Use this box to specify the dynamic that should be used at this position on the staff.</div>
+</li>
+<li><h4>Custom Note Velocity</h4><div class="ctldesc">Use this checkbox and value box combination to force a custom MIDI note velocity, rather than the default velocity assigned to the selected dynamic. MIDI note velocity controls how hard a note is struck (or blown for wind instruments).
+By default, the velocity is set by the Instrument definition, but it can be overridden here.</div>
+</li>
+<li><h4>Change Channel Volume</h4><div class="ctldesc">Use this checkbox and value box combination to change the current MIDI volume for the MIDI channel associated with the staff. By default, no changes are made to the channel volume when a dynamic expression is inserted into the staff. An override volume must be set for the volume to change. If you are using Cresc/Decresc dynamic variances with the dynamic, you may want to use volume overrides to achieve a smoother volume swell over the variance.</div>
+</li>
 </ul>
 <p>
 <b>See Also </b></p>
@@ -20,5 +23,5 @@ Performance dynamics control the MIDI note velocity and MIDI channel volume. The
 <li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
-<?php echo $HTMLDoc->BodyFtr?></body>
+</body>
 </html>
