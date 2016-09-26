@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Find Command</title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>Find Command</h2>
+<hr>
+<p>
+This command is used to create a new find criteria, which can be used to locate some elements or errors that exist in the staff. The quickest way to initiate a find sequence is by using Ctrl+F. </p>
+<p>
+There are two types of find operations:
+<ol>
+<li><a href="JavaScript:IDHTip('IDH_FINDBYEXPRESSION')">By Expression</a>
+<br>
+<br>
+<b>Examples:</b>
+<br>
+<br>
+<b>|Duration:*Eighth</b>
+<br>
+This search will find anything on the staff that has an 8th note as its duration.
+<br>
+<br>
+<b>|Note|Duration:*Eighth</b>
+<br>
+This search will find any note on the staff that has an 8th note as its duration. It will not find chords or rests with this duration.
+<br>
+<br>
+<b>|Tempo|*Tempo:120|</b>
+<br>
+This search will find the next tempo on the staff set to 120.
+<br>
+<br>
+<b>|Text|*Slowly</b>
+<br>
+This search will find the next text expresion on the staff that includes the text <i>Slowly</i>.
+<br>
+<br>
+<b>|Bar|*|SysBreak:Y|</b>
+<br>
+This search will find a bar line in the active staff that specifies a system break.
+<br>
+<br>
+<b>|Clef|*</b>
+<br>
+This search will find the next clef on the staff.
+<br>
+<br>
+The key to finding items on a staff is due to the fact that each item on the staff has a text representation. You can see a staff item's text representation by selecting any <b>one</b> item on a staff, then executing an Edit | Copy command. Now, either start a new find (Ctrl+F) and paste into the expression box, or open a notepad window and paste into it. This only works with single item selections, but if you try it a little you will see that you can find almost anything on the staff with a little creative expression building. You can simply replace any part of the text description that you do not want to match with an asterisk (*).
+<br>
+</li>
+<li><a href="JavaScript:IDHTip('IDH_FINDBYCATERGORY')">By Category</a>
+<br>
+<ul>
+<li><b>Hanging Note Tie:</b> This find category helps to quickly locate notes that might stick/hang during play back. This can be caused by mismatching note accidentals between an outwardly tied note and the later note that receives the tie. A muted note that receives a tie can also cause a stuck note that can be detected by this find category.
+<br>
+</li>
+<li><b>Unassigned Octave Accidental:</b> When an accidental is assigned to a note in one octave, notes of the same pitch in that bar that appear in different octaves should have an accidental assigned to them as well, in order to avoid confusion. This find category helps to quickly locate notes in different octaves that do not have an accidental assignment, but probably should have one.
+<br>
+</li>
+</ul>
+</li>
+</ol>
+<p>
+Once the find criteria is found and executed the first time, the <a href=MNU_FINDNEXT.htm>Find Next</a> command can be used to quickly locate each successive matching element in the current staff.</p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_EDIT.htm>Edit Menu Commands</a></li>
+<li><a href=MNU_FINDNEXT.htm>Find Next Command</a></li>
+</ul>
+</body>
+</html>

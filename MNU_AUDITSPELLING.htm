@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Audit Enharmonic Spelling Command</title>
+</head>
+<body>
+<script language=JavaScript src=_nwhelp.js></script>
+<h2>Audit Enharmonic Spelling Command</h2>
+<hr>
+<p>
+This command is used to audit all of the note spelling on the staff. All note pitchesd, including individual members of a chord, will be compared to the note pitches contained within the key signature. If a note pitch can be spelled within the key signature, then the audit will change the spelling of the note such that it is in the key signature. If the note requires an accidental, the spelling of the note will favor sharps for key signatures that contain sharps, or flats for key signatures that contain flats.
+<p>
+In some chord scenarios where multiple adjacent intervals of a minor second are used, the result of the audit may include some lost or inaccurate notes in the staff . In cases where this might happen, you are warned, and the chords which may have a problem are shown to you, one by one. The specific things which might cause trouble include: </p>
+<ol>
+<li>Intervals of a minor second where one or more of the notes in the interval are tied to some other note in the staff which is not a part of the same minor second interval. The note tie may not be correct after transposition, as they may get transposed to different staff positions and accidental assignments.</li>
+<li>A group of 3 or more notes that are all separated by intervals of a minor second. In this case, one or more of the notes may no longer exist after the transposition.</li>
+<li>Two overlapping notes combined into a chord.</li>
+</ol>
+<p>
+If any of these situations apply to the staff you are transposing, you should look over the chords as they are shown, and then decide whether you still wish to use the audit function. In any case, if you are unhappy with the results of the audit, you can simply <a href=MNU_EDITUNDO.htm>undo it</a> afterwards to restore the staff to its form prior to the audit.</p>
+<p>
+<b>See Also </b> </p>
+<ul>
+<li><a href=SUBMNU_TOOLS.htm>Tools Menu Commands</a></li>
+</ul>
+</body>
+</html>

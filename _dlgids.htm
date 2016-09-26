@@ -80,7 +80,7 @@ This is where you specify the title of this composition.
 This box is where you place your name, or the name of the composer of this work. You can also add a phrase such as &quot;arranged by&quot; in front of your name in order to distinguish your role in the song.
 
 <hr><h2><a name=IDH_DLGINFO3></a></h2>
-You are entitled to copyright protection for any original songs. You can specify two lines of copyright information that will be displayed on the first page of the printed composition. A suggested phrasing is provided automatically. If you have registered, your name is also placed here automatically for new songs that are created.
+You are entitled to copyright protection for any original songs. You can specify two lines of copyright information that will be displayed on the first page of the printed composition. A suggested phrasing is provided automatically.
 
 <hr><h2><a name=IDH_DLGINFO4></a></h2>
 Any comments that you wish to make about the composition can be made here. This can be used as a running record of your compositional or performance process associated with the song. This information is not included on any printouts of the song.
@@ -116,7 +116,7 @@ If you want your printed pages to be numbered, then check this box.
 If you have elected to have your pages numbered, then this indicates what number should be used for the first page. All subsequent pages will be incremented from this starting value.
 
 <hr><h2><a name=IDH_DLGPRINTCLASSIC11></a></h2>
-This box identifies the size of the printed staff, in points. The size defines the number of points inside the basic staff minus all ledger lines. Depending on your printer's resolution, not all point changes will show actual change on the printed page. Use the Print Preview feature to check the results before printing.
+This box identifies the size of the printed staff, in points. The size defines the number of points inside the basic staff minus all leger lines. Depending on your printer's resolution, not all point changes will show actual change on the printed page. Use the Print Preview feature to check the results before printing.
 
 <hr><h2><a name=IDH_DLGPRINTCLASSIC12></a></h2>
 If you want title, author, and copyright information to be included in the first page of a printout, then check this box. If this box is not checked, all printed pages will use the same format.
@@ -329,12 +329,6 @@ The time offset for each control point gets multiplied by the <i>Time Offset Mul
 <hr><h2><a name=IDH_DLGMULTIPTCTRL7></a></h2>
 These scroll bars are used to control the value associated with the corresponding control point. The range of the control point varies with the type of controller that has been specified.
 
-<hr><h2><a name=IDH_DLGREGISTER1></a></h2>
-If you have registered, you should type your name in this box, exactly as it appears in your registered user package.
-
-<hr><h2><a name=IDH_DLGREGISTER2></a></h2>
-If you have registered, you should type your registration activation code in this box, exactly as it appears in your registered user package.
-
 <hr><h2><a name=IDH_DLGWELCOME1></a></h2>
 This area shows information about the product and its usage license.
 
@@ -346,14 +340,23 @@ If this box is checked, the staff will be audibly transposed during play back su
 <p>
 If you prefer for the effects of the transpose to both be seen and heard, then do not place a check in this box. If you decide to undo the effect later, this can be done from within the Score Builder, using the Edit button for this staff.
 
+<hr><h2><a name=IDH_DLGTRANSPOSE3></a></h2>
+When enabled, this tells the transpose operation to select new key signatures that minimize the number of sharps or flats in the key.
+
+<hr><h2><a name=IDH_DLGTRANSPOSE4></a></h2>
+When enabled, this tells the transpose operation to prefer flat key signatures when the new key signature would otherwise be ambiguous.
+
+<hr><h2><a name=IDH_DLGTRANSPOSE5></a></h2>
+When enabled, this tells the transpose operation to prefer sharp key signatures when the new key signature would otherwise be ambiguous.
+
 <hr><h2><a name=IDH_DLGTRANSPOSEWARN1></a></h2>
-If you press this button, the transpose will be performed without any additional warnings, even if other chords may not be transposed correctly.
+If you press this button, the command will be performed without any additional warnings, even if other notes may not be spelled correctly.
 
 <hr><h2><a name=IDH_DLGTRANSPOSEWARN2></a></h2>
-If you want to cancel the transpose operation, press this button. Once pressed, control will be returned to the editor without making any changes to the staff (ie. the transpose will not be performed).
+If you want to cancel the current operation, press this button. Once pressed, control will be returned to the editor without making any changes to the staff (ie. the command will not be performed).
 
 <hr><h2><a name=IDH_DLGTRANSPOSEWARN3></a></h2>
-This presence of this button indicates that there is at least one more chord in the staff that might not transpose correctly. You can press this button to view the next chord that may have problems during the transpose operation.
+This presence of this button indicates that there is at least one more note/chord in the staff that might not be spelled correctly after the command is finished. You can press this button to view the next item that may have problems during the command operation.
 
 <hr><h2><a name=IDH_DLGPRINTMETRICS1></a></h2>
 This is the margin associated with the top of the page.
@@ -698,6 +701,13 @@ This field is used to control how the item is justified within its space on the 
 <hr><h2><a name=IDH_NTNPROPXALIGNPLACEMENT></a></h2>
 This field controls how the text or symbol expression/instruction should be aligned with other expressions/instructions that appear directly above or below this item in other staves.
 
+<hr><h2><a name=IDH_DLGLYRICNOTEALIGNMENT></a></h2>
+This field controls how the lyric text will be aligned and justified underneath it's corresponding note(s). Lyric alignment can be forced to use:
+<p><b>Start of Accidental/Note</b>: This aligns the lyric syllables on the far left side of each corresponding note, starting at the same
+location as any accidentals that would appear on the note.
+<p><b>Standard Rules</b>: This aligns the lyric using standard conventions for lyrics in notation. Normally, the lyric will be centered 
+under the notes. If a multi-note phrase encompasses the syllable, then the lyric will be left aligned with the start of the notehead.
+
 <hr><h2><a name=IDH_BARPROPSYSTEMBREAK></a></h2>
 When selected for a bar line that appears in the top staff of a system, this option will force a new system to be started, starting with the next measure. 
 <p>
@@ -718,6 +728,38 @@ Each staff can be assigned one of the custom highlight colors. If this is done, 
 
 <hr><h2><a name=IDH_ATTACHLYRICSYLLABLE></a></h2>
 Any note, chord, or rest can automatically be used in the placement of lyrics. By default, all notes except rests, grace notes, and notes that receive a tie or slur get attached to a lyric syllable. This box can be used to override the default lyric attachment behavior.
+
+<hr><h2><a name=IDH_CHASEPLAYINGNOTES></a></h2>
+When enabled, the score editor will follow and highlight notes while they are being played by the program. When disabled, a song is played without being followed by the program. This can be used to reduce the demands of the program on the computer during play back. It also will sometimes make play back more accurate, since the demands on the computer are significantly reduced. Finally, when the note chase is disabled, you can continue to edit the song in the editor. Your changes will not have any audible effect, however, until you stop and restart play back.
+
+<hr><h2><a name=IDH_NOTEMUTED></a></h2>
+This allows a note or chord to be muted such that it will not be heard during play back. 
+<b>Be careful</b> with this, as muting the receiving end of a note tie will cause stuck notes that
+never stop playing.
+
+<hr><h2><a name=IDH_NOLEGERLINES></a></h2>
+This option can be used to prevent leger lines from being shown for selected notes, even if the note extends
+outside of the normal five line staff.
+
+<hr><h2><a name=IDH_STAFFLINECOUNT></a></h2>
+This controls the number of lines displayed by the staff. Normally, this should be set to five.
+
+<hr><h2><a name=IDH_FINDBYEXPRESSION></a></h2>
+This find method can be used to find almost anything on a staff, one item at a time. For
+simple text find operations, simply type in the text you want to find and the text in the active
+staff will be compared with the text you entered. You can place an asterisk (*) in your string and
+it will act as a wildcard character, matching anything in that position of the text.
+<p>
+Every object on the staff has a character representation, and you can use an advanced find to locate 
+an item by its character representation. For the more advanced find operation, start your expression 
+with a vertical bar (|) followed by the text label that represents the object you are trying to find.
+<p>For more details, use the Help button.
+
+<hr><h2><a name=IDH_FINDBYCATERGORY></a></h2>
+This find method has a set of predefined find algorithms which can be used to search for objects in the staff.
+The <b>Hanging Note Tie</b> and <b>Unassigned Octave Accidental</b> algorithms can be very useful when 
+trying to resolve stuck notes and octave intervals in a staff that do not sound as expected.
+<p>For more details, use the Help button.
 
 <hr><h2><a name=IDH_UNASSIGNED></a></h2>
 This item has not yet been assigned a help context. If possible, please let us know about this situation.
