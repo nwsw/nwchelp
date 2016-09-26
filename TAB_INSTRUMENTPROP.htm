@@ -4,54 +4,24 @@
 </head>
 <body>
 <h2>Instrument Change Properties</h2>
-
-<p>Instrument properties include:
-<p>
+<p>Instrument properties include:</p>
+<p style="font-size: 10pt;"><strong>Name:</strong>&nbsp;This is a name for the instrument specified by the other fields. This can be anything, but it is helpful if the name describes what sound is expected by the specified properties. This name will also appear in the staff when an instrument change is inserted into the staff notation.</p>
+<p style="font-size: 10pt;"><strong>Predefined Instruments:</strong>&nbsp;You can select from a list of predefined instruments using this button.</p>
+<p style="font-size: 10pt;"><strong>Send Patch:</strong>&nbsp;Select this to send&nbsp;a specific MIDI patch number to the MIDI synthesizer channel assigned to the staff. The patch number starts at 0, and goes up to 127 (it is zero based). If you have an external synthesizer that displays patch numbers, these might start at 1 (one based), so you might have to subtract one from the number on the display when used here.</p>
+<p>The easiest way to select a patch number is by using the <strong>Predefined instruments</strong> button. You can then select the instrument by name, rather than number.</p>
+<p style="padding-left: 30px;"><strong>Note:</strong> If the current staff is sharing a MIDI channel with another staff, then only one of the staves should send patch number information.</p>
+<p style="font-size: 10pt;"><strong>Send Bank Select:</strong>&nbsp;MIDI synthesizers will often support a variety of <strong>instrument banks</strong>, each containing different groups of instrument sounds. Select the <strong>Send</strong> box to specify a specific bank of sounds. The <strong>MSB</strong> field specifies the value for MIDI Controller 0, and the <strong>LSB</strong> field specifies the value for MIDI Controller 32.</p>
+<p>These controller values will then be sent to your synthesizer. Consult your synthesizer manual if you think it supports multiple patch banks and you want to use this feature.</p>
+<p style="padding-left: 30px;"><strong>Note:</strong> If the current staff is sharing a MIDI channel with another staff, then only one of the staves should send bank select information.</p>
+<p><span style="font-size: 10pt;"><strong>Default Dynamic Velocities:</strong>&nbsp;</span>When dynamics are entered on the staff, they are mapped to MIDI note velocities, unless the dynamic overrides these values. The velocity values that are most appropriate for this instrument should be assigned here, so that dynamic changes in the staff will sound as you intend.</p>
+<p style="font-size: 10pt;"><strong>Transposition:</strong>&nbsp;If this instrument is based on a real world instrument, you can use this setting to make the notes play back in the same pitch as the real world instrument. For example, if the staff is notated for a trumpet in Bb, you would enter a value of -2 in this box.</p>
+<p style="font-size: 10pt;"><strong>Set Pitch Bend Range:</strong> By default, the pitch bend controller used in a Multi-point Controller will typically extend only 2 semitones. This setting can be used to override that range in the current MIDI channel.</p>
+<p><strong>See Also </strong></p>
 <ul>
-<li><h4>Patch Name</h4><div class="ctldesc">This is a name for the instrument specified by the other fields. This can be anything, but it is helpful if the 
-name describes what sound is expected by the specified properties. This name will also appear in the staff when
-an instrument change is inserted into the staff notation.</div>
-</li>
-<li><h4>Predefined Instruments</h4><div class="ctldesc">You can select from a list of predefined instruments using this button.</div>
-</li>
-<li><h4>Send Patch</h4><div class="ctldesc">Select the <b>Send Patch</b> box if you want to select a specific MIDI patch number that will be sent to the MIDI synthesizer.
-The patch number starts at 0, and goes up to 127 (it is zero based). If you have an external synthesizer that displays
-patch numbers, these might start at 1 (it is one based), so you might have to subtract one from the number on the display
-when used here.
-
-<p>The easiest way to select a patch number is by using the <b>Predefined instruments</b> button. You can then select 
-the instrument by name, rather than number.
-
-<p><b>Note:</b> If the current staff is sharing a MIDI channel with another staff, then only one of the staves
-should send patch number information.</div>
-</li>
-<li><h4>Bank Select</h4><div class="ctldesc">MIDI synthesizers will often support a variety of <b>instrument banks</b>, each containing different 
-groups of instrument sounds. Select the <b>Send</b> box to specify a specific bank of sounds. The <b>MSB</b>
-field specifies the value for MIDI Controller 0, and the <b>LSB</b> field specifies the value for MIDI Controller 32.
-
-<p>These controller values will then be sent to your synthesizer. Consult your synthesizer manual if you think it supports
-multiple patch banks and you want to use this feature.
-
-<p><b>Note:</b> If the current staff is sharing a MIDI channel with another staff, then only one of the staves
-should send bank select information.</div>
- options</li>
-<li><h4>Default Dynamic Velocities</h4><div class="ctldesc">When dynamics are entered on the staff, they are mapped to MIDI note velocities, unless the dynamic overrides 
-these values. The velocity values that are most appropriate for this instrument should be assigned here, so that 
-dynamic changes in the staff will sound as you intend.</div>
-</li>
-<li><h4>Transposition</h4><div class="ctldesc">If this instrument is based on a real world instrument, you can use this setting to make the
-notes play back in the same pitch as the real world instrument. For example, if the staff is
-notated for a trumpet in Bb, you would enter a value of -2 in this box.</div>
-</li>
-</ul>
-<p>
-<b>See Also </b></p>
-<ul>
-<li>On the Web: <a href="http://http://my.noteworthysoftware.com/?board=6">Instrument Trees Forum</a></li>
+<li>On the Web: <a href="http://nwsw.net/-fb6" target="_blank">Instrument Trees Forum</a></li>
 <li><a href="MNU_ADDPATCH.htm">Instrument Change Command</a></li>
 <li><a href="MNU_OPENPROPERTIES.htm">Edit Properties Command</a></li>
 <li><a href="intro_proptab.htm">Introduction to Property Dialog Boxes</a></li>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
 </body>
-</html>

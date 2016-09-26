@@ -1,14 +1,106 @@
 <html>
 <head>
-<title>Score Review </title>
-</head>
+<title>Score Review</title>
+<STYLE type="text/css">
+td.fldp {text-align: center; background-color:#666;color:white; font-weight:bold;}
+td.fldl {text-align: center; background-color:#CCC;color:black; font-weight:bold;}
+</STYLE></head>
 <body>
 <h2>Score Review</h2>
-
-<p>
-This command brings up a list of all staves in the score. A summary of the MIDI attributes from Staff Properties is shown for each staff. Each staff can be edited by advancing to the properties dialog directly from the review. </p>
-<p>
-<b>See Also </b></p>
+<p>This command brings up a summary list of all staves in the score. The list can be sorted by any column by clicking on the header label. There are many more columns available than are initially shown. You can right click on any column header to add additional columns, or to hide the field in the current column.</p>
+<p>Column fields include:</p>
+<table border="0">
+<tbody>
+<tr>
+<td class="fldp" colspan="2">Basic Fields</td>
+</tr>
+<tr>
+<td class="fldl">ID</td>
+<td>This is the index order for the staff list. It shows the position of each staff in the score.<br></td>
+</tr>
+<tr>
+<td class="fldl">Name</td>
+<td>The is the physical name of the staff.<br></td>
+</tr>
+<tr>
+<td class="fldl">Warn</td>
+<td>This shows the number of warnings that have been found for the staff. Currently, this only indicates the number of unassigned octave accidentals found in the staff.<br></td>
+</tr>
+<tr>
+<td class="fldl">Hide</td>
+<td>This reflects whether the staff is currently shown in the editor and when printing.</td>
+</tr>
+<tr>
+<td class="fldp" colspan="2">General</td>
+</tr>
+<tr>
+<td class="fldl">Label</td>
+<td>This is the full staff label assigned to the staff.<br></td>
+</tr>
+<tr>
+<td class="fldl">Label Abbrev</td>
+<td>This shows the abbreviated staff label if one is assigned to the staff.</td>
+</tr>
+<tr>
+<td class="fldl">Group</td>
+<td>Shows the staff group assigned from Staff Properties.<br></td>
+</tr>
+<tr>
+<td class="fldp" colspan="2">Performance<strong>&nbsp;</strong></td>
+</tr>
+<tr>
+<td class="fldl">Muted</td>
+<td>Indicates if the staff is muted.<br></td>
+</tr>
+<tr>
+<td class="fldl">Port</td>
+<td>This is the "0 based" MIDI port assigned to the staff.<br></td>
+</tr>
+<tr>
+<td class="fldl">Device</td>
+<td>This is the actual MIDI device name assigned to the staff.<br></td>
+</tr>
+<tr>
+<td class="fldl">Channel</td>
+<td>This is the "1 based" MIDI channel for the staff.<br></td>
+</tr>
+<tr>
+<td class="fldl">Patch</td>
+<td>This is the "1 based" instrument patch assigned to the staff from Staff Properties (note that it differs from the 0 based value that is assigned there). A value of 0 here represents that a patch change is not being sent by this staff.<br></td>
+</tr>
+<tr>
+<td class="fldl">Transpose</td>
+<td>This is the transposition assigned to the staff from Staff Properties.</td>
+</tr>
+<tr>
+<td class="fldl">Volume</td>
+<td>This is the initial MIDI volume assigned to the staff from Staff Properties.</td>
+</tr>
+<tr>
+<td class="fldl">Stereo Pan</td>
+<td>This is the initial MIDI stereo pan position assigned to the staff from Staff Properties.</td>
+</tr>
+<tr>
+<td class="fldp" colspan="2">Stats/Metrics</td>
+</tr>
+<tr>
+<td class="fldl">Bars</td>
+<td>This is the number of bar lines found in the staff that are preceded by one or more notes. This count includes bar lines that have the "Exclude From Bar Count" option enabled. In most cases, this number should match amongst all visible staff parts.<br></td>
+</tr>
+<tr>
+<td class="fldl">Play Span</td>
+<td>This is the total duration/length of all notes and rests found in the staff when they are summed together during a simulated performance. In most cases, this number should match amongst all visible staff parts.</td>
+</tr>
+<tr>
+<td class="fldl">View Span</td>
+<td>This is the total duration/length of all notes and rests found in the  staff when they are all individually summed together, ignoring any repeats or flow directions. In most cases, this number should match amongst all visible staff parts.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul>
+</ul>
+<p><strong>See Also </strong></p>
 <ul>
 <li><a href="MNU_EDITSTAFF.htm">Staff Properties</a></li>
 <li><a href="MNU_ADDPATCH.htm">Setting an Instrument Patch</a></li>
@@ -16,4 +108,3 @@ This command brings up a list of all staves in the score. A summary of the MIDI 
 <li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
 </ul>
 </body>
-</html>

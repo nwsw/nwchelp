@@ -4,71 +4,44 @@
 </head>
 <body>
 <h2>Find Command</h2>
-
-<p>
-This command is used to create a new find criteria, which can be used to locate elements that exist in the staff. The quickest way to initiate a find sequence is by using Ctrl+F. 
-There are two types of find operations:
-</p>
-
-<ol> 
-<li><h4>By Expression</h4><div class="ctldesc">This find method can be used to find almost anything on a staff, one item at a time. For
-simple text find operations, simply type in the text you want to find and the text in the active
-staff will be compared with the text you entered. You can place an asterisk (*) in your string and
-it will act as a wildcard character, matching anything in that position of the text.
-<p>Each item on the staff also has a text representation. You can see a staff item&#39;s text representation by selecting any single item on a staff, 
-then using the <a href="MNU_EDITCOPY.htm">Edit, Copy command</a>. Now, either start a new find (Ctrl+F) and paste the object&rsquo;s text into 
-the expression box, or open a notepad window and paste into it. By replacing parts of the text with an asterisk (*), you can create a wild card 
-match criteria that will be used for the search. By starting your expression with a vertical bar (|) followed by the text label that represents 
-the object, the search will use the clip text representation of each object for matching against your expression.
-
-<p><b>Examples:</b>
-<ul>
-<li><b>|Dur:*8th</b>
-<br>
-This search will find anything on the staff that has an 8th note as its duration.
-</li>
-<li><b>|Note|Dur:*8th</b>
-<br>
-This search will find any note on the staff that has an 8th note as its duration. It will not find chords or rests with this duration.
-</li>
-<li><b>|Tempo|*Tempo:120|</b>
-<br>
-This search will find the next tempo on the staff set to 120.
-</li>
-<li><b>|Text|*Slowly</b>
-<br>
-This search will find the next text expresion on the staff that includes the text <i>Slowly</i>.
-</li>
-<li><b>|Bar*|SysBreak:Y|</b>
-<br>
-This search will find a bar line in the active staff that specifies a system break.
-</li>
-<li><b>|Clef|*</b>
-<br>
-This search will find the next clef on the staff.
-</li>
-</ul>
-</div>
-</li>
-
-<li><h4>By Category</h4>
-<div class="ctldesc">This find method has a set of predefined find algorithms which can be used to search for objects in the staff.
-The <b>Unassigned Octave Accidental</b> algorithms can be useful when trying to resolve octave intervals in a staff that do not sound as expected.
-<p>
-<ul>
-<li><b>Unassigned Octave Accidental:</b> When an accidental is assigned to a note in one octave, notes of the same pitch in that bar that appear in different octaves should have an accidental assigned to them as well, in order to avoid confusion. This find category helps to quickly locate notes in different octaves that do not have an accidental assignment, but probably should have one.
-</li>
-</ul>
-</div>
-</li>
+<p>This command is used to find stuff. The quickest way to initiate a find sequence is by using Ctrl+F. Once the find criteria is found and executed the first time, the <a href="MNU_FINDNEXT.htm">Find Next</a> command can be used to quickly locate each successive matching element in the current staff.</p>
+<h2>Search Direction</h2>
+<p>There are three different find directions that can be used:</p>
+<ol>
+<li><em>Current staff only</em> searches foreard in the current staff</li>
+<li><em>Right then down</em> is like the first method, but will continue to search lower staves after the current staff has been searched to its end</li>
+<li><em>Down then right</em> searches chronoligically in all parts, starting with the current staff position</li>
 </ol>
-<p>
-Once the find criteria is found and executed the first time, the <a href="MNU_FINDNEXT.htm">Find Next</a> command can be used to quickly locate each successive matching element in the current staff.</p>
-<p>
-<b>See Also </b> </p>
+<h2>Simple Expressions</h2>
+<p>You can find almost anything on a staff, one item at a time. For simple text find operations, simply type in the text you want to find and the text in the active staff will be compared with the text you entered. You can place an asterisk (*) in your string and it will act as a wildcard character, matching anything in that position of the text.</p>
+<div class="ctldesc">
+<p>Each item on the staff also has a text representation. You can see a staff item's text representation by selecting any single item on a staff, then starting the Find command.&nbsp;The full matching text description of the object is shown in the find expression. By replacing parts of the text with an asterisk (*), a wild card match criteria can be created and used for the search. By starting your expression with a vertical bar (|) followed by the text label that represents the object, the search will use the clip text representation of each object for matching against your expression.</p>
+<p><strong>Examples:</strong></p>
 <ul>
+<li><strong>|Dur:*8th</strong> <br> This search will find anything on the staff that has an 8th note as its duration.</li>
+<li><strong>|Note|Dur:*8th</strong> <br> This search will find any note on the staff that has an 8th note as its duration. It will not find chords or rests with this duration.</li>
+<li><strong>|Tempo|*Tempo:120|</strong> <br> This search will find the next tempo on the staff set to 120.</li>
+<li><strong>|Text|*Slowly</strong> <br> This search will find the next text expresion on the staff that includes the text <em>Slowly</em>.</li>
+<li><strong>|Bar*|SysBreak:Y|</strong> <br> This search will find a bar line in the active staff that specifies a system break.</li>
+<li><strong>|Clef|*</strong> <br> This search will find the next clef on the staff.</li>
+</ul>
+</div>
+<p>You can also use parentheses to match a one of several possible text strings. Each possible match should be separated by an asterisk. For example:</p>
+<ul>
+<li><strong>|(Note*Chord)</strong><br>This will match any note or chord item in the staff.</li>
+<li><strong>|(Bar*Ending)|*|Visibility:(Never*SingleStaff)</strong><br>This expression will only match any bar line or special ending that has its visibility set to Never or Single Staff.</li>
+</ul>
+<h2>Advanced PCRE Expressions</h2>
+<p>Sophisticated match expressions can also be built using standard <a href="pcre.htm">Perl Compatible Regular Expressions</a>, or PCRE for short. Any expression that starts with a slash (/) will be matched using PCRE. When using PCRE, remember to escape the vertical bars (|) used in NWC object text with a backslash (\). Some example PCRE expressions:</p>
+<ul>
+<li><strong>/^\|(Clef|Key|TimeSig)</strong><br>This expression matches any clef, key, or time signature item on the staff.</li>
+<li><strong>/\|Color:[2-4]</strong><br>This expression will match all items using highlight colors 2, 3, or 4.</li>
+<li><strong>/(?# Blank Space Notehead )\|Pos\d*:[^z\|]+z</strong><br>This expression uses a comment block to describe what it does. It will find any Blank Space noteheads in the staff.</li>
+</ul>
+<p><strong>See Also </strong></p>
+<ul>
+<li><a href="pcre.htm">About PCRE</a></li>
 <li><a href="SUBMNU_EDIT.htm">Edit Menu Commands</a></li>
 <li><a href="MNU_FINDNEXT.htm">Find Next Command</a></li>
 </ul>
 </body>
-</html>

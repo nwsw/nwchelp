@@ -4,17 +4,18 @@
 </head>
 <body>
 <h2>User Tool Command</h2>
-
-<p>This command is used to create and access a list of user tools which can be run against the currently active editor window.
-You can use the New, Edit, and Remove buttons to create your own user tool commands. A starter set of tools is available 
-from <a href="http://www.noteworthysoftware.com/nwc2/">our web site</a>, or on the optional CD.
-
-<p>Developers and advanced users may also wish to explore our <a href="http://my.noteworthysoftware.com/?board=7.0">forum dedicated to User Tools</a>.
-
-<p><b>See Also </b> 
+<p>This command is used to access custom user tools.</p>
+<p>This mechanism takes advantage of the fact that everything in a *.nwc files can be represented as text. When invoking a user tool, the current notation selection (or the entire file) is converted to a text representation, then passed to the the tool via its standard input. The tool can then change/process the notation, and either return an updated notation clip, or a report of information about the clip.</p>
+<p>The program includes a built-in Lua scripting engine that can be used to create your own user tools. Additionally, any console mode scripting language capable of loading, parsing, and outputting text can be utilized for user tools, including PHP, Perl, Python, Ruby, JavaScript, and others. You can use the New, Copy, Edit, and Remove buttons to customize your  list of user tools. You can also add Lua scripts to your collection of  user tools by dragging and dropping them onto the main program window. In addition to the built-in Lua option, we also offer a complete PHP based scripting solution, including many useful tools, from <a href="https://noteworthycomposer.com" target="_blank">our web site</a>.</p>
+<p>Users can also create, exchange, and discuss user tools from our <a href="http://nwsw.net/-fb7" target="_blank">forum dedicated to User Tools</a>.</p>
+<p>&nbsp;</p>
+<p><strong>See Also</strong></p>
 <ul>
-<li><a href="SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
-<li><a href="MNU_LASTUSERTOOL.htm">Last User Tool</a></li>
+<li><a href="/nwc2/help/intro_usertooldev.htm">Introduction to User Tool Development</a></li>
+<li><a href="/nwc2/help/intro_lua_scripting.htm">Lua Scripting</a></li>
+</ul>
+<ul>
+<li><a href="/nwc2/help/SUBMNU_TOOLS.htm">Tools Menu Commands</a></li>
+<li><a href="/nwc2/help/MNU_LASTUSERTOOL.htm">Last User Tool</a></li>
 </ul>
 </body>
-</html>

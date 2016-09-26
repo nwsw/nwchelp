@@ -1,37 +1,27 @@
 <html>
 <head>
-<title>Chord Member Command </title>
+<title>Chord Member Command</title>
 </head>
 <body>
-<h2>Chord Member Command</h2>
-
-<p>
-This command adds a new note to an existing note, rest, or chord that is just behind the insertion point. If only a single note or rest is present prior to executing this command, a new chord will be formed that combines this new note with the prior item. If the operation is not allowed (due to a rules violation, as described below), the computer will beep and no change will occur. </p>
-<p>
-A chord is capable of supporting notes of two differing duration and/or differing stem directions. If the new note&#39;s stem direction and note position is consistent with the note, rest, or chord to the left of the insertion point, then the new note is combined with the item to the left. When combining notes with a previously placed rest, the stem direction tools can be used to control whether the notes appear above or below the rest. </p>
-<p>
-The following rules apply to chords in <i>NoteWorthy Composer 2</i>: </p>
+<h2><img src="img/addchord.gif" alt=""> Chord Member Command</h2>
+<p>This command adds a new note to an existing note, rest, or chord that is just behind the insertion point. If only a single note or rest is present prior to executing this command, a new chord will be formed that combines this new note with the prior item. If the operation is not allowed (due to a rules violation, as described below), the computer will beep and no change will occur.</p>
+<p>A chord is capable of supporting notes of two differing duration and/or differing stem directions. If the new note's stem direction and note position is consistent with the note, rest, or chord to the left of the insertion point, then the new note is combined with the item to the left. When combining notes with a previously placed rest, the stem direction tools can be used to control whether the notes appear above or below the rest.</p>
+<p>The following rules apply to chords in <em>NoteWorthy Composer 2</em>:</p>
 <ol>
-<li>In most cases, a chord can contain only one note at each vertical position on the staff. Two notes with the same pitch but differing duration or stem direction cannot be added to the staff unless:
-<ol>
+<li>In most cases, a chord can contain only one note at each vertical position on the staff. Two notes with the same pitch but differing duration or stem direction cannot be added to the staff unless: <ol>
 <li>no other notes above them in the chord have a stem down</li>
 <li>no other notes below them in the chord have a stem up</li>
-</ol>
-</li>
+</ol> </li>
 <li>Two notes at the same vertical position but with differing accidentals should never be added to the same chord or unpredictable results will occur. If either of these notes are dotted, then both should be dotted, or the visual results may be confusing to the reader. If only one of two overlapping notes is to be dotted, then ties should be used to demonstrate which voice is extended.</li>
 <li>If a chord member is added to an existing note, it must have the same duration, or it must be in the opposing stem direction. Attempts to add a third duration type to an existing chord, or two notes of differing duration but the same stem direction, will be rejected.</li>
-<li>A chord containing a rest is created by first placing the rest, and then adding one or more notes to that rest. The duration of the rest <b>must</b> be smaller than that of the notes that are added to it. The stem direction assigned to the rest <b>must</b> be different (opposite) than the note that is being added, or the operation will fail.</li>
+<li>A chord containing a rest is created by first placing the rest, and then adding one or more notes to that rest. The duration of the rest <strong>must</strong> be smaller than that of the notes that are added to it. The stem direction assigned to the rest <strong>must</strong> be different (opposite) than the note that is being added, or the operation will fail.</li>
 <li>A note with its stem going downward cannot be combined with a lower note which has its stem going upward. The reverse is also true: a note with its stem going upward cannot be combined with a higher note that has a downward stem.</li>
 </ol>
-<p>
-Chord members can be added most efficiently by pressing &lt;Ctrl Enter&gt; from the computer keyboard. This automatically executes the chord member command. Chord members can be removed from a chord in a similar fashion by pressing &lt;Ctrl Backspace&gt; when the insertion point is directly to the right of the note to be removed. When removing notes from an existing chord that includes dual stem directions, the remaining items will still have their stem direction set. This holds true even if all of the items with stems going in one direction have been removed. </p>
-<p>
-Lastly, it is important to understand that only the smaller duration item is actually used in aligning notes on a score. When creating split-stem chords, the notes in the larger duration are ignored when formatting and alignment is performed with respect to other notes above and around this item. It is also only possible to beam, triplet, or slur the notes of the shorter duration in a split stem chord. </p>
-<p>
-<b>See Also </b> </p>
+<p>Chord members can be added most efficiently by pressing &lt;Ctrl Enter&gt; from the computer keyboard. This automatically executes the chord member command. Chord members can be removed from a chord in a similar fashion by pressing &lt;Ctrl Backspace&gt; when the insertion point is directly to the right of the note to be removed. When removing notes from an existing chord that includes dual stem directions, the remaining items will still have their stem direction set. This holds true even if all of the items with stems going in one direction have been removed.</p>
+<p>Lastly, it is important to understand that only the smaller duration item is actually used in aligning notes on a score. When creating split-stem chords, the notes in the larger duration are ignored when formatting and alignment is performed with respect to other notes above and around this item. It is also only possible to beam, triplet, or slur the notes of the shorter duration in a split stem chord.</p>
+<p><strong>See Also </strong></p>
 <ul>
 <li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 <li><a href="SUBMNU_NOTES.htm">Notes Menu Commands</a></li>
 </ul>
 </body>
-</html>

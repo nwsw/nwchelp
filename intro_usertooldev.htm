@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Introduction to User Tool Development</title>
+</head>
+<body>
+<h2>Introduction to User Tool Development</h2>
+<p>User tools are console mode programs (they run on the command line, not via a graphical user interface). A user tool should accept notation clip text on its standard input (STDIN), and should output new or replacement clip text on its standard output (STDOUT). Any warnings or errors should be directed to standard error (STDERR). The following return codes are recognized:</p>
+<table border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td width="10%" valign="top">0</td>
+<td width="90%" valign="top">Text in STDOUT  is processed and anything found in STDERR is presented as a warning to the user<br></td>
+</tr>
+<tr>
+<td width="10%" valign="top">1</td>
+<td width="90%" valign="top">Anything found in STDERR is shown to the user, and nothing else is done<br></td>
+</tr>
+<tr>
+<td width="10%" valign="top">99</td>
+<td width="90%" valign="top">Anything found in STDOUT is shown to the user, and nothing else is done</td>
+</tr>
+</tbody>
+</table>
+<p>A user tool can be configured to accept user input by adding special prompt instructions on the user tool command line. The format for a prompt instruction is as follows:</p>
+<p><strong>&lt;PROMPT:prompt_label=*&gt;</strong><br> A prompt instruction always starts with the <strong>&lt;</strong> sign, followed by the word <strong>PROMPT</strong> in upper case, and completed by a colon. The prompt issued to the user is then specified. It should only contain alpha-numeric text, questions mark, or colon. The prompt is terminated by an equal sign (<strong>=</strong>). The character after the equal sign is a format specifier, which can be one of the following:</p>
+<table border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr>
+<td width="10%" valign="top">*&nbsp;</td>
+<td width="90%">An asterisk indicates that general text input should be gathered from the user. <br></td>
+</tr>
+<tr>
+<td width="10%" valign="top">#</td>
+<td width="90%">The pound sign indicates that the user should be prompted for an integer value. The range of the value can optionally be specified in brackets after the # sign. For example <strong>#[0,5]</strong> would prompt for a value from 0 to 5 to be entered by the user.<br></td>
+</tr>
+<tr>
+<td width="10%" valign="top">|</td>
+<td width="90%">The vertical bar indicates that the user should be prompt to select a value from a list. The list of possible values immediately follow the first vertical bar, each separated by another single vertical bar. For example, <strong>|Quarter|Half|Whole</strong> would prompt the user to select one of these three durations. The first value in the list is the default.</td>
+</tr>
+</tbody>
+</table>
+<p>Finally, the prompt is terminated by the <strong>&gt;</strong> sign. No extra white space should be included in the prompt specifier.</p>
+<p>Some example prompts:</p>
+<p><strong>&lt;PROMPT:Enter a matching text expression:=*&gt;</strong><br> This will prompt the user to "<em>Enter a matching text expression:</em>" that will include a text box for general text entry.</p>
+<p><strong>&lt;PROMPT:How many?=#&gt;</strong><br> This will prompt the user "<em>How many?</em>" that will include a numeric entry box.</p>
+<p><strong>&lt;PROMPT:Which octave?=#[3,6]&gt;</strong><br> This will prompt the user to select "<em>Which octave?</em>" and will include a numeric entry box that accepts values from 3 to 6.</p>
+<p><strong>&lt;PROMPT:Please select the smallest note to process?=|Quarter|8th|16th|32nd&gt;</strong><br> This will prompt the user to "<em>Please select the smallest note to process?</em>" and will include a drop down box that includes <strong>Quarter</strong>, <strong>8th</strong>, <strong>16th</strong>, and <strong>32nd</strong>.</p>
+<p><strong>See Also</strong></p>
+<ul>
+<li><a href="/nwc2/help/intro_lua_scripting.htm">Program Customization with Lua</a></li>
+<li><a href="/nwc2/help/MNU_USERTOOLS.htm">User Tool Command<br></a></li>
+</ul>
+</body>

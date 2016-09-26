@@ -3,13 +3,66 @@
 <title>What's New</title>
 </head>
 <body>
+<h2>What&rsquo;s New in <em>NoteWorthy Composer</em> Version 2.75a</h2>
+<ul>
+<li>ANSI Text Encoding option for MIDI files (Tools, Options, File)</li>
+<li>Support for <a href="PathExpansions.htm">expandable file/folder path names</a></li>
+<li>Built-in Lua plugin and user tool API reference (Help, Lua API Reference)</li>
+<li>Additions to the object plugin api</li>
+<li>Convert options now built into the main nwc2.exe program</li>
+<li>Detect problems with Unicode filenames that cannot be represented in ANSI</li>
+<li>Fix for a computation anomaly in the object plugin drawing mechanism</li>
+<li>Fix for loading files created/edited by an old NWC version 1 program</li>
+</ul>
+
+<h2>What&rsquo;s New in <em>NoteWorthy Composer</em> Version 2.75</h2>
+<ul>
+<li>Official support for Windows 10</li>
+<li>Unicode support for all user entered text in the *.nwc/nwctxt file</li>
+<li>Dynamic loading of many standard NWC fonts, including the Pardy Font Pack</li>
+<li><a href="MNU_ADDUSEROBJECT.htm">Custom Objects</a>, and a <a href="https://github.com/nwsw/nwcplugin-api" target="_blank">plugin API</a></li>
+<li>New <a href="MNU_ADDMARKER.htm">Marker object</a> for greater control over articulation, slur and triplet rendering</li>
+<li>Finer control over <a href="TAB_NTNPROPALIGNMENT.htm">Expression Placement</a> Staff Position (2 decimal places)</li>
+<li>Scaling of individual text expressions (<a href="MNU_ADDTEXT.htm">Insert, Text</a>)</li>
+<li>By popular demand, by default, the Notes toolbar again shows the full accidental and duration palette of buttons</li>
+<li>By popular demand, the ability to map File, New to your own custom folder location has returned</li>
+<li>A new MIDI File option has been added to Tools, Options, Folders</li>
+<li>Tools, Options, File, <strong>Start Export at MIDI Folder</strong> can be used to start File, Export from this new folder</li>
+<li>nwctxt format used for all clipboard operations</li>
+<li><a href="MNU_FIND.htm">Find</a> now supports Next (F3) and Previous (Shift+F3) directions</li>
+<li>Find now supports searching through the current staff or all editor staffs</li>
+<li>Edit,Find and Edit,Filtered Properties now show the match count for the given search expression</li>
+<li>Relaxed stem direction rule when adding chord members</li>
+<li>Pitch Bend Range support added to the <a href="TAB_INSTRUMENTPROP.htm">Instrument specification</a></li>
+<li>Multi-point Controller now accepts empty time offsets, which can be useful for resetting a sweep, such as with Pitch Bend</li>
+<li>Notifications alerts now popup when some kind of warning or error notification has been detected within the system</li>
+</ul>
+<h2>What&rsquo;s New in <em>NoteWorthy Composer</em> Version 2.51</h2>
+<ul>
+<li>Built-in user tool scripting with <a href="intro_lua_scripting.htm">Lua</a></li>
+<li>Built-in <span style="text-decoration: underline;">Retrograde</span> and <span style="text-decoration: underline;">Show Note Names</span> user tools included with the program (using Lua)</li>
+<li>New targeting mechanism for adding tie, accidental, glyph, and color options to individual, existing notes in a chord</li>
+<li><a href="pcre.htm">PCRE</a> expressions in the <a href="MNU_FIND.htm">Find</a> and <a href="MNU_NTNFILTEREDPROP.htm">Filtered Properties</a> commands</li>
+<li>Enhanced play back status timer with interactivity</li>
+<li>Enhanced <a href="MNU_PRINTPREVIEW.htm">Print Preview</a></li>
+<li>New <a href="MNU_ACCIDENTAL_SEL.htm">accidental</a>, <a href="MNU_DURATION_SEL.htm">duration</a>, <a href="MNU_NOTEHEAD_SEL.htm">notehead</a>, <a href="MNU_ITEMCOLOR.htm">color</a>, <a href="MNU_ADDCLEF.htm">clef</a>, <a href="MNU_ADDKEYSIGNATURE.htm">key signature</a>, <a href="MNU_ADDTIMESIGNATURE.htm">time signature</a>, <a href="MNU_ADDREST.htm">rest</a>, <a href="MNU_ADDBARLINE.htm">bar line</a>, and <a href="MNU_ADDDYNAMIC.htm">dynamic</a> selectors in the Toolbar</li>
+<li>Enhanced <a href="MNU_FIND.htm">Edit Find</a> mechanism</li>
+<li>Enhanced <a href="MNU_SCOREREVIEW.htm">Tools, Score Review</a> mechanism</li>
+<li>Enhanced editor scrolling support</li>
+<li>Built-in support for some special play related computer keyboard function keys</li>
+<li><a href="MNU_FILENEW.htm">File, New</a>, Browse function</li>
+<li>New lyric syllable spacing</li>
+<li>Changes for Staccato performance style</li>
+<li><a href="MNU_PIANOBAR_ID.htm">On-screen piano</a> now supports over 10 point multi-touch</li>
+<li><a href="CustomToolbarCommands.htm">User customized</a> command images in the toolbars</li>
+</ul>
 <h2>What&rsquo;s New in <em>NoteWorthy Composer</em> Version 2.5</h2>
 <ul>
 <li>New Insert Spacer mechanism</li>
 <li>New Boundary Change for dynamically changing a staff boundary during print</li>
 <li>New Boundary Collapse for dynamically hiding parts on some print systems</li>
 <li>New Boundary Change Staff Gap for creating a gap in the system, commonly used for ending Coda sections</li>
-<li>Full &quot;round trip&quot; support for working with *.nwctxt files</li>
+<li>Full "round trip" support for working with *.nwctxt files</li>
 <li>User tool support for accessing the entire file or just the current selection</li>
 <li>New character map utility for use in creating text expressions via Insert, Text</li>
 <li>Text Expression access to primary and cue sized Staff Symbol Font</li>
@@ -21,7 +74,7 @@
 <li>Caesura added to Tempo Variance</li>
 <li>Staccatissimo articulation</li>
 <li>Marcato articulation</li>
-<li>Persistent note tools are now individually configurable</li>
+<li>Persistent tools are now individually configurable</li>
 <li>The Orchestral staff style now supports staff groups, with each different group shown in its own bracket in the conductor score</li>
 <li>Support beaming through a clef change</li>
 <li>An Abbreviated Staff Label can be optionally assigned to each staff</li>
@@ -71,8 +124,8 @@
 <li>Support for user selectable notation font</li>
 <li>Hear notes as you add them to the staff</li>
 <li>Hairpin/graphic crescendo/diminuendo note properties</li>
-<li><em><strong>X</strong></em> noteheads for percussion notes</li>
-<li><strong><em>Diamond </em></strong>noteheads for other non-pitched and harmonic notes</li>
+<li><strong>X</strong> noteheads for percussion notes</li>
+<li><strong>Diamond</strong> noteheads for other non-pitched and harmonic notes</li>
 <li>A blank notehead for unusual circumstances</li>
 <li>Percussion Clef</li>
 <li>A new Instrument Tree mechanism</li>
@@ -82,7 +135,7 @@
 <li>User control over note stems</li>
 <li>Slurs are now drawn to the contour of the enclosing notes</li>
 <li>Default beam placement and slant have been completely redesigned</li>
-<li>Grace note scaling  is now more consistent with standard conventions</li>
+<li>Grace note scaling is now more consistent with standard conventions</li>
 <li>Accidentals and other note symbols are now scaled on grace notes</li>
 <li>Grace notes are slurred independently from primary notes</li>
 <li>Grace note stems default to up when their stem direction is not set</li>
@@ -112,26 +165,62 @@
 <li>Mouse pointer in editor uses system cursor when run on a Windows XP/Vista system</li>
 <li>New <strong>Justify printed systems vertically</strong> option for controlling whether printed systems are justified vertically when printing</li>
 </ul>
-<p><strong>Some version 2.0 features explained in more detail:</strong></p>
-<p>&nbsp;</p>
+<h2>Some version 2.0 features explained in more detail:</h2>
 <ul>
-<li><strong>User selectable notation font</strong><br> The staff notation typeface can now be specified by the user. This is done from <a href="MNU_PAGESETUP.htm">File, Page Setup, Fonts (tab)</a>. The Staff Size option from version 1 is also found on this tab (moved from the <strong>File, Page Setup, Options</strong> tab). <br><br> </li>
-<li><strong><a href="MNU_HAIRPINCRESC.htm"><img src="img/cresc.gif" alt=""> Crescendo</a> and <a href="MNU_HAIRPINDECRESC.htm"><img src="img/decresc.gif" alt=""> Diminuendo</a> Attributes for Selected Notes</strong><br> Graphic crescendo and diminuendo can now be added as easily as slurs are applied to notes. Simply select the notes   that are included in the volume swell or fade, then press the <strong>&lt;</strong> key for a crescendo symbol, or the <strong>&gt;</strong> key for the diminuendo symbol. The hairpins are placed on the staff consistent with the preceding Dynamic mark that you should   already have inserted into the staff.<br> <br> <strong>Note</strong> that the shortcut for adding a note accent has been moved to the exclamation point (!).<br> <br> </li>
-<li><em><strong><a href="MNU_NOTEHEADX.htm"><img src="img/notehdx.gif" alt=""></a> X</strong></em><strong> noteheads </strong>for percussion notes<br> You can add new notes that use the X notehead by first selecting the X Notehead      tool, then adding notes as normal. The only difference is that the notes will      now show up with an X as their notehead. The easiest way to change noteheads      during note entry is to use the Q key to cycle through the available notehead      styles.<br> <br> The notehead of existing notes can also be changed by selecting them first,      then pressing the X Notehead tool button.<br> <br> </li>
-<li><strong><em><strong><a href="MNU_NOTEHEADDIAMOND.htm"><img src="img/notehdmd.gif" border="0" alt=""></a></strong> Diamond </em></strong>noteheads for other non-pitched and harmonic notes<br> The procedure for inserting diamond notes or changing notes to use the diamond      shape is the same as for X noteheads described above, except that the Diamond      Notehead tool is selected instead.<br> <br> </li>
-<li><strong><em><strong><a href="MNU_ADDCLEF.htm"><img src="img/qinsclfd.gif" alt=""></a></strong></em></strong> <strong>Percussion Clef</strong><br> The percussion clef can be added quickly using the new quick insert tool button      shown. It can also be adding using the conventional Insert | Clef command.      Note that the percussion clef is treated just like a bass clef for MIDI input,      play back, and key signature support. Technically, a percussion clef has no      concept of pitch, but in the MIDI domain, a means of determining pitch is      still necessary. Defaulting to Bass Clef seems to be a good default choice.      You can use the Staff Properties Transpose value to alter this behavior as      needed. <br> <br> </li>
-<li><strong>A new Instrument Tree mechanism</strong><br> The NTWPATCH.INI mechanism from version 1 has been removed. A new instrument tree mechanism has been added in its place. User customizable instrument trees are used to create and select predefined instruments, with full control over all instrument properties, including bank select, transpose, and default dynamic note velocities. New Instrument Tree files are added to a dedicated folder that is controlled from Tools|Options|Folders, so you can override the default location of these files. Instrument changes in the staff can now show a custom, user assigned name. Default MIDI note velocities for Dynamics are now under user control via Instrument Properties.<br> <br> </li>
-<li><strong>NWC Clipboard Text<br> </strong>The Find text introduced in version 1 has been extended to support full textual Copy and Paste operations to and from the clipboard. You can now copy and paste large selections of staff notation in the Find text format. This enables you to edit the Find text in a text editor, and then paste it back into the program. The mechanism is automatic. Simply copy notation as normal, but now you can paste the data into any text edit window, such as Windows's Notepad.<br> <br> You can see most of the Find text format by simply copying single items from the program into a text editor. When copying single items, more text details are shown than the shorter format used when copying multiple items at once. <br> <br> A <a href="MNU_USERTOOLS.htm">User Tool</a> mechanism is provided which enables prewritten scripts to applied against selected notation.<br> <br> You can now also paste simple text into the staff. It is automatically pasted as a text expression.<br> <br> </li>
-<li><strong>User control of note stems</strong><br> By default, the program tries to make note stem lengths more consistent with conventional notation practices. When necessary, the length of a note stem is now under user control. The stem length can be adjusted, as well as completely hidden.<br> <br> </li>
-<li><strong>New Lyricist field</strong> (in addition to the existing Author/Composer field)<br> File | Info now has a field for Lyricist. This is printed on the left side      of the title page at the same vertical position as the Author/Composer field.<br> <br> </li>
-<li><strong>Optional support for underscores in your lyrics</strong> (shut off translation      to spaces)<br> The Configuration tab of Edit | Lyrics now has a new option called "Underscore      shown as space" which can be unchecked to disable the underscore translation      to space feature.<br> <br> </li>
+<li><strong>User selectable notation font</strong><br> The staff notation typeface can now be specified by the user. This is done from <a href="MNU_PAGESETUP.htm">File, Page Setup, Fonts (tab)</a>. The Staff Size option from version 1 is also found on this tab (moved from the <strong>File, Page Setup, Options</strong> tab).
+</li>
+<li><strong><a href="MNU_HAIRPINCRESC.htm"><img src="img/cresc.gif" alt=""> Crescendo</a> and <a href="MNU_HAIRPINDECRESC.htm"><img src="img/decresc.gif" alt=""> Diminuendo</a> Attributes for Selected Notes</strong>
+<br>Graphic crescendo and diminuendo can now be added as easily as slurs are applied to notes. Simply select the notes that are included in the volume swell or fade, then press the <strong>&lt;</strong> key for a crescendo symbol, or the <strong>&gt;</strong> key for the diminuendo symbol. The hairpins are placed on the staff consistent with the preceding Dynamic mark that you should already have inserted into the staff.<br> <br> <strong>Note</strong> that the shortcut for adding a note accent has been moved to the exclamation point (!).
+</li>
+<li><em><strong><a href="MNU_NOTEHEADX.htm"><img src="img/notehdx.gif" alt=""></a> X</strong></em><strong> noteheads </strong>for percussion notes
+<br>You can add new notes that use the X notehead by first selecting the X Notehead tool, then adding notes as normal. The only difference is that the notes will now show up with an X as their notehead. The easiest way to change noteheads during note entry is to use the Q key to cycle through the available notehead styles.<br> <br> The notehead of existing notes can also be changed by selecting them first, then pressing the X Notehead tool button.
+</li>
+<li><strong><em><strong><a href="MNU_NOTEHEADDIAMOND.htm"><img src="img/notehdmd.gif" alt="" border="0"></a></strong> Diamond </em></strong>noteheads for other non-pitched and harmonic notes
+<br>The procedure for inserting diamond notes or changing notes to use the diamond shape is the same as for X noteheads described above, except that the Diamond Notehead tool is selected instead.</li>
+<li><a href="MNU_ADDCLEF.htm">Percussion Clef</a><br> The percussion clef can be added using the conventional Insert Clef command. Note that the percussion clef is treated just like a bass clef for MIDI input, play back, and key signature support. Technically, a percussion clef has no concept of pitch, but in the MIDI domain, a means of determining pitch is still necessary. Defaulting to Bass Clef seems to be a good default choice. You can use the Staff Properties Transpose value to alter this behavior as needed.
+</li>
+<li><strong>A new Instrument Tree mechanism</strong>
+<br>The NTWPATCH.INI mechanism from version 1 has been removed. A new instrument tree mechanism has been added in its place. User customizable instrument trees are used to create and select predefined instruments, with full control over all instrument properties, including bank select, transpose, and default dynamic note velocities. New Instrument Tree files are added to a dedicated folder that is controlled from Tools|Options|Folders, so you can override the default location of these files. Instrument changes in the staff can now show a custom, user assigned name. Default MIDI note velocities for Dynamics are now under user control via Instrument Properties.
+</li>
+<li><strong>NWC Clipboard Text</strong>
+<p>The Find text introduced in version 1 has been extended to support full textual Copy and Paste operations to and from the clipboard. You can now copy and paste large selections of staff notation in the Find text format. This enables you to edit the Find text in a text editor, and then paste it back into the program. The mechanism is automatic. Simply copy notation as normal, but now you can paste the data into any text edit window, such as Windows's Notepad.</p>
+<p>You can see most of the Find text format by simply copying single items from the program into a text editor. When copying single items, more text details are shown than the shorter format used when copying multiple items at once.</p>
+<p>A <a href="MNU_USERTOOLS.htm">User Tool</a> mechanism is provided which enables prewritten scripts to applied against selected notation.</p>
+<p>You can now also paste simple text into the staff. It is automatically pasted as a text expression.</p>
+</li>
+<li><strong>User control of note stems</strong>
+<br>By default, the program tries to make note stem lengths more consistent with conventional notation practices. When necessary, the length of a note stem is now under user control. The stem length can be adjusted, as well as completely hidden.
+</li>
+<li><strong>New Lyricist field</strong> (in addition to the existing Author/Composer field)
+<br>File, Info now has a field for Lyricist. This is printed on the left side of the title page at the same vertical position as the Author/Composer field.
+</li>
+<li><strong>Optional support for underscores in your lyrics</strong> (shut off translation to spaces)
+<br>The Configuration tab of Edit, Lyrics now has a new option called "Underscore shown as space" which can be unchecked to disable the underscore translation to space feature.
+</li>
 <li><strong>New staff labels</strong></li>
-<br> A staff can now be named and labeled separately. Each staff must have a unique name, but the label is not subject to this restriction. A grand staff label can now be controlled by the first staff in the grand staff brace by simply assigning the other staves to a blank label.<br> <br> A new option is added to Tools | Options that controls whether staff  labels will be shown in the editor.   This new option is separate from the Page Setup options that control whether staff labels appear when   printing.<br> <br>
-<li><strong>Hidden items show in active and inactive colors for quicker identification</strong><br> You can set the exact color scheme that is used in the editor from the Tools | Options | Color area.   Make sure that you have a score edit window open before going to this area. <br> <br> </li>
-<li><strong>A new anchor symbol</strong><br> A new anchor symbol for expressions that do not preserve width.<br> <br> </li>
-<li><strong>Staff notation limits increased to 32000 items</strong><br> Any staff can now have up to 32000 items in it. Each note, rest, chord, bar line, or other object on the staff counts as 	one item. The old version 1.* limit was 12000 items.<br> <br> </li>
-<li><strong>More highlight colors</strong><br> You now have access to seven different highlight colors for drawing special attention to some areas of    your work. This is more than double the number of highlights that were available in version 1.   <br> <br> </li>
-<li><strong>Direct entry of Multi-point Controller values</strong><br> You no longer are required to use the data entry sliders for those small adjustments to your     Multi-point Controller settings. New edit boxes for each control point allow you to quickly modify     your settings. The sliders are still available for use and reference, and they even update as you change the values in the    edit boxes.   <br> <br> </li>
-<li><strong>Windows XP enhancements</strong><br> If you are using Windows XP, several enhancements will be automatically available in this new version. This new version is more aware of  	the themes feature that is controlled from the Display applet of the Control Panel. Your selected theme      and more of the controls in the program interface will be consistent with your selected theme. Windows XP  	also allows user control over the hand cursor, and this new version utilizes this system cursor. Lastly,  	the File Open and Save dialogs include extra options that are only available on Windows 2000, Windows XP,  	or Windows Vista systems.</li>
+<ul>
+<li>A staff can now be named and labeled separately. Each staff must have a unique name, but the label is not subject to this restriction. A grand staff label can now be controlled by the first staff in the grand staff brace by simply assigning the other staves to a blank label.
+</li>
+<li>A new option is added to Tools, Options that controls whether staff labels will be shown in the editor. This new option is separate from the Page Setup options that control whether staff labels appear when printing.
+</li>
+</ul>
+<li><strong>Hidden items show in active and inactive colors for quicker identification</strong>
+<br>You can set the exact color scheme that is used in the editor from the Tools | Options | Color area. Make sure that you have a score edit window open before going to this area.
+</li>
+<li><strong>A new anchor symbol</strong>
+<br>A new anchor symbol for expressions that do not preserve width.
+</li>
+<li><strong>Staff notation limits increased to 32000 items</strong>
+<br>Any staff can now have up to 32000 items in it. Each note, rest, chord, bar line, or other object on the staff counts as one item. The old version 1.* limit was 12000 items.
+</li>
+<li><strong>More highlight colors</strong>
+<br>You now have access to seven different highlight colors for drawing special attention to some areas of your work. This is more than double the number of highlights that were available in version 1.
+</li>
+<li><strong>Direct entry of Multi-point Controller values</strong>
+<br>You no longer are required to use the data entry sliders for those small adjustments to your Multi-point Controller settings. New edit boxes for each control point allow you to quickly modify your settings. The sliders are still available for use and reference, and they even update as you change the values in the edit boxes.
+</li>
+<li><strong>Windows XP enhancements</strong>
+<br>If you are using Windows XP, several enhancements will be automatically available in this new version. This new version is more aware of the themes feature that is controlled from the Display applet of the Control Panel. Your selected theme and more of the controls in the program interface will be consistent with your selected theme. Windows XP also allows user control over the hand cursor, and this new version utilizes this system cursor. Lastly, the File Open and Save dialogs include extra options that are only available on Windows 2000, Windows XP, or Windows Vista systems.
+</li>
 </ul>
 </body>
