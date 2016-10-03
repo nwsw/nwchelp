@@ -4,13 +4,13 @@
 </head>
 <body>
 <h2>Boundary Change Properties</h2>
-<p>The Boundary Change object is used to dynamically change the staff boundary. Each boundary change supports a single instruction which will be applied to the staff during the printing process. If the instruction is hidden based on its <a href="/nwc2/help/TAB_NTNPROPVISIBILITY.htm">Visibility property</a>, then it will be ignored during the printing process.</p>
+<p>The Boundary Change object is used to dynamically change the staff boundary. Each boundary change supports a single instruction which will be applied to the staff during the printing process. If the instruction is hidden based on its <a href="TAB_NTNPROPVISIBILITY.htm">Visibility property</a>, then it will be ignored during the printing process.</p>
 <p>Available instructions are grouped into three areas:</p>
 <h3>Changing the printed staff boundary offset</h3>
 <p>Instructions in this section control the dynamic vertical size of the staff when it is printed. The two available instructions are:</p>
 <ul>
 <li><strong>Set new boundary offset</strong><br>This instruction can be used to specify the maximum height required for the upper or lower staff boundary in this section of notes. When printing, the staff will automatically be sized to enclose the largest boundary offset that applies within the containing notation. The boundary height is relative to the staff line boundary, so the upper boundary specifies the minimum number of positions required above the staff lines, and the lower boundary specifies the minimum number of positions required below the staff lines.<br><br></li>
-<li><strong>Reset to default</strong><br>This instruction will reset the maximum height requirement for the staff to the boundary size specified in <a href="/nwc2/help/MNU_EDITSTAFF.htm">Staff Properties</a>.</li>
+<li><strong>Reset to default</strong><br>This instruction will reset the maximum height requirement for the staff to the boundary size specified in <a href="MNU_EDITSTAFF.htm">Staff Properties</a>.</li>
 </ul>
 <h3>Collapsing/hiding a printed staff</h3>
 <p>Instructions in this section dynamically control when a staff will be included on the printed page. Using these instructions, it is possible to collapse a staff during some portions of the performance so that it will not be printed. The two available instructions are:</p>
@@ -21,13 +21,13 @@
 <h3>Stand alone print instructions</h3>
 <p>The following instructions are available:</p>
 <ul>
-<li><strong>Gap the staff</strong><br>This instruction is used to create a gap in the current staff. It is most commonly used to start a Coda note section. The gap width uses the same units as the staff <a href="/nwc2/help/MNU_ADDSPACER.htm">Spacer item</a>. The <strong>System connections</strong> option can be used in the top staff of the system to re-display any staff bracket or brace that appears in the system. The system brace will only be shown if additional notes appear in the printed system after the gap. If the gap ends the staff, then this will simply add blank space to the end of the staff/system. It is recommended that a transparent <a href="/nwc2/help/MNU_ADDSTYLEDBARLINE.htm">bar line</a> be added immediately after the staff gap in the event that a system break occurs immediately after the gap.<br><br></li>
+<li><strong>Gap the staff</strong><br>This instruction is used to create a gap in the current staff. It is most commonly used to start a Coda note section. The gap width uses the same units as the staff <a href="MNU_ADDSPACER.htm">Spacer item</a>. The <strong>System connections</strong> option can be used in the top staff of the system to re-display any staff bracket or brace that appears in the system. The system brace will only be shown if additional notes appear in the printed system after the gap. If the gap ends the staff, then this will simply add blank space to the end of the staff/system. It is recommended that a transparent <a href="MNU_ADDSTYLEDBARLINE.htm">bar line</a> be added immediately after the staff gap in the event that a system break occurs immediately after the gap.<br><br></li>
 <li><strong>Force a new system</strong><br>When added to the top staff in the system, this instruction can be used to force a new system to be started in the printout. If necessary, it can also be used to force the new system to start at the top of a new page.</li>
 </ul>
 <p><strong>See Also </strong></p>
 <ul>
-<li><a href="/nwc2/help/intro_proptab.htm">Introduction to Property Dialog Boxes</a></li>
-<li><a href="/nwc2/help/MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
-<li><a href="/nwc2/help/SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
+<li><a href="intro_proptab.htm">Introduction to Property Dialog Boxes</a></li>
+<li><a href="MNU_OPENPROPERTIES.htm">Edit | Properties Command</a></li>
+<li><a href="SUBMNU_INSERT.htm">Insert Menu Commands</a></li>
 </ul>
 </body>
