@@ -3,14 +3,17 @@
 <title>Keyboard Guide</title>
 <style type="text/css">
 table.klist {border:0;}
-.klist th {width:75px;}
-.klist td,.klist th {border:0;border-bottom:solid 1px #ccc;}
+.klist th {white-space:nowrap; padding:0 6px; text-align:center;}
+.klist td,.klist th {border:0;border-bottom:solid 1px #ccc;vertical-align:middle;}
+.klist th a {text-decoration: none; display:block;}
+.klist th a:hover {background: #DDD;}
 h3 {background-color: #E0E0E0;}
 </style></head>
 <body>
 <h2>Keyboard Guide</h2>
-<p>The following are the quick key lists for use in <em>NoteWorthy Composer 2</em>. When the words <strong>Up</strong>, <strong>Down</strong>, <strong>Left</strong>, or <strong>Right</strong> are used in the key chart, they refer to the four arrow keys on the keyboard.</p>
-<h3>Common Editor Shortcuts</h3>
+<p>The following are the common quick key lists for use in the program.</p>
+
+<h3 id="editkeys">Common Editor Shortcuts</h3>
 <p>The following quick keys are generally available when editing a score:</p>
 <table class="klist">
 <tbody>
@@ -80,19 +83,19 @@ h3 {background-color: #E0E0E0;}
 <tr><th><a href="MNU_NOTESLUR.htm">;</a></th>
 <td>Toggles the outbound slur note attribute</td>
 </tr>
-<tr><th><a href="MNU_NOTESTACCATO.htm">Comma<br>,</a></th>
+<tr><th><a href="MNU_NOTESTACCATO.htm">, (comma)</a></th>
 <td>Toggles the staccato note attribute</td>
 </tr>
-<tr><th><a href="MNU_NOTETENUTO.htm">Underscore<br>_</a></th>
+<tr><th><a href="MNU_NOTETENUTO.htm">_ (underscore)</a></th>
 <td>Toggles the tenuto note attribute</td>
 </tr>
-<tr><th><a href="MNU_NOTETIE.htm">Forward slash<br>/ </a></th>
+<tr><th><a href="MNU_NOTETIE.htm">/ (forward slash)</a></th>
 <td>Toggles the note tie outward status for note entry</td>
 </tr>
-<tr><th><a href="MNU_ITEMCOLOR.htm">Backslash<br>\</a></th>
+<tr><th><a href="MNU_ITEMCOLOR.htm">\ (backslash)</a></th>
 <td>Opens the color select menu</td>
 </tr>
-<tr><th><a href="MNU_NOTEDOT.htm">Period<br>.</a></th>
+<tr><th><a href="MNU_NOTEDOT.htm">. (period)</a></th>
 <td>Cycles the dotted note status for note entry. Will also cycle the double dot if it appears next to the dot in a tool bar.</td>
 </tr>
 <tr><th><a href="MNU_NOTESTEMUP.htm">Shift+Up</a></th>
@@ -221,10 +224,10 @@ h3 {background-color: #E0E0E0;}
 <tr><th>0</th>
 <td>Clears the note accidental, tie, and dot status parameters</td>
 </tr>
-<tr><th>+</th>
+<tr><th>+ (plus)</th>
 <td>Shifts the running note duration to next larger duration</td>
 </tr>
-<tr><th>-</th>
+<tr><th>- (minus)</th>
 <td>Shifts the running note duration to next smaller duration</td>
 </tr>
 <tr><th>Home</th>
@@ -239,20 +242,14 @@ h3 {background-color: #E0E0E0;}
 <tr><th>Ctrl+End</th>
 <td>Changes the active staff to the last staff in the system</td>
 </tr>
-<tr><th>Ctrl+Right Arrow</th>
-<td>Moves the insertion point forward to the next measure</td>
+<tr><th>Ctrl+&#8596;</th>
+<td>Moves the insertion point to the prior/next bar</td>
 </tr>
-<tr><th>Ctrl+Left Arrow</th>
-<td>Moves the insertion point backward to the nearest bar line</td>
-</tr>
-<tr><th>Shift+L/R Arrow</th>
+<tr><th>Shift+&#8596;</th>
 <td>Selects notation as the insertion point moves</td>
 </tr>
-<tr><th>Page Up</th>
-<td>Shifts the active staff upward</td>
-</tr>
-<tr><th>Page Down</th>
-<td>Shifts the active staff downward</td>
+<tr><th>Page Up/Down</th>
+<td>Select the prior/next active staff</td>
 </tr>
 <tr><th><a href="MNU_VIEWZOOMIN.htm">Alt+Plus</a></th>
 <td>Zoom in</td>
@@ -292,20 +289,21 @@ h3 {background-color: #E0E0E0;}
 </tr>
 </tbody>
 </table>
-<h3>Common Shortcuts While Editing Existing Selected Notation</h3>
+
+<h3 id="editselkeys">Common Shortcuts While Editing Existing Selected Notation</h3>
 <p>The following keys are available when notation has been selected:</p>
 <table class="klist" border="0">
 <tbody>
 <tr><th><a href="CNTXTMNU_NTNEDITOR2.htm">Menu key</a></th>
 <td>Opens a context menu</td>
 </tr>
-<tr><th><a href="MNU_OPENPROPERTIES.htm">Alt+Enter</a><br><a href="MNU_OPENPROPERTIES.htm">Ctrl+E</a></th>
+<tr><th><a href="MNU_OPENPROPERTIES.htm">Alt+Enter</a><a href="MNU_OPENPROPERTIES.htm">Ctrl+E</a></th>
 <td>Opens a property dialog for the currently selected item(s)</td>
 </tr>
 <tr><th><a href="MNU_EDITCUT.htm">Ctrl+X</a></th>
 <td>Cuts the selection and places it in the clipboard</td>
 </tr>
-<tr><th><a href="MNU_EDITCOPY.htm">Ctrl C</a></th>
+<tr><th><a href="MNU_EDITCOPY.htm">Ctrl+C</a></th>
 <td>Copies the selection into the clipboard</td>
 </tr>
 <tr><th><a href="MNU_EDITCLEAR.htm">Ctrl+Del</a></th>
@@ -320,15 +318,23 @@ h3 {background-color: #E0E0E0;}
 <tr><th>Backspace</th>
 <td>Removes the currently selected notes</td>
 </tr>
-<tr><th>Shift+Ctrl+Down</th>
-<td>Shifts the selection downward on the staff</td>
+<tr><th>Shift+Ctrl+&#8597;</th>
+<td>Slides the selection of notes up or down on the staff</td>
 </tr>
-<tr><th>Shift+Ctrl+Up</th>
-<td>Shifts the selection upward on the staff</td>
+<tr><th>Alt+&#8597;</th>
+<td>Change a selected note's stem length</td>
+</tr>
+<tr><th>Alt+&#8596;</th>
+<td>Change a selected note's <strong>note spacing</strong></td>
+</tr>
+<tr><th>Alt+Shift+&#8596;</th>
+<td>Change a selected note's <strong>accidental spacing</strong></td>
 </tr>
 </tbody>
 </table>
-<h3>Common Shortcuts While Editing Existing Notation without Selection</h3>
+
+
+<h3 id="editnoselkeys">Common Shortcuts While Editing Existing Notation without Selection</h3>
 <p>These commands do specific things when notation is not currently selected:</p>
 <table class="klist" border="0">
 <tbody>
@@ -347,24 +353,20 @@ h3 {background-color: #E0E0E0;}
 <tr><th>Ctrl+Backspace</th>
 <td>Deletes the chord member just behind the insertion point</td>
 </tr>
-<tr><th>Ctrl+Up</th>
-<td>Moves the insertion point up by an octave</td>
+<tr><th>Ctrl+&#8597;</th>
+<td>Moves the insertion point up or down by an octave</td>
 </tr>
-<tr><th>Ctrl+Down</th>
-<td>Moves the insertion point down by an octave</td>
-</tr>
-<tr><th>Shift+Ctrl+Down</th>
-<td>Shifts the running note duration to next smaller duration</td>
-</tr>
-<tr><th>Shift+Ctrl+Up</th>
-<td>Shifts the running note duration to next larger duration</td>
+<tr><th>Shift+Ctrl+&#8597;</th>
+<td>Shifts the running note duration to next  duration</td>
 </tr>
 <tr><th><a href="MNU_EDITSTAFF.htm">F2</a></th>
 <td>Open the Staff Properties dialog</td>
 </tr>
 </tbody>
 </table>
-<h3>Property Sheet Shortcuts</h3>
+
+
+<h3 id="propsheetkeys">Property Sheet Shortcuts</h3>
 <p>These keys are available when you are inside a <a href="intro_proptab.htm">property dialog</a> box (where tabs are present):</p>
 <table class="klist" border="0">
 <tbody>
