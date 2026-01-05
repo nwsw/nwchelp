@@ -26,9 +26,16 @@ The following options are available for controlling the MIDI import operations o
 <p>
 <b><i>Track Splitting Options </i></b></p>
 <ul>
-<li><h4>Separate MIDI channels</h4><div class="ctldesc">This option is used to control whether each MIDI channel found in a MIDI track will be mapped into a new staff. When set, a new staff will be created for note events occurring in each MIDI channel that is present. When not set, all note events will be treated together in the conversion to a notated staff regardless of their MIDI channel.</div>
+<li><h4>Map each MIDI channel to new staff</h4><div class="ctldesc">This option is used to control whether each MIDI channel found in a MIDI track will be mapped into a new staff. When set, a new staff will be created for note events occurring in each MIDI channel that is present. When not set, all note events will be treated together in the conversion to a notated staff regardless of their MIDI channel.</div>
 </li>
 <li><h4>Maximum single track chord size</h4><div class="ctldesc">This option is used to enable automatic splitting of MIDI tracks into two staves. The value in this box is semitones. Whenever a group of simultaneous note events span a semitone interval larger than this value, the performance will automatically be split into two staves during import.</div>
+</li>
+</ul>
+<p>
+<b><i>Miscellaneous</i></b></p>
+<ul>
+<li><h4>Maximum time length</h4><div class="ctldesc">This option can be used to truncate an imported MIDI file to a maximum time length. Some files have extra padded notes at the end of their sequence which can overflow the
+staff notation. This option can be used to overcome this problem.</div>
 </li>
 </ul>
 <p>
